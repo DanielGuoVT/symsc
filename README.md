@@ -36,14 +36,14 @@ csc
 Some benchmarks have the same name in our paper and they are differentiated by the
 name-suffixes as following:
 
-| Benchmark        | Directory  |
+| Benchmark     | Directory     |
 | ------------- |:-------------:|
-| AES\[6\]      | aes-openssl |
-| AES\[9\]      | aes      |
-|CAST5\[4\] | cast5-tom      |
-|CAST5\[19\] | cast5      |
-|DES\[3\] | des-libgcrypt      |
-|DES\[19\] | des      |
+| AES\[6\]      | aes-openssl   |
+| AES\[9\]      | aes           |
+|CAST5\[4\]     | cast5-tom     |
+|CAST5\[19\]    | cast5         |
+|DES\[3\]       | des-libgcrypt |
+|DES\[19\]      | des           |
 
 I also created five script files (also in the benchmark directory) for the experimental data collection.  
 You can directly run them (no parameters required) to generate data tables:  
