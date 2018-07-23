@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/MemCpyOpt
+END
+align.ll
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/MemCpyOpt/align.ll
+END
+memcpy.ll
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/MemCpyOpt/memcpy.ll
+END
+form-memset.ll
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/MemCpyOpt/form-memset.ll
+END
+atomic.ll
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/MemCpyOpt/atomic.ll
+END
+sret.ll
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/MemCpyOpt/sret.ll
+END
+smaller.ll
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/MemCpyOpt/smaller.ll
+END
+crash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/MemCpyOpt/crash.ll
+END
+memcpy-to-memset.ll
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/MemCpyOpt/memcpy-to-memset.ll
+END
+2008-03-13-ReturnSlotBitcast.ll
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/MemCpyOpt/2008-03-13-ReturnSlotBitcast.ll
+END
+2008-02-24-MultipleUseofSRet.ll
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/MemCpyOpt/2008-02-24-MultipleUseofSRet.ll
+END
+memmove.ll
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/MemCpyOpt/memmove.ll
+END
+loadstore-sret.ll
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/MemCpyOpt/loadstore-sret.ll
+END
+2011-06-02-CallSlotOverwritten.ll
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/MemCpyOpt/2011-06-02-CallSlotOverwritten.ll
+END
+lit.local.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/MemCpyOpt/lit.local.cfg
+END

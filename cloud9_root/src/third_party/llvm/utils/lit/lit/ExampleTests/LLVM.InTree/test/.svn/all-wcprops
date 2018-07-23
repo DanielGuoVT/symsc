@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/utils/lit/lit/ExampleTests/LLVM.InTree/test
+END
+site.exp
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/utils/lit/lit/ExampleTests/LLVM.InTree/test/site.exp
+END
+lit.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/utils/lit/lit/ExampleTests/LLVM.InTree/test/lit.cfg
+END
+lit.site.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/utils/lit/lit/ExampleTests/LLVM.InTree/test/lit.site.cfg
+END

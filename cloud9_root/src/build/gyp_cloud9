@@ -1,0 +1,52 @@
+#!/usr/bin/env python
+#
+# Cloud9 Parallel Symbolic Execution Engine
+#
+
+
+import os
+import sys
+
+
+script_dir = os.path.dirname(__file__)
+cloud9_src = os.path.abspath(os.path.join(script_dir, os.pardir))
+
+
+sys.path.insert(0, os.path.join(cloud9_src, 'third_party', 'gyp', 'pylib'))
+import gyp
+
+
+def Main():
+  args = sys.argv[1:]
+  gyp_args = []
+  
+  gyp_file = os.path.join(script_dir, "all.gyp")
+  include_files = []
+  # Extract the gyp file and the includes
+  for arg in args:
+    if arg.startswith("-I") and len(arg) > 2:
+      include_files.append(os.path.realpath(arg[2:]))
+    elif arg.endswith(".gyp"):
+      gyp_file = arg
+    else:
+      gyp_args.append(arg)
+
+  gyp_args.append(gyp_file)
+
+  additional_includes = [
+    os.path.join(script_dir, "common.gypi"),
+  ]
+  
+  for additional_include in additional_includes:
+    if os.path.realpath(additional_include) not in include_files:
+      include_files.append(additional_include)
+
+  gyp_args.extend([("-I%s" % path) for path in include_files])
+
+  print 'Updating projects from gyp files...'
+  sys.stdout.flush()
+
+  return gyp.main(gyp_args)
+
+if __name__ == "__main__":
+  sys.exit(Main())

@@ -1,0 +1,16 @@
+[func]
+FI
+encrypt
+key_schedule
+
+[sbox]
+KASUMI_SBOX_S7
+KASUMI_SBOX_S9
+
+[shadow]
+FI
+encrypt1
+key_schedule1
+
+[key]
+key

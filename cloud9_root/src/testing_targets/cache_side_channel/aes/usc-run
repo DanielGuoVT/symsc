@@ -1,0 +1,14 @@
+../../build/make_all;
+./clean
+echo ---------------------------------------
+date
+echo ---------------------------------------
+date > log.time
+name=`basename $(pwd)`
+echo "Start executing ${name}.bc ..."
+c9-worker --stand-alone --posix-runtime --libc=uclibc --fork-on-schedule --output-dir result $1 $2 $3 $4 -usc -flog ../../out/Default/${name}.bc ;
+date >> log.time
+echo ---------------------------------------
+date
+echo ---------------------------------------
+

@@ -1,0 +1,353 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce
+END
+variable_stride.ll
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/variable_stride.ll
+END
+2007-04-23-UseIterator.ll
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/2007-04-23-UseIterator.ll
+END
+remove_indvar.ll
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/remove_indvar.ll
+END
+dont-hoist-simple-loop-constants.ll
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/dont-hoist-simple-loop-constants.ll
+END
+pr3571.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/pr3571.ll
+END
+2011-10-14-IntPtr.ll
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/2011-10-14-IntPtr.ll
+END
+dont_reduce_bytes.ll
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/dont_reduce_bytes.ll
+END
+share_code_in_preheader.ll
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/share_code_in_preheader.ll
+END
+pr2537.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/pr2537.ll
+END
+pr3086.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/pr3086.ll
+END
+2008-09-09-Overflow.ll
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/2008-09-09-Overflow.ll
+END
+2011-10-06-ReusePhi.ll
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/2011-10-06-ReusePhi.ll
+END
+lit.local.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/lit.local.cfg
+END
+pr3399.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/pr3399.ll
+END
+exit_compare_live_range.ll
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/exit_compare_live_range.ll
+END
+dead-phi.ll
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/dead-phi.ll
+END
+2012-01-02-nopreheader.ll
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/2012-01-02-nopreheader.ll
+END
+2012-03-26-constexpr.ll
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/2012-03-26-constexpr.ll
+END
+2009-04-28-no-reduce-mul.ll
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/2009-04-28-no-reduce-mul.ll
+END
+uglygep.ll
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/uglygep.ll
+END
+use_postinc_value_outside_loop.ll
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/use_postinc_value_outside_loop.ll
+END
+2005-09-12-UsesOutOutsideOfLoop.ll
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/2005-09-12-UsesOutOutsideOfLoop.ll
+END
+pr12018.ll
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/pr12018.ll
+END
+preserve-gep-loop-variant.ll
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/preserve-gep-loop-variant.ll
+END
+quadradic-exit-value.ll
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/quadradic-exit-value.ll
+END
+pr12048.ll
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/pr12048.ll
+END
+2012-01-16-nopreheader.ll
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/2012-01-16-nopreheader.ll
+END
+ivchain.ll
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/ivchain.ll
+END
+var_stride_used_by_compare.ll
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/var_stride_used_by_compare.ll
+END
+post-inc-icmpzero.ll
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/post-inc-icmpzero.ll
+END
+ops_after_indvar.ll
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/ops_after_indvar.ll
+END
+2011-10-03-CritEdgeMerge.ll
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/2011-10-03-CritEdgeMerge.ll
+END
+count-to-zero.ll
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/count-to-zero.ll
+END
+invariant_value_first_arg.ll
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/invariant_value_first_arg.ll
+END
+2008-08-13-CmpStride.ll
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/2008-08-13-CmpStride.ll
+END
+addrec-gep.ll
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/addrec-gep.ll
+END
+2011-07-20-DoubleIV.ll
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/2011-07-20-DoubleIV.ll
+END
+pr2570.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/pr2570.ll
+END
+phi_node_update_multiple_preds.ll
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/phi_node_update_multiple_preds.ll
+END
+dominate-assert.ll
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/dominate-assert.ll
+END
+dont_reverse.ll
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/dont_reverse.ll
+END
+nonlinear-postinc.ll
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/nonlinear-postinc.ll
+END
+2009-01-13-nonconstant-stride-outside-loop.ll
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/2009-01-13-nonconstant-stride-outside-loop.ll
+END
+2011-12-19-PostincQuadratic.ll
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/2011-12-19-PostincQuadratic.ll
+END
+related_indvars.ll
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/related_indvars.ll
+END
+2011-07-19-CritEdgeBreakCrash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/2011-07-19-CritEdgeBreakCrash.ll
+END
+2005-08-17-OutOfLoopVariant.ll
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/2005-08-17-OutOfLoopVariant.ll
+END
+hoist-parent-preheader.ll
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/hoist-parent-preheader.ll
+END
+2005-08-15-AddRecIV.ll
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/2005-08-15-AddRecIV.ll
+END
+dont_insert_redundant_ops.ll
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/dont_insert_redundant_ops.ll
+END
+2012-03-15-nopreheader.ll
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/2012-03-15-nopreheader.ll
+END
+2008-08-14-ShadowIV.ll
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/2008-08-14-ShadowIV.ll
+END
+share_ivs.ll
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/share_ivs.ll
+END
+2011-10-13-SCEVChain.ll
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/2011-10-13-SCEVChain.ll
+END
+pr12691.ll
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/pr12691.ll
+END
+different-type-ivs.ll
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/different-type-ivs.ll
+END
+nested-reduce.ll
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/nested-reduce.ll
+END
+invariant_value_first.ll
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopStrengthReduce/invariant_value_first.ll
+END

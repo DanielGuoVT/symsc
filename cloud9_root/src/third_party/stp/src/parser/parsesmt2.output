@@ -1,0 +1,4712 @@
+Grammar
+
+    0 $accept: cmd "end of file"
+
+    1 cmd: commands "end of file"
+
+    2 commands: commands cmdi
+    3         | cmdi
+
+    4 cmdi: LPAREN_TOK EXIT_TOK RPAREN_TOK
+    5     | LPAREN_TOK CHECK_SAT_TOK RPAREN_TOK
+    6     | LPAREN_TOK LOGIC_TOK STRING_TOK RPAREN_TOK
+    7     | LPAREN_TOK NOTES_TOK attribute STRING_TOK RPAREN_TOK
+    8     | LPAREN_TOK OPTION_TOK attribute RPAREN_TOK
+    9     | LPAREN_TOK NOTES_TOK attribute DECIMAL_TOK RPAREN_TOK
+   10     | LPAREN_TOK NOTES_TOK attribute RPAREN_TOK
+   11     | LPAREN_TOK PUSH_TOK NUMERAL_TOK RPAREN_TOK
+   12     | LPAREN_TOK POP_TOK NUMERAL_TOK RPAREN_TOK
+   13     | LPAREN_TOK DECLARE_FUNCTION_TOK var_decl RPAREN_TOK
+   14     | LPAREN_TOK FORMULA_TOK an_formula RPAREN_TOK
+
+   15 status: STRING_TOK
+
+   16 attribute: SOURCE_TOK
+   17          | CATEGORY_TOK
+   18          | DIFFICULTY_TOK
+   19          | VERSION_TOK
+   20          | STATUS_TOK status
+   21          | PRINT_TOK TRUE_TOK
+   22          | PRINT_TOK FALSE_TOK
+
+   23 var_decl: STRING_TOK LPAREN_TOK RPAREN_TOK LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK RPAREN_TOK
+   24         | STRING_TOK LPAREN_TOK RPAREN_TOK BOOL_TOK
+   25         | STRING_TOK LPAREN_TOK RPAREN_TOK LPAREN_TOK ARRAY_TOK LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK RPAREN_TOK LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK RPAREN_TOK RPAREN_TOK
+
+   26 an_formulas: an_formula
+   27            | an_formulas an_formula
+
+   28 an_formula: TRUE_TOK
+   29           | FALSE_TOK
+   30           | FORMID_TOK
+   31           | LPAREN_TOK EQ_TOK an_term an_term RPAREN_TOK
+   32           | LPAREN_TOK DISTINCT_TOK an_terms RPAREN_TOK
+   33           | LPAREN_TOK DISTINCT_TOK an_formulas RPAREN_TOK
+   34           | LPAREN_TOK BVSLT_TOK an_term an_term RPAREN_TOK
+   35           | LPAREN_TOK BVSLE_TOK an_term an_term RPAREN_TOK
+   36           | LPAREN_TOK BVSGT_TOK an_term an_term RPAREN_TOK
+   37           | LPAREN_TOK BVSGE_TOK an_term an_term RPAREN_TOK
+   38           | LPAREN_TOK BVLT_TOK an_term an_term RPAREN_TOK
+   39           | LPAREN_TOK BVLE_TOK an_term an_term RPAREN_TOK
+   40           | LPAREN_TOK BVGT_TOK an_term an_term RPAREN_TOK
+   41           | LPAREN_TOK BVGE_TOK an_term an_term RPAREN_TOK
+   42           | LPAREN_TOK an_formula RPAREN_TOK
+   43           | LPAREN_TOK NOT_TOK an_formula RPAREN_TOK
+   44           | LPAREN_TOK IMPLIES_TOK an_formula an_formula RPAREN_TOK
+   45           | LPAREN_TOK ITE_TOK an_formula an_formula an_formula RPAREN_TOK
+   46           | LPAREN_TOK AND_TOK an_formulas RPAREN_TOK
+   47           | LPAREN_TOK OR_TOK an_formulas RPAREN_TOK
+   48           | LPAREN_TOK XOR_TOK an_formula an_formula RPAREN_TOK
+   49           | LPAREN_TOK EQ_TOK an_formula an_formula RPAREN_TOK
+   50           | LPAREN_TOK LET_TOK LPAREN_TOK lets RPAREN_TOK an_formula RPAREN_TOK
+
+   51 lets: let lets
+   52     | let
+
+   53 let: LPAREN_TOK STRING_TOK an_formula RPAREN_TOK
+   54    | LPAREN_TOK STRING_TOK an_term RPAREN_TOK
+
+   55 an_terms: an_term
+   56         | an_terms an_term
+
+   57 an_term: TERMID_TOK
+   58        | LPAREN_TOK an_term RPAREN_TOK
+   59        | SELECT_TOK an_term an_term
+   60        | STORE_TOK an_term an_term an_term
+   61        | LPAREN_TOK UNDERSCORE_TOK BVEXTRACT_TOK NUMERAL_TOK NUMERAL_TOK RPAREN_TOK an_term
+   62        | LPAREN_TOK UNDERSCORE_TOK BVZX_TOK NUMERAL_TOK RPAREN_TOK an_term
+   63        | LPAREN_TOK UNDERSCORE_TOK BVSX_TOK NUMERAL_TOK RPAREN_TOK an_term
+   64        | ITE_TOK an_formula an_term an_term
+   65        | BVCONCAT_TOK an_term an_term
+   66        | BVNOT_TOK an_term
+   67        | BVNEG_TOK an_term
+   68        | BVAND_TOK an_term an_term
+   69        | BVOR_TOK an_term an_term
+   70        | BVXOR_TOK an_term an_term
+   71        | BVXNOR_TOK an_term an_term
+   72        | BVCOMP_TOK an_term an_term
+   73        | BVSUB_TOK an_term an_term
+   74        | BVPLUS_TOK an_term an_term
+   75        | BVMULT_TOK an_term an_term
+   76        | BVDIV_TOK an_term an_term
+   77        | BVMOD_TOK an_term an_term
+   78        | SBVDIV_TOK an_term an_term
+   79        | SBVREM_TOK an_term an_term
+   80        | SBVMOD_TOK an_term an_term
+   81        | BVNAND_TOK an_term an_term
+   82        | BVNOR_TOK an_term an_term
+   83        | BVLEFTSHIFT_1_TOK an_term an_term
+   84        | BVRIGHTSHIFT_1_TOK an_term an_term
+   85        | BVARITHRIGHTSHIFT_TOK an_term an_term
+   86        | LPAREN_TOK UNDERSCORE_TOK BVROTATE_LEFT_TOK NUMERAL_TOK RPAREN_TOK an_term
+   87        | LPAREN_TOK UNDERSCORE_TOK BVROTATE_RIGHT_TOK NUMERAL_TOK RPAREN_TOK an_term
+   88        | LPAREN_TOK UNDERSCORE_TOK BVREPEAT_TOK NUMERAL_TOK RPAREN_TOK an_term
+   89        | UNDERSCORE_TOK BVCONST_DECIMAL_TOK NUMERAL_TOK
+   90        | BVCONST_HEXIDECIMAL_TOK
+   91        | BVCONST_BINARY_TOK
+
+
+Terminals, with rules where they appear
+
+"end of file" (0) 0 1
+error (256)
+NUMERAL_TOK (258) 11 12 23 25 61 62 63 86 87 88 89
+BVCONST_DECIMAL_TOK (259) 89
+BVCONST_BINARY_TOK (260) 91
+BVCONST_HEXIDECIMAL_TOK (261) 90
+DECIMAL_TOK (262) 9
+FORMID_TOK (263) 30
+TERMID_TOK (264) 57
+STRING_TOK (265) 6 7 15 23 24 25 53 54
+SOURCE_TOK (266) 16
+CATEGORY_TOK (267) 17
+DIFFICULTY_TOK (268) 18
+VERSION_TOK (269) 19
+STATUS_TOK (270) 20
+PRINT_TOK (271) 21 22
+UNDERSCORE_TOK (272) 23 25 61 62 63 86 87 88 89
+LPAREN_TOK (273) 4 5 6 7 8 9 10 11 12 13 14 23 24 25 31 32 33 34 35
+    36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 53 54 58 61 62 63
+    86 87 88
+RPAREN_TOK (274) 4 5 6 7 8 9 10 11 12 13 14 23 24 25 31 32 33 34 35
+    36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 53 54 58 61 62 63
+    86 87 88
+BVLEFTSHIFT_1_TOK (275) 83
+BVRIGHTSHIFT_1_TOK (276) 84
+BVARITHRIGHTSHIFT_TOK (277) 85
+BVPLUS_TOK (278) 74
+BVSUB_TOK (279) 73
+BVNOT_TOK (280) 66
+BVMULT_TOK (281) 75
+BVDIV_TOK (282) 76
+SBVDIV_TOK (283) 78
+BVMOD_TOK (284) 77
+SBVREM_TOK (285) 79
+SBVMOD_TOK (286) 80
+BVNEG_TOK (287) 67
+BVAND_TOK (288) 68
+BVOR_TOK (289) 69
+BVXOR_TOK (290) 70
+BVNAND_TOK (291) 81
+BVNOR_TOK (292) 82
+BVXNOR_TOK (293) 71
+BVCONCAT_TOK (294) 65
+BVLT_TOK (295) 38
+BVGT_TOK (296) 40
+BVLE_TOK (297) 39
+BVGE_TOK (298) 41
+BVSLT_TOK (299) 34
+BVSGT_TOK (300) 36
+BVSLE_TOK (301) 35
+BVSGE_TOK (302) 37
+BVSX_TOK (303) 63
+BVEXTRACT_TOK (304) 61
+BVZX_TOK (305) 62
+BVROTATE_RIGHT_TOK (306) 87
+BVROTATE_LEFT_TOK (307) 86
+BVREPEAT_TOK (308) 88
+BVCOMP_TOK (309) 72
+BITVEC_TOK (310) 23 25
+ARRAY_TOK (311) 25
+BOOL_TOK (312) 24
+TRUE_TOK (313) 21 28
+FALSE_TOK (314) 22 29
+NOT_TOK (315) 43
+AND_TOK (316) 46
+OR_TOK (317) 47
+XOR_TOK (318) 48
+ITE_TOK (319) 45 64
+EQ_TOK (320) 31 49
+IMPLIES_TOK (321) 44
+DISTINCT_TOK (322) 32 33
+LET_TOK (323) 50
+EXIT_TOK (324) 4
+CHECK_SAT_TOK (325) 5
+LOGIC_TOK (326) 6
+NOTES_TOK (327) 7 9 10
+OPTION_TOK (328) 8
+DECLARE_FUNCTION_TOK (329) 13
+FORMULA_TOK (330) 14
+PUSH_TOK (331) 11
+POP_TOK (332) 12
+SELECT_TOK (333) 59
+STORE_TOK (334) 60
+
+
+Nonterminals, with rules where they appear
+
+$accept (80)
+    on left: 0
+cmd (81)
+    on left: 1, on right: 0
+commands (82)
+    on left: 2 3, on right: 1 2
+cmdi (83)
+    on left: 4 5 6 7 8 9 10 11 12 13 14, on right: 2 3
+status (84)
+    on left: 15, on right: 20
+attribute (85)
+    on left: 16 17 18 19 20 21 22, on right: 7 8 9 10
+var_decl (86)
+    on left: 23 24 25, on right: 13
+an_formulas (87)
+    on left: 26 27, on right: 27 33 46 47
+an_formula (88)
+    on left: 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45
+    46 47 48 49 50, on right: 14 26 27 42 43 44 45 48 49 50 53 64
+lets (89)
+    on left: 51 52, on right: 50 51
+let (90)
+    on left: 53 54, on right: 51 52
+an_terms (91)
+    on left: 55 56, on right: 32 56
+an_term (92)
+    on left: 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74
+    75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91, on right: 31
+    34 35 36 37 38 39 40 41 54 55 56 58 59 60 61 62 63 64 65 66 67
+    68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88
+
+
+state 0
+
+    0 $accept: . cmd "end of file"
+
+    LPAREN_TOK  shift, and go to state 1
+
+    cmd       go to state 2
+    commands  go to state 3
+    cmdi      go to state 4
+
+
+state 1
+
+    4 cmdi: LPAREN_TOK . EXIT_TOK RPAREN_TOK
+    5     | LPAREN_TOK . CHECK_SAT_TOK RPAREN_TOK
+    6     | LPAREN_TOK . LOGIC_TOK STRING_TOK RPAREN_TOK
+    7     | LPAREN_TOK . NOTES_TOK attribute STRING_TOK RPAREN_TOK
+    8     | LPAREN_TOK . OPTION_TOK attribute RPAREN_TOK
+    9     | LPAREN_TOK . NOTES_TOK attribute DECIMAL_TOK RPAREN_TOK
+   10     | LPAREN_TOK . NOTES_TOK attribute RPAREN_TOK
+   11     | LPAREN_TOK . PUSH_TOK NUMERAL_TOK RPAREN_TOK
+   12     | LPAREN_TOK . POP_TOK NUMERAL_TOK RPAREN_TOK
+   13     | LPAREN_TOK . DECLARE_FUNCTION_TOK var_decl RPAREN_TOK
+   14     | LPAREN_TOK . FORMULA_TOK an_formula RPAREN_TOK
+
+    EXIT_TOK              shift, and go to state 5
+    CHECK_SAT_TOK         shift, and go to state 6
+    LOGIC_TOK             shift, and go to state 7
+    NOTES_TOK             shift, and go to state 8
+    OPTION_TOK            shift, and go to state 9
+    DECLARE_FUNCTION_TOK  shift, and go to state 10
+    FORMULA_TOK           shift, and go to state 11
+    PUSH_TOK              shift, and go to state 12
+    POP_TOK               shift, and go to state 13
+
+
+state 2
+
+    0 $accept: cmd . "end of file"
+
+    "end of file"  shift, and go to state 14
+
+
+state 3
+
+    1 cmd: commands . "end of file"
+    2 commands: commands . cmdi
+
+    "end of file"  shift, and go to state 15
+    LPAREN_TOK     shift, and go to state 1
+
+    cmdi  go to state 16
+
+
+state 4
+
+    3 commands: cmdi .
+
+    $default  reduce using rule 3 (commands)
+
+
+state 5
+
+    4 cmdi: LPAREN_TOK EXIT_TOK . RPAREN_TOK
+
+    RPAREN_TOK  shift, and go to state 17
+
+
+state 6
+
+    5 cmdi: LPAREN_TOK CHECK_SAT_TOK . RPAREN_TOK
+
+    RPAREN_TOK  shift, and go to state 18
+
+
+state 7
+
+    6 cmdi: LPAREN_TOK LOGIC_TOK . STRING_TOK RPAREN_TOK
+
+    STRING_TOK  shift, and go to state 19
+
+
+state 8
+
+    7 cmdi: LPAREN_TOK NOTES_TOK . attribute STRING_TOK RPAREN_TOK
+    9     | LPAREN_TOK NOTES_TOK . attribute DECIMAL_TOK RPAREN_TOK
+   10     | LPAREN_TOK NOTES_TOK . attribute RPAREN_TOK
+
+    SOURCE_TOK      shift, and go to state 20
+    CATEGORY_TOK    shift, and go to state 21
+    DIFFICULTY_TOK  shift, and go to state 22
+    VERSION_TOK     shift, and go to state 23
+    STATUS_TOK      shift, and go to state 24
+    PRINT_TOK       shift, and go to state 25
+
+    attribute  go to state 26
+
+
+state 9
+
+    8 cmdi: LPAREN_TOK OPTION_TOK . attribute RPAREN_TOK
+
+    SOURCE_TOK      shift, and go to state 20
+    CATEGORY_TOK    shift, and go to state 21
+    DIFFICULTY_TOK  shift, and go to state 22
+    VERSION_TOK     shift, and go to state 23
+    STATUS_TOK      shift, and go to state 24
+    PRINT_TOK       shift, and go to state 25
+
+    attribute  go to state 27
+
+
+state 10
+
+   13 cmdi: LPAREN_TOK DECLARE_FUNCTION_TOK . var_decl RPAREN_TOK
+
+    STRING_TOK  shift, and go to state 28
+
+    var_decl  go to state 29
+
+
+state 11
+
+   14 cmdi: LPAREN_TOK FORMULA_TOK . an_formula RPAREN_TOK
+
+    FORMID_TOK  shift, and go to state 30
+    LPAREN_TOK  shift, and go to state 31
+    TRUE_TOK    shift, and go to state 32
+    FALSE_TOK   shift, and go to state 33
+
+    an_formula  go to state 34
+
+
+state 12
+
+   11 cmdi: LPAREN_TOK PUSH_TOK . NUMERAL_TOK RPAREN_TOK
+
+    NUMERAL_TOK  shift, and go to state 35
+
+
+state 13
+
+   12 cmdi: LPAREN_TOK POP_TOK . NUMERAL_TOK RPAREN_TOK
+
+    NUMERAL_TOK  shift, and go to state 36
+
+
+state 14
+
+    0 $accept: cmd "end of file" .
+
+    $default  accept
+
+
+state 15
+
+    1 cmd: commands "end of file" .
+
+    $default  reduce using rule 1 (cmd)
+
+
+state 16
+
+    2 commands: commands cmdi .
+
+    $default  reduce using rule 2 (commands)
+
+
+state 17
+
+    4 cmdi: LPAREN_TOK EXIT_TOK RPAREN_TOK .
+
+    $default  reduce using rule 4 (cmdi)
+
+
+state 18
+
+    5 cmdi: LPAREN_TOK CHECK_SAT_TOK RPAREN_TOK .
+
+    $default  reduce using rule 5 (cmdi)
+
+
+state 19
+
+    6 cmdi: LPAREN_TOK LOGIC_TOK STRING_TOK . RPAREN_TOK
+
+    RPAREN_TOK  shift, and go to state 37
+
+
+state 20
+
+   16 attribute: SOURCE_TOK .
+
+    $default  reduce using rule 16 (attribute)
+
+
+state 21
+
+   17 attribute: CATEGORY_TOK .
+
+    $default  reduce using rule 17 (attribute)
+
+
+state 22
+
+   18 attribute: DIFFICULTY_TOK .
+
+    $default  reduce using rule 18 (attribute)
+
+
+state 23
+
+   19 attribute: VERSION_TOK .
+
+    $default  reduce using rule 19 (attribute)
+
+
+state 24
+
+   20 attribute: STATUS_TOK . status
+
+    STRING_TOK  shift, and go to state 38
+
+    status  go to state 39
+
+
+state 25
+
+   21 attribute: PRINT_TOK . TRUE_TOK
+   22          | PRINT_TOK . FALSE_TOK
+
+    TRUE_TOK   shift, and go to state 40
+    FALSE_TOK  shift, and go to state 41
+
+
+state 26
+
+    7 cmdi: LPAREN_TOK NOTES_TOK attribute . STRING_TOK RPAREN_TOK
+    9     | LPAREN_TOK NOTES_TOK attribute . DECIMAL_TOK RPAREN_TOK
+   10     | LPAREN_TOK NOTES_TOK attribute . RPAREN_TOK
+
+    DECIMAL_TOK  shift, and go to state 42
+    STRING_TOK   shift, and go to state 43
+    RPAREN_TOK   shift, and go to state 44
+
+
+state 27
+
+    8 cmdi: LPAREN_TOK OPTION_TOK attribute . RPAREN_TOK
+
+    RPAREN_TOK  shift, and go to state 45
+
+
+state 28
+
+   23 var_decl: STRING_TOK . LPAREN_TOK RPAREN_TOK LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK RPAREN_TOK
+   24         | STRING_TOK . LPAREN_TOK RPAREN_TOK BOOL_TOK
+   25         | STRING_TOK . LPAREN_TOK RPAREN_TOK LPAREN_TOK ARRAY_TOK LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK RPAREN_TOK LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK RPAREN_TOK RPAREN_TOK
+
+    LPAREN_TOK  shift, and go to state 46
+
+
+state 29
+
+   13 cmdi: LPAREN_TOK DECLARE_FUNCTION_TOK var_decl . RPAREN_TOK
+
+    RPAREN_TOK  shift, and go to state 47
+
+
+state 30
+
+   30 an_formula: FORMID_TOK .
+
+    $default  reduce using rule 30 (an_formula)
+
+
+state 31
+
+   31 an_formula: LPAREN_TOK . EQ_TOK an_term an_term RPAREN_TOK
+   32           | LPAREN_TOK . DISTINCT_TOK an_terms RPAREN_TOK
+   33           | LPAREN_TOK . DISTINCT_TOK an_formulas RPAREN_TOK
+   34           | LPAREN_TOK . BVSLT_TOK an_term an_term RPAREN_TOK
+   35           | LPAREN_TOK . BVSLE_TOK an_term an_term RPAREN_TOK
+   36           | LPAREN_TOK . BVSGT_TOK an_term an_term RPAREN_TOK
+   37           | LPAREN_TOK . BVSGE_TOK an_term an_term RPAREN_TOK
+   38           | LPAREN_TOK . BVLT_TOK an_term an_term RPAREN_TOK
+   39           | LPAREN_TOK . BVLE_TOK an_term an_term RPAREN_TOK
+   40           | LPAREN_TOK . BVGT_TOK an_term an_term RPAREN_TOK
+   41           | LPAREN_TOK . BVGE_TOK an_term an_term RPAREN_TOK
+   42           | LPAREN_TOK . an_formula RPAREN_TOK
+   43           | LPAREN_TOK . NOT_TOK an_formula RPAREN_TOK
+   44           | LPAREN_TOK . IMPLIES_TOK an_formula an_formula RPAREN_TOK
+   45           | LPAREN_TOK . ITE_TOK an_formula an_formula an_formula RPAREN_TOK
+   46           | LPAREN_TOK . AND_TOK an_formulas RPAREN_TOK
+   47           | LPAREN_TOK . OR_TOK an_formulas RPAREN_TOK
+   48           | LPAREN_TOK . XOR_TOK an_formula an_formula RPAREN_TOK
+   49           | LPAREN_TOK . EQ_TOK an_formula an_formula RPAREN_TOK
+   50           | LPAREN_TOK . LET_TOK LPAREN_TOK lets RPAREN_TOK an_formula RPAREN_TOK
+
+    FORMID_TOK    shift, and go to state 30
+    LPAREN_TOK    shift, and go to state 31
+    BVLT_TOK      shift, and go to state 48
+    BVGT_TOK      shift, and go to state 49
+    BVLE_TOK      shift, and go to state 50
+    BVGE_TOK      shift, and go to state 51
+    BVSLT_TOK     shift, and go to state 52
+    BVSGT_TOK     shift, and go to state 53
+    BVSLE_TOK     shift, and go to state 54
+    BVSGE_TOK     shift, and go to state 55
+    TRUE_TOK      shift, and go to state 32
+    FALSE_TOK     shift, and go to state 33
+    NOT_TOK       shift, and go to state 56
+    AND_TOK       shift, and go to state 57
+    OR_TOK        shift, and go to state 58
+    XOR_TOK       shift, and go to state 59
+    ITE_TOK       shift, and go to state 60
+    EQ_TOK        shift, and go to state 61
+    IMPLIES_TOK   shift, and go to state 62
+    DISTINCT_TOK  shift, and go to state 63
+    LET_TOK       shift, and go to state 64
+
+    an_formula  go to state 65
+
+
+state 32
+
+   28 an_formula: TRUE_TOK .
+
+    $default  reduce using rule 28 (an_formula)
+
+
+state 33
+
+   29 an_formula: FALSE_TOK .
+
+    $default  reduce using rule 29 (an_formula)
+
+
+state 34
+
+   14 cmdi: LPAREN_TOK FORMULA_TOK an_formula . RPAREN_TOK
+
+    RPAREN_TOK  shift, and go to state 66
+
+
+state 35
+
+   11 cmdi: LPAREN_TOK PUSH_TOK NUMERAL_TOK . RPAREN_TOK
+
+    RPAREN_TOK  shift, and go to state 67
+
+
+state 36
+
+   12 cmdi: LPAREN_TOK POP_TOK NUMERAL_TOK . RPAREN_TOK
+
+    RPAREN_TOK  shift, and go to state 68
+
+
+state 37
+
+    6 cmdi: LPAREN_TOK LOGIC_TOK STRING_TOK RPAREN_TOK .
+
+    $default  reduce using rule 6 (cmdi)
+
+
+state 38
+
+   15 status: STRING_TOK .
+
+    $default  reduce using rule 15 (status)
+
+
+state 39
+
+   20 attribute: STATUS_TOK status .
+
+    $default  reduce using rule 20 (attribute)
+
+
+state 40
+
+   21 attribute: PRINT_TOK TRUE_TOK .
+
+    $default  reduce using rule 21 (attribute)
+
+
+state 41
+
+   22 attribute: PRINT_TOK FALSE_TOK .
+
+    $default  reduce using rule 22 (attribute)
+
+
+state 42
+
+    9 cmdi: LPAREN_TOK NOTES_TOK attribute DECIMAL_TOK . RPAREN_TOK
+
+    RPAREN_TOK  shift, and go to state 69
+
+
+state 43
+
+    7 cmdi: LPAREN_TOK NOTES_TOK attribute STRING_TOK . RPAREN_TOK
+
+    RPAREN_TOK  shift, and go to state 70
+
+
+state 44
+
+   10 cmdi: LPAREN_TOK NOTES_TOK attribute RPAREN_TOK .
+
+    $default  reduce using rule 10 (cmdi)
+
+
+state 45
+
+    8 cmdi: LPAREN_TOK OPTION_TOK attribute RPAREN_TOK .
+
+    $default  reduce using rule 8 (cmdi)
+
+
+state 46
+
+   23 var_decl: STRING_TOK LPAREN_TOK . RPAREN_TOK LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK RPAREN_TOK
+   24         | STRING_TOK LPAREN_TOK . RPAREN_TOK BOOL_TOK
+   25         | STRING_TOK LPAREN_TOK . RPAREN_TOK LPAREN_TOK ARRAY_TOK LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK RPAREN_TOK LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK RPAREN_TOK RPAREN_TOK
+
+    RPAREN_TOK  shift, and go to state 71
+
+
+state 47
+
+   13 cmdi: LPAREN_TOK DECLARE_FUNCTION_TOK var_decl RPAREN_TOK .
+
+    $default  reduce using rule 13 (cmdi)
+
+
+state 48
+
+   38 an_formula: LPAREN_TOK BVLT_TOK . an_term an_term RPAREN_TOK
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 101
+
+
+state 49
+
+   40 an_formula: LPAREN_TOK BVGT_TOK . an_term an_term RPAREN_TOK
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 102
+
+
+state 50
+
+   39 an_formula: LPAREN_TOK BVLE_TOK . an_term an_term RPAREN_TOK
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 103
+
+
+state 51
+
+   41 an_formula: LPAREN_TOK BVGE_TOK . an_term an_term RPAREN_TOK
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 104
+
+
+state 52
+
+   34 an_formula: LPAREN_TOK BVSLT_TOK . an_term an_term RPAREN_TOK
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 105
+
+
+state 53
+
+   36 an_formula: LPAREN_TOK BVSGT_TOK . an_term an_term RPAREN_TOK
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 106
+
+
+state 54
+
+   35 an_formula: LPAREN_TOK BVSLE_TOK . an_term an_term RPAREN_TOK
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 107
+
+
+state 55
+
+   37 an_formula: LPAREN_TOK BVSGE_TOK . an_term an_term RPAREN_TOK
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 108
+
+
+state 56
+
+   43 an_formula: LPAREN_TOK NOT_TOK . an_formula RPAREN_TOK
+
+    FORMID_TOK  shift, and go to state 30
+    LPAREN_TOK  shift, and go to state 31
+    TRUE_TOK    shift, and go to state 32
+    FALSE_TOK   shift, and go to state 33
+
+    an_formula  go to state 109
+
+
+state 57
+
+   46 an_formula: LPAREN_TOK AND_TOK . an_formulas RPAREN_TOK
+
+    FORMID_TOK  shift, and go to state 30
+    LPAREN_TOK  shift, and go to state 31
+    TRUE_TOK    shift, and go to state 32
+    FALSE_TOK   shift, and go to state 33
+
+    an_formulas  go to state 110
+    an_formula   go to state 111
+
+
+state 58
+
+   47 an_formula: LPAREN_TOK OR_TOK . an_formulas RPAREN_TOK
+
+    FORMID_TOK  shift, and go to state 30
+    LPAREN_TOK  shift, and go to state 31
+    TRUE_TOK    shift, and go to state 32
+    FALSE_TOK   shift, and go to state 33
+
+    an_formulas  go to state 112
+    an_formula   go to state 111
+
+
+state 59
+
+   48 an_formula: LPAREN_TOK XOR_TOK . an_formula an_formula RPAREN_TOK
+
+    FORMID_TOK  shift, and go to state 30
+    LPAREN_TOK  shift, and go to state 31
+    TRUE_TOK    shift, and go to state 32
+    FALSE_TOK   shift, and go to state 33
+
+    an_formula  go to state 113
+
+
+state 60
+
+   45 an_formula: LPAREN_TOK ITE_TOK . an_formula an_formula an_formula RPAREN_TOK
+
+    FORMID_TOK  shift, and go to state 30
+    LPAREN_TOK  shift, and go to state 31
+    TRUE_TOK    shift, and go to state 32
+    FALSE_TOK   shift, and go to state 33
+
+    an_formula  go to state 114
+
+
+state 61
+
+   31 an_formula: LPAREN_TOK EQ_TOK . an_term an_term RPAREN_TOK
+   49           | LPAREN_TOK EQ_TOK . an_formula an_formula RPAREN_TOK
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    FORMID_TOK               shift, and go to state 30
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 115
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    TRUE_TOK                 shift, and go to state 32
+    FALSE_TOK                shift, and go to state 33
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_formula  go to state 116
+    an_term     go to state 117
+
+
+state 62
+
+   44 an_formula: LPAREN_TOK IMPLIES_TOK . an_formula an_formula RPAREN_TOK
+
+    FORMID_TOK  shift, and go to state 30
+    LPAREN_TOK  shift, and go to state 31
+    TRUE_TOK    shift, and go to state 32
+    FALSE_TOK   shift, and go to state 33
+
+    an_formula  go to state 118
+
+
+state 63
+
+   32 an_formula: LPAREN_TOK DISTINCT_TOK . an_terms RPAREN_TOK
+   33           | LPAREN_TOK DISTINCT_TOK . an_formulas RPAREN_TOK
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    FORMID_TOK               shift, and go to state 30
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 115
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    TRUE_TOK                 shift, and go to state 32
+    FALSE_TOK                shift, and go to state 33
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_formulas  go to state 119
+    an_formula   go to state 111
+    an_terms     go to state 120
+    an_term      go to state 121
+
+
+state 64
+
+   50 an_formula: LPAREN_TOK LET_TOK . LPAREN_TOK lets RPAREN_TOK an_formula RPAREN_TOK
+
+    LPAREN_TOK  shift, and go to state 122
+
+
+state 65
+
+   42 an_formula: LPAREN_TOK an_formula . RPAREN_TOK
+
+    RPAREN_TOK  shift, and go to state 123
+
+
+state 66
+
+   14 cmdi: LPAREN_TOK FORMULA_TOK an_formula RPAREN_TOK .
+
+    $default  reduce using rule 14 (cmdi)
+
+
+state 67
+
+   11 cmdi: LPAREN_TOK PUSH_TOK NUMERAL_TOK RPAREN_TOK .
+
+    $default  reduce using rule 11 (cmdi)
+
+
+state 68
+
+   12 cmdi: LPAREN_TOK POP_TOK NUMERAL_TOK RPAREN_TOK .
+
+    $default  reduce using rule 12 (cmdi)
+
+
+state 69
+
+    9 cmdi: LPAREN_TOK NOTES_TOK attribute DECIMAL_TOK RPAREN_TOK .
+
+    $default  reduce using rule 9 (cmdi)
+
+
+state 70
+
+    7 cmdi: LPAREN_TOK NOTES_TOK attribute STRING_TOK RPAREN_TOK .
+
+    $default  reduce using rule 7 (cmdi)
+
+
+state 71
+
+   23 var_decl: STRING_TOK LPAREN_TOK RPAREN_TOK . LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK RPAREN_TOK
+   24         | STRING_TOK LPAREN_TOK RPAREN_TOK . BOOL_TOK
+   25         | STRING_TOK LPAREN_TOK RPAREN_TOK . LPAREN_TOK ARRAY_TOK LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK RPAREN_TOK LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK RPAREN_TOK RPAREN_TOK
+
+    LPAREN_TOK  shift, and go to state 124
+    BOOL_TOK    shift, and go to state 125
+
+
+state 72
+
+   91 an_term: BVCONST_BINARY_TOK .
+
+    $default  reduce using rule 91 (an_term)
+
+
+state 73
+
+   90 an_term: BVCONST_HEXIDECIMAL_TOK .
+
+    $default  reduce using rule 90 (an_term)
+
+
+state 74
+
+   57 an_term: TERMID_TOK .
+
+    $default  reduce using rule 57 (an_term)
+
+
+state 75
+
+   89 an_term: UNDERSCORE_TOK . BVCONST_DECIMAL_TOK NUMERAL_TOK
+
+    BVCONST_DECIMAL_TOK  shift, and go to state 126
+
+
+state 76
+
+   58 an_term: LPAREN_TOK . an_term RPAREN_TOK
+   61        | LPAREN_TOK . UNDERSCORE_TOK BVEXTRACT_TOK NUMERAL_TOK NUMERAL_TOK RPAREN_TOK an_term
+   62        | LPAREN_TOK . UNDERSCORE_TOK BVZX_TOK NUMERAL_TOK RPAREN_TOK an_term
+   63        | LPAREN_TOK . UNDERSCORE_TOK BVSX_TOK NUMERAL_TOK RPAREN_TOK an_term
+   86        | LPAREN_TOK . UNDERSCORE_TOK BVROTATE_LEFT_TOK NUMERAL_TOK RPAREN_TOK an_term
+   87        | LPAREN_TOK . UNDERSCORE_TOK BVROTATE_RIGHT_TOK NUMERAL_TOK RPAREN_TOK an_term
+   88        | LPAREN_TOK . UNDERSCORE_TOK BVREPEAT_TOK NUMERAL_TOK RPAREN_TOK an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 127
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 128
+
+
+state 77
+
+   83 an_term: BVLEFTSHIFT_1_TOK . an_term an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 129
+
+
+state 78
+
+   84 an_term: BVRIGHTSHIFT_1_TOK . an_term an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 130
+
+
+state 79
+
+   85 an_term: BVARITHRIGHTSHIFT_TOK . an_term an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 131
+
+
+state 80
+
+   74 an_term: BVPLUS_TOK . an_term an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 132
+
+
+state 81
+
+   73 an_term: BVSUB_TOK . an_term an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 133
+
+
+state 82
+
+   66 an_term: BVNOT_TOK . an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 134
+
+
+state 83
+
+   75 an_term: BVMULT_TOK . an_term an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 135
+
+
+state 84
+
+   76 an_term: BVDIV_TOK . an_term an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 136
+
+
+state 85
+
+   78 an_term: SBVDIV_TOK . an_term an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 137
+
+
+state 86
+
+   77 an_term: BVMOD_TOK . an_term an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 138
+
+
+state 87
+
+   79 an_term: SBVREM_TOK . an_term an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 139
+
+
+state 88
+
+   80 an_term: SBVMOD_TOK . an_term an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 140
+
+
+state 89
+
+   67 an_term: BVNEG_TOK . an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 141
+
+
+state 90
+
+   68 an_term: BVAND_TOK . an_term an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 142
+
+
+state 91
+
+   69 an_term: BVOR_TOK . an_term an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 143
+
+
+state 92
+
+   70 an_term: BVXOR_TOK . an_term an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 144
+
+
+state 93
+
+   81 an_term: BVNAND_TOK . an_term an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 145
+
+
+state 94
+
+   82 an_term: BVNOR_TOK . an_term an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 146
+
+
+state 95
+
+   71 an_term: BVXNOR_TOK . an_term an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 147
+
+
+state 96
+
+   65 an_term: BVCONCAT_TOK . an_term an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 148
+
+
+state 97
+
+   72 an_term: BVCOMP_TOK . an_term an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 149
+
+
+state 98
+
+   64 an_term: ITE_TOK . an_formula an_term an_term
+
+    FORMID_TOK  shift, and go to state 30
+    LPAREN_TOK  shift, and go to state 31
+    TRUE_TOK    shift, and go to state 32
+    FALSE_TOK   shift, and go to state 33
+
+    an_formula  go to state 150
+
+
+state 99
+
+   59 an_term: SELECT_TOK . an_term an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 151
+
+
+state 100
+
+   60 an_term: STORE_TOK . an_term an_term an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 152
+
+
+state 101
+
+   38 an_formula: LPAREN_TOK BVLT_TOK an_term . an_term RPAREN_TOK
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 153
+
+
+state 102
+
+   40 an_formula: LPAREN_TOK BVGT_TOK an_term . an_term RPAREN_TOK
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 154
+
+
+state 103
+
+   39 an_formula: LPAREN_TOK BVLE_TOK an_term . an_term RPAREN_TOK
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 155
+
+
+state 104
+
+   41 an_formula: LPAREN_TOK BVGE_TOK an_term . an_term RPAREN_TOK
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 156
+
+
+state 105
+
+   34 an_formula: LPAREN_TOK BVSLT_TOK an_term . an_term RPAREN_TOK
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 157
+
+
+state 106
+
+   36 an_formula: LPAREN_TOK BVSGT_TOK an_term . an_term RPAREN_TOK
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 158
+
+
+state 107
+
+   35 an_formula: LPAREN_TOK BVSLE_TOK an_term . an_term RPAREN_TOK
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 159
+
+
+state 108
+
+   37 an_formula: LPAREN_TOK BVSGE_TOK an_term . an_term RPAREN_TOK
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 160
+
+
+state 109
+
+   43 an_formula: LPAREN_TOK NOT_TOK an_formula . RPAREN_TOK
+
+    RPAREN_TOK  shift, and go to state 161
+
+
+state 110
+
+   27 an_formulas: an_formulas . an_formula
+   46 an_formula: LPAREN_TOK AND_TOK an_formulas . RPAREN_TOK
+
+    FORMID_TOK  shift, and go to state 30
+    LPAREN_TOK  shift, and go to state 31
+    RPAREN_TOK  shift, and go to state 162
+    TRUE_TOK    shift, and go to state 32
+    FALSE_TOK   shift, and go to state 33
+
+    an_formula  go to state 163
+
+
+state 111
+
+   26 an_formulas: an_formula .
+
+    $default  reduce using rule 26 (an_formulas)
+
+
+state 112
+
+   27 an_formulas: an_formulas . an_formula
+   47 an_formula: LPAREN_TOK OR_TOK an_formulas . RPAREN_TOK
+
+    FORMID_TOK  shift, and go to state 30
+    LPAREN_TOK  shift, and go to state 31
+    RPAREN_TOK  shift, and go to state 164
+    TRUE_TOK    shift, and go to state 32
+    FALSE_TOK   shift, and go to state 33
+
+    an_formula  go to state 163
+
+
+state 113
+
+   48 an_formula: LPAREN_TOK XOR_TOK an_formula . an_formula RPAREN_TOK
+
+    FORMID_TOK  shift, and go to state 30
+    LPAREN_TOK  shift, and go to state 31
+    TRUE_TOK    shift, and go to state 32
+    FALSE_TOK   shift, and go to state 33
+
+    an_formula  go to state 165
+
+
+state 114
+
+   45 an_formula: LPAREN_TOK ITE_TOK an_formula . an_formula an_formula RPAREN_TOK
+
+    FORMID_TOK  shift, and go to state 30
+    LPAREN_TOK  shift, and go to state 31
+    TRUE_TOK    shift, and go to state 32
+    FALSE_TOK   shift, and go to state 33
+
+    an_formula  go to state 166
+
+
+state 115
+
+   31 an_formula: LPAREN_TOK . EQ_TOK an_term an_term RPAREN_TOK
+   32           | LPAREN_TOK . DISTINCT_TOK an_terms RPAREN_TOK
+   33           | LPAREN_TOK . DISTINCT_TOK an_formulas RPAREN_TOK
+   34           | LPAREN_TOK . BVSLT_TOK an_term an_term RPAREN_TOK
+   35           | LPAREN_TOK . BVSLE_TOK an_term an_term RPAREN_TOK
+   36           | LPAREN_TOK . BVSGT_TOK an_term an_term RPAREN_TOK
+   37           | LPAREN_TOK . BVSGE_TOK an_term an_term RPAREN_TOK
+   38           | LPAREN_TOK . BVLT_TOK an_term an_term RPAREN_TOK
+   39           | LPAREN_TOK . BVLE_TOK an_term an_term RPAREN_TOK
+   40           | LPAREN_TOK . BVGT_TOK an_term an_term RPAREN_TOK
+   41           | LPAREN_TOK . BVGE_TOK an_term an_term RPAREN_TOK
+   42           | LPAREN_TOK . an_formula RPAREN_TOK
+   43           | LPAREN_TOK . NOT_TOK an_formula RPAREN_TOK
+   44           | LPAREN_TOK . IMPLIES_TOK an_formula an_formula RPAREN_TOK
+   45           | LPAREN_TOK . ITE_TOK an_formula an_formula an_formula RPAREN_TOK
+   46           | LPAREN_TOK . AND_TOK an_formulas RPAREN_TOK
+   47           | LPAREN_TOK . OR_TOK an_formulas RPAREN_TOK
+   48           | LPAREN_TOK . XOR_TOK an_formula an_formula RPAREN_TOK
+   49           | LPAREN_TOK . EQ_TOK an_formula an_formula RPAREN_TOK
+   50           | LPAREN_TOK . LET_TOK LPAREN_TOK lets RPAREN_TOK an_formula RPAREN_TOK
+   58 an_term: LPAREN_TOK . an_term RPAREN_TOK
+   61        | LPAREN_TOK . UNDERSCORE_TOK BVEXTRACT_TOK NUMERAL_TOK NUMERAL_TOK RPAREN_TOK an_term
+   62        | LPAREN_TOK . UNDERSCORE_TOK BVZX_TOK NUMERAL_TOK RPAREN_TOK an_term
+   63        | LPAREN_TOK . UNDERSCORE_TOK BVSX_TOK NUMERAL_TOK RPAREN_TOK an_term
+   86        | LPAREN_TOK . UNDERSCORE_TOK BVROTATE_LEFT_TOK NUMERAL_TOK RPAREN_TOK an_term
+   87        | LPAREN_TOK . UNDERSCORE_TOK BVROTATE_RIGHT_TOK NUMERAL_TOK RPAREN_TOK an_term
+   88        | LPAREN_TOK . UNDERSCORE_TOK BVREPEAT_TOK NUMERAL_TOK RPAREN_TOK an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    FORMID_TOK               shift, and go to state 30
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 127
+    LPAREN_TOK               shift, and go to state 115
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVLT_TOK                 shift, and go to state 48
+    BVGT_TOK                 shift, and go to state 49
+    BVLE_TOK                 shift, and go to state 50
+    BVGE_TOK                 shift, and go to state 51
+    BVSLT_TOK                shift, and go to state 52
+    BVSGT_TOK                shift, and go to state 53
+    BVSLE_TOK                shift, and go to state 54
+    BVSGE_TOK                shift, and go to state 55
+    BVCOMP_TOK               shift, and go to state 97
+    TRUE_TOK                 shift, and go to state 32
+    FALSE_TOK                shift, and go to state 33
+    NOT_TOK                  shift, and go to state 56
+    AND_TOK                  shift, and go to state 57
+    OR_TOK                   shift, and go to state 58
+    XOR_TOK                  shift, and go to state 59
+    ITE_TOK                  shift, and go to state 167
+    EQ_TOK                   shift, and go to state 61
+    IMPLIES_TOK              shift, and go to state 62
+    DISTINCT_TOK             shift, and go to state 63
+    LET_TOK                  shift, and go to state 64
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_formula  go to state 65
+    an_term     go to state 128
+
+
+state 116
+
+   49 an_formula: LPAREN_TOK EQ_TOK an_formula . an_formula RPAREN_TOK
+
+    FORMID_TOK  shift, and go to state 30
+    LPAREN_TOK  shift, and go to state 31
+    TRUE_TOK    shift, and go to state 32
+    FALSE_TOK   shift, and go to state 33
+
+    an_formula  go to state 168
+
+
+state 117
+
+   31 an_formula: LPAREN_TOK EQ_TOK an_term . an_term RPAREN_TOK
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 169
+
+
+state 118
+
+   44 an_formula: LPAREN_TOK IMPLIES_TOK an_formula . an_formula RPAREN_TOK
+
+    FORMID_TOK  shift, and go to state 30
+    LPAREN_TOK  shift, and go to state 31
+    TRUE_TOK    shift, and go to state 32
+    FALSE_TOK   shift, and go to state 33
+
+    an_formula  go to state 170
+
+
+state 119
+
+   27 an_formulas: an_formulas . an_formula
+   33 an_formula: LPAREN_TOK DISTINCT_TOK an_formulas . RPAREN_TOK
+
+    FORMID_TOK  shift, and go to state 30
+    LPAREN_TOK  shift, and go to state 31
+    RPAREN_TOK  shift, and go to state 171
+    TRUE_TOK    shift, and go to state 32
+    FALSE_TOK   shift, and go to state 33
+
+    an_formula  go to state 163
+
+
+state 120
+
+   32 an_formula: LPAREN_TOK DISTINCT_TOK an_terms . RPAREN_TOK
+   56 an_terms: an_terms . an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    RPAREN_TOK               shift, and go to state 172
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 173
+
+
+state 121
+
+   55 an_terms: an_term .
+
+    $default  reduce using rule 55 (an_terms)
+
+
+state 122
+
+   50 an_formula: LPAREN_TOK LET_TOK LPAREN_TOK . lets RPAREN_TOK an_formula RPAREN_TOK
+
+    LPAREN_TOK  shift, and go to state 174
+
+    lets  go to state 175
+    let   go to state 176
+
+
+state 123
+
+   42 an_formula: LPAREN_TOK an_formula RPAREN_TOK .
+
+    $default  reduce using rule 42 (an_formula)
+
+
+state 124
+
+   23 var_decl: STRING_TOK LPAREN_TOK RPAREN_TOK LPAREN_TOK . UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK RPAREN_TOK
+   25         | STRING_TOK LPAREN_TOK RPAREN_TOK LPAREN_TOK . ARRAY_TOK LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK RPAREN_TOK LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK RPAREN_TOK RPAREN_TOK
+
+    UNDERSCORE_TOK  shift, and go to state 177
+    ARRAY_TOK       shift, and go to state 178
+
+
+state 125
+
+   24 var_decl: STRING_TOK LPAREN_TOK RPAREN_TOK BOOL_TOK .
+
+    $default  reduce using rule 24 (var_decl)
+
+
+state 126
+
+   89 an_term: UNDERSCORE_TOK BVCONST_DECIMAL_TOK . NUMERAL_TOK
+
+    NUMERAL_TOK  shift, and go to state 179
+
+
+state 127
+
+   61 an_term: LPAREN_TOK UNDERSCORE_TOK . BVEXTRACT_TOK NUMERAL_TOK NUMERAL_TOK RPAREN_TOK an_term
+   62        | LPAREN_TOK UNDERSCORE_TOK . BVZX_TOK NUMERAL_TOK RPAREN_TOK an_term
+   63        | LPAREN_TOK UNDERSCORE_TOK . BVSX_TOK NUMERAL_TOK RPAREN_TOK an_term
+   86        | LPAREN_TOK UNDERSCORE_TOK . BVROTATE_LEFT_TOK NUMERAL_TOK RPAREN_TOK an_term
+   87        | LPAREN_TOK UNDERSCORE_TOK . BVROTATE_RIGHT_TOK NUMERAL_TOK RPAREN_TOK an_term
+   88        | LPAREN_TOK UNDERSCORE_TOK . BVREPEAT_TOK NUMERAL_TOK RPAREN_TOK an_term
+   89        | UNDERSCORE_TOK . BVCONST_DECIMAL_TOK NUMERAL_TOK
+
+    BVCONST_DECIMAL_TOK  shift, and go to state 126
+    BVSX_TOK             shift, and go to state 180
+    BVEXTRACT_TOK        shift, and go to state 181
+    BVZX_TOK             shift, and go to state 182
+    BVROTATE_RIGHT_TOK   shift, and go to state 183
+    BVROTATE_LEFT_TOK    shift, and go to state 184
+    BVREPEAT_TOK         shift, and go to state 185
+
+
+state 128
+
+   58 an_term: LPAREN_TOK an_term . RPAREN_TOK
+
+    RPAREN_TOK  shift, and go to state 186
+
+
+state 129
+
+   83 an_term: BVLEFTSHIFT_1_TOK an_term . an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 187
+
+
+state 130
+
+   84 an_term: BVRIGHTSHIFT_1_TOK an_term . an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 188
+
+
+state 131
+
+   85 an_term: BVARITHRIGHTSHIFT_TOK an_term . an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 189
+
+
+state 132
+
+   74 an_term: BVPLUS_TOK an_term . an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 190
+
+
+state 133
+
+   73 an_term: BVSUB_TOK an_term . an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 191
+
+
+state 134
+
+   66 an_term: BVNOT_TOK an_term .
+
+    $default  reduce using rule 66 (an_term)
+
+
+state 135
+
+   75 an_term: BVMULT_TOK an_term . an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 192
+
+
+state 136
+
+   76 an_term: BVDIV_TOK an_term . an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 193
+
+
+state 137
+
+   78 an_term: SBVDIV_TOK an_term . an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 194
+
+
+state 138
+
+   77 an_term: BVMOD_TOK an_term . an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 195
+
+
+state 139
+
+   79 an_term: SBVREM_TOK an_term . an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 196
+
+
+state 140
+
+   80 an_term: SBVMOD_TOK an_term . an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 197
+
+
+state 141
+
+   67 an_term: BVNEG_TOK an_term .
+
+    $default  reduce using rule 67 (an_term)
+
+
+state 142
+
+   68 an_term: BVAND_TOK an_term . an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 198
+
+
+state 143
+
+   69 an_term: BVOR_TOK an_term . an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 199
+
+
+state 144
+
+   70 an_term: BVXOR_TOK an_term . an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 200
+
+
+state 145
+
+   81 an_term: BVNAND_TOK an_term . an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 201
+
+
+state 146
+
+   82 an_term: BVNOR_TOK an_term . an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 202
+
+
+state 147
+
+   71 an_term: BVXNOR_TOK an_term . an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 203
+
+
+state 148
+
+   65 an_term: BVCONCAT_TOK an_term . an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 204
+
+
+state 149
+
+   72 an_term: BVCOMP_TOK an_term . an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 205
+
+
+state 150
+
+   64 an_term: ITE_TOK an_formula . an_term an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 206
+
+
+state 151
+
+   59 an_term: SELECT_TOK an_term . an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 207
+
+
+state 152
+
+   60 an_term: STORE_TOK an_term . an_term an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 208
+
+
+state 153
+
+   38 an_formula: LPAREN_TOK BVLT_TOK an_term an_term . RPAREN_TOK
+
+    RPAREN_TOK  shift, and go to state 209
+
+
+state 154
+
+   40 an_formula: LPAREN_TOK BVGT_TOK an_term an_term . RPAREN_TOK
+
+    RPAREN_TOK  shift, and go to state 210
+
+
+state 155
+
+   39 an_formula: LPAREN_TOK BVLE_TOK an_term an_term . RPAREN_TOK
+
+    RPAREN_TOK  shift, and go to state 211
+
+
+state 156
+
+   41 an_formula: LPAREN_TOK BVGE_TOK an_term an_term . RPAREN_TOK
+
+    RPAREN_TOK  shift, and go to state 212
+
+
+state 157
+
+   34 an_formula: LPAREN_TOK BVSLT_TOK an_term an_term . RPAREN_TOK
+
+    RPAREN_TOK  shift, and go to state 213
+
+
+state 158
+
+   36 an_formula: LPAREN_TOK BVSGT_TOK an_term an_term . RPAREN_TOK
+
+    RPAREN_TOK  shift, and go to state 214
+
+
+state 159
+
+   35 an_formula: LPAREN_TOK BVSLE_TOK an_term an_term . RPAREN_TOK
+
+    RPAREN_TOK  shift, and go to state 215
+
+
+state 160
+
+   37 an_formula: LPAREN_TOK BVSGE_TOK an_term an_term . RPAREN_TOK
+
+    RPAREN_TOK  shift, and go to state 216
+
+
+state 161
+
+   43 an_formula: LPAREN_TOK NOT_TOK an_formula RPAREN_TOK .
+
+    $default  reduce using rule 43 (an_formula)
+
+
+state 162
+
+   46 an_formula: LPAREN_TOK AND_TOK an_formulas RPAREN_TOK .
+
+    $default  reduce using rule 46 (an_formula)
+
+
+state 163
+
+   27 an_formulas: an_formulas an_formula .
+
+    $default  reduce using rule 27 (an_formulas)
+
+
+state 164
+
+   47 an_formula: LPAREN_TOK OR_TOK an_formulas RPAREN_TOK .
+
+    $default  reduce using rule 47 (an_formula)
+
+
+state 165
+
+   48 an_formula: LPAREN_TOK XOR_TOK an_formula an_formula . RPAREN_TOK
+
+    RPAREN_TOK  shift, and go to state 217
+
+
+state 166
+
+   45 an_formula: LPAREN_TOK ITE_TOK an_formula an_formula . an_formula RPAREN_TOK
+
+    FORMID_TOK  shift, and go to state 30
+    LPAREN_TOK  shift, and go to state 31
+    TRUE_TOK    shift, and go to state 32
+    FALSE_TOK   shift, and go to state 33
+
+    an_formula  go to state 218
+
+
+state 167
+
+   45 an_formula: LPAREN_TOK ITE_TOK . an_formula an_formula an_formula RPAREN_TOK
+   64 an_term: ITE_TOK . an_formula an_term an_term
+
+    FORMID_TOK  shift, and go to state 30
+    LPAREN_TOK  shift, and go to state 31
+    TRUE_TOK    shift, and go to state 32
+    FALSE_TOK   shift, and go to state 33
+
+    an_formula  go to state 219
+
+
+state 168
+
+   49 an_formula: LPAREN_TOK EQ_TOK an_formula an_formula . RPAREN_TOK
+
+    RPAREN_TOK  shift, and go to state 220
+
+
+state 169
+
+   31 an_formula: LPAREN_TOK EQ_TOK an_term an_term . RPAREN_TOK
+
+    RPAREN_TOK  shift, and go to state 221
+
+
+state 170
+
+   44 an_formula: LPAREN_TOK IMPLIES_TOK an_formula an_formula . RPAREN_TOK
+
+    RPAREN_TOK  shift, and go to state 222
+
+
+state 171
+
+   33 an_formula: LPAREN_TOK DISTINCT_TOK an_formulas RPAREN_TOK .
+
+    $default  reduce using rule 33 (an_formula)
+
+
+state 172
+
+   32 an_formula: LPAREN_TOK DISTINCT_TOK an_terms RPAREN_TOK .
+
+    $default  reduce using rule 32 (an_formula)
+
+
+state 173
+
+   56 an_terms: an_terms an_term .
+
+    $default  reduce using rule 56 (an_terms)
+
+
+state 174
+
+   53 let: LPAREN_TOK . STRING_TOK an_formula RPAREN_TOK
+   54    | LPAREN_TOK . STRING_TOK an_term RPAREN_TOK
+
+    STRING_TOK  shift, and go to state 223
+
+
+state 175
+
+   50 an_formula: LPAREN_TOK LET_TOK LPAREN_TOK lets . RPAREN_TOK an_formula RPAREN_TOK
+
+    RPAREN_TOK  shift, and go to state 224
+
+
+state 176
+
+   51 lets: let . lets
+   52     | let .
+
+    LPAREN_TOK  shift, and go to state 174
+
+    $default  reduce using rule 52 (lets)
+
+    lets  go to state 225
+    let   go to state 176
+
+
+state 177
+
+   23 var_decl: STRING_TOK LPAREN_TOK RPAREN_TOK LPAREN_TOK UNDERSCORE_TOK . BITVEC_TOK NUMERAL_TOK RPAREN_TOK
+
+    BITVEC_TOK  shift, and go to state 226
+
+
+state 178
+
+   25 var_decl: STRING_TOK LPAREN_TOK RPAREN_TOK LPAREN_TOK ARRAY_TOK . LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK RPAREN_TOK LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK RPAREN_TOK RPAREN_TOK
+
+    LPAREN_TOK  shift, and go to state 227
+
+
+state 179
+
+   89 an_term: UNDERSCORE_TOK BVCONST_DECIMAL_TOK NUMERAL_TOK .
+
+    $default  reduce using rule 89 (an_term)
+
+
+state 180
+
+   63 an_term: LPAREN_TOK UNDERSCORE_TOK BVSX_TOK . NUMERAL_TOK RPAREN_TOK an_term
+
+    NUMERAL_TOK  shift, and go to state 228
+
+
+state 181
+
+   61 an_term: LPAREN_TOK UNDERSCORE_TOK BVEXTRACT_TOK . NUMERAL_TOK NUMERAL_TOK RPAREN_TOK an_term
+
+    NUMERAL_TOK  shift, and go to state 229
+
+
+state 182
+
+   62 an_term: LPAREN_TOK UNDERSCORE_TOK BVZX_TOK . NUMERAL_TOK RPAREN_TOK an_term
+
+    NUMERAL_TOK  shift, and go to state 230
+
+
+state 183
+
+   87 an_term: LPAREN_TOK UNDERSCORE_TOK BVROTATE_RIGHT_TOK . NUMERAL_TOK RPAREN_TOK an_term
+
+    NUMERAL_TOK  shift, and go to state 231
+
+
+state 184
+
+   86 an_term: LPAREN_TOK UNDERSCORE_TOK BVROTATE_LEFT_TOK . NUMERAL_TOK RPAREN_TOK an_term
+
+    NUMERAL_TOK  shift, and go to state 232
+
+
+state 185
+
+   88 an_term: LPAREN_TOK UNDERSCORE_TOK BVREPEAT_TOK . NUMERAL_TOK RPAREN_TOK an_term
+
+    NUMERAL_TOK  shift, and go to state 233
+
+
+state 186
+
+   58 an_term: LPAREN_TOK an_term RPAREN_TOK .
+
+    $default  reduce using rule 58 (an_term)
+
+
+state 187
+
+   83 an_term: BVLEFTSHIFT_1_TOK an_term an_term .
+
+    $default  reduce using rule 83 (an_term)
+
+
+state 188
+
+   84 an_term: BVRIGHTSHIFT_1_TOK an_term an_term .
+
+    $default  reduce using rule 84 (an_term)
+
+
+state 189
+
+   85 an_term: BVARITHRIGHTSHIFT_TOK an_term an_term .
+
+    $default  reduce using rule 85 (an_term)
+
+
+state 190
+
+   74 an_term: BVPLUS_TOK an_term an_term .
+
+    $default  reduce using rule 74 (an_term)
+
+
+state 191
+
+   73 an_term: BVSUB_TOK an_term an_term .
+
+    $default  reduce using rule 73 (an_term)
+
+
+state 192
+
+   75 an_term: BVMULT_TOK an_term an_term .
+
+    $default  reduce using rule 75 (an_term)
+
+
+state 193
+
+   76 an_term: BVDIV_TOK an_term an_term .
+
+    $default  reduce using rule 76 (an_term)
+
+
+state 194
+
+   78 an_term: SBVDIV_TOK an_term an_term .
+
+    $default  reduce using rule 78 (an_term)
+
+
+state 195
+
+   77 an_term: BVMOD_TOK an_term an_term .
+
+    $default  reduce using rule 77 (an_term)
+
+
+state 196
+
+   79 an_term: SBVREM_TOK an_term an_term .
+
+    $default  reduce using rule 79 (an_term)
+
+
+state 197
+
+   80 an_term: SBVMOD_TOK an_term an_term .
+
+    $default  reduce using rule 80 (an_term)
+
+
+state 198
+
+   68 an_term: BVAND_TOK an_term an_term .
+
+    $default  reduce using rule 68 (an_term)
+
+
+state 199
+
+   69 an_term: BVOR_TOK an_term an_term .
+
+    $default  reduce using rule 69 (an_term)
+
+
+state 200
+
+   70 an_term: BVXOR_TOK an_term an_term .
+
+    $default  reduce using rule 70 (an_term)
+
+
+state 201
+
+   81 an_term: BVNAND_TOK an_term an_term .
+
+    $default  reduce using rule 81 (an_term)
+
+
+state 202
+
+   82 an_term: BVNOR_TOK an_term an_term .
+
+    $default  reduce using rule 82 (an_term)
+
+
+state 203
+
+   71 an_term: BVXNOR_TOK an_term an_term .
+
+    $default  reduce using rule 71 (an_term)
+
+
+state 204
+
+   65 an_term: BVCONCAT_TOK an_term an_term .
+
+    $default  reduce using rule 65 (an_term)
+
+
+state 205
+
+   72 an_term: BVCOMP_TOK an_term an_term .
+
+    $default  reduce using rule 72 (an_term)
+
+
+state 206
+
+   64 an_term: ITE_TOK an_formula an_term . an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 234
+
+
+state 207
+
+   59 an_term: SELECT_TOK an_term an_term .
+
+    $default  reduce using rule 59 (an_term)
+
+
+state 208
+
+   60 an_term: STORE_TOK an_term an_term . an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 235
+
+
+state 209
+
+   38 an_formula: LPAREN_TOK BVLT_TOK an_term an_term RPAREN_TOK .
+
+    $default  reduce using rule 38 (an_formula)
+
+
+state 210
+
+   40 an_formula: LPAREN_TOK BVGT_TOK an_term an_term RPAREN_TOK .
+
+    $default  reduce using rule 40 (an_formula)
+
+
+state 211
+
+   39 an_formula: LPAREN_TOK BVLE_TOK an_term an_term RPAREN_TOK .
+
+    $default  reduce using rule 39 (an_formula)
+
+
+state 212
+
+   41 an_formula: LPAREN_TOK BVGE_TOK an_term an_term RPAREN_TOK .
+
+    $default  reduce using rule 41 (an_formula)
+
+
+state 213
+
+   34 an_formula: LPAREN_TOK BVSLT_TOK an_term an_term RPAREN_TOK .
+
+    $default  reduce using rule 34 (an_formula)
+
+
+state 214
+
+   36 an_formula: LPAREN_TOK BVSGT_TOK an_term an_term RPAREN_TOK .
+
+    $default  reduce using rule 36 (an_formula)
+
+
+state 215
+
+   35 an_formula: LPAREN_TOK BVSLE_TOK an_term an_term RPAREN_TOK .
+
+    $default  reduce using rule 35 (an_formula)
+
+
+state 216
+
+   37 an_formula: LPAREN_TOK BVSGE_TOK an_term an_term RPAREN_TOK .
+
+    $default  reduce using rule 37 (an_formula)
+
+
+state 217
+
+   48 an_formula: LPAREN_TOK XOR_TOK an_formula an_formula RPAREN_TOK .
+
+    $default  reduce using rule 48 (an_formula)
+
+
+state 218
+
+   45 an_formula: LPAREN_TOK ITE_TOK an_formula an_formula an_formula . RPAREN_TOK
+
+    RPAREN_TOK  shift, and go to state 236
+
+
+state 219
+
+   45 an_formula: LPAREN_TOK ITE_TOK an_formula . an_formula an_formula RPAREN_TOK
+   64 an_term: ITE_TOK an_formula . an_term an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    FORMID_TOK               shift, and go to state 30
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 115
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    TRUE_TOK                 shift, and go to state 32
+    FALSE_TOK                shift, and go to state 33
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_formula  go to state 166
+    an_term     go to state 206
+
+
+state 220
+
+   49 an_formula: LPAREN_TOK EQ_TOK an_formula an_formula RPAREN_TOK .
+
+    $default  reduce using rule 49 (an_formula)
+
+
+state 221
+
+   31 an_formula: LPAREN_TOK EQ_TOK an_term an_term RPAREN_TOK .
+
+    $default  reduce using rule 31 (an_formula)
+
+
+state 222
+
+   44 an_formula: LPAREN_TOK IMPLIES_TOK an_formula an_formula RPAREN_TOK .
+
+    $default  reduce using rule 44 (an_formula)
+
+
+state 223
+
+   53 let: LPAREN_TOK STRING_TOK . an_formula RPAREN_TOK
+   54    | LPAREN_TOK STRING_TOK . an_term RPAREN_TOK
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    FORMID_TOK               shift, and go to state 30
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 115
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    TRUE_TOK                 shift, and go to state 32
+    FALSE_TOK                shift, and go to state 33
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_formula  go to state 237
+    an_term     go to state 238
+
+
+state 224
+
+   50 an_formula: LPAREN_TOK LET_TOK LPAREN_TOK lets RPAREN_TOK . an_formula RPAREN_TOK
+
+    FORMID_TOK  shift, and go to state 30
+    LPAREN_TOK  shift, and go to state 31
+    TRUE_TOK    shift, and go to state 32
+    FALSE_TOK   shift, and go to state 33
+
+    an_formula  go to state 239
+
+
+state 225
+
+   51 lets: let lets .
+
+    $default  reduce using rule 51 (lets)
+
+
+state 226
+
+   23 var_decl: STRING_TOK LPAREN_TOK RPAREN_TOK LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK . NUMERAL_TOK RPAREN_TOK
+
+    NUMERAL_TOK  shift, and go to state 240
+
+
+state 227
+
+   25 var_decl: STRING_TOK LPAREN_TOK RPAREN_TOK LPAREN_TOK ARRAY_TOK LPAREN_TOK . UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK RPAREN_TOK LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK RPAREN_TOK RPAREN_TOK
+
+    UNDERSCORE_TOK  shift, and go to state 241
+
+
+state 228
+
+   63 an_term: LPAREN_TOK UNDERSCORE_TOK BVSX_TOK NUMERAL_TOK . RPAREN_TOK an_term
+
+    RPAREN_TOK  shift, and go to state 242
+
+
+state 229
+
+   61 an_term: LPAREN_TOK UNDERSCORE_TOK BVEXTRACT_TOK NUMERAL_TOK . NUMERAL_TOK RPAREN_TOK an_term
+
+    NUMERAL_TOK  shift, and go to state 243
+
+
+state 230
+
+   62 an_term: LPAREN_TOK UNDERSCORE_TOK BVZX_TOK NUMERAL_TOK . RPAREN_TOK an_term
+
+    RPAREN_TOK  shift, and go to state 244
+
+
+state 231
+
+   87 an_term: LPAREN_TOK UNDERSCORE_TOK BVROTATE_RIGHT_TOK NUMERAL_TOK . RPAREN_TOK an_term
+
+    RPAREN_TOK  shift, and go to state 245
+
+
+state 232
+
+   86 an_term: LPAREN_TOK UNDERSCORE_TOK BVROTATE_LEFT_TOK NUMERAL_TOK . RPAREN_TOK an_term
+
+    RPAREN_TOK  shift, and go to state 246
+
+
+state 233
+
+   88 an_term: LPAREN_TOK UNDERSCORE_TOK BVREPEAT_TOK NUMERAL_TOK . RPAREN_TOK an_term
+
+    RPAREN_TOK  shift, and go to state 247
+
+
+state 234
+
+   64 an_term: ITE_TOK an_formula an_term an_term .
+
+    $default  reduce using rule 64 (an_term)
+
+
+state 235
+
+   60 an_term: STORE_TOK an_term an_term an_term .
+
+    $default  reduce using rule 60 (an_term)
+
+
+state 236
+
+   45 an_formula: LPAREN_TOK ITE_TOK an_formula an_formula an_formula RPAREN_TOK .
+
+    $default  reduce using rule 45 (an_formula)
+
+
+state 237
+
+   53 let: LPAREN_TOK STRING_TOK an_formula . RPAREN_TOK
+
+    RPAREN_TOK  shift, and go to state 248
+
+
+state 238
+
+   54 let: LPAREN_TOK STRING_TOK an_term . RPAREN_TOK
+
+    RPAREN_TOK  shift, and go to state 249
+
+
+state 239
+
+   50 an_formula: LPAREN_TOK LET_TOK LPAREN_TOK lets RPAREN_TOK an_formula . RPAREN_TOK
+
+    RPAREN_TOK  shift, and go to state 250
+
+
+state 240
+
+   23 var_decl: STRING_TOK LPAREN_TOK RPAREN_TOK LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK . RPAREN_TOK
+
+    RPAREN_TOK  shift, and go to state 251
+
+
+state 241
+
+   25 var_decl: STRING_TOK LPAREN_TOK RPAREN_TOK LPAREN_TOK ARRAY_TOK LPAREN_TOK UNDERSCORE_TOK . BITVEC_TOK NUMERAL_TOK RPAREN_TOK LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK RPAREN_TOK RPAREN_TOK
+
+    BITVEC_TOK  shift, and go to state 252
+
+
+state 242
+
+   63 an_term: LPAREN_TOK UNDERSCORE_TOK BVSX_TOK NUMERAL_TOK RPAREN_TOK . an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 253
+
+
+state 243
+
+   61 an_term: LPAREN_TOK UNDERSCORE_TOK BVEXTRACT_TOK NUMERAL_TOK NUMERAL_TOK . RPAREN_TOK an_term
+
+    RPAREN_TOK  shift, and go to state 254
+
+
+state 244
+
+   62 an_term: LPAREN_TOK UNDERSCORE_TOK BVZX_TOK NUMERAL_TOK RPAREN_TOK . an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 255
+
+
+state 245
+
+   87 an_term: LPAREN_TOK UNDERSCORE_TOK BVROTATE_RIGHT_TOK NUMERAL_TOK RPAREN_TOK . an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 256
+
+
+state 246
+
+   86 an_term: LPAREN_TOK UNDERSCORE_TOK BVROTATE_LEFT_TOK NUMERAL_TOK RPAREN_TOK . an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 257
+
+
+state 247
+
+   88 an_term: LPAREN_TOK UNDERSCORE_TOK BVREPEAT_TOK NUMERAL_TOK RPAREN_TOK . an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 258
+
+
+state 248
+
+   53 let: LPAREN_TOK STRING_TOK an_formula RPAREN_TOK .
+
+    $default  reduce using rule 53 (let)
+
+
+state 249
+
+   54 let: LPAREN_TOK STRING_TOK an_term RPAREN_TOK .
+
+    $default  reduce using rule 54 (let)
+
+
+state 250
+
+   50 an_formula: LPAREN_TOK LET_TOK LPAREN_TOK lets RPAREN_TOK an_formula RPAREN_TOK .
+
+    $default  reduce using rule 50 (an_formula)
+
+
+state 251
+
+   23 var_decl: STRING_TOK LPAREN_TOK RPAREN_TOK LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK RPAREN_TOK .
+
+    $default  reduce using rule 23 (var_decl)
+
+
+state 252
+
+   25 var_decl: STRING_TOK LPAREN_TOK RPAREN_TOK LPAREN_TOK ARRAY_TOK LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK . NUMERAL_TOK RPAREN_TOK LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK RPAREN_TOK RPAREN_TOK
+
+    NUMERAL_TOK  shift, and go to state 259
+
+
+state 253
+
+   63 an_term: LPAREN_TOK UNDERSCORE_TOK BVSX_TOK NUMERAL_TOK RPAREN_TOK an_term .
+
+    $default  reduce using rule 63 (an_term)
+
+
+state 254
+
+   61 an_term: LPAREN_TOK UNDERSCORE_TOK BVEXTRACT_TOK NUMERAL_TOK NUMERAL_TOK RPAREN_TOK . an_term
+
+    BVCONST_BINARY_TOK       shift, and go to state 72
+    BVCONST_HEXIDECIMAL_TOK  shift, and go to state 73
+    TERMID_TOK               shift, and go to state 74
+    UNDERSCORE_TOK           shift, and go to state 75
+    LPAREN_TOK               shift, and go to state 76
+    BVLEFTSHIFT_1_TOK        shift, and go to state 77
+    BVRIGHTSHIFT_1_TOK       shift, and go to state 78
+    BVARITHRIGHTSHIFT_TOK    shift, and go to state 79
+    BVPLUS_TOK               shift, and go to state 80
+    BVSUB_TOK                shift, and go to state 81
+    BVNOT_TOK                shift, and go to state 82
+    BVMULT_TOK               shift, and go to state 83
+    BVDIV_TOK                shift, and go to state 84
+    SBVDIV_TOK               shift, and go to state 85
+    BVMOD_TOK                shift, and go to state 86
+    SBVREM_TOK               shift, and go to state 87
+    SBVMOD_TOK               shift, and go to state 88
+    BVNEG_TOK                shift, and go to state 89
+    BVAND_TOK                shift, and go to state 90
+    BVOR_TOK                 shift, and go to state 91
+    BVXOR_TOK                shift, and go to state 92
+    BVNAND_TOK               shift, and go to state 93
+    BVNOR_TOK                shift, and go to state 94
+    BVXNOR_TOK               shift, and go to state 95
+    BVCONCAT_TOK             shift, and go to state 96
+    BVCOMP_TOK               shift, and go to state 97
+    ITE_TOK                  shift, and go to state 98
+    SELECT_TOK               shift, and go to state 99
+    STORE_TOK                shift, and go to state 100
+
+    an_term  go to state 260
+
+
+state 255
+
+   62 an_term: LPAREN_TOK UNDERSCORE_TOK BVZX_TOK NUMERAL_TOK RPAREN_TOK an_term .
+
+    $default  reduce using rule 62 (an_term)
+
+
+state 256
+
+   87 an_term: LPAREN_TOK UNDERSCORE_TOK BVROTATE_RIGHT_TOK NUMERAL_TOK RPAREN_TOK an_term .
+
+    $default  reduce using rule 87 (an_term)
+
+
+state 257
+
+   86 an_term: LPAREN_TOK UNDERSCORE_TOK BVROTATE_LEFT_TOK NUMERAL_TOK RPAREN_TOK an_term .
+
+    $default  reduce using rule 86 (an_term)
+
+
+state 258
+
+   88 an_term: LPAREN_TOK UNDERSCORE_TOK BVREPEAT_TOK NUMERAL_TOK RPAREN_TOK an_term .
+
+    $default  reduce using rule 88 (an_term)
+
+
+state 259
+
+   25 var_decl: STRING_TOK LPAREN_TOK RPAREN_TOK LPAREN_TOK ARRAY_TOK LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK . RPAREN_TOK LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK RPAREN_TOK RPAREN_TOK
+
+    RPAREN_TOK  shift, and go to state 261
+
+
+state 260
+
+   61 an_term: LPAREN_TOK UNDERSCORE_TOK BVEXTRACT_TOK NUMERAL_TOK NUMERAL_TOK RPAREN_TOK an_term .
+
+    $default  reduce using rule 61 (an_term)
+
+
+state 261
+
+   25 var_decl: STRING_TOK LPAREN_TOK RPAREN_TOK LPAREN_TOK ARRAY_TOK LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK RPAREN_TOK . LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK RPAREN_TOK RPAREN_TOK
+
+    LPAREN_TOK  shift, and go to state 262
+
+
+state 262
+
+   25 var_decl: STRING_TOK LPAREN_TOK RPAREN_TOK LPAREN_TOK ARRAY_TOK LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK RPAREN_TOK LPAREN_TOK . UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK RPAREN_TOK RPAREN_TOK
+
+    UNDERSCORE_TOK  shift, and go to state 263
+
+
+state 263
+
+   25 var_decl: STRING_TOK LPAREN_TOK RPAREN_TOK LPAREN_TOK ARRAY_TOK LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK RPAREN_TOK LPAREN_TOK UNDERSCORE_TOK . BITVEC_TOK NUMERAL_TOK RPAREN_TOK RPAREN_TOK
+
+    BITVEC_TOK  shift, and go to state 264
+
+
+state 264
+
+   25 var_decl: STRING_TOK LPAREN_TOK RPAREN_TOK LPAREN_TOK ARRAY_TOK LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK RPAREN_TOK LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK . NUMERAL_TOK RPAREN_TOK RPAREN_TOK
+
+    NUMERAL_TOK  shift, and go to state 265
+
+
+state 265
+
+   25 var_decl: STRING_TOK LPAREN_TOK RPAREN_TOK LPAREN_TOK ARRAY_TOK LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK RPAREN_TOK LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK . RPAREN_TOK RPAREN_TOK
+
+    RPAREN_TOK  shift, and go to state 266
+
+
+state 266
+
+   25 var_decl: STRING_TOK LPAREN_TOK RPAREN_TOK LPAREN_TOK ARRAY_TOK LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK RPAREN_TOK LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK RPAREN_TOK . RPAREN_TOK
+
+    RPAREN_TOK  shift, and go to state 267
+
+
+state 267
+
+   25 var_decl: STRING_TOK LPAREN_TOK RPAREN_TOK LPAREN_TOK ARRAY_TOK LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK RPAREN_TOK LPAREN_TOK UNDERSCORE_TOK BITVEC_TOK NUMERAL_TOK RPAREN_TOK RPAREN_TOK .
+
+    $default  reduce using rule 25 (var_decl)

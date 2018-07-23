@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopRotate
+END
+indirectbr.ll
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopRotate/indirectbr.ll
+END
+pr2639.ll
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopRotate/pr2639.ll
+END
+PhiRename-1.ll
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopRotate/PhiRename-1.ll
+END
+phi-duplicate.ll
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopRotate/phi-duplicate.ll
+END
+simplifylatch.ll
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopRotate/simplifylatch.ll
+END
+dbgvalue.ll
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopRotate/dbgvalue.ll
+END
+lit.local.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopRotate/lit.local.cfg
+END
+preserve-scev.ll
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopRotate/preserve-scev.ll
+END
+alloca.ll
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopRotate/alloca.ll
+END
+2009-01-25-SingleEntryPhi.ll
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopRotate/2009-01-25-SingleEntryPhi.ll
+END
+crash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopRotate/crash.ll
+END
+basic.ll
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopRotate/basic.ll
+END
+PhiSelfRefernce-1.ll
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopRotate/PhiSelfRefernce-1.ll
+END

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/MergeFunc
+END
+2011-02-08-RemoveEqual.ll
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/MergeFunc/2011-02-08-RemoveEqual.ll
+END
+vector.ll
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/MergeFunc/vector.ll
+END
+vectors-and-arrays.ll
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/MergeFunc/vectors-and-arrays.ll
+END
+phi-speculation1.ll
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/MergeFunc/phi-speculation1.ll
+END
+phi-speculation2.ll
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/MergeFunc/phi-speculation2.ll
+END
+fold-weak.ll
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/MergeFunc/fold-weak.ll
+END
+lit.local.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/MergeFunc/lit.local.cfg
+END

@@ -1,0 +1,533 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify
+END
+dangling-use.ll
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/dangling-use.ll
+END
+phi-uses-value-multiple-times.ll
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/phi-uses-value-multiple-times.ll
+END
+2005-06-15-InstMoveCrash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/2005-06-15-InstMoveCrash.ll
+END
+lftr_simple.ll
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/lftr_simple.ll
+END
+loop_evaluate_4.ll
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/loop_evaluate_4.ll
+END
+2008-06-15-SCEVExpanderBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/2008-06-15-SCEVExpanderBug.ll
+END
+2003-12-15-Crash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/2003-12-15-Crash.ll
+END
+2011-10-27-lftrnull.ll
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/2011-10-27-lftrnull.ll
+END
+lftr-reuse.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/lftr-reuse.ll
+END
+loop_evaluate9.ll
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/loop_evaluate9.ll
+END
+2005-02-26-ExitValueCompute.ll
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/2005-02-26-ExitValueCompute.ll
+END
+sink-alloca.ll
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/sink-alloca.ll
+END
+2005-02-11-InvokeCrash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/2005-02-11-InvokeCrash.ll
+END
+2011-09-19-vectoriv.ll
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/2011-09-19-vectoriv.ll
+END
+iv-fold.ll
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/iv-fold.ll
+END
+shrunk-constant.ll
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/shrunk-constant.ll
+END
+promote-iv-to-eliminate-casts.ll
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/promote-iv-to-eliminate-casts.ll
+END
+no-iv-rewrite.ll
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/no-iv-rewrite.ll
+END
+2003-04-16-ExprAnalysis.ll
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/2003-04-16-ExprAnalysis.ll
+END
+2008-10-03-CouldNotCompute.ll
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/2008-10-03-CouldNotCompute.ll
+END
+2011-11-01-lftrptr.ll
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/2011-11-01-lftrptr.ll
+END
+eliminate-comparison.ll
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/eliminate-comparison.ll
+END
+loop_evaluate_3.ll
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/loop_evaluate_3.ll
+END
+2007-06-06-DeleteDanglesPtr.ll
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/2007-06-06-DeleteDanglesPtr.ll
+END
+2004-04-07-ScalarEvolutionCrash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/2004-04-07-ScalarEvolutionCrash.ll
+END
+2011-09-27-hoistsext.ll
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/2011-09-27-hoistsext.ll
+END
+exit_value_tests.ll
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/exit_value_tests.ll
+END
+loop_evaluate8.ll
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/loop_evaluate8.ll
+END
+2005-11-18-Crash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/2005-11-18-Crash.ll
+END
+2004-03-10-PHIInsertionBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/2004-03-10-PHIInsertionBug.ll
+END
+2005-02-17-TruncateExprCrash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/2005-02-17-TruncateExprCrash.ll
+END
+2009-04-22-IndvarCrash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/2009-04-22-IndvarCrash.ll
+END
+iv-sext.ll
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/iv-sext.ll
+END
+2011-09-10-widen-nsw.ll
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/2011-09-10-widen-nsw.ll
+END
+loop_evaluate11.ll
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/loop_evaluate11.ll
+END
+floating-point-iv.ll
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/floating-point-iv.ll
+END
+2011-11-15-multiexit.ll
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/2011-11-15-multiexit.ll
+END
+udiv.ll
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/udiv.ll
+END
+lit.local.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/lit.local.cfg
+END
+variable-stride-ivs-1.ll
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/variable-stride-ivs-1.ll
+END
+uglygep.ll
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/uglygep.ll
+END
+tripcount_infinite.ll
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/tripcount_infinite.ll
+END
+2004-04-05-InvokeCastCrash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/2004-04-05-InvokeCastCrash.ll
+END
+2003-12-10-RemoveInstrCrash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/2003-12-10-RemoveInstrCrash.ll
+END
+interesting-invoke-use.ll
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/interesting-invoke-use.ll
+END
+2011-11-17-selfphi.ll
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/2011-11-17-selfphi.ll
+END
+ada-loops.ll
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/ada-loops.ll
+END
+loop_evaluate_2.ll
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/loop_evaluate_2.ll
+END
+masked-iv.ll
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/masked-iv.ll
+END
+ashr-tripcount.ll
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/ashr-tripcount.ll
+END
+casted-argument.ll
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/casted-argument.ll
+END
+loop_evaluate_6.ll
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/loop_evaluate_6.ll
+END
+sink-trapping.ll
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/sink-trapping.ll
+END
+loop_evaluate7.ll
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/loop_evaluate7.ll
+END
+lftr-promote.ll
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/lftr-promote.ll
+END
+iterationCount_zext_or_trunc.ll
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/iterationCount_zext_or_trunc.ll
+END
+2006-09-20-LFTR-Crash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/2006-09-20-LFTR-Crash.ll
+END
+loop_evaluate10.ll
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/loop_evaluate10.ll
+END
+crash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/crash.ll
+END
+2007-11-23-BitcastCrash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/2007-11-23-BitcastCrash.ll
+END
+2003-09-23-NotAtTop.ll
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/2003-09-23-NotAtTop.ll
+END
+2009-04-15-shorten-iv-vars-2.ll
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/2009-04-15-shorten-iv-vars-2.ll
+END
+lftr-other-uses.ll
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/lftr-other-uses.ll
+END
+avoid-i0.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/avoid-i0.ll
+END
+variable-stride-ivs-0.ll
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/variable-stride-ivs-0.ll
+END
+elim-extend.ll
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/elim-extend.ll
+END
+2006-12-10-BitCast.ll
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/2006-12-10-BitCast.ll
+END
+2009-05-24-useafterfree.ll
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/2009-05-24-useafterfree.ll
+END
+2007-01-06-TripCount.ll
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/2007-01-06-TripCount.ll
+END
+loop_evaluate_1.ll
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/loop_evaluate_1.ll
+END
+2006-06-16-Indvar-LCSSA-Crash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/2006-06-16-Indvar-LCSSA-Crash.ll
+END
+2002-09-09-PointerIndVar.ll
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/2002-09-09-PointerIndVar.ll
+END
+divide-pointer.ll
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/divide-pointer.ll
+END
+loop_evaluate_5.ll
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/loop_evaluate_5.ll
+END
+tripcount_compute.ll
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/tripcount_compute.ll
+END
+indirectbr.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/indirectbr.ll
+END
+eliminate-rem.ll
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/eliminate-rem.ll
+END
+eliminate-max.ll
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/eliminate-max.ll
+END
+polynomial-expand.ll
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/polynomial-expand.ll
+END
+2008-11-25-APFloatAssert.ll
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/2008-11-25-APFloatAssert.ll
+END
+2009-04-27-Floating.ll
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/2009-04-27-Floating.ll
+END
+single-element-range.ll
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/single-element-range.ll
+END
+2006-03-31-NegativeStride.ll
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/2006-03-31-NegativeStride.ll
+END
+iv-zext.ll
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/iv-zext.ll
+END
+2009-04-14-shorten_iv_vars.ll
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/2009-04-14-shorten_iv_vars.ll
+END
+preserve-signed-wrap.ll
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/preserve-signed-wrap.ll
+END
+signed-trip-count.ll
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/signed-trip-count.ll
+END
+2008-09-02-IVType.ll
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/IndVarSimplify/2008-09-02-IVType.ll
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/utils/fpcmp
+END
+fpcmp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/utils/fpcmp/fpcmp.cpp
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/utils/fpcmp/Makefile
+END

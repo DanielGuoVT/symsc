@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/projects/sample
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/projects/sample/Makefile
+END
+Makefile.llvm.config.in
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/projects/sample/Makefile.llvm.config.in
+END
+Makefile.llvm.rules
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/projects/sample/Makefile.llvm.rules
+END
+configure
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/projects/sample/configure
+END
+Makefile.common.in
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/projects/sample/Makefile.common.in
+END

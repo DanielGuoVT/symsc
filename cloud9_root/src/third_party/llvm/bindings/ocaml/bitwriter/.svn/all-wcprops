@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/bindings/ocaml/bitwriter
+END
+llvm_bitwriter.mli
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/bindings/ocaml/bitwriter/llvm_bitwriter.mli
+END
+bitwriter_ocaml.c
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/bindings/ocaml/bitwriter/bitwriter_ocaml.c
+END
+llvm_bitwriter.ml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/bindings/ocaml/bitwriter/llvm_bitwriter.ml
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/bindings/ocaml/bitwriter/Makefile
+END

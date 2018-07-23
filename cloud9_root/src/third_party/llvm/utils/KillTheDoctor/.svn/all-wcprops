@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/utils/KillTheDoctor
+END
+KillTheDoctor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/utils/KillTheDoctor/KillTheDoctor.cpp
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/utils/KillTheDoctor/CMakeLists.txt
+END

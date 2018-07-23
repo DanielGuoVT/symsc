@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/tools/llvm-stub
+END
+llvm-stub.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/tools/llvm-stub/llvm-stub.c
+END
+LLVMBuild.txt
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/tools/llvm-stub/LLVMBuild.txt
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/tools/llvm-stub/CMakeLists.txt
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/tools/llvm-stub/Makefile
+END

@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Archive
+END
+evenlen
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Archive/evenlen
+END
+toc_xpg4.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Archive/toc_xpg4.ll
+END
+xpg4.a
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Archive/xpg4.a
+END
+very_long_bytecode_file_name.bc
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Archive/very_long_bytecode_file_name.bc
+END
+toc_GNU.ll
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Archive/toc_GNU.ll
+END
+toc_MacOSX.ll
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Archive/toc_MacOSX.ll
+END
+oddlen
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Archive/oddlen
+END
+IsNAN.o
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Archive/IsNAN.o
+END
+check_binary_output.ll
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Archive/check_binary_output.ll
+END
+GNU.a
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Archive/GNU.a
+END
+toc_SVR4.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Archive/toc_SVR4.ll
+END
+MacOSX.a
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Archive/MacOSX.a
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Archive/README.txt
+END
+SVR4.a
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Archive/SVR4.a
+END
+lit.local.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Archive/lit.local.cfg
+END
+extract.ll
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Archive/extract.ll
+END

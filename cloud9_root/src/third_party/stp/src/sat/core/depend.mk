@@ -1,0 +1,51 @@
+/home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/Main.o /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/Main.or /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/Main.od /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/Main.op: \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/Main.cc \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../utils/System.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../utils/../mtl/IntTypesMtl.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../utils/ParseUtils.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../utils/Options.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../utils/../mtl/Vec.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../utils/../mtl/../mtl/IntTypesMtl.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../utils/../mtl/../mtl/XAlloc.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../utils/../utils/ParseUtils.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../core/Dimacs.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../core/../utils/ParseUtils.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../core/../core/SolverTypes.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../core/../core/../mtl/IntTypesMtl.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../core/../core/../mtl/Alg.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../core/../core/../mtl/../mtl/Vec.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../core/../core/../mtl/Vec.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../core/../core/../mtl/Map.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../core/../core/../mtl/../mtl/IntTypesMtl.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../core/../core/../mtl/Alloc.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../core/../core/../mtl/../mtl/XAlloc.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../core/Solver.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../core/../mtl/Vec.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../core/../mtl/Heap.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../core/../mtl/../mtl/Vec.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../core/../mtl/Alg.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../core/../utils/Options.h
+/home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/Solver.o /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/Solver.or /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/Solver.od /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/Solver.op: \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/Solver.cc \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../mtl/Sort.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../mtl/../mtl/Vec.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../mtl/../mtl/../mtl/IntTypesMtl.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../mtl/../mtl/../mtl/XAlloc.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../core/Solver.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../core/../mtl/Vec.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../core/../mtl/Heap.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../core/../mtl/../mtl/Vec.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../core/../mtl/Alg.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../core/../utils/Options.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../core/../utils/../mtl/IntTypesMtl.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../core/../utils/../mtl/Vec.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../core/../utils/../utils/ParseUtils.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../core/../core/SolverTypes.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../core/../core/../mtl/IntTypesMtl.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../core/../core/../mtl/Alg.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../core/../core/../mtl/Vec.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../core/../core/../mtl/Map.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../core/../core/../mtl/../mtl/IntTypesMtl.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../core/../core/../mtl/../mtl/Vec.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../core/../core/../mtl/Alloc.h \
+ /home/sjguo/research/cloud9_root/src/third_party/stp/src/sat/core/../core/../core/../mtl/../mtl/XAlloc.h

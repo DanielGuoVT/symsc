@@ -1,0 +1,184 @@
+10
+
+dir
+159523
+https://llvm.org/svn/llvm-project/llvm/tags/RELEASE_31/final/test/Transforms
+https://llvm.org/svn/llvm-project
+
+
+
+2012-05-02T10:00:50.398969Z
+155985
+void
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+91177308-0d34-0410-b5e6-96231b3b80d8
+
+LoopDeletion
+dir
+
+LoopUnswitch
+dir
+
+IndVarSimplify
+dir
+
+ObjCARC
+dir
+
+LoopUnroll
+dir
+
+ConstantMerge
+dir
+
+LowerSwitch
+dir
+
+MemCpyOpt
+dir
+
+BBVectorize
+dir
+
+LoopStrengthReduce
+dir
+
+CodeGenPrepare
+dir
+
+IPConstantProp
+dir
+
+Internalize
+dir
+
+CorrelatedValuePropagation
+dir
+
+LoopRotate
+dir
+
+SCCP
+dir
+
+PhaseOrdering
+dir
+
+GVN
+dir
+
+InstSimplify
+dir
+
+DeadArgElim
+dir
+
+Mem2Reg
+dir
+
+BranchFolding
+dir
+
+JumpThreading
+dir
+
+Reassociate
+dir
+
+TailDup
+dir
+
+SimplifyLibCalls
+dir
+
+FunctionAttrs
+dir
+
+DeadStoreElimination
+dir
+
+LowerInvoke
+dir
+
+Sink
+dir
+
+LCSSA
+dir
+
+PruneEH
+dir
+
+CodeExtractor
+dir
+
+EarlyCSE
+dir
+
+InstCombine
+dir
+
+StripSymbols
+dir
+
+MergeFunc
+dir
+
+SimplifyCFG
+dir
+
+GlobalDCE
+dir
+
+Inline
+dir
+
+GlobalOpt
+dir
+
+BlockPlacement
+dir
+
+LowerExpectIntrinsic
+dir
+
+LICM
+dir
+
+LowerAtomic
+dir
+
+LoopSimplify
+dir
+
+ConstProp
+dir
+
+ScalarRepl
+dir
+
+ArgumentPromotion
+dir
+
+LoopIdiom
+dir
+
+ADCE
+dir
+
+TailCallElim
+dir
+

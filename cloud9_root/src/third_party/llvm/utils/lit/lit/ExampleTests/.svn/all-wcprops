@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/utils/lit/lit/ExampleTests
+END
+fail.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/utils/lit/lit/ExampleTests/fail.c
+END
+required-and-present.c
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/utils/lit/lit/ExampleTests/required-and-present.c
+END
+xpass.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/utils/lit/lit/ExampleTests/xpass.c
+END
+xfail.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/utils/lit/lit/ExampleTests/xfail.c
+END
+lit.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/utils/lit/lit/ExampleTests/lit.cfg
+END
+pass.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/utils/lit/lit/ExampleTests/pass.c
+END
+required-and-missing.c
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/utils/lit/lit/ExampleTests/required-and-missing.c
+END

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/projects/sample/autoconf
+END
+config.sub
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/projects/sample/autoconf/config.sub
+END
+ltmain.sh
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/projects/sample/autoconf/ltmain.sh
+END
+install-sh
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/projects/sample/autoconf/install-sh
+END
+LICENSE.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/projects/sample/autoconf/LICENSE.TXT
+END
+mkinstalldirs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/projects/sample/autoconf/mkinstalldirs
+END
+AutoRegen.sh
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/projects/sample/autoconf/AutoRegen.sh
+END
+configure.ac
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/projects/sample/autoconf/configure.ac
+END
+config.guess
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/projects/sample/autoconf/config.guess
+END
+ExportMap.map
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/projects/sample/autoconf/ExportMap.map
+END

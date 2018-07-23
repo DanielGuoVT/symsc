@@ -1,0 +1,359 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl
+END
+not-a-vector.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/not-a-vector.ll
+END
+inline-vector.ll
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/inline-vector.ll
+END
+address-space.ll
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/address-space.ll
+END
+volatile.ll
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/volatile.ll
+END
+basictest.ll
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/basictest.ll
+END
+DifferingTypes.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/DifferingTypes.ll
+END
+memcpy-align.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/memcpy-align.ll
+END
+2011-06-08-VectorExtractValue.ll
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/2011-06-08-VectorExtractValue.ll
+END
+vectors-with-mismatched-elements.ll
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/vectors-with-mismatched-elements.ll
+END
+badarray.ll
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/badarray.ll
+END
+only-memcpy-uses.ll
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/only-memcpy-uses.ll
+END
+memcpy-from-global.ll
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/memcpy-from-global.ll
+END
+2011-09-22-PHISpeculateInvoke.ll
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/2011-09-22-PHISpeculateInvoke.ll
+END
+load-store-aggregate.ll
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/load-store-aggregate.ll
+END
+sroa_two.ll
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/sroa_two.ll
+END
+copy-aggregate.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/copy-aggregate.ll
+END
+2008-08-22-out-of-range-array-promote.ll
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/2008-08-22-out-of-range-array-promote.ll
+END
+debuginfo-preserved.ll
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/debuginfo-preserved.ll
+END
+2007-11-03-bigendian_apint.ll
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/2007-11-03-bigendian_apint.ll
+END
+union-pointer.ll
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/union-pointer.ll
+END
+vector_promote.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/vector_promote.ll
+END
+2010-01-18-SelfCopy.ll
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/2010-01-18-SelfCopy.ll
+END
+lit.local.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/lit.local.cfg
+END
+memset-aggregate-byte-leader.ll
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/memset-aggregate-byte-leader.ll
+END
+2011-05-06-CapturedAlloca.ll
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/2011-05-06-CapturedAlloca.ll
+END
+2008-09-22-vector-gep.ll
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/2008-09-22-vector-gep.ll
+END
+2009-12-11-NeonTypes.ll
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/2009-12-11-NeonTypes.ll
+END
+2008-02-28-SubElementExtractCrash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/2008-02-28-SubElementExtractCrash.ll
+END
+vector_memcpy.ll
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/vector_memcpy.ll
+END
+union-packed.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/union-packed.ll
+END
+phi-cycle.ll
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/phi-cycle.ll
+END
+memset-aggregate.ll
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/memset-aggregate.ll
+END
+arraytest.ll
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/arraytest.ll
+END
+2008-01-29-PromoteBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/2008-01-29-PromoteBug.ll
+END
+2011-11-11-EmptyStruct.ll
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/2011-11-11-EmptyStruct.ll
+END
+2009-02-05-LoadFCA.ll
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/2009-02-05-LoadFCA.ll
+END
+2011-06-17-VectorPartialMemset.ll
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/2011-06-17-VectorPartialMemset.ll
+END
+2006-11-07-InvalidArrayPromote.ll
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/2006-11-07-InvalidArrayPromote.ll
+END
+union-fp-int.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/union-fp-int.ll
+END
+bitfield-sroa.ll
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/bitfield-sroa.ll
+END
+2008-06-22-LargeArray.ll
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/2008-06-22-LargeArray.ll
+END
+nonzero-first-index.ll
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/nonzero-first-index.ll
+END
+2008-06-05-loadstore-agg.ll
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/2008-06-05-loadstore-agg.ll
+END
+select_promote.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/select_promote.ll
+END
+2003-09-12-IncorrectPromote.ll
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/2003-09-12-IncorrectPromote.ll
+END
+2003-10-29-ArrayProblem.ll
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/2003-10-29-ArrayProblem.ll
+END
+negative-memset.ll
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/negative-memset.ll
+END
+2011-10-11-VectorMemset.ll
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/2011-10-11-VectorMemset.ll
+END
+2009-02-02-ScalarPromoteOutOfRange.ll
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/2009-02-02-ScalarPromoteOutOfRange.ll
+END
+sroa-fca.ll
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/sroa-fca.ll
+END
+AggregatePromote.ll
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/AggregatePromote.ll
+END
+phinodepromote.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/phinodepromote.ll
+END
+phi-select.ll
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/phi-select.ll
+END
+2009-03-04-MemCpyAlign.ll
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/2009-03-04-MemCpyAlign.ll
+END
+lifetime.ll
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/lifetime.ll
+END
+crash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/crash.ll
+END
+2011-10-22-VectorCrash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/2011-10-22-VectorCrash.ll
+END
+2007-05-29-MemcpyPreserve.ll
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/2007-05-29-MemcpyPreserve.ll
+END
+2003-05-29-ArrayFail.ll
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/ScalarRepl/2003-05-29-ArrayFail.ll
+END

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/Hexagon
+END
+lit.local.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/Hexagon/lit.local.cfg
+END
+double.ll
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/Hexagon/double.ll
+END
+frame.ll
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/Hexagon/frame.ll
+END
+struct_args_large.ll
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/Hexagon/struct_args_large.ll
+END
+args.ll
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/Hexagon/args.ll
+END
+combine.ll
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/Hexagon/combine.ll
+END
+struct_args.ll
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/Hexagon/struct_args.ll
+END
+float.ll
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/Hexagon/float.ll
+END
+mpy.ll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/Hexagon/mpy.ll
+END
+vaddh.ll
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/Hexagon/vaddh.ll
+END
+static.ll
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/Hexagon/static.ll
+END

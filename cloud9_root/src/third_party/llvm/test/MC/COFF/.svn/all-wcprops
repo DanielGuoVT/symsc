@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/COFF
+END
+symbol-mangling.ll
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/COFF/symbol-mangling.ll
+END
+simple-fixups.s
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/COFF/simple-fixups.s
+END
+align-nops.s
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/COFF/align-nops.s
+END
+module-asm.ll
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/COFF/module-asm.ll
+END
+diff.s
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/COFF/diff.s
+END
+lit.local.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/COFF/lit.local.cfg
+END
+seh.s
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/COFF/seh.s
+END
+global_ctors.ll
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/COFF/global_ctors.ll
+END
+seh-section.s
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/COFF/seh-section.s
+END
+secrel32.s
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/COFF/secrel32.s
+END
+switch-relocations.ll
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/COFF/switch-relocations.ll
+END
+weak.s
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/COFF/weak.s
+END
+bss.s
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/COFF/bss.s
+END
+symbol-fragment-offset.s
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/COFF/symbol-fragment-offset.s
+END
+symbol-alias.s
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/COFF/symbol-alias.s
+END
+basic-coff.s
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/COFF/basic-coff.s
+END

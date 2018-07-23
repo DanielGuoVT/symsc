@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Bitcode/Writer
+END
+ValueEnumerator.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Bitcode/Writer/ValueEnumerator.h
+END
+BitcodeWriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Bitcode/Writer/BitcodeWriter.cpp
+END
+LLVMBuild.txt
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Bitcode/Writer/LLVMBuild.txt
+END
+BitWriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Bitcode/Writer/BitWriter.cpp
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Bitcode/Writer/CMakeLists.txt
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Bitcode/Writer/Makefile
+END
+BitcodeWriterPass.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Bitcode/Writer/BitcodeWriterPass.cpp
+END
+ValueEnumerator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Bitcode/Writer/ValueEnumerator.cpp
+END

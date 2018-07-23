@@ -1,0 +1,269 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore
+END
+2010-02-25-LSR-Crash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/2010-02-25-LSR-Crash.ll
+END
+basictest.ll
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/basictest.ll
+END
+globals.ll
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/globals.ll
+END
+sext.ll
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/sext.ll
+END
+ladd_lsub_combine.ll
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/ladd_lsub_combine.ll
+END
+indirectbr.ll
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/indirectbr.ll
+END
+2011-08-01-VarargsBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/2011-08-01-VarargsBug.ll
+END
+global_negative_offset.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/global_negative_offset.ll
+END
+threads.ll
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/threads.ll
+END
+2008-11-17-Shl64.ll
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/2008-11-17-Shl64.ll
+END
+getid.ll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/getid.ll
+END
+switch.ll
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/switch.ll
+END
+tls.ll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/tls.ll
+END
+events.ll
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/events.ll
+END
+unaligned_load.ll
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/unaligned_load.ll
+END
+ps-intrinsics.ll
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/ps-intrinsics.ll
+END
+trap.ll
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/trap.ll
+END
+2011-01-31-DAGCombineBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/2011-01-31-DAGCombineBug.ll
+END
+lit.local.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/lit.local.cfg
+END
+trampoline.ll
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/trampoline.ll
+END
+addsub64.ll
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/addsub64.ll
+END
+unaligned_store_combine.ll
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/unaligned_store_combine.ll
+END
+misc-intrinsics.ll
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/misc-intrinsics.ll
+END
+fneg.ll
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/fneg.ll
+END
+load.ll
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/load.ll
+END
+bigstructret.ll
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/bigstructret.ll
+END
+2011-08-01-DynamicAllocBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/2011-08-01-DynamicAllocBug.ll
+END
+unaligned_store.ll
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/unaligned_store.ll
+END
+scavenging.ll
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/scavenging.ll
+END
+2009-07-15-store192.ll
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/2009-07-15-store192.ll
+END
+float-intrinsics.ll
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/float-intrinsics.ll
+END
+2009-01-08-Crash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/2009-01-08-Crash.ll
+END
+licm-ldwcp.ll
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/licm-ldwcp.ll
+END
+store.ll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/store.ll
+END
+ashr.ll
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/ashr.ll
+END
+2009-01-14-Remat-Crash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/2009-01-14-Remat-Crash.ll
+END
+2009-03-27-v2f64-param.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/2009-03-27-v2f64-param.ll
+END
+sr-intrinsics.ll
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/sr-intrinsics.ll
+END
+mul64.ll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/mul64.ll
+END
+2010-04-07-DbgValueOtherTargets.ll
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/2010-04-07-DbgValueOtherTargets.ll
+END
+private.ll
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/private.ll
+END
+resources.ll
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/resources.ll
+END
+constants.ll
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/constants.ll
+END
+switch_long.ll
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/XCore/switch_long.ll
+END

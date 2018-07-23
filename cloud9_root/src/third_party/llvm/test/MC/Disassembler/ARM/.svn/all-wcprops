@@ -1,0 +1,467 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM
+END
+invalid-LDM-thumb.txt
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-LDM-thumb.txt
+END
+invalid-IT-thumb.txt
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-IT-thumb.txt
+END
+invalid-t2LDRBT-thumb.txt
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-t2LDRBT-thumb.txt
+END
+thumb-tests.txt
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/thumb-tests.txt
+END
+arm-tests.txt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/arm-tests.txt
+END
+vfp4.txt
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/vfp4.txt
+END
+unpredictable-LDRD-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/unpredictable-LDRD-arm.txt
+END
+invalid-t2PUSH-thumb.txt
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-t2PUSH-thumb.txt
+END
+unpredictable-SHADD16-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/unpredictable-SHADD16-arm.txt
+END
+invalid-CPS3p-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-CPS3p-arm.txt
+END
+invalid-LDRB_POST-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-LDRB_POST-arm.txt
+END
+invalid-UMAAL-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-UMAAL-arm.txt
+END
+lit.local.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/lit.local.cfg
+END
+invalid-SBFX-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-SBFX-arm.txt
+END
+invalid-VLD3DUPd32_UPD-thumb.txt
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-VLD3DUPd32_UPD-thumb.txt
+END
+invalid-DMB-thumb.txt
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-DMB-thumb.txt
+END
+invalid-SRS-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-SRS-arm.txt
+END
+unpredictable-ADDREXT3-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/unpredictable-ADDREXT3-arm.txt
+END
+unpredictable-STRBrs-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/unpredictable-STRBrs-arm.txt
+END
+invalid-VST1d8Twb_register-thumb.txt
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-VST1d8Twb_register-thumb.txt
+END
+invalid-MOVs-LSL-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-MOVs-LSL-arm.txt
+END
+invalid-t2STREXB-thumb.txt
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-t2STREXB-thumb.txt
+END
+thumb-printf.txt
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/thumb-printf.txt
+END
+invalid-t2STREXD-thumb.txt
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-t2STREXD-thumb.txt
+END
+invalid-MCR-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-MCR-arm.txt
+END
+unpredictable-RSC-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/unpredictable-RSC-arm.txt
+END
+invalid-STMIA_UPD-thumb.txt
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-STMIA_UPD-thumb.txt
+END
+invalid-LDR_PRE-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-LDR_PRE-arm.txt
+END
+invalid-t2STRD_PRE-thumb.txt
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-t2STRD_PRE-thumb.txt
+END
+unpredictable-MUL-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/unpredictable-MUL-arm.txt
+END
+neon-tests.txt
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/neon-tests.txt
+END
+thumb1.txt
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/thumb1.txt
+END
+invalid-BFI-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-BFI-arm.txt
+END
+thumb2.txt
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/thumb2.txt
+END
+neont2.txt
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/neont2.txt
+END
+invalid-MOVTi16-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-MOVTi16-arm.txt
+END
+invalid-IT-CBNZ-thumb.txt
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-IT-CBNZ-thumb.txt
+END
+unpredictable-LSL-regform.txt
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/unpredictable-LSL-regform.txt
+END
+invalid-MSRi-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-MSRi-arm.txt
+END
+unpredictable-LDR-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/unpredictable-LDR-arm.txt
+END
+invalid-VST2b32_UPD-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-VST2b32_UPD-arm.txt
+END
+unpredictable-UQADD8-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/unpredictable-UQADD8-arm.txt
+END
+invalid-MOVr-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-MOVr-arm.txt
+END
+invalid-t2STR_POST-thumb.txt
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-t2STR_POST-thumb.txt
+END
+invalid-MOVs-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-MOVs-arm.txt
+END
+invalid-Bcc-thumb.txt
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-Bcc-thumb.txt
+END
+invalid-IT-CC15.txt
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-IT-CC15.txt
+END
+invalid-LDRD_PRE-thumb.txt
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-LDRD_PRE-thumb.txt
+END
+unpredictable-MRS-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/unpredictable-MRS-arm.txt
+END
+neon.txt
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/neon.txt
+END
+invalid-t2LDRSHi12-thumb.txt
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-t2LDRSHi12-thumb.txt
+END
+basic-arm-instructions.txt
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/basic-arm-instructions.txt
+END
+invalid-VLD1DUPq8_UPD-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-VLD1DUPq8_UPD-arm.txt
+END
+invalid-SMLAD-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-SMLAD-arm.txt
+END
+invalid-LDC-form-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-LDC-form-arm.txt
+END
+unpredictable-swp-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/unpredictable-swp-arm.txt
+END
+unpredictable-SSAT-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/unpredictable-SSAT-arm.txt
+END
+invalid-DSB-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-DSB-arm.txt
+END
+ldrd-armv4.txt
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/ldrd-armv4.txt
+END
+unpredictable-MRRC2-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/unpredictable-MRRC2-arm.txt
+END
+invalid-SXTB-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-SXTB-arm.txt
+END
+unpredictables-thumb.txt
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/unpredictables-thumb.txt
+END
+unpredictable-ADC-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/unpredictable-ADC-arm.txt
+END
+invalid-t2LDRSHi8-thumb.txt
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-t2LDRSHi8-thumb.txt
+END
+invalid-RFEorLDMIA-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-RFEorLDMIA-arm.txt
+END
+invalid-MRRC2-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-MRRC2-arm.txt
+END
+memory-arm-instructions.txt
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/memory-arm-instructions.txt
+END
+invalid-LDR_POST-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-LDR_POST-arm.txt
+END
+invalid-LDRrs-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-LDRrs-arm.txt
+END
+invalid-CPS2p-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-CPS2p-arm.txt
+END
+invalid-t2LDREXD-thumb.txt
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-t2LDREXD-thumb.txt
+END
+fp-encoding.txt
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/fp-encoding.txt
+END
+invalid-t2Bcc-thumb.txt
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-t2Bcc-thumb.txt
+END
+thumb-MSR-MClass.txt
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/thumb-MSR-MClass.txt
+END
+invalid-VQADD-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-VQADD-arm.txt
+END
+invalid-VLDMSDB_UPD-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/invalid-VLDMSDB_UPD-arm.txt
+END
+unpredictable-AI1cmp-arm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/ARM/unpredictable-AI1cmp-arm.txt
+END

@@ -1,0 +1,16 @@
+[func]
+seed_setkey
+seed_encrypt
+
+[sbox]
+SS0
+SS1
+SS2
+SS3
+
+[shadow]
+seed_setkey1
+seed_encrypt1
+
+[key]
+key

@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Transforms/Utils
+END
+LowerExpectIntrinsic.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Transforms/Utils/LowerExpectIntrinsic.cpp
+END
+LoopSimplify.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Transforms/Utils/LoopSimplify.cpp
+END
+LLVMBuild.txt
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Transforms/Utils/LLVMBuild.txt
+END
+SimplifyIndVar.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Transforms/Utils/SimplifyIndVar.cpp
+END
+Utils.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Transforms/Utils/Utils.cpp
+END
+InstructionNamer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Transforms/Utils/InstructionNamer.cpp
+END
+LoopUnroll.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Transforms/Utils/LoopUnroll.cpp
+END
+CloneFunction.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Transforms/Utils/CloneFunction.cpp
+END
+ModuleUtils.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Transforms/Utils/ModuleUtils.cpp
+END
+LowerSwitch.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Transforms/Utils/LowerSwitch.cpp
+END
+BasicBlockUtils.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Transforms/Utils/BasicBlockUtils.cpp
+END
+SimplifyInstructions.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Transforms/Utils/SimplifyInstructions.cpp
+END
+CmpInstAnalysis.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Transforms/Utils/CmpInstAnalysis.cpp
+END
+ValueMapper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Transforms/Utils/ValueMapper.cpp
+END
+AddrModeMatcher.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Transforms/Utils/AddrModeMatcher.cpp
+END
+UnifyFunctionExitNodes.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Transforms/Utils/UnifyFunctionExitNodes.cpp
+END
+InlineFunction.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Transforms/Utils/InlineFunction.cpp
+END
+PromoteMemoryToRegister.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Transforms/Utils/PromoteMemoryToRegister.cpp
+END
+Local.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Transforms/Utils/Local.cpp
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Transforms/Utils/CMakeLists.txt
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Transforms/Utils/Makefile
+END
+Mem2Reg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Transforms/Utils/Mem2Reg.cpp
+END
+LowerInvoke.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Transforms/Utils/LowerInvoke.cpp
+END
+DemoteRegToStack.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Transforms/Utils/DemoteRegToStack.cpp
+END
+LCSSA.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Transforms/Utils/LCSSA.cpp
+END
+BuildLibCalls.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Transforms/Utils/BuildLibCalls.cpp
+END
+CodeExtractor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Transforms/Utils/CodeExtractor.cpp
+END
+CloneModule.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Transforms/Utils/CloneModule.cpp
+END
+BreakCriticalEdges.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Transforms/Utils/BreakCriticalEdges.cpp
+END
+LoopUnrollRuntime.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Transforms/Utils/LoopUnrollRuntime.cpp
+END
+SSAUpdater.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Transforms/Utils/SSAUpdater.cpp
+END
+SimplifyCFG.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Transforms/Utils/SimplifyCFG.cpp
+END

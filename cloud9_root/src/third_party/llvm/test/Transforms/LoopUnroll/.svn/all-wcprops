@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopUnroll
+END
+2011-10-01-NoopTrunc.ll
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopUnroll/2011-10-01-NoopTrunc.ll
+END
+2007-05-09-UnknownTripCount.ll
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopUnroll/2007-05-09-UnknownTripCount.ll
+END
+lit.local.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopUnroll/lit.local.cfg
+END
+shifted-tripcount.ll
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopUnroll/shifted-tripcount.ll
+END
+runtime-loop1.ll
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopUnroll/runtime-loop1.ll
+END
+unloop.ll
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopUnroll/unloop.ll
+END
+runtime-loop2.ll
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopUnroll/runtime-loop2.ll
+END
+pr11361.ll
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopUnroll/pr11361.ll
+END
+runtime-loop3.ll
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopUnroll/runtime-loop3.ll
+END
+pr10813.ll
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopUnroll/pr10813.ll
+END
+2011-08-08-PhiUpdate.ll
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopUnroll/2011-08-08-PhiUpdate.ll
+END
+2007-04-16-PhiUpdate.ll
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopUnroll/2007-04-16-PhiUpdate.ll
+END
+2011-08-09-PhiUpdate.ll
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopUnroll/2011-08-09-PhiUpdate.ll
+END
+basic.ll
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopUnroll/basic.ll
+END
+2004-05-13-DontUnrollTooMuch.ll
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopUnroll/2004-05-13-DontUnrollTooMuch.ll
+END
+2005-03-06-BadLoopInfoUpdate.ll
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopUnroll/2005-03-06-BadLoopInfoUpdate.ll
+END
+2007-11-05-Crash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopUnroll/2007-11-05-Crash.ll
+END
+2011-08-09-IVSimplify.ll
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopUnroll/2011-08-09-IVSimplify.ll
+END
+2012-04-09-unroll-indirectbr.ll
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopUnroll/2012-04-09-unroll-indirectbr.ll
+END
+runtime-loop.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopUnroll/runtime-loop.ll
+END
+scevunroll.ll
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopUnroll/scevunroll.ll
+END
+2006-08-24-MultiBlockLoop.ll
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopUnroll/2006-08-24-MultiBlockLoop.ll
+END
+2007-05-05-UnrollMiscomp.ll
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopUnroll/2007-05-05-UnrollMiscomp.ll
+END
+partial-unroll-optsize.ll
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LoopUnroll/partial-unroll-optsize.ll
+END

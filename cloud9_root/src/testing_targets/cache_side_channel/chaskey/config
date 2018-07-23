@@ -1,0 +1,14 @@
+[func]
+RunEncryptionKeySchedule
+chaskey_encrypt
+chaskey_decrypt
+
+[sbox]
+
+[shadow]
+RunEncryptionKeySchedule1
+chaskey_encrypt1
+chaskey_decrypt1
+
+[key]
+key

@@ -1,0 +1,82 @@
+#!/usr/bin/env python
+#
+# Copyright notice here.
+
+"""Proxy that invokes clang or gcc depending on environment variable.
+
+The proxy is useful in cases when the configuration step of the software
+requires GCC, and the building needs Clang. In this case, the configuration
+script would hard-code the proxy path, which could then behave differently
+at configuration and build time."""
+
+__author__ = "stefan.bucur@epfl.ch (Stefan Bucur)"
+
+
+import os
+import sys
+import re
+
+
+script_dir = os.path.dirname(__file__)
+script_name = os.path.basename(sys.argv[0])
+config_file = os.path.join(script_dir, "config")
+cloud9_dir = os.path.join(script_dir, os.pardir, os.pardir)
+
+llvm_build = os.path.join(cloud9_dir, "third_party/llvm-build/Release+Asserts")
+llvm_plugin = os.path.join(llvm_build, "lib/LLVMgold.so")
+
+script_mapping = {
+  'gcc.proxy': {
+    'llvm': [os.path.join(llvm_build, "bin/clang"), "-emit-llvm"],
+    'clang': [os.path.join(llvm_build, "bin/clang")],
+    'gcc': ["gcc"],
+  },
+  'g++.proxy': {
+    'llvm': [os.path.join(llvm_build, "bin/clang++"), "-emit-llvm"],
+    'clang': [os.path.join(llvm_build, "bin/clang++")],
+    'gcc': ["g++"],
+  },
+  'ar.proxy': {
+    'llvm': ["ar", "--plugin", llvm_plugin],
+    'clang': ["ar"],
+    'gcc': ["ar"],
+  },
+  'ranlib.proxy': {
+    'llvm': ["ar", "--plugin", llvm_plugin, "-s"],
+    'clang': ["ranlib"],
+    'gcc': ["ranlib"],
+  },
+  'nm.proxy': {
+    'llvm': [os.path.join(llvm_build, "bin/llvm-nm")],
+    'clang': ["nm"],
+    'gcc': ["nm"],
+  },
+}
+
+# Three possible options: 'llvm', 'clang', or 'gcc'
+config_opt = os.environ.get("LLVM_BUILD_MODE", "llvm")
+if config_opt not in ['llvm', 'clang', 'gcc']:
+  raise ValueError("Invalid build configuration option")
+
+cmd_line = script_mapping[script_name][config_opt]
+
+if len(sys.argv) > 1:
+  
+  if script_name in ['ar.proxy']:
+    match = re.match('^-?[dmpqrstxabcDfilMNoPsSTuvV]*$',sys.argv[1])
+    if match is not None:
+      cmd_line.insert(1,sys.argv[1])
+      cmd_line.extend(sys.argv[2:])
+    else:
+      cmd_line.extend(sys.argv[1:])
+  else:
+    cmd_line.extend(sys.argv[1:])
+
+llvm_args = [
+  "-Wl,-plugin-opt=also-emit-llvm",
+]
+
+if script_name in ['gcc.proxy', 'g++.proxy'] and config_opt != "llvm":
+  cmd_line = filter(lambda arg: arg not in llvm_args, cmd_line)
+
+os.execvp(cmd_line[0], cmd_line)

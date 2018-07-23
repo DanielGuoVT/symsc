@@ -1,0 +1,365 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT
+END
+APSInt.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/APSInt.h
+END
+FoldingSet.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/FoldingSet.h
+END
+Triple.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/Triple.h
+END
+edit_distance.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/edit_distance.h
+END
+SmallString.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/SmallString.h
+END
+SetOperations.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/SetOperations.h
+END
+BitVector.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/BitVector.h
+END
+StringRef.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/StringRef.h
+END
+StringMap.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/StringMap.h
+END
+InMemoryStruct.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/InMemoryStruct.h
+END
+Statistic.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/Statistic.h
+END
+PointerIntPair.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/PointerIntPair.h
+END
+ValueMap.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/ValueMap.h
+END
+DenseSet.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/DenseSet.h
+END
+APInt.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/APInt.h
+END
+ImmutableList.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/ImmutableList.h
+END
+SetVector.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/SetVector.h
+END
+IndexedMap.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/IndexedMap.h
+END
+SparseBitVector.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/SparseBitVector.h
+END
+EquivalenceClasses.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/EquivalenceClasses.h
+END
+SCCIterator.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/SCCIterator.h
+END
+StringSet.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/StringSet.h
+END
+ImmutableIntervalMap.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/ImmutableIntervalMap.h
+END
+ilist.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/ilist.h
+END
+Optional.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/Optional.h
+END
+PriorityQueue.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/PriorityQueue.h
+END
+OwningPtr.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/OwningPtr.h
+END
+GraphTraits.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/GraphTraits.h
+END
+StringSwitch.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/StringSwitch.h
+END
+PointerUnion.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/PointerUnion.h
+END
+ilist_node.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/ilist_node.h
+END
+SmallBitVector.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/SmallBitVector.h
+END
+SmallVector.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/SmallVector.h
+END
+TinyPtrVector.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/TinyPtrVector.h
+END
+IntEqClasses.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/IntEqClasses.h
+END
+DeltaAlgorithm.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/DeltaAlgorithm.h
+END
+Trie.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/Trie.h
+END
+DenseMapInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/DenseMapInfo.h
+END
+SparseSet.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/SparseSet.h
+END
+PackedVector.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/PackedVector.h
+END
+SmallPtrSet.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/SmallPtrSet.h
+END
+ArrayRef.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/ArrayRef.h
+END
+DAGDeltaAlgorithm.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/DAGDeltaAlgorithm.h
+END
+ImmutableMap.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/ImmutableMap.h
+END
+IntrusiveRefCntPtr.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/IntrusiveRefCntPtr.h
+END
+Hashing.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/Hashing.h
+END
+IntervalMap.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/IntervalMap.h
+END
+SmallSet.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/SmallSet.h
+END
+NullablePtr.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/NullablePtr.h
+END
+DepthFirstIterator.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/DepthFirstIterator.h
+END
+APFloat.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/APFloat.h
+END
+Twine.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/Twine.h
+END
+VariadicFunction.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/VariadicFunction.h
+END
+UniqueVector.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/UniqueVector.h
+END
+STLExtras.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/STLExtras.h
+END
+ScopedHashTable.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/ScopedHashTable.h
+END
+ImmutableSet.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/ImmutableSet.h
+END
+PostOrderIterator.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/PostOrderIterator.h
+END
+DenseMap.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/DenseMap.h
+END
+StringExtras.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/include/llvm/ADT/StringExtras.h
+END

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalDCE
+END
+2009-01-05-DeadAliases.ll
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalDCE/2009-01-05-DeadAliases.ll
+END
+basicvariabletest.ll
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalDCE/basicvariabletest.ll
+END
+externally_available.ll
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalDCE/externally_available.ll
+END
+2002-08-17-WorkListTest.ll
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalDCE/2002-08-17-WorkListTest.ll
+END
+2009-02-17-AliasUsesAliasee.ll
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalDCE/2009-02-17-AliasUsesAliasee.ll
+END
+lit.local.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalDCE/lit.local.cfg
+END
+2003-07-01-SelfReference.ll
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalDCE/2003-07-01-SelfReference.ll
+END
+2003-10-09-PreserveWeakGlobals.ll
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalDCE/2003-10-09-PreserveWeakGlobals.ll
+END
+2002-07-17-ConstantRef.ll
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalDCE/2002-07-17-ConstantRef.ll
+END
+2002-08-17-FunctionDGE.ll
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalDCE/2002-08-17-FunctionDGE.ll
+END
+2002-07-17-CastRef.ll
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalDCE/2002-07-17-CastRef.ll
+END
+2002-09-12-Redeletion.ll
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalDCE/2002-09-12-Redeletion.ll
+END

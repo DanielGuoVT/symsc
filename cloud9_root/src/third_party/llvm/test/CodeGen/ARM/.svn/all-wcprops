@@ -1,0 +1,3161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM
+END
+pack.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/pack.ll
+END
+call-tc.ll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/call-tc.ll
+END
+undef-sext.ll
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/undef-sext.ll
+END
+tls1.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/tls1.ll
+END
+machine-licm.ll
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/machine-licm.ll
+END
+2009-09-23-LiveVariablesBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-09-23-LiveVariablesBug.ll
+END
+ldr_post.ll
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ldr_post.ll
+END
+arguments3.ll
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/arguments3.ll
+END
+rev.ll
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/rev.ll
+END
+2011-12-19-sjlj-clobber.ll
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-12-19-sjlj-clobber.ll
+END
+2007-05-22-tailmerge-3.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2007-05-22-tailmerge-3.ll
+END
+thumb2-it-block.ll
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/thumb2-it-block.ll
+END
+ret_void.ll
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ret_void.ll
+END
+2011-04-07-schediv.ll
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-04-07-schediv.ll
+END
+widen-vmovs.ll
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/widen-vmovs.ll
+END
+inlineasm.ll
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/inlineasm.ll
+END
+2012-04-02-TwoAddrInstrCrash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2012-04-02-TwoAddrInstrCrash.ll
+END
+arm-asm.ll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/arm-asm.ll
+END
+ifcvt2.ll
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ifcvt2.ll
+END
+vneg.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vneg.ll
+END
+2009-08-29-ExtractEltf32.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-08-29-ExtractEltf32.ll
+END
+prefetch.ll
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/prefetch.ll
+END
+fcopysign.ll
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fcopysign.ll
+END
+fast-isel-redefinition.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fast-isel-redefinition.ll
+END
+2011-08-29-SchedCycle.ll
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-08-29-SchedCycle.ll
+END
+vaba.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vaba.ll
+END
+arguments-nosplit-i64.ll
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/arguments-nosplit-i64.ll
+END
+fpconv.ll
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fpconv.ll
+END
+2011-09-09-OddVectorDivision.ll
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-09-09-OddVectorDivision.ll
+END
+global-merge.ll
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/global-merge.ll
+END
+2012-01-26-CopyPropKills.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2012-01-26-CopyPropKills.ll
+END
+ldr_ext.ll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ldr_ext.ll
+END
+elf-lcomm-align.ll
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/elf-lcomm-align.ll
+END
+vtbl.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vtbl.ll
+END
+2010-10-19-mc-elf-objheader.ll
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2010-10-19-mc-elf-objheader.ll
+END
+ehabi-unwind.ll
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ehabi-unwind.ll
+END
+ldm.ll
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ldm.ll
+END
+fast-isel-br-const.ll
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fast-isel-br-const.ll
+END
+2011-11-30-MergeAlignment.ll
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-11-30-MergeAlignment.ll
+END
+2009-04-08-AggregateAddr.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-04-08-AggregateAddr.ll
+END
+aliases.ll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/aliases.ll
+END
+vrev.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vrev.ll
+END
+atomic-load-store.ll
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/atomic-load-store.ll
+END
+umulo-32.ll
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/umulo-32.ll
+END
+tls2.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/tls2.ll
+END
+intrinsics.ll
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/intrinsics.ll
+END
+fast-isel.ll
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fast-isel.ll
+END
+arguments4.ll
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/arguments4.ll
+END
+select_xform.ll
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/select_xform.ll
+END
+2009-04-06-AsmModifier.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-04-06-AsmModifier.ll
+END
+cse-libcalls.ll
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/cse-libcalls.ll
+END
+vqdmul.ll
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vqdmul.ll
+END
+fpow.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fpow.ll
+END
+2012-01-23-PostRA-LICM.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2012-01-23-PostRA-LICM.ll
+END
+vcvt_combine.ll
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vcvt_combine.ll
+END
+fnmul.ll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fnmul.ll
+END
+2008-05-19-LiveIntervalsBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2008-05-19-LiveIntervalsBug.ll
+END
+atomic-op.ll
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/atomic-op.ll
+END
+2008-03-05-SxtInRegBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2008-03-05-SxtInRegBug.ll
+END
+2009-07-22-ScavengerAssert.ll
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-07-22-ScavengerAssert.ll
+END
+ifcvt3.ll
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ifcvt3.ll
+END
+2009-06-19-RegScavengerAssert.ll
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-06-19-RegScavengerAssert.ll
+END
+debug-info-sreg2.ll
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/debug-info-sreg2.ll
+END
+2009-09-13-InvalidSuperReg.ll
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-09-13-InvalidSuperReg.ll
+END
+neon_minmax.ll
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/neon_minmax.ll
+END
+movt-movw-global.ll
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/movt-movw-global.ll
+END
+2010-04-07-DbgValueOtherTargets.ll
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2010-04-07-DbgValueOtherTargets.ll
+END
+2011-10-26-ExpandUnalignedLoadCrash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-10-26-ExpandUnalignedLoadCrash.ll
+END
+arm-modifier.ll
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/arm-modifier.ll
+END
+2009-09-24-spill-align.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-09-24-spill-align.ll
+END
+fp16.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fp16.ll
+END
+fast-isel-icmp.ll
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fast-isel-icmp.ll
+END
+2011-08-12-vmovqqqq-pseudo.ll
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-08-12-vmovqqqq-pseudo.ll
+END
+fpcmp_ueq.ll
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fpcmp_ueq.ll
+END
+2007-05-14-RegScavengerAssert.ll
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2007-05-14-RegScavengerAssert.ll
+END
+neon_shift.ll
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/neon_shift.ll
+END
+vbsl-constant.ll
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vbsl-constant.ll
+END
+2011-11-29-128bitArithmetics.ll
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-11-29-128bitArithmetics.ll
+END
+2010-12-07-PEIBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2010-12-07-PEIBug.ll
+END
+jumptable-label.ll
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/jumptable-label.ll
+END
+2007-05-07-tailmerge-1.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2007-05-07-tailmerge-1.ll
+END
+2011-09-19-cpsr.ll
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-09-19-cpsr.ll
+END
+ret_f64_arg_split.ll
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ret_f64_arg_split.ll
+END
+tls3.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/tls3.ll
+END
+2008-02-04-LocalRegAllocBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2008-02-04-LocalRegAllocBug.ll
+END
+arguments5.ll
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/arguments5.ll
+END
+2010-03-04-stm-undef-addr.ll
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2010-03-04-stm-undef-addr.ll
+END
+vfp.ll
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vfp.ll
+END
+bic.ll
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/bic.ll
+END
+long-setcc.ll
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/long-setcc.ll
+END
+vmla.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vmla.ll
+END
+vqsub.ll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vqsub.ll
+END
+fast-isel-call.ll
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fast-isel-call.ll
+END
+2011-04-27-IfCvtBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-04-27-IfCvtBug.ll
+END
+2008-02-29-RegAllocLocal.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2008-02-29-RegAllocLocal.ll
+END
+stm.ll
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/stm.ll
+END
+2009-08-21-PostRAKill2.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-08-21-PostRAKill2.ll
+END
+fast-isel-select.ll
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fast-isel-select.ll
+END
+lsr-icmp-imm.ll
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/lsr-icmp-imm.ll
+END
+2007-05-09-tailmerge-2.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2007-05-09-tailmerge-2.ll
+END
+2011-11-07-PromoteVectorLoadStore.ll
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-11-07-PromoteVectorLoadStore.ll
+END
+fast-isel-fold.ll
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fast-isel-fold.ll
+END
+2011-04-12-AlignBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-04-12-AlignBug.ll
+END
+arguments_f64_backfill.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/arguments_f64_backfill.ll
+END
+insn-sched1.ll
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/insn-sched1.ll
+END
+vshiftins.ll
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vshiftins.ll
+END
+2009-08-15-RegScavenger-EarlyClobber.ll
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-08-15-RegScavenger-EarlyClobber.ll
+END
+tst_teq.ll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/tst_teq.ll
+END
+fptoint.ll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fptoint.ll
+END
+2008-04-04-ScavengerAssert.ll
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2008-04-04-ScavengerAssert.ll
+END
+debug-info-blocks.ll
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/debug-info-blocks.ll
+END
+fparith.ll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fparith.ll
+END
+vpadd.ll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vpadd.ll
+END
+log2_not_readnone.ll
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/log2_not_readnone.ll
+END
+ifcvt4.ll
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ifcvt4.ll
+END
+ctor_order.ll
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ctor_order.ll
+END
+2010-08-04-EHCrash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2010-08-04-EHCrash.ll
+END
+fast-isel-br-phi.ll
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fast-isel-br-phi.ll
+END
+fast-isel-ldrh-strh-arm.ll
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fast-isel-ldrh-strh-arm.ll
+END
+2009-06-30-RegScavengerAssert2.ll
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-06-30-RegScavengerAssert2.ll
+END
+debug-info-qreg.ll
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/debug-info-qreg.ll
+END
+inlineasm-imm-arm.ll
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/inlineasm-imm-arm.ll
+END
+vstlane.ll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vstlane.ll
+END
+2012-03-26-FoldImmBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2012-03-26-FoldImmBug.ll
+END
+lsr-scale-addr-mode.ll
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/lsr-scale-addr-mode.ll
+END
+code-placement.ll
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/code-placement.ll
+END
+unaligned_load_store.ll
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/unaligned_load_store.ll
+END
+ret_f32_arg5.ll
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ret_f32_arg5.ll
+END
+vext.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vext.ll
+END
+2010-04-09-NeonSelect.ll
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2010-04-09-NeonSelect.ll
+END
+ret_i64_arg2.ll
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ret_i64_arg2.ll
+END
+alloca.ll
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/alloca.ll
+END
+shuffle.ll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/shuffle.ll
+END
+vceq.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vceq.ll
+END
+2009-09-09-AllOnes.ll
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-09-09-AllOnes.ll
+END
+2007-04-03-PEIBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2007-04-03-PEIBug.ll
+END
+mul_const.ll
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/mul_const.ll
+END
+fp_convert.ll
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fp_convert.ll
+END
+flag-crash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/flag-crash.ll
+END
+2010-05-19-Shuffles.ll
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2010-05-19-Shuffles.ll
+END
+fmscs.ll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fmscs.ll
+END
+truncstore-dag-combine.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/truncstore-dag-combine.ll
+END
+2008-04-11-PHIofImpDef.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2008-04-11-PHIofImpDef.ll
+END
+2007-03-30-RegScavengerAssert.ll
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2007-03-30-RegScavengerAssert.ll
+END
+2007-04-02-RegScavengerAssert.ll
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2007-04-02-RegScavengerAssert.ll
+END
+2006-11-10-CycleInDAG.ll
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2006-11-10-CycleInDAG.ll
+END
+arm-and-tst-peephole.ll
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/arm-and-tst-peephole.ll
+END
+vbits.ll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vbits.ll
+END
+2011-03-10-DAGCombineCrash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-03-10-DAGCombineCrash.ll
+END
+vzip.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vzip.ll
+END
+sub.ll
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/sub.ll
+END
+vtrn.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vtrn.ll
+END
+arguments6.ll
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/arguments6.ll
+END
+ldr_frame.ll
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ldr_frame.ll
+END
+mul.ll
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/mul.ll
+END
+2009-09-13-InvalidSubreg.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-09-13-InvalidSubreg.ll
+END
+vrec.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vrec.ll
+END
+2011-02-07-AntidepClobber.ll
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-02-07-AntidepClobber.ll
+END
+atomic-64bit.ll
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/atomic-64bit.ll
+END
+2009-08-21-PostRAKill3.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-08-21-PostRAKill3.ll
+END
+2010-12-08-tpsoft.ll
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2010-12-08-tpsoft.ll
+END
+fpcmp.ll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fpcmp.ll
+END
+crash-greedy-v6.ll
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/crash-greedy-v6.ll
+END
+arm-negative-stride.ll
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/arm-negative-stride.ll
+END
+thread_pointer.ll
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/thread_pointer.ll
+END
+gv-stubs-crash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/gv-stubs-crash.ll
+END
+tail-opts.ll
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/tail-opts.ll
+END
+iabs.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/iabs.ll
+END
+2007-08-15-ReuseBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2007-08-15-ReuseBug.ll
+END
+div.ll
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/div.ll
+END
+ret_f64_arg2.ll
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ret_f64_arg2.ll
+END
+indirectbr.ll
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/indirectbr.ll
+END
+2011-04-15-AndVFlagPeepholeBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-04-15-AndVFlagPeepholeBug.ll
+END
+2011-04-15-RegisterCmpPeephole.ll
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-04-15-RegisterCmpPeephole.ll
+END
+ifcvt5.ll
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ifcvt5.ll
+END
+sbfx.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/sbfx.ll
+END
+vdiv_combine.ll
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vdiv_combine.ll
+END
+2009-06-30-RegScavengerAssert3.ll
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-06-30-RegScavengerAssert3.ll
+END
+2009-04-09-RegScavengerAsm.ll
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-04-09-RegScavengerAsm.ll
+END
+vabd.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vabd.ll
+END
+vdup.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vdup.ll
+END
+addrmode.ll
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/addrmode.ll
+END
+2009-08-31-TwoRegShuffle.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-08-31-TwoRegShuffle.ll
+END
+globals.ll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/globals.ll
+END
+2008-07-17-Fdiv.ll
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2008-07-17-Fdiv.ll
+END
+ret_i64_arg3.ll
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ret_i64_arg3.ll
+END
+test-sharedidx.ll
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/test-sharedidx.ll
+END
+fabss.ll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fabss.ll
+END
+reg_sequence.ll
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/reg_sequence.ll
+END
+2010-10-25-ifcvt-ldm.ll
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2010-10-25-ifcvt-ldm.ll
+END
+mem.ll
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/mem.ll
+END
+2010-09-29-mc-asm-header-test.ll
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2010-09-29-mc-asm-header-test.ll
+END
+vsub.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vsub.ll
+END
+2010-11-29-PrologueBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2010-11-29-PrologueBug.ll
+END
+vmul.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vmul.ll
+END
+vcge.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vcge.ll
+END
+fast-isel-mvn.ll
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fast-isel-mvn.ll
+END
+2009-09-22-LiveVariablesBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-09-22-LiveVariablesBug.ll
+END
+2009-06-30-RegScavengerAssert.ll
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-06-30-RegScavengerAssert.ll
+END
+2007-03-27-RegScavengerAssert.ll
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2007-03-27-RegScavengerAssert.ll
+END
+2011-08-25-ldmia_ret.ll
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-08-25-ldmia_ret.ll
+END
+2009-08-04-RegScavengerAssert-2.ll
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-08-04-RegScavengerAssert-2.ll
+END
+2009-06-15-RegScavengerAssert.ll
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-06-15-RegScavengerAssert.ll
+END
+arguments7.ll
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/arguments7.ll
+END
+2009-08-26-ScalarToVector.ll
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-08-26-ScalarToVector.ll
+END
+ispositive.ll
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ispositive.ll
+END
+bfi.ll
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/bfi.ll
+END
+2009-02-27-SpillerBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-02-27-SpillerBug.ll
+END
+vbsl.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vbsl.ll
+END
+2007-04-30-CombinerCrash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2007-04-30-CombinerCrash.ll
+END
+vpadal.ll
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vpadal.ll
+END
+dyn-stackalloc.ll
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/dyn-stackalloc.ll
+END
+fdivs.ll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fdivs.ll
+END
+crash-O0.ll
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/crash-O0.ll
+END
+2011-11-28-DAGCombineBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-11-28-DAGCombineBug.ll
+END
+ldrd-memoper.ll
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ldrd-memoper.ll
+END
+hidden-vis-2.ll
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/hidden-vis-2.ll
+END
+vqadd.ll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vqadd.ll
+END
+ifcvt6.ll
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ifcvt6.ll
+END
+2010-08-04-StackVariable.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2010-08-04-StackVariable.ll
+END
+2011-07-10-GlobalMergeBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-07-10-GlobalMergeBug.ll
+END
+sxt_rot.ll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/sxt_rot.ll
+END
+2011-03-15-LdStMultipleBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-03-15-LdStMultipleBug.ll
+END
+2010-03-04-eabi-fp-spill.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2010-03-04-eabi-fp-spill.ll
+END
+bswap-inline-asm.ll
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/bswap-inline-asm.ll
+END
+2010-11-30-reloc-movt.ll
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2010-11-30-reloc-movt.ll
+END
+neon_arith1.ll
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/neon_arith1.ll
+END
+2009-07-29-VFP3Registers.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-07-29-VFP3Registers.ll
+END
+2009-06-30-RegScavengerAssert4.ll
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-06-30-RegScavengerAssert4.ll
+END
+2009-04-08-FloatUndef.ll
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-04-08-FloatUndef.ll
+END
+2011-01-19-MergedGlobalDbg.ll
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-01-19-MergedGlobalDbg.ll
+END
+2010-12-17-LocalStackSlotCrash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2010-12-17-LocalStackSlotCrash.ll
+END
+peephole-bitcast.ll
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/peephole-bitcast.ll
+END
+fmacs.ll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fmacs.ll
+END
+machine-cse-cmp.ll
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/machine-cse-cmp.ll
+END
+align.ll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/align.ll
+END
+2011-10-26-memset-inline.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-10-26-memset-inline.ll
+END
+subreg-remat.ll
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/subreg-remat.ll
+END
+long.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/long.ll
+END
+neon_div.ll
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/neon_div.ll
+END
+ret_arg1.ll
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ret_arg1.ll
+END
+fpcmp-opt.ll
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fpcmp-opt.ll
+END
+2009-06-02-ISelCrash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-06-02-ISelCrash.ll
+END
+2011-04-26-SchedTweak.ll
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-04-26-SchedTweak.ll
+END
+2009-06-04-MissingLiveIn.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-06-04-MissingLiveIn.ll
+END
+2007-04-03-UndefinedSymbol.ll
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2007-04-03-UndefinedSymbol.ll
+END
+select.ll
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/select.ll
+END
+call_nolink.ll
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/call_nolink.ll
+END
+2008-04-10-ScavengerAssert.ll
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2008-04-10-ScavengerAssert.ll
+END
+2011-08-02-MergedGlobalDbg.ll
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-08-02-MergedGlobalDbg.ll
+END
+fast-isel-intrinsic.ll
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fast-isel-intrinsic.ll
+END
+2009-04-08-FREM.ll
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-04-08-FREM.ll
+END
+2011-04-11-MachineLICMBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-04-11-MachineLICMBug.ll
+END
+fnmscs.ll
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fnmscs.ll
+END
+memfunc.ll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/memfunc.ll
+END
+arguments8.ll
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/arguments8.ll
+END
+2009-02-16-SpillerBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-02-16-SpillerBug.ll
+END
+2009-07-18-RewriterBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-07-18-RewriterBug.ll
+END
+vld1.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vld1.ll
+END
+2012-03-13-DAGCombineBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2012-03-13-DAGCombineBug.ll
+END
+2009-11-13-CoalescerCrash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-11-13-CoalescerCrash.ll
+END
+load-global.ll
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/load-global.ll
+END
+vicmp.ll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vicmp.ll
+END
+lsr-unfolded-offset.ll
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/lsr-unfolded-offset.ll
+END
+2010-06-21-nondarwin-tc.ll
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2010-06-21-nondarwin-tc.ll
+END
+2009-09-09-fpcmp-ole.ll
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-09-09-fpcmp-ole.ll
+END
+vhsub.ll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vhsub.ll
+END
+hidden-vis-3.ll
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/hidden-vis-3.ll
+END
+vqshl.ll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vqshl.ll
+END
+reg_asc_order.ll
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/reg_asc_order.ll
+END
+2009-10-27-double-align.ll
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-10-27-double-align.ll
+END
+2008-05-19-ScavengerAssert.ll
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2008-05-19-ScavengerAssert.ll
+END
+bits.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/bits.ll
+END
+2010-04-14-SplitVector.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2010-04-14-SplitVector.ll
+END
+ifcvt7.ll
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ifcvt7.ll
+END
+2011-05-04-MultipleLandingPadSuccs.ll
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-05-04-MultipleLandingPadSuccs.ll
+END
+2010-05-18-PostIndexBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2010-05-18-PostIndexBug.ll
+END
+2010-05-21-BuildVector.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2010-05-21-BuildVector.ll
+END
+fold-const.ll
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fold-const.ll
+END
+weak2.ll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/weak2.ll
+END
+2009-11-13-ScavengerAssert2.ll
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-11-13-ScavengerAssert2.ll
+END
+private.ll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/private.ll
+END
+2009-03-09-AddrModeBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-03-09-AddrModeBug.ll
+END
+2009-06-30-RegScavengerAssert5.ll
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-06-30-RegScavengerAssert5.ll
+END
+load.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/load.ll
+END
+2009-05-05-DAGCombineBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-05-05-DAGCombineBug.ll
+END
+2012-01-24-RegSequenceLiveRange.ll
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2012-01-24-RegSequenceLiveRange.ll
+END
+2010-06-29-PartialRedefFastAlloc.ll
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2010-06-29-PartialRedefFastAlloc.ll
+END
+debug-info-branch-folding.ll
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/debug-info-branch-folding.ll
+END
+2009-08-04-RegScavengerAssert.ll
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-08-04-RegScavengerAssert.ll
+END
+fpconsts.ll
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fpconsts.ll
+END
+neon_ld1.ll
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/neon_ld1.ll
+END
+compare-call.ll
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/compare-call.ll
+END
+vcombine.ll
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vcombine.ll
+END
+vshift.ll
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vshift.ll
+END
+ret_arg2.ll
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ret_arg2.ll
+END
+fast-isel-crash2.ll
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fast-isel-crash2.ll
+END
+2011-06-29-MergeGlobalsAlign.ll
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-06-29-MergeGlobalsAlign.ll
+END
+ret0.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ret0.ll
+END
+odr_comdat.ll
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/odr_comdat.ll
+END
+2009-08-21-PostRAKill.ll
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-08-21-PostRAKill.ll
+END
+ldr.ll
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ldr.ll
+END
+debug-info-d16-reg.ll
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/debug-info-d16-reg.ll
+END
+mult-alt-generic-arm.ll
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/mult-alt-generic-arm.ll
+END
+vmov.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vmov.ll
+END
+2011-08-29-ldr_pre_imm.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-08-29-ldr_pre_imm.ll
+END
+2011-12-14-machine-sink.ll
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-12-14-machine-sink.ll
+END
+long_shift.ll
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/long_shift.ll
+END
+fixunsdfdi.ll
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fixunsdfdi.ll
+END
+argaddr.ll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/argaddr.ll
+END
+fpmem.ll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fpmem.ll
+END
+2010-05-20-NEONSpillCrash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2010-05-20-NEONSpillCrash.ll
+END
+2010-04-15-ScavengerDebugValue.ll
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2010-04-15-ScavengerDebugValue.ll
+END
+fp-arg-shuffle.ll
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fp-arg-shuffle.ll
+END
+vld2.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vld2.ll
+END
+vadd.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vadd.ll
+END
+fast-isel-ret.ll
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fast-isel-ret.ll
+END
+ret_i64_arg_split.ll
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ret_i64_arg_split.ll
+END
+fsubs.ll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fsubs.ll
+END
+hardfloat_neon.ll
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/hardfloat_neon.ll
+END
+unord.ll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/unord.ll
+END
+ret_f64_arg_stack.ll
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ret_f64_arg_stack.ll
+END
+atomic-cmp.ll
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/atomic-cmp.ll
+END
+armv4.ll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/armv4.ll
+END
+pr3502.ll
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/pr3502.ll
+END
+vst1.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vst1.ll
+END
+2009-11-07-SubRegAsmPrinting.ll
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-11-07-SubRegAsmPrinting.ll
+END
+mvn.ll
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/mvn.ll
+END
+vshrn.ll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vshrn.ll
+END
+2009-05-07-RegAllocLocal.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-05-07-RegAllocLocal.ll
+END
+inlineasm2.ll
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/inlineasm2.ll
+END
+ifcvt8.ll
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ifcvt8.ll
+END
+str_pre.ll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/str_pre.ll
+END
+2012-01-26-CoalescerBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2012-01-26-CoalescerBug.ll
+END
+ldr_pre.ll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ldr_pre.ll
+END
+available_externally.ll
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/available_externally.ll
+END
+hidden-vis.ll
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/hidden-vis.ll
+END
+trunc_ldr.ll
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/trunc_ldr.ll
+END
+2011-09-28-CMovCombineBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-09-28-CMovCombineBug.ll
+END
+2011-11-09-BitcastVectorDouble.ll
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-11-09-BitcastVectorDouble.ll
+END
+2009-08-31-LSDA-Name.ll
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-08-31-LSDA-Name.ll
+END
+neon_ld2.ll
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/neon_ld2.ll
+END
+vuzp.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vuzp.ll
+END
+arguments.ll
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/arguments.ll
+END
+trap.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/trap.ll
+END
+ret_arg3.ll
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ret_arg3.ll
+END
+fnmacs.ll
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fnmacs.ll
+END
+2008-07-24-CodeGenPrepCrash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2008-07-24-CodeGenPrepCrash.ll
+END
+constants.ll
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/constants.ll
+END
+shifter_operand.ll
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/shifter_operand.ll
+END
+str_pre-2.ll
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/str_pre-2.ll
+END
+2012-02-01-CoalescerBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2012-02-01-CoalescerBug.ll
+END
+2010-05-18-LocalAllocCrash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2010-05-18-LocalAllocCrash.ll
+END
+2009-05-18-InlineAsmMem.ll
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-05-18-InlineAsmMem.ll
+END
+carry.ll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/carry.ll
+END
+debug-info-arg.ll
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/debug-info-arg.ll
+END
+vshll.ll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vshll.ll
+END
+2007-01-19-InfiniteLoop.ll
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2007-01-19-InfiniteLoop.ll
+END
+neon_spill.ll
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/neon_spill.ll
+END
+vld3.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vld3.ll
+END
+2012-04-10-DAGCombine.ll
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2012-04-10-DAGCombine.ll
+END
+ret_f64_arg_reg_split.ll
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ret_f64_arg_reg_split.ll
+END
+vcnt.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vcnt.ll
+END
+fast-isel-indirectbr.ll
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fast-isel-indirectbr.ll
+END
+vshl.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vshl.ll
+END
+fast-isel-pred.ll
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fast-isel-pred.ll
+END
+vcvt.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vcvt.ll
+END
+2009-11-13-ScavengerAssert.ll
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-11-13-ScavengerAssert.ll
+END
+weak.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/weak.ll
+END
+vector-DAGCombine.ll
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vector-DAGCombine.ll
+END
+2009-06-22-CoalescerBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-06-22-CoalescerBug.ll
+END
+vector-extend-narrow.ll
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vector-extend-narrow.ll
+END
+vst2.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vst2.ll
+END
+crash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/crash.ll
+END
+arm-frameaddr.ll
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/arm-frameaddr.ll
+END
+inlineasm3.ll
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/inlineasm3.ll
+END
+ifcvt9.ll
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ifcvt9.ll
+END
+ctors_dtors.ll
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ctors_dtors.ll
+END
+fast-isel-conversion.ll
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fast-isel-conversion.ll
+END
+str_post.ll
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/str_post.ll
+END
+2009-08-23-linkerprivate.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-08-23-linkerprivate.ll
+END
+2010-05-17-FastAllocCrash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2010-05-17-FastAllocCrash.ll
+END
+2011-03-23-PeepholeBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-03-23-PeepholeBug.ll
+END
+divmod.ll
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/divmod.ll
+END
+fmuls.ll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fmuls.ll
+END
+vhadd.ll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vhadd.ll
+END
+2009-10-30.ll
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-10-30.ll
+END
+2010-04-13-v2f64SplitArg.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2010-04-13-v2f64SplitArg.ll
+END
+2010-05-14-IllegalType.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2010-05-14-IllegalType.ll
+END
+illegal-vector-bitcast.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/illegal-vector-bitcast.ll
+END
+thumb1-varalloc.ll
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/thumb1-varalloc.ll
+END
+vget_lane.ll
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vget_lane.ll
+END
+2007-05-03-BadPostIndexedLd.ll
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2007-05-03-BadPostIndexedLd.ll
+END
+ret_arg4.ll
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ret_arg4.ll
+END
+ifcvt10.ll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ifcvt10.ll
+END
+2009-10-02-NEONSubregsBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-10-02-NEONSubregsBug.ll
+END
+vminmax.ll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vminmax.ll
+END
+imm.ll
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/imm.ll
+END
+2009-11-13-VRRewriterCrash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-11-13-VRRewriterCrash.ll
+END
+2009-09-21-LiveVariablesBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-09-21-LiveVariablesBug.ll
+END
+vabs.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vabs.ll
+END
+2009-02-22-SoftenFloatVaArg.ll
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-02-22-SoftenFloatVaArg.ll
+END
+large-stack.ll
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/large-stack.ll
+END
+2008-09-17-CoalescerBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2008-09-17-CoalescerBug.ll
+END
+2009-07-01-CommuteBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-07-01-CommuteBug.ll
+END
+fnegs.ll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fnegs.ll
+END
+2007-05-14-InlineAsmCstCrash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2007-05-14-InlineAsmCstCrash.ll
+END
+2007-05-23-BadPreIndexedStore.ll
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2007-05-23-BadPreIndexedStore.ll
+END
+2009-09-28-LdStOptiBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-09-28-LdStOptiBug.ll
+END
+memcpy-inline.ll
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/memcpy-inline.ll
+END
+2010-06-11-vmovdrr-bitcast.ll
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2010-06-11-vmovdrr-bitcast.ll
+END
+vld4.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vld4.ll
+END
+lit.local.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/lit.local.cfg
+END
+call.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/call.ll
+END
+2009-11-30-LiveVariablesBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-11-30-LiveVariablesBug.ll
+END
+tail-dup.ll
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/tail-dup.ll
+END
+formal.ll
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/formal.ll
+END
+fadds.ll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fadds.ll
+END
+dagcombine-anyexttozeroext.ll
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/dagcombine-anyexttozeroext.ll
+END
+fpowi.ll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fpowi.ll
+END
+fast-isel-crash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fast-isel-crash.ll
+END
+2009-11-02-NegativeLane.ll
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-11-02-NegativeLane.ll
+END
+ldstrexd.ll
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ldstrexd.ll
+END
+opt-shuff-tstore.ll
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/opt-shuff-tstore.ll
+END
+extloadi1.ll
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/extloadi1.ll
+END
+2010-06-29-SubregImpDefs.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2010-06-29-SubregImpDefs.ll
+END
+2009-08-29-TooLongSplat.ll
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-08-29-TooLongSplat.ll
+END
+2008-08-07-AsmPrintBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2008-08-07-AsmPrintBug.ll
+END
+2007-03-13-InstrSched.ll
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2007-03-13-InstrSched.ll
+END
+stack-frame.ll
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/stack-frame.ll
+END
+2007-03-21-JoinIntervalsCrash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2007-03-21-JoinIntervalsCrash.ll
+END
+vst3.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vst3.ll
+END
+debug-info-s16-reg.ll
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/debug-info-s16-reg.ll
+END
+vcgt.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vcgt.ll
+END
+inlineasm4.ll
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/inlineasm4.ll
+END
+fp.ll
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fp.ll
+END
+2010-06-25-Thumb2ITInvalidIterator.ll
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2010-06-25-Thumb2ITInvalidIterator.ll
+END
+load_i1_select.ll
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/load_i1_select.ll
+END
+2007-03-07-CombinerCrash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2007-03-07-CombinerCrash.ll
+END
+2010-07-26-GlobalMerge.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2010-07-26-GlobalMerge.ll
+END
+uint64tof64.ll
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/uint64tof64.ll
+END
+eh-resume-darwin.ll
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/eh-resume-darwin.ll
+END
+bfx.ll
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/bfx.ll
+END
+smul.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/smul.ll
+END
+2010-03-18-ldm-rtrn.ll
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2010-03-18-ldm-rtrn.ll
+END
+2009-08-02-RegScavengerAssert-Neon.ll
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-08-02-RegScavengerAssert-Neon.ll
+END
+2011-11-14-EarlyClobber.ll
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-11-14-EarlyClobber.ll
+END
+ldst-f32-2-i32.ll
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ldst-f32-2-i32.ll
+END
+2008-03-07-RegScavengerAssert.ll
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2008-03-07-RegScavengerAssert.ll
+END
+bfc.ll
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/bfc.ll
+END
+mls.ll
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/mls.ll
+END
+2009-07-09-asm-p-constraint.ll
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-07-09-asm-p-constraint.ll
+END
+arguments-nosplit-double.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/arguments-nosplit-double.ll
+END
+ret_arg5.ll
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ret_arg5.ll
+END
+2009-10-21-InvalidFNeg.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-10-21-InvalidFNeg.ll
+END
+ifcvt11.ll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ifcvt11.ll
+END
+phi.ll
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/phi.ll
+END
+uxtb.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/uxtb.ll
+END
+2009-09-20-LiveIntervalsBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-09-20-LiveIntervalsBug.ll
+END
+fmdrr-fmrrd.ll
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fmdrr-fmrrd.ll
+END
+2011-11-09-IllegalVectorFPIntConvert.ll
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-11-09-IllegalVectorFPIntConvert.ll
+END
+2011-04-12-FastRegAlloc.ll
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-04-12-FastRegAlloc.ll
+END
+2010-11-15-SpillEarlyClobber.ll
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2010-11-15-SpillEarlyClobber.ll
+END
+hello.ll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/hello.ll
+END
+2009-10-16-Scope.ll
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-10-16-Scope.ll
+END
+t2-imm.ll
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/t2-imm.ll
+END
+fast-isel-GEP-coalesce.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fast-isel-GEP-coalesce.ll
+END
+vargs.ll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vargs.ll
+END
+str_trunc.ll
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/str_trunc.ll
+END
+cse-call.ll
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/cse-call.ll
+END
+movt.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/movt.ll
+END
+2008-11-18-ScavengerAssert.ll
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2008-11-18-ScavengerAssert.ll
+END
+select-imm.ll
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/select-imm.ll
+END
+vpminmax.ll
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vpminmax.ll
+END
+vst4.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vst4.ll
+END
+section.ll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/section.ll
+END
+fast-isel-ldr-str-thumb-neg-index.ll
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fast-isel-ldr-str-thumb-neg-index.ll
+END
+2011-06-16-TailCallByVal.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-06-16-TailCallByVal.ll
+END
+vsra.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vsra.ll
+END
+2012-03-05-FPSCR-bug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2012-03-05-FPSCR-bug.ll
+END
+int-to-fp.ll
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/int-to-fp.ll
+END
+2009-05-11-CodePlacementCrash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-05-11-CodePlacementCrash.ll
+END
+crash-greedy.ll
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/crash-greedy.ll
+END
+fast-isel-deadcode.ll
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fast-isel-deadcode.ll
+END
+mulhi.ll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/mulhi.ll
+END
+spill-q.ll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/spill-q.ll
+END
+vmls.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vmls.ll
+END
+fast-isel-cmp-imm.ll
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fast-isel-cmp-imm.ll
+END
+arguments2.ll
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/arguments2.ll
+END
+clz.ll
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/clz.ll
+END
+vargs_align.ll
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vargs_align.ll
+END
+2009-07-22-SchedulerAssert.ll
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-07-22-SchedulerAssert.ll
+END
+va_arg.ll
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/va_arg.ll
+END
+ctz.ll
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ctz.ll
+END
+fnmuls.ll
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fnmuls.ll
+END
+ret_i128_arg2.ll
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ret_i128_arg2.ll
+END
+fast-isel-binary.ll
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fast-isel-binary.ll
+END
+vfcmp.ll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vfcmp.ll
+END
+fast-isel-static.ll
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fast-isel-static.ll
+END
+2011-06-09-TailCallByVal.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-06-09-TailCallByVal.ll
+END
+commute-movcc.ll
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/commute-movcc.ll
+END
+2009-12-02-vtrn-undef.ll
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-12-02-vtrn-undef.ll
+END
+ldrd.ll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ldrd.ll
+END
+2010-09-21-OptCmpBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2010-09-21-OptCmpBug.ll
+END
+fusedMAC.ll
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fusedMAC.ll
+END
+ifcvt1.ll
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ifcvt1.ll
+END
+2009-08-15-RegScavengerAssert.ll
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-08-15-RegScavengerAssert.ll
+END
+2009-08-27-ScalarToVector.ll
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-08-27-ScalarToVector.ll
+END
+2010-06-21-LdStMultipleBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2010-06-21-LdStMultipleBug.ll
+END
+bx_fold.ll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/bx_fold.ll
+END
+ret_f32_arg2.ll
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/ret_f32_arg2.ll
+END
+lsr-code-insertion.ll
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/lsr-code-insertion.ll
+END
+vqshrn.ll
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vqshrn.ll
+END
+2011-10-26-memset-with-neon.ll
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-10-26-memset-with-neon.ll
+END
+vldlane.ll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vldlane.ll
+END
+arm-returnaddr.ll
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/arm-returnaddr.ll
+END
+fast-isel-ldr-str-arm.ll
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/fast-isel-ldr-str-arm.ll
+END
+2009-09-10-postdec.ll
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-09-10-postdec.ll
+END
+2009-11-01-NeonMoves.ll
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-11-01-NeonMoves.ll
+END
+2010-12-15-elf-lcomm.ll
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2010-12-15-elf-lcomm.ll
+END
+vlddup.ll
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/vlddup.ll
+END
+2011-02-04-AntidepMultidef.ll
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2011-02-04-AntidepMultidef.ll
+END
+2009-09-27-CoalescerBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-09-27-CoalescerBug.ll
+END
+uxt_rot.ll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/uxt_rot.ll
+END
+2009-03-07-SpillerBug.ll
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/2009-03-07-SpillerBug.ll
+END
+avoid-cpsr-rmw.ll
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/ARM/avoid-cpsr-rmw.ll
+END

@@ -1,0 +1,66 @@
+
+# Temporary files
+*~
+
+# Eclipse files
+.project
+
+# External repositories
+#/cloud9
+#/klee-uclibc
+#/third_party/boolector
+#/third_party/binutils
+#/third_party/gyp
+#/third_party/stp
+#/third_party/llvm
+/data
+/seven-summits
+/third_party/binutils-install
+/third_party/googlemock
+/third_party/googletest
+/third_party/llvm-build
+/third_party/z3
+
+# GYP generated
+/Makefile
+/testing_targets/Makefile
+*.target.mk
+*.Makefile
+
+# Generated binaries
+/out
+/testing_targets/libcxx/
+/testing_targets/out
+/testing_targets/sjguo
+/testing_targets/tapDiff
+/testing_targets/plc-bak
+/testing_targets/plc-bak-bak
+/testing_targets/c9-tests
+/testing_targets/InspectBench
+
+# Third party download cache
+/third_party/.downloads
+
+# Other files
+*.swp
+*.d
+.cproject
+*.o
+*.a
+*Release*/
+*Release+Asserts*/
+*Debug*/
+*Debug+Asserts*/
+*result*/
+*.dot
+*.pdf
+*.pdf
+*.png
+*.eps
+*.bc
+*.pyc
+*.ll
+*.prefs
+*.setting/
+*.svn-base
+*.svn/*

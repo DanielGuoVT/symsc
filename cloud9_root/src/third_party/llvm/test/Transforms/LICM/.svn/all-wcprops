@@ -1,0 +1,221 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM
+END
+2007-05-22-VolatileSink.ll
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM/2007-05-22-VolatileSink.ll
+END
+2006-09-12-DeadUserOfSunkInstr.ll
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM/2006-09-12-DeadUserOfSunkInstr.ll
+END
+crash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM/crash.ll
+END
+debug-value.ll
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM/debug-value.ll
+END
+2004-11-17-UndefIndexCrash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM/2004-11-17-UndefIndexCrash.ll
+END
+sinking.ll
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM/sinking.ll
+END
+2007-10-01-PromoteSafeValue.ll
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM/2007-10-01-PromoteSafeValue.ll
+END
+2011-04-06-PromoteResultOfPromotion.ll
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM/2011-04-06-PromoteResultOfPromotion.ll
+END
+2003-02-28-PromoteDifferentType.ll
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM/2003-02-28-PromoteDifferentType.ll
+END
+2008-07-22-LoadGlobalConstant.ll
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM/2008-07-22-LoadGlobalConstant.ll
+END
+2011-07-06-Alignment.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM/2011-07-06-Alignment.ll
+END
+2003-05-02-LoadHoist.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM/2003-05-02-LoadHoist.ll
+END
+scalar_promote.ll
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM/scalar_promote.ll
+END
+basictest.ll
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM/basictest.ll
+END
+hoisting.ll
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM/hoisting.ll
+END
+speculate.ll
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM/speculate.ll
+END
+scalar-promote-memmodel.ll
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM/scalar-promote-memmodel.ll
+END
+2011-04-06-HoistMissedASTUpdate.ll
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM/2011-04-06-HoistMissedASTUpdate.ll
+END
+2011-04-09-RAUW-AST.ll
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM/2011-04-09-RAUW-AST.ll
+END
+2003-02-27-StoreSinkPHIs.ll
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM/2003-02-27-StoreSinkPHIs.ll
+END
+Preserve-LCSSA.ll
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM/Preserve-LCSSA.ll
+END
+2003-02-26-LoopExitNotDominated.ll
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM/2003-02-26-LoopExitNotDominated.ll
+END
+atomics.ll
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM/atomics.ll
+END
+2007-07-30-AliasSet.ll
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM/2007-07-30-AliasSet.ll
+END
+2009-12-10-LICM-Indbr-Crash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM/2009-12-10-LICM-Indbr-Crash.ll
+END
+2003-02-27-PreheaderProblem.ll
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM/2003-02-27-PreheaderProblem.ll
+END
+lit.local.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM/lit.local.cfg
+END
+2007-09-24-PromoteNullValue.ll
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM/2007-09-24-PromoteNullValue.ll
+END
+2008-05-20-AliasSetVAArg.ll
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM/2008-05-20-AliasSetVAArg.ll
+END
+2007-09-17-PromoteValue.ll
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM/2007-09-17-PromoteValue.ll
+END
+no-preheader-test.ll
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM/no-preheader-test.ll
+END
+2003-12-11-SinkingToPHI.ll
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM/2003-12-11-SinkingToPHI.ll
+END
+2004-09-14-AliasAnalysisInvalidate.ll
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM/2004-09-14-AliasAnalysisInvalidate.ll
+END
+2003-02-27-PreheaderExitNodeUpdate.ll
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM/2003-02-27-PreheaderExitNodeUpdate.ll
+END
+2003-02-27-NestedLoopExitBlocks.ll
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM/2003-02-27-NestedLoopExitBlocks.ll
+END
+hoist-invariant-load.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/LICM/hoist-invariant-load.ll
+END

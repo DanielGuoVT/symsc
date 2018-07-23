@@ -1,0 +1,257 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore
+END
+Type.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/Type.cpp
+END
+Globals.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/Globals.cpp
+END
+Function.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/Function.cpp
+END
+GVMaterializer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/GVMaterializer.cpp
+END
+Attributes.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/Attributes.cpp
+END
+ConstantsContext.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/ConstantsContext.h
+END
+SymbolTableListTraitsImpl.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/SymbolTableListTraitsImpl.h
+END
+LLVMBuild.txt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/LLVMBuild.txt
+END
+Core.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/Core.cpp
+END
+PrintModulePass.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/PrintModulePass.cpp
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/Makefile
+END
+BasicBlock.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/BasicBlock.cpp
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/CMakeLists.txt
+END
+Use.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/Use.cpp
+END
+ConstantFold.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/ConstantFold.cpp
+END
+GCOV.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/GCOV.cpp
+END
+ValueTypes.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/ValueTypes.cpp
+END
+LLVMContextImpl.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/LLVMContextImpl.cpp
+END
+Pass.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/Pass.cpp
+END
+ValueSymbolTable.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/ValueSymbolTable.cpp
+END
+Constants.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/Constants.cpp
+END
+AsmWriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/AsmWriter.cpp
+END
+LLVMContext.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/LLVMContext.cpp
+END
+InlineAsm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/InlineAsm.cpp
+END
+Dominators.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/Dominators.cpp
+END
+AutoUpgrade.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/AutoUpgrade.cpp
+END
+Metadata.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/Metadata.cpp
+END
+IRBuilder.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/IRBuilder.cpp
+END
+Instruction.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/Instruction.cpp
+END
+DebugLoc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/DebugLoc.cpp
+END
+Module.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/Module.cpp
+END
+PassRegistry.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/PassRegistry.cpp
+END
+IntrinsicInst.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/IntrinsicInst.cpp
+END
+PassManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/PassManager.cpp
+END
+ConstantFold.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/ConstantFold.h
+END
+Instructions.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/Instructions.cpp
+END
+LLVMContextImpl.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/LLVMContextImpl.h
+END
+LeakDetector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/LeakDetector.cpp
+END
+LeaksContext.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/LeaksContext.h
+END
+Verifier.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/Verifier.cpp
+END
+Value.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/Value.cpp
+END
+User.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/VMCore/User.cpp
+END

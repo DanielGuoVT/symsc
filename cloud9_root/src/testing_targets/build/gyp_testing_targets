@@ -1,0 +1,7 @@
+#!/bin/bash -e
+
+THIS_DIR=$(readlink -f "$(dirname "${0}")")
+GYP_DIR="${THIS_DIR}/../../third_party/gyp"
+TOP_DIR="${THIS_DIR}/.."
+
+${GYP_DIR}/gyp -I${THIS_DIR}/common_llvm.gypi ${THIS_DIR}/all_llvm.gyp --toplevel-dir=${TOP_DIR}

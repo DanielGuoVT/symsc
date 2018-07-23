@@ -1,0 +1,6 @@
+rm -fr result
+rm -f *.out
+rm -f *.elf
+rm -f *.bc
+rm -f *.ll
+rm -f log.*

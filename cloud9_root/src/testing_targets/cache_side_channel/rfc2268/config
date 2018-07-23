@@ -1,0 +1,13 @@
+[func]
+encrypt
+setkey
+
+[sbox]
+rfc2268_sbox
+
+[shadow]
+encrypt1
+setkey1
+
+[key]
+key

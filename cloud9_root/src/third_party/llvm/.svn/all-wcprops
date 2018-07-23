@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final
+END
+CREDITS.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/CREDITS.TXT
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/README.txt
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/Makefile
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/CMakeLists.txt
+END
+LICENSE.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/LICENSE.TXT
+END
+configure
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/configure
+END
+Makefile.common
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/Makefile.common
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/.gitignore
+END
+Makefile.config.in
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/Makefile.config.in
+END
+Makefile.rules
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/Makefile.rules
+END
+llvm.spec.in
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/llvm.spec.in
+END
+LLVMBuild.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/LLVMBuild.txt
+END

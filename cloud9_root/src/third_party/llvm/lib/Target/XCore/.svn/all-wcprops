@@ -1,0 +1,185 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/XCore
+END
+XCoreSubtarget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/XCore/XCoreSubtarget.cpp
+END
+XCoreRegisterInfo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/XCore/XCoreRegisterInfo.cpp
+END
+XCoreInstrInfo.td
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/XCore/XCoreInstrInfo.td
+END
+XCoreFrameLowering.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/XCore/XCoreFrameLowering.cpp
+END
+XCoreISelLowering.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/XCore/XCoreISelLowering.cpp
+END
+XCore.td
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/XCore/XCore.td
+END
+XCoreSubtarget.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/XCore/XCoreSubtarget.h
+END
+XCoreRegisterInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/XCore/XCoreRegisterInfo.h
+END
+XCoreFrameLowering.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/XCore/XCoreFrameLowering.h
+END
+XCoreISelLowering.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/XCore/XCoreISelLowering.h
+END
+XCoreInstrInfo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/XCore/XCoreInstrInfo.cpp
+END
+XCoreTargetMachine.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/XCore/XCoreTargetMachine.cpp
+END
+XCoreTargetObjectFile.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/XCore/XCoreTargetObjectFile.cpp
+END
+XCoreSelectionDAGInfo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/XCore/XCoreSelectionDAGInfo.cpp
+END
+XCoreInstrFormats.td
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/XCore/XCoreInstrFormats.td
+END
+XCoreInstrInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/XCore/XCoreInstrInfo.h
+END
+XCoreTargetMachine.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/XCore/XCoreTargetMachine.h
+END
+XCoreTargetObjectFile.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/XCore/XCoreTargetObjectFile.h
+END
+XCoreSelectionDAGInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/XCore/XCoreSelectionDAGInfo.h
+END
+XCore.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/XCore/XCore.h
+END
+XCoreAsmPrinter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/XCore/XCoreAsmPrinter.cpp
+END
+XCoreCallingConv.td
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/XCore/XCoreCallingConv.td
+END
+XCoreRegisterInfo.td
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/XCore/XCoreRegisterInfo.td
+END
+LLVMBuild.txt
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/XCore/LLVMBuild.txt
+END
+XCoreMachineFunctionInfo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/XCore/XCoreMachineFunctionInfo.cpp
+END
+XCoreISelDAGToDAG.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/XCore/XCoreISelDAGToDAG.cpp
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/XCore/README.txt
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/XCore/Makefile
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/XCore/CMakeLists.txt
+END
+XCoreMachineFunctionInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/XCore/XCoreMachineFunctionInfo.h
+END

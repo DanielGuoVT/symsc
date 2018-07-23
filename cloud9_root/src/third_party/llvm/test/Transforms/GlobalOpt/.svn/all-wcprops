@@ -1,0 +1,419 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt
+END
+alias-resolve.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/alias-resolve.ll
+END
+cxx-dtor.ll
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/cxx-dtor.ll
+END
+2007-11-09-GEP-GEP-Crash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/2007-11-09-GEP-GEP-Crash.ll
+END
+deadglobal.ll
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/deadglobal.ll
+END
+2009-11-16-MallocSingleStoreToGlobalVar.ll
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/2009-11-16-MallocSingleStoreToGlobalVar.ll
+END
+storepointer-compare.ll
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/storepointer-compare.ll
+END
+2005-06-15-LocalizeConstExprCrash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/2005-06-15-LocalizeConstExprCrash.ll
+END
+2009-02-15-ResolveAlias.ll
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/2009-02-15-ResolveAlias.ll
+END
+2008-04-26-SROA-Global-Align.ll
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/2008-04-26-SROA-Global-Align.ll
+END
+2007-05-13-Crash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/2007-05-13-Crash.ll
+END
+2007-04-05-Crash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/2007-04-05-Crash.ll
+END
+2004-10-10-CastStoreOnce.ll
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/2004-10-10-CastStoreOnce.ll
+END
+heap-sra-1.ll
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/heap-sra-1.ll
+END
+2008-12-16-HeapSRACrash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/2008-12-16-HeapSRACrash.ll
+END
+2005-09-27-Crash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/2005-09-27-Crash.ll
+END
+2010-02-25-MallocPromote.ll
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/2010-02-25-MallocPromote.ll
+END
+undef-init.ll
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/undef-init.ll
+END
+deadfunction.ll
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/deadfunction.ll
+END
+ctor-list-opt-constexpr.ll
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/ctor-list-opt-constexpr.ll
+END
+load-store-global.ll
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/load-store-global.ll
+END
+lit.local.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/lit.local.cfg
+END
+zeroinitializer-gep-load.ll
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/zeroinitializer-gep-load.ll
+END
+heap-sra-phi.ll
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/heap-sra-phi.ll
+END
+ctor-list-opt.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/ctor-list-opt.ll
+END
+constantexpr-dangle.ll
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/constantexpr-dangle.ll
+END
+2010-10-19-WeakOdr.ll
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/2010-10-19-WeakOdr.ll
+END
+2009-01-13-phi-user.ll
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/2009-01-13-phi-user.ll
+END
+2008-01-03-Crash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/2008-01-03-Crash.ll
+END
+integer-bool.ll
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/integer-bool.ll
+END
+phi-select.ll
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/phi-select.ll
+END
+2008-01-29-VolatileGlobal.ll
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/2008-01-29-VolatileGlobal.ll
+END
+2008-12-16-HeapSRACrash-2.ll
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/2008-12-16-HeapSRACrash-2.ll
+END
+unnamed-addr.ll
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/unnamed-addr.ll
+END
+crash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/crash.ll
+END
+heap-sra-4.ll
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/heap-sra-4.ll
+END
+memset-null.ll
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/memset-null.ll
+END
+constantfold-initializers.ll
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/constantfold-initializers.ll
+END
+2009-11-16-BrokenPerformHeapAllocSRoA.ll
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/2009-11-16-BrokenPerformHeapAllocSRoA.ll
+END
+globalsra.ll
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/globalsra.ll
+END
+globalsra-unknown-index.ll
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/globalsra-unknown-index.ll
+END
+2010-02-26-MallocSROA.ll
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/2010-02-26-MallocSROA.ll
+END
+basictest.ll
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/basictest.ll
+END
+2008-01-13-OutOfRangeSROA.ll
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/2008-01-13-OutOfRangeSROA.ll
+END
+trivialstore.ll
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/trivialstore.ll
+END
+malloc-promote-2.ll
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/malloc-promote-2.ll
+END
+memcpy.ll
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/memcpy.ll
+END
+iterate.ll
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/iterate.ll
+END
+2009-02-15-BitcastAlias.ll
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/2009-02-15-BitcastAlias.ll
+END
+heap-sra-3.ll
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/heap-sra-3.ll
+END
+2009-06-01-RecursivePHI.ll
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/2009-06-01-RecursivePHI.ll
+END
+atomic.ll
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/atomic.ll
+END
+deadglobal-2.ll
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/deadglobal-2.ll
+END
+metadata.ll
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/metadata.ll
+END
+2011-04-09-EmptyGlobalCtors.ll
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/2011-04-09-EmptyGlobalCtors.ll
+END
+2009-03-06-Anonymous.ll
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/2009-03-06-Anonymous.ll
+END
+2006-11-01-ShrinkGlobalPhiCrash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/2006-11-01-ShrinkGlobalPhiCrash.ll
+END
+2008-07-17-addrspace.ll
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/2008-07-17-addrspace.ll
+END
+2009-03-05-dbg.ll
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/2009-03-05-dbg.ll
+END
+2007-06-04-PackedStruct.ll
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/2007-06-04-PackedStruct.ll
+END
+2009-03-07-PromotePtrToBool.ll
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/2009-03-07-PromotePtrToBool.ll
+END
+malloc-promote-1.ll
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/malloc-promote-1.ll
+END
+memset.ll
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/memset.ll
+END
+invariant.ll
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/invariant.ll
+END
+invoke.ll
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/invoke.ll
+END
+2006-07-07-InlineAsmCrash.ll
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/2006-07-07-InlineAsmCrash.ll
+END
+storepointer.ll
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/storepointer.ll
+END
+heap-sra-2.ll
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/heap-sra-2.ll
+END
+ctor-list-opt-inbounds.ll
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/ctor-list-opt-inbounds.ll
+END
+globalsra-partial.ll
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Transforms/GlobalOpt/globalsra-partial.ll
+END

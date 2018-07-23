@@ -1,0 +1,18 @@
+#!/bin/bash -e
+#
+# Copyright notice here.
+# Author: Stefan Bucur (stefan.bucur@epfl.ch)
+
+THIS_DIR="$(dirname "${0}")"
+
+MAKE_DIR="${THIS_DIR}/../"
+
+echo "Preparing LLVM+Gold environment"
+
+source ${THIS_DIR}/prepare_build_env.sh
+
+# Override any existing value
+export LLVM_BUILD_MODE=llvm
+
+NUM_JOBS="$(grep -c "^processor" /proc/cpuinfo)"
+make -C "${MAKE_DIR}" V=1 -j${NUM_JOBS}

@@ -1,0 +1,1208 @@
+BitBlaster.o depend: BitBlaster.cpp BitBlaster.h \
+ ../STPManager/STPManager.h ../STPManager/UserDefinedFlags.h \
+ ../STPManager/../AST/AST.h ../STPManager/../AST/UsefulDefs.h \
+ ../STPManager/../AST/../main/Globals.h ../STPManager/../AST/ASTKind.h \
+ ../STPManager/../AST/../extlib-constbv/constantbv.h \
+ ../STPManager/../AST/RunTimes.h \
+ ../STPManager/../AST/../sat/utils/System.h \
+ ../STPManager/../AST/../sat/utils/../mtl/IntTypesMtl.h \
+ ../STPManager/../AST/ASTNode.h \
+ ../STPManager/../AST/NodeFactory/HashingNodeFactory.h \
+ ../STPManager/../AST/NodeFactory/NodeFactory.h \
+ ../STPManager/../AST/NodeFactory/../ASTKind.h \
+ ../STPManager/../AST/ASTInternal.h ../STPManager/../AST/ASTInterior.h \
+ ../STPManager/../AST/ASTInternalWithChildren.h \
+ ../STPManager/../AST/ASTSymbol.h ../STPManager/../AST/ASTBVConst.h \
+ ../STPManager/../AST/NodeFactory/HashingNodeFactory.h \
+ ../STPManager/../sat/SATSolver.h ../STPManager/../sat/mtl/Vec.h \
+ ../STPManager/../sat/mtl/../mtl/IntTypesMtl.h \
+ ../STPManager/../sat/mtl/../mtl/XAlloc.h \
+ ../STPManager/../sat/core/SolverTypes.h \
+ ../STPManager/../sat/core/../mtl/IntTypesMtl.h \
+ ../STPManager/../sat/core/../mtl/Alg.h \
+ ../STPManager/../sat/core/../mtl/../mtl/Vec.h \
+ ../STPManager/../sat/core/../mtl/Vec.h \
+ ../STPManager/../sat/core/../mtl/Map.h \
+ ../STPManager/../sat/core/../mtl/../mtl/IntTypesMtl.h \
+ ../STPManager/../sat/core/../mtl/Alloc.h \
+ ../STPManager/../sat/core/../mtl/../mtl/XAlloc.h AIG/BBNodeManagerAIG.h \
+ AIG/BBNodeAIG.h AIG/../../extlib-abc/aig.h AIG/../../extlib-abc/vec.h \
+ AIG/../../extlib-abc/leaks.h AIG/../../extlib-abc/vecInt.h \
+ AIG/../../extlib-abc/vecFlt.h AIG/../../extlib-abc/vecStr.h \
+ AIG/../../extlib-abc/vecPtr.h AIG/../../extlib-abc/vecVec.h \
+ AIG/../../extlib-abc/cnf_short.h AIG/../../extlib-abc/aig.h \
+ AIG/../../extlib-abc/dar.h AIG/../ToSATBase.h AIG/../../AST/AST.h \
+ AIG/../../STPManager/STPManager.h ASTNode/BBNodeManagerASTNode.h \
+ ASTNode/../../STPManager/STPManager.h \
+ ../simplifier/constantBitP/FixedBits.h \
+ ../simplifier/constantBitP/ConstantBitPropagation.h \
+ ../simplifier/constantBitP/FixedBits.h \
+ ../simplifier/constantBitP/Dependencies.h \
+ ../simplifier/constantBitP/../../AST/AST.h \
+ ../simplifier/constantBitP/NodeToFixedBitsMap.h \
+ ../simplifier/constantBitP/WorkList.h \
+ ../simplifier/constantBitP/MultiplicationStats.h \
+ ../simplifier/constantBitP/NodeToFixedBitsMap.h \
+ ../simplifier/simplifier.h ../simplifier/../AST/AST.h \
+ ../simplifier/../STPManager/STPManager.h \
+ ../simplifier/../AST/NodeFactory/SimplifyingNodeFactory.h \
+ ../simplifier/../AST/NodeFactory/NodeFactory.h \
+ ../simplifier/../AST/NodeFactory/../../STPManager/STPManager.h \
+ ../simplifier/SubstitutionMap.h ../simplifier/VariablesInExpression.h \
+ ../simplifier/Symbols.h
+
+BitBlaster.h:
+
+../STPManager/STPManager.h:
+
+../STPManager/UserDefinedFlags.h:
+
+../STPManager/../AST/AST.h:
+
+../STPManager/../AST/UsefulDefs.h:
+
+../STPManager/../AST/../main/Globals.h:
+
+../STPManager/../AST/ASTKind.h:
+
+../STPManager/../AST/../extlib-constbv/constantbv.h:
+
+../STPManager/../AST/RunTimes.h:
+
+../STPManager/../AST/../sat/utils/System.h:
+
+../STPManager/../AST/../sat/utils/../mtl/IntTypesMtl.h:
+
+../STPManager/../AST/ASTNode.h:
+
+../STPManager/../AST/NodeFactory/HashingNodeFactory.h:
+
+../STPManager/../AST/NodeFactory/NodeFactory.h:
+
+../STPManager/../AST/NodeFactory/../ASTKind.h:
+
+../STPManager/../AST/ASTInternal.h:
+
+../STPManager/../AST/ASTInterior.h:
+
+../STPManager/../AST/ASTInternalWithChildren.h:
+
+../STPManager/../AST/ASTSymbol.h:
+
+../STPManager/../AST/ASTBVConst.h:
+
+../STPManager/../AST/NodeFactory/HashingNodeFactory.h:
+
+../STPManager/../sat/SATSolver.h:
+
+../STPManager/../sat/mtl/Vec.h:
+
+../STPManager/../sat/mtl/../mtl/IntTypesMtl.h:
+
+../STPManager/../sat/mtl/../mtl/XAlloc.h:
+
+../STPManager/../sat/core/SolverTypes.h:
+
+../STPManager/../sat/core/../mtl/IntTypesMtl.h:
+
+../STPManager/../sat/core/../mtl/Alg.h:
+
+../STPManager/../sat/core/../mtl/../mtl/Vec.h:
+
+../STPManager/../sat/core/../mtl/Vec.h:
+
+../STPManager/../sat/core/../mtl/Map.h:
+
+../STPManager/../sat/core/../mtl/../mtl/IntTypesMtl.h:
+
+../STPManager/../sat/core/../mtl/Alloc.h:
+
+../STPManager/../sat/core/../mtl/../mtl/XAlloc.h:
+
+AIG/BBNodeManagerAIG.h:
+
+AIG/BBNodeAIG.h:
+
+AIG/../../extlib-abc/aig.h:
+
+AIG/../../extlib-abc/vec.h:
+
+AIG/../../extlib-abc/leaks.h:
+
+AIG/../../extlib-abc/vecInt.h:
+
+AIG/../../extlib-abc/vecFlt.h:
+
+AIG/../../extlib-abc/vecStr.h:
+
+AIG/../../extlib-abc/vecPtr.h:
+
+AIG/../../extlib-abc/vecVec.h:
+
+AIG/../../extlib-abc/cnf_short.h:
+
+AIG/../../extlib-abc/aig.h:
+
+AIG/../../extlib-abc/dar.h:
+
+AIG/../ToSATBase.h:
+
+AIG/../../AST/AST.h:
+
+AIG/../../STPManager/STPManager.h:
+
+ASTNode/BBNodeManagerASTNode.h:
+
+ASTNode/../../STPManager/STPManager.h:
+
+../simplifier/constantBitP/FixedBits.h:
+
+../simplifier/constantBitP/ConstantBitPropagation.h:
+
+../simplifier/constantBitP/FixedBits.h:
+
+../simplifier/constantBitP/Dependencies.h:
+
+../simplifier/constantBitP/../../AST/AST.h:
+
+../simplifier/constantBitP/NodeToFixedBitsMap.h:
+
+../simplifier/constantBitP/WorkList.h:
+
+../simplifier/constantBitP/MultiplicationStats.h:
+
+../simplifier/constantBitP/NodeToFixedBitsMap.h:
+
+../simplifier/simplifier.h:
+
+../simplifier/../AST/AST.h:
+
+../simplifier/../STPManager/STPManager.h:
+
+../simplifier/../AST/NodeFactory/SimplifyingNodeFactory.h:
+
+../simplifier/../AST/NodeFactory/NodeFactory.h:
+
+../simplifier/../AST/NodeFactory/../../STPManager/STPManager.h:
+
+../simplifier/SubstitutionMap.h:
+
+../simplifier/VariablesInExpression.h:
+
+../simplifier/Symbols.h:
+ToSATBase.o depend: ToSATBase.cpp ToSATBase.h ../AST/AST.h \
+ ../AST/UsefulDefs.h ../AST/../main/Globals.h ../AST/ASTKind.h \
+ ../AST/../extlib-constbv/constantbv.h ../AST/RunTimes.h \
+ ../AST/../sat/utils/System.h ../AST/../sat/utils/../mtl/IntTypesMtl.h \
+ ../AST/ASTNode.h ../AST/NodeFactory/HashingNodeFactory.h \
+ ../AST/NodeFactory/NodeFactory.h ../AST/NodeFactory/../ASTKind.h \
+ ../AST/ASTInternal.h ../AST/ASTInterior.h \
+ ../AST/ASTInternalWithChildren.h ../AST/ASTSymbol.h ../AST/ASTBVConst.h \
+ ../STPManager/STPManager.h ../STPManager/UserDefinedFlags.h \
+ ../STPManager/../AST/AST.h \
+ ../STPManager/../AST/NodeFactory/HashingNodeFactory.h \
+ ../STPManager/../sat/SATSolver.h ../STPManager/../sat/mtl/Vec.h \
+ ../STPManager/../sat/mtl/../mtl/IntTypesMtl.h \
+ ../STPManager/../sat/mtl/../mtl/XAlloc.h \
+ ../STPManager/../sat/core/SolverTypes.h \
+ ../STPManager/../sat/core/../mtl/IntTypesMtl.h \
+ ../STPManager/../sat/core/../mtl/Alg.h \
+ ../STPManager/../sat/core/../mtl/../mtl/Vec.h \
+ ../STPManager/../sat/core/../mtl/Vec.h \
+ ../STPManager/../sat/core/../mtl/Map.h \
+ ../STPManager/../sat/core/../mtl/../mtl/IntTypesMtl.h \
+ ../STPManager/../sat/core/../mtl/Alloc.h \
+ ../STPManager/../sat/core/../mtl/../mtl/XAlloc.h
+
+ToSATBase.h:
+
+../AST/AST.h:
+
+../AST/UsefulDefs.h:
+
+../AST/../main/Globals.h:
+
+../AST/ASTKind.h:
+
+../AST/../extlib-constbv/constantbv.h:
+
+../AST/RunTimes.h:
+
+../AST/../sat/utils/System.h:
+
+../AST/../sat/utils/../mtl/IntTypesMtl.h:
+
+../AST/ASTNode.h:
+
+../AST/NodeFactory/HashingNodeFactory.h:
+
+../AST/NodeFactory/NodeFactory.h:
+
+../AST/NodeFactory/../ASTKind.h:
+
+../AST/ASTInternal.h:
+
+../AST/ASTInterior.h:
+
+../AST/ASTInternalWithChildren.h:
+
+../AST/ASTSymbol.h:
+
+../AST/ASTBVConst.h:
+
+../STPManager/STPManager.h:
+
+../STPManager/UserDefinedFlags.h:
+
+../STPManager/../AST/AST.h:
+
+../STPManager/../AST/NodeFactory/HashingNodeFactory.h:
+
+../STPManager/../sat/SATSolver.h:
+
+../STPManager/../sat/mtl/Vec.h:
+
+../STPManager/../sat/mtl/../mtl/IntTypesMtl.h:
+
+../STPManager/../sat/mtl/../mtl/XAlloc.h:
+
+../STPManager/../sat/core/SolverTypes.h:
+
+../STPManager/../sat/core/../mtl/IntTypesMtl.h:
+
+../STPManager/../sat/core/../mtl/Alg.h:
+
+../STPManager/../sat/core/../mtl/../mtl/Vec.h:
+
+../STPManager/../sat/core/../mtl/Vec.h:
+
+../STPManager/../sat/core/../mtl/Map.h:
+
+../STPManager/../sat/core/../mtl/../mtl/IntTypesMtl.h:
+
+../STPManager/../sat/core/../mtl/Alloc.h:
+
+../STPManager/../sat/core/../mtl/../mtl/XAlloc.h:
+AIG/BBNodeManagerAIG.o depend: AIG/BBNodeManagerAIG.cpp \
+ AIG/BBNodeManagerAIG.h AIG/BBNodeAIG.h AIG/../../extlib-abc/aig.h \
+ AIG/../../extlib-abc/vec.h AIG/../../extlib-abc/leaks.h \
+ AIG/../../extlib-abc/vecInt.h AIG/../../extlib-abc/vecFlt.h \
+ AIG/../../extlib-abc/vecStr.h AIG/../../extlib-abc/vecPtr.h \
+ AIG/../../extlib-abc/vecVec.h AIG/../../extlib-abc/cnf_short.h \
+ AIG/../../extlib-abc/aig.h AIG/../../extlib-abc/dar.h AIG/../ToSATBase.h \
+ AIG/../../AST/AST.h AIG/../../AST/UsefulDefs.h \
+ AIG/../../AST/../main/Globals.h AIG/../../AST/ASTKind.h \
+ AIG/../../AST/../extlib-constbv/constantbv.h AIG/../../AST/RunTimes.h \
+ AIG/../../AST/../sat/utils/System.h \
+ AIG/../../AST/../sat/utils/../mtl/IntTypesMtl.h AIG/../../AST/ASTNode.h \
+ AIG/../../AST/NodeFactory/HashingNodeFactory.h \
+ AIG/../../AST/NodeFactory/NodeFactory.h \
+ AIG/../../AST/NodeFactory/../ASTKind.h AIG/../../AST/ASTInternal.h \
+ AIG/../../AST/ASTInterior.h AIG/../../AST/ASTInternalWithChildren.h \
+ AIG/../../AST/ASTSymbol.h AIG/../../AST/ASTBVConst.h \
+ AIG/../../STPManager/STPManager.h \
+ AIG/../../STPManager/UserDefinedFlags.h \
+ AIG/../../STPManager/../AST/AST.h \
+ AIG/../../STPManager/../AST/NodeFactory/HashingNodeFactory.h \
+ AIG/../../STPManager/../sat/SATSolver.h \
+ AIG/../../STPManager/../sat/mtl/Vec.h \
+ AIG/../../STPManager/../sat/mtl/../mtl/IntTypesMtl.h \
+ AIG/../../STPManager/../sat/mtl/../mtl/XAlloc.h \
+ AIG/../../STPManager/../sat/core/SolverTypes.h \
+ AIG/../../STPManager/../sat/core/../mtl/IntTypesMtl.h \
+ AIG/../../STPManager/../sat/core/../mtl/Alg.h \
+ AIG/../../STPManager/../sat/core/../mtl/../mtl/Vec.h \
+ AIG/../../STPManager/../sat/core/../mtl/Vec.h \
+ AIG/../../STPManager/../sat/core/../mtl/Map.h \
+ AIG/../../STPManager/../sat/core/../mtl/../mtl/IntTypesMtl.h \
+ AIG/../../STPManager/../sat/core/../mtl/Alloc.h \
+ AIG/../../STPManager/../sat/core/../mtl/../mtl/XAlloc.h
+
+AIG/BBNodeManagerAIG.h:
+
+AIG/BBNodeAIG.h:
+
+AIG/../../extlib-abc/aig.h:
+
+AIG/../../extlib-abc/vec.h:
+
+AIG/../../extlib-abc/leaks.h:
+
+AIG/../../extlib-abc/vecInt.h:
+
+AIG/../../extlib-abc/vecFlt.h:
+
+AIG/../../extlib-abc/vecStr.h:
+
+AIG/../../extlib-abc/vecPtr.h:
+
+AIG/../../extlib-abc/vecVec.h:
+
+AIG/../../extlib-abc/cnf_short.h:
+
+AIG/../../extlib-abc/aig.h:
+
+AIG/../../extlib-abc/dar.h:
+
+AIG/../ToSATBase.h:
+
+AIG/../../AST/AST.h:
+
+AIG/../../AST/UsefulDefs.h:
+
+AIG/../../AST/../main/Globals.h:
+
+AIG/../../AST/ASTKind.h:
+
+AIG/../../AST/../extlib-constbv/constantbv.h:
+
+AIG/../../AST/RunTimes.h:
+
+AIG/../../AST/../sat/utils/System.h:
+
+AIG/../../AST/../sat/utils/../mtl/IntTypesMtl.h:
+
+AIG/../../AST/ASTNode.h:
+
+AIG/../../AST/NodeFactory/HashingNodeFactory.h:
+
+AIG/../../AST/NodeFactory/NodeFactory.h:
+
+AIG/../../AST/NodeFactory/../ASTKind.h:
+
+AIG/../../AST/ASTInternal.h:
+
+AIG/../../AST/ASTInterior.h:
+
+AIG/../../AST/ASTInternalWithChildren.h:
+
+AIG/../../AST/ASTSymbol.h:
+
+AIG/../../AST/ASTBVConst.h:
+
+AIG/../../STPManager/STPManager.h:
+
+AIG/../../STPManager/UserDefinedFlags.h:
+
+AIG/../../STPManager/../AST/AST.h:
+
+AIG/../../STPManager/../AST/NodeFactory/HashingNodeFactory.h:
+
+AIG/../../STPManager/../sat/SATSolver.h:
+
+AIG/../../STPManager/../sat/mtl/Vec.h:
+
+AIG/../../STPManager/../sat/mtl/../mtl/IntTypesMtl.h:
+
+AIG/../../STPManager/../sat/mtl/../mtl/XAlloc.h:
+
+AIG/../../STPManager/../sat/core/SolverTypes.h:
+
+AIG/../../STPManager/../sat/core/../mtl/IntTypesMtl.h:
+
+AIG/../../STPManager/../sat/core/../mtl/Alg.h:
+
+AIG/../../STPManager/../sat/core/../mtl/../mtl/Vec.h:
+
+AIG/../../STPManager/../sat/core/../mtl/Vec.h:
+
+AIG/../../STPManager/../sat/core/../mtl/Map.h:
+
+AIG/../../STPManager/../sat/core/../mtl/../mtl/IntTypesMtl.h:
+
+AIG/../../STPManager/../sat/core/../mtl/Alloc.h:
+
+AIG/../../STPManager/../sat/core/../mtl/../mtl/XAlloc.h:
+AIG/ToCNFAIG.o depend: AIG/ToCNFAIG.cpp AIG/ToCNFAIG.h \
+ AIG/../../extlib-abc/aig.h AIG/../../extlib-abc/vec.h \
+ AIG/../../extlib-abc/leaks.h AIG/../../extlib-abc/vecInt.h \
+ AIG/../../extlib-abc/vecFlt.h AIG/../../extlib-abc/vecStr.h \
+ AIG/../../extlib-abc/vecPtr.h AIG/../../extlib-abc/vecVec.h \
+ AIG/../../extlib-abc/cnf_short.h AIG/../../extlib-abc/aig.h \
+ AIG/../../extlib-abc/dar.h AIG/../ToSATBase.h AIG/../../AST/AST.h \
+ AIG/../../AST/UsefulDefs.h AIG/../../AST/../main/Globals.h \
+ AIG/../../AST/ASTKind.h AIG/../../AST/../extlib-constbv/constantbv.h \
+ AIG/../../AST/RunTimes.h AIG/../../AST/../sat/utils/System.h \
+ AIG/../../AST/../sat/utils/../mtl/IntTypesMtl.h AIG/../../AST/ASTNode.h \
+ AIG/../../AST/NodeFactory/HashingNodeFactory.h \
+ AIG/../../AST/NodeFactory/NodeFactory.h \
+ AIG/../../AST/NodeFactory/../ASTKind.h AIG/../../AST/ASTInternal.h \
+ AIG/../../AST/ASTInterior.h AIG/../../AST/ASTInternalWithChildren.h \
+ AIG/../../AST/ASTSymbol.h AIG/../../AST/ASTBVConst.h \
+ AIG/../../STPManager/STPManager.h \
+ AIG/../../STPManager/UserDefinedFlags.h \
+ AIG/../../STPManager/../AST/AST.h \
+ AIG/../../STPManager/../AST/NodeFactory/HashingNodeFactory.h \
+ AIG/../../STPManager/../sat/SATSolver.h \
+ AIG/../../STPManager/../sat/mtl/Vec.h \
+ AIG/../../STPManager/../sat/mtl/../mtl/IntTypesMtl.h \
+ AIG/../../STPManager/../sat/mtl/../mtl/XAlloc.h \
+ AIG/../../STPManager/../sat/core/SolverTypes.h \
+ AIG/../../STPManager/../sat/core/../mtl/IntTypesMtl.h \
+ AIG/../../STPManager/../sat/core/../mtl/Alg.h \
+ AIG/../../STPManager/../sat/core/../mtl/../mtl/Vec.h \
+ AIG/../../STPManager/../sat/core/../mtl/Vec.h \
+ AIG/../../STPManager/../sat/core/../mtl/Map.h \
+ AIG/../../STPManager/../sat/core/../mtl/../mtl/IntTypesMtl.h \
+ AIG/../../STPManager/../sat/core/../mtl/Alloc.h \
+ AIG/../../STPManager/../sat/core/../mtl/../mtl/XAlloc.h \
+ AIG/BBNodeManagerAIG.h AIG/BBNodeAIG.h
+
+AIG/ToCNFAIG.h:
+
+AIG/../../extlib-abc/aig.h:
+
+AIG/../../extlib-abc/vec.h:
+
+AIG/../../extlib-abc/leaks.h:
+
+AIG/../../extlib-abc/vecInt.h:
+
+AIG/../../extlib-abc/vecFlt.h:
+
+AIG/../../extlib-abc/vecStr.h:
+
+AIG/../../extlib-abc/vecPtr.h:
+
+AIG/../../extlib-abc/vecVec.h:
+
+AIG/../../extlib-abc/cnf_short.h:
+
+AIG/../../extlib-abc/aig.h:
+
+AIG/../../extlib-abc/dar.h:
+
+AIG/../ToSATBase.h:
+
+AIG/../../AST/AST.h:
+
+AIG/../../AST/UsefulDefs.h:
+
+AIG/../../AST/../main/Globals.h:
+
+AIG/../../AST/ASTKind.h:
+
+AIG/../../AST/../extlib-constbv/constantbv.h:
+
+AIG/../../AST/RunTimes.h:
+
+AIG/../../AST/../sat/utils/System.h:
+
+AIG/../../AST/../sat/utils/../mtl/IntTypesMtl.h:
+
+AIG/../../AST/ASTNode.h:
+
+AIG/../../AST/NodeFactory/HashingNodeFactory.h:
+
+AIG/../../AST/NodeFactory/NodeFactory.h:
+
+AIG/../../AST/NodeFactory/../ASTKind.h:
+
+AIG/../../AST/ASTInternal.h:
+
+AIG/../../AST/ASTInterior.h:
+
+AIG/../../AST/ASTInternalWithChildren.h:
+
+AIG/../../AST/ASTSymbol.h:
+
+AIG/../../AST/ASTBVConst.h:
+
+AIG/../../STPManager/STPManager.h:
+
+AIG/../../STPManager/UserDefinedFlags.h:
+
+AIG/../../STPManager/../AST/AST.h:
+
+AIG/../../STPManager/../AST/NodeFactory/HashingNodeFactory.h:
+
+AIG/../../STPManager/../sat/SATSolver.h:
+
+AIG/../../STPManager/../sat/mtl/Vec.h:
+
+AIG/../../STPManager/../sat/mtl/../mtl/IntTypesMtl.h:
+
+AIG/../../STPManager/../sat/mtl/../mtl/XAlloc.h:
+
+AIG/../../STPManager/../sat/core/SolverTypes.h:
+
+AIG/../../STPManager/../sat/core/../mtl/IntTypesMtl.h:
+
+AIG/../../STPManager/../sat/core/../mtl/Alg.h:
+
+AIG/../../STPManager/../sat/core/../mtl/../mtl/Vec.h:
+
+AIG/../../STPManager/../sat/core/../mtl/Vec.h:
+
+AIG/../../STPManager/../sat/core/../mtl/Map.h:
+
+AIG/../../STPManager/../sat/core/../mtl/../mtl/IntTypesMtl.h:
+
+AIG/../../STPManager/../sat/core/../mtl/Alloc.h:
+
+AIG/../../STPManager/../sat/core/../mtl/../mtl/XAlloc.h:
+
+AIG/BBNodeManagerAIG.h:
+
+AIG/BBNodeAIG.h:
+AIG/ToSATAIG.o depend: AIG/ToSATAIG.cpp AIG/ToSATAIG.h \
+ AIG/../../AST/AST.h AIG/../../AST/UsefulDefs.h \
+ AIG/../../AST/../main/Globals.h AIG/../../AST/ASTKind.h \
+ AIG/../../AST/../extlib-constbv/constantbv.h AIG/../../AST/RunTimes.h \
+ AIG/../../AST/../sat/utils/System.h \
+ AIG/../../AST/../sat/utils/../mtl/IntTypesMtl.h AIG/../../AST/ASTNode.h \
+ AIG/../../AST/NodeFactory/HashingNodeFactory.h \
+ AIG/../../AST/NodeFactory/NodeFactory.h \
+ AIG/../../AST/NodeFactory/../ASTKind.h AIG/../../AST/ASTInternal.h \
+ AIG/../../AST/ASTInterior.h AIG/../../AST/ASTInternalWithChildren.h \
+ AIG/../../AST/ASTSymbol.h AIG/../../AST/ASTBVConst.h \
+ AIG/../../AST/RunTimes.h AIG/../../STPManager/STPManager.h \
+ AIG/../../STPManager/UserDefinedFlags.h \
+ AIG/../../STPManager/../AST/AST.h \
+ AIG/../../STPManager/../AST/NodeFactory/HashingNodeFactory.h \
+ AIG/../../STPManager/../sat/SATSolver.h \
+ AIG/../../STPManager/../sat/mtl/Vec.h \
+ AIG/../../STPManager/../sat/mtl/../mtl/IntTypesMtl.h \
+ AIG/../../STPManager/../sat/mtl/../mtl/XAlloc.h \
+ AIG/../../STPManager/../sat/core/SolverTypes.h \
+ AIG/../../STPManager/../sat/core/../mtl/IntTypesMtl.h \
+ AIG/../../STPManager/../sat/core/../mtl/Alg.h \
+ AIG/../../STPManager/../sat/core/../mtl/../mtl/Vec.h \
+ AIG/../../STPManager/../sat/core/../mtl/Vec.h \
+ AIG/../../STPManager/../sat/core/../mtl/Map.h \
+ AIG/../../STPManager/../sat/core/../mtl/../mtl/IntTypesMtl.h \
+ AIG/../../STPManager/../sat/core/../mtl/Alloc.h \
+ AIG/../../STPManager/../sat/core/../mtl/../mtl/XAlloc.h \
+ AIG/../BitBlaster.h AIG/../../STPManager/STPManager.h \
+ AIG/BBNodeManagerAIG.h AIG/BBNodeAIG.h AIG/../../extlib-abc/aig.h \
+ AIG/../../extlib-abc/vec.h AIG/../../extlib-abc/leaks.h \
+ AIG/../../extlib-abc/vecInt.h AIG/../../extlib-abc/vecFlt.h \
+ AIG/../../extlib-abc/vecStr.h AIG/../../extlib-abc/vecPtr.h \
+ AIG/../../extlib-abc/vecVec.h AIG/../../extlib-abc/cnf_short.h \
+ AIG/../../extlib-abc/aig.h AIG/../../extlib-abc/dar.h AIG/../ToSATBase.h \
+ AIG/../../AST/AST.h AIG/ToCNFAIG.h AIG/../../AST/ArrayTransformer.h \
+ AIG/../../AST/AST.h AIG/../../AST/../STPManager/STPManager.h \
+ AIG/../../AST/../AST/NodeFactory/SimplifyingNodeFactory.h \
+ AIG/../../AST/../AST/NodeFactory/NodeFactory.h \
+ AIG/../../AST/../AST/NodeFactory/../../STPManager/STPManager.h \
+ AIG/../../simplifier/constantBitP/ConstantBitPropagation.h \
+ AIG/../../simplifier/constantBitP/FixedBits.h \
+ AIG/../../simplifier/constantBitP/Dependencies.h \
+ AIG/../../simplifier/constantBitP/../../AST/AST.h \
+ AIG/../../simplifier/constantBitP/NodeToFixedBitsMap.h \
+ AIG/../../simplifier/constantBitP/WorkList.h \
+ AIG/../../simplifier/constantBitP/MultiplicationStats.h \
+ AIG/../../simplifier/simplifier.h AIG/../../simplifier/../AST/AST.h \
+ AIG/../../simplifier/../STPManager/STPManager.h \
+ AIG/../../simplifier/../AST/NodeFactory/SimplifyingNodeFactory.h \
+ AIG/../../simplifier/SubstitutionMap.h \
+ AIG/../../simplifier/VariablesInExpression.h \
+ AIG/../../simplifier/Symbols.h
+
+AIG/ToSATAIG.h:
+
+AIG/../../AST/AST.h:
+
+AIG/../../AST/UsefulDefs.h:
+
+AIG/../../AST/../main/Globals.h:
+
+AIG/../../AST/ASTKind.h:
+
+AIG/../../AST/../extlib-constbv/constantbv.h:
+
+AIG/../../AST/RunTimes.h:
+
+AIG/../../AST/../sat/utils/System.h:
+
+AIG/../../AST/../sat/utils/../mtl/IntTypesMtl.h:
+
+AIG/../../AST/ASTNode.h:
+
+AIG/../../AST/NodeFactory/HashingNodeFactory.h:
+
+AIG/../../AST/NodeFactory/NodeFactory.h:
+
+AIG/../../AST/NodeFactory/../ASTKind.h:
+
+AIG/../../AST/ASTInternal.h:
+
+AIG/../../AST/ASTInterior.h:
+
+AIG/../../AST/ASTInternalWithChildren.h:
+
+AIG/../../AST/ASTSymbol.h:
+
+AIG/../../AST/ASTBVConst.h:
+
+AIG/../../AST/RunTimes.h:
+
+AIG/../../STPManager/STPManager.h:
+
+AIG/../../STPManager/UserDefinedFlags.h:
+
+AIG/../../STPManager/../AST/AST.h:
+
+AIG/../../STPManager/../AST/NodeFactory/HashingNodeFactory.h:
+
+AIG/../../STPManager/../sat/SATSolver.h:
+
+AIG/../../STPManager/../sat/mtl/Vec.h:
+
+AIG/../../STPManager/../sat/mtl/../mtl/IntTypesMtl.h:
+
+AIG/../../STPManager/../sat/mtl/../mtl/XAlloc.h:
+
+AIG/../../STPManager/../sat/core/SolverTypes.h:
+
+AIG/../../STPManager/../sat/core/../mtl/IntTypesMtl.h:
+
+AIG/../../STPManager/../sat/core/../mtl/Alg.h:
+
+AIG/../../STPManager/../sat/core/../mtl/../mtl/Vec.h:
+
+AIG/../../STPManager/../sat/core/../mtl/Vec.h:
+
+AIG/../../STPManager/../sat/core/../mtl/Map.h:
+
+AIG/../../STPManager/../sat/core/../mtl/../mtl/IntTypesMtl.h:
+
+AIG/../../STPManager/../sat/core/../mtl/Alloc.h:
+
+AIG/../../STPManager/../sat/core/../mtl/../mtl/XAlloc.h:
+
+AIG/../BitBlaster.h:
+
+AIG/../../STPManager/STPManager.h:
+
+AIG/BBNodeManagerAIG.h:
+
+AIG/BBNodeAIG.h:
+
+AIG/../../extlib-abc/aig.h:
+
+AIG/../../extlib-abc/vec.h:
+
+AIG/../../extlib-abc/leaks.h:
+
+AIG/../../extlib-abc/vecInt.h:
+
+AIG/../../extlib-abc/vecFlt.h:
+
+AIG/../../extlib-abc/vecStr.h:
+
+AIG/../../extlib-abc/vecPtr.h:
+
+AIG/../../extlib-abc/vecVec.h:
+
+AIG/../../extlib-abc/cnf_short.h:
+
+AIG/../../extlib-abc/aig.h:
+
+AIG/../../extlib-abc/dar.h:
+
+AIG/../ToSATBase.h:
+
+AIG/../../AST/AST.h:
+
+AIG/ToCNFAIG.h:
+
+AIG/../../AST/ArrayTransformer.h:
+
+AIG/../../AST/AST.h:
+
+AIG/../../AST/../STPManager/STPManager.h:
+
+AIG/../../AST/../AST/NodeFactory/SimplifyingNodeFactory.h:
+
+AIG/../../AST/../AST/NodeFactory/NodeFactory.h:
+
+AIG/../../AST/../AST/NodeFactory/../../STPManager/STPManager.h:
+
+AIG/../../simplifier/constantBitP/ConstantBitPropagation.h:
+
+AIG/../../simplifier/constantBitP/FixedBits.h:
+
+AIG/../../simplifier/constantBitP/Dependencies.h:
+
+AIG/../../simplifier/constantBitP/../../AST/AST.h:
+
+AIG/../../simplifier/constantBitP/NodeToFixedBitsMap.h:
+
+AIG/../../simplifier/constantBitP/WorkList.h:
+
+AIG/../../simplifier/constantBitP/MultiplicationStats.h:
+
+AIG/../../simplifier/simplifier.h:
+
+AIG/../../simplifier/../AST/AST.h:
+
+AIG/../../simplifier/../STPManager/STPManager.h:
+
+AIG/../../simplifier/../AST/NodeFactory/SimplifyingNodeFactory.h:
+
+AIG/../../simplifier/SubstitutionMap.h:
+
+AIG/../../simplifier/VariablesInExpression.h:
+
+AIG/../../simplifier/Symbols.h:
+ASTNode/ClauseList.o depend: ASTNode/ClauseList.cpp ASTNode/ClauseList.h \
+ ASTNode/../../AST/AST.h ASTNode/../../AST/UsefulDefs.h \
+ ASTNode/../../AST/../main/Globals.h ASTNode/../../AST/ASTKind.h \
+ ASTNode/../../AST/../extlib-constbv/constantbv.h \
+ ASTNode/../../AST/RunTimes.h ASTNode/../../AST/../sat/utils/System.h \
+ ASTNode/../../AST/../sat/utils/../mtl/IntTypesMtl.h \
+ ASTNode/../../AST/ASTNode.h \
+ ASTNode/../../AST/NodeFactory/HashingNodeFactory.h \
+ ASTNode/../../AST/NodeFactory/NodeFactory.h \
+ ASTNode/../../AST/NodeFactory/../ASTKind.h \
+ ASTNode/../../AST/ASTInternal.h ASTNode/../../AST/ASTInterior.h \
+ ASTNode/../../AST/ASTInternalWithChildren.h \
+ ASTNode/../../AST/ASTSymbol.h ASTNode/../../AST/ASTBVConst.h
+
+ASTNode/ClauseList.h:
+
+ASTNode/../../AST/AST.h:
+
+ASTNode/../../AST/UsefulDefs.h:
+
+ASTNode/../../AST/../main/Globals.h:
+
+ASTNode/../../AST/ASTKind.h:
+
+ASTNode/../../AST/../extlib-constbv/constantbv.h:
+
+ASTNode/../../AST/RunTimes.h:
+
+ASTNode/../../AST/../sat/utils/System.h:
+
+ASTNode/../../AST/../sat/utils/../mtl/IntTypesMtl.h:
+
+ASTNode/../../AST/ASTNode.h:
+
+ASTNode/../../AST/NodeFactory/HashingNodeFactory.h:
+
+ASTNode/../../AST/NodeFactory/NodeFactory.h:
+
+ASTNode/../../AST/NodeFactory/../ASTKind.h:
+
+ASTNode/../../AST/ASTInternal.h:
+
+ASTNode/../../AST/ASTInterior.h:
+
+ASTNode/../../AST/ASTInternalWithChildren.h:
+
+ASTNode/../../AST/ASTSymbol.h:
+
+ASTNode/../../AST/ASTBVConst.h:
+ASTNode/SimpBool.o depend: ASTNode/SimpBool.cpp ASTNode/../../AST/AST.h \
+ ASTNode/../../AST/UsefulDefs.h ASTNode/../../AST/../main/Globals.h \
+ ASTNode/../../AST/ASTKind.h \
+ ASTNode/../../AST/../extlib-constbv/constantbv.h \
+ ASTNode/../../AST/RunTimes.h ASTNode/../../AST/../sat/utils/System.h \
+ ASTNode/../../AST/../sat/utils/../mtl/IntTypesMtl.h \
+ ASTNode/../../AST/ASTNode.h \
+ ASTNode/../../AST/NodeFactory/HashingNodeFactory.h \
+ ASTNode/../../AST/NodeFactory/NodeFactory.h \
+ ASTNode/../../AST/NodeFactory/../ASTKind.h \
+ ASTNode/../../AST/ASTInternal.h ASTNode/../../AST/ASTInterior.h \
+ ASTNode/../../AST/ASTInternalWithChildren.h \
+ ASTNode/../../AST/ASTSymbol.h ASTNode/../../AST/ASTBVConst.h \
+ ASTNode/../../STPManager/STPManager.h \
+ ASTNode/../../STPManager/UserDefinedFlags.h \
+ ASTNode/../../STPManager/../AST/AST.h \
+ ASTNode/../../STPManager/../AST/NodeFactory/HashingNodeFactory.h \
+ ASTNode/../../STPManager/../sat/SATSolver.h \
+ ASTNode/../../STPManager/../sat/mtl/Vec.h \
+ ASTNode/../../STPManager/../sat/mtl/../mtl/IntTypesMtl.h \
+ ASTNode/../../STPManager/../sat/mtl/../mtl/XAlloc.h \
+ ASTNode/../../STPManager/../sat/core/SolverTypes.h \
+ ASTNode/../../STPManager/../sat/core/../mtl/IntTypesMtl.h \
+ ASTNode/../../STPManager/../sat/core/../mtl/Alg.h \
+ ASTNode/../../STPManager/../sat/core/../mtl/../mtl/Vec.h \
+ ASTNode/../../STPManager/../sat/core/../mtl/Vec.h \
+ ASTNode/../../STPManager/../sat/core/../mtl/Map.h \
+ ASTNode/../../STPManager/../sat/core/../mtl/../mtl/IntTypesMtl.h \
+ ASTNode/../../STPManager/../sat/core/../mtl/Alloc.h \
+ ASTNode/../../STPManager/../sat/core/../mtl/../mtl/XAlloc.h
+
+ASTNode/../../AST/AST.h:
+
+ASTNode/../../AST/UsefulDefs.h:
+
+ASTNode/../../AST/../main/Globals.h:
+
+ASTNode/../../AST/ASTKind.h:
+
+ASTNode/../../AST/../extlib-constbv/constantbv.h:
+
+ASTNode/../../AST/RunTimes.h:
+
+ASTNode/../../AST/../sat/utils/System.h:
+
+ASTNode/../../AST/../sat/utils/../mtl/IntTypesMtl.h:
+
+ASTNode/../../AST/ASTNode.h:
+
+ASTNode/../../AST/NodeFactory/HashingNodeFactory.h:
+
+ASTNode/../../AST/NodeFactory/NodeFactory.h:
+
+ASTNode/../../AST/NodeFactory/../ASTKind.h:
+
+ASTNode/../../AST/ASTInternal.h:
+
+ASTNode/../../AST/ASTInterior.h:
+
+ASTNode/../../AST/ASTInternalWithChildren.h:
+
+ASTNode/../../AST/ASTSymbol.h:
+
+ASTNode/../../AST/ASTBVConst.h:
+
+ASTNode/../../STPManager/STPManager.h:
+
+ASTNode/../../STPManager/UserDefinedFlags.h:
+
+ASTNode/../../STPManager/../AST/AST.h:
+
+ASTNode/../../STPManager/../AST/NodeFactory/HashingNodeFactory.h:
+
+ASTNode/../../STPManager/../sat/SATSolver.h:
+
+ASTNode/../../STPManager/../sat/mtl/Vec.h:
+
+ASTNode/../../STPManager/../sat/mtl/../mtl/IntTypesMtl.h:
+
+ASTNode/../../STPManager/../sat/mtl/../mtl/XAlloc.h:
+
+ASTNode/../../STPManager/../sat/core/SolverTypes.h:
+
+ASTNode/../../STPManager/../sat/core/../mtl/IntTypesMtl.h:
+
+ASTNode/../../STPManager/../sat/core/../mtl/Alg.h:
+
+ASTNode/../../STPManager/../sat/core/../mtl/../mtl/Vec.h:
+
+ASTNode/../../STPManager/../sat/core/../mtl/Vec.h:
+
+ASTNode/../../STPManager/../sat/core/../mtl/Map.h:
+
+ASTNode/../../STPManager/../sat/core/../mtl/../mtl/IntTypesMtl.h:
+
+ASTNode/../../STPManager/../sat/core/../mtl/Alloc.h:
+
+ASTNode/../../STPManager/../sat/core/../mtl/../mtl/XAlloc.h:
+ASTNode/ToCNF.o depend: ASTNode/ToCNF.cpp ASTNode/../../AST/AST.h \
+ ASTNode/../../AST/UsefulDefs.h ASTNode/../../AST/../main/Globals.h \
+ ASTNode/../../AST/ASTKind.h \
+ ASTNode/../../AST/../extlib-constbv/constantbv.h \
+ ASTNode/../../AST/RunTimes.h ASTNode/../../AST/../sat/utils/System.h \
+ ASTNode/../../AST/../sat/utils/../mtl/IntTypesMtl.h \
+ ASTNode/../../AST/ASTNode.h \
+ ASTNode/../../AST/NodeFactory/HashingNodeFactory.h \
+ ASTNode/../../AST/NodeFactory/NodeFactory.h \
+ ASTNode/../../AST/NodeFactory/../ASTKind.h \
+ ASTNode/../../AST/ASTInternal.h ASTNode/../../AST/ASTInterior.h \
+ ASTNode/../../AST/ASTInternalWithChildren.h \
+ ASTNode/../../AST/ASTSymbol.h ASTNode/../../AST/ASTBVConst.h \
+ ASTNode/../../STPManager/STPManager.h \
+ ASTNode/../../STPManager/UserDefinedFlags.h \
+ ASTNode/../../STPManager/../AST/AST.h \
+ ASTNode/../../STPManager/../AST/NodeFactory/HashingNodeFactory.h \
+ ASTNode/../../STPManager/../sat/SATSolver.h \
+ ASTNode/../../STPManager/../sat/mtl/Vec.h \
+ ASTNode/../../STPManager/../sat/mtl/../mtl/IntTypesMtl.h \
+ ASTNode/../../STPManager/../sat/mtl/../mtl/XAlloc.h \
+ ASTNode/../../STPManager/../sat/core/SolverTypes.h \
+ ASTNode/../../STPManager/../sat/core/../mtl/IntTypesMtl.h \
+ ASTNode/../../STPManager/../sat/core/../mtl/Alg.h \
+ ASTNode/../../STPManager/../sat/core/../mtl/../mtl/Vec.h \
+ ASTNode/../../STPManager/../sat/core/../mtl/Vec.h \
+ ASTNode/../../STPManager/../sat/core/../mtl/Map.h \
+ ASTNode/../../STPManager/../sat/core/../mtl/../mtl/IntTypesMtl.h \
+ ASTNode/../../STPManager/../sat/core/../mtl/Alloc.h \
+ ASTNode/../../STPManager/../sat/core/../mtl/../mtl/XAlloc.h \
+ ASTNode/ToCNF.h ASTNode/ClauseList.h
+
+ASTNode/../../AST/AST.h:
+
+ASTNode/../../AST/UsefulDefs.h:
+
+ASTNode/../../AST/../main/Globals.h:
+
+ASTNode/../../AST/ASTKind.h:
+
+ASTNode/../../AST/../extlib-constbv/constantbv.h:
+
+ASTNode/../../AST/RunTimes.h:
+
+ASTNode/../../AST/../sat/utils/System.h:
+
+ASTNode/../../AST/../sat/utils/../mtl/IntTypesMtl.h:
+
+ASTNode/../../AST/ASTNode.h:
+
+ASTNode/../../AST/NodeFactory/HashingNodeFactory.h:
+
+ASTNode/../../AST/NodeFactory/NodeFactory.h:
+
+ASTNode/../../AST/NodeFactory/../ASTKind.h:
+
+ASTNode/../../AST/ASTInternal.h:
+
+ASTNode/../../AST/ASTInterior.h:
+
+ASTNode/../../AST/ASTInternalWithChildren.h:
+
+ASTNode/../../AST/ASTSymbol.h:
+
+ASTNode/../../AST/ASTBVConst.h:
+
+ASTNode/../../STPManager/STPManager.h:
+
+ASTNode/../../STPManager/UserDefinedFlags.h:
+
+ASTNode/../../STPManager/../AST/AST.h:
+
+ASTNode/../../STPManager/../AST/NodeFactory/HashingNodeFactory.h:
+
+ASTNode/../../STPManager/../sat/SATSolver.h:
+
+ASTNode/../../STPManager/../sat/mtl/Vec.h:
+
+ASTNode/../../STPManager/../sat/mtl/../mtl/IntTypesMtl.h:
+
+ASTNode/../../STPManager/../sat/mtl/../mtl/XAlloc.h:
+
+ASTNode/../../STPManager/../sat/core/SolverTypes.h:
+
+ASTNode/../../STPManager/../sat/core/../mtl/IntTypesMtl.h:
+
+ASTNode/../../STPManager/../sat/core/../mtl/Alg.h:
+
+ASTNode/../../STPManager/../sat/core/../mtl/../mtl/Vec.h:
+
+ASTNode/../../STPManager/../sat/core/../mtl/Vec.h:
+
+ASTNode/../../STPManager/../sat/core/../mtl/Map.h:
+
+ASTNode/../../STPManager/../sat/core/../mtl/../mtl/IntTypesMtl.h:
+
+ASTNode/../../STPManager/../sat/core/../mtl/Alloc.h:
+
+ASTNode/../../STPManager/../sat/core/../mtl/../mtl/XAlloc.h:
+
+ASTNode/ToCNF.h:
+
+ASTNode/ClauseList.h:
+ASTNode/ToSAT.o depend: ASTNode/ToSAT.cpp ASTNode/ToSAT.h ASTNode/ToCNF.h \
+ ASTNode/../../AST/AST.h ASTNode/../../AST/UsefulDefs.h \
+ ASTNode/../../AST/../main/Globals.h ASTNode/../../AST/ASTKind.h \
+ ASTNode/../../AST/../extlib-constbv/constantbv.h \
+ ASTNode/../../AST/RunTimes.h ASTNode/../../AST/../sat/utils/System.h \
+ ASTNode/../../AST/../sat/utils/../mtl/IntTypesMtl.h \
+ ASTNode/../../AST/ASTNode.h \
+ ASTNode/../../AST/NodeFactory/HashingNodeFactory.h \
+ ASTNode/../../AST/NodeFactory/NodeFactory.h \
+ ASTNode/../../AST/NodeFactory/../ASTKind.h \
+ ASTNode/../../AST/ASTInternal.h ASTNode/../../AST/ASTInterior.h \
+ ASTNode/../../AST/ASTInternalWithChildren.h \
+ ASTNode/../../AST/ASTSymbol.h ASTNode/../../AST/ASTBVConst.h \
+ ASTNode/../../STPManager/STPManager.h \
+ ASTNode/../../STPManager/UserDefinedFlags.h \
+ ASTNode/../../STPManager/../AST/AST.h \
+ ASTNode/../../STPManager/../AST/NodeFactory/HashingNodeFactory.h \
+ ASTNode/../../STPManager/../sat/SATSolver.h \
+ ASTNode/../../STPManager/../sat/mtl/Vec.h \
+ ASTNode/../../STPManager/../sat/mtl/../mtl/IntTypesMtl.h \
+ ASTNode/../../STPManager/../sat/mtl/../mtl/XAlloc.h \
+ ASTNode/../../STPManager/../sat/core/SolverTypes.h \
+ ASTNode/../../STPManager/../sat/core/../mtl/IntTypesMtl.h \
+ ASTNode/../../STPManager/../sat/core/../mtl/Alg.h \
+ ASTNode/../../STPManager/../sat/core/../mtl/../mtl/Vec.h \
+ ASTNode/../../STPManager/../sat/core/../mtl/Vec.h \
+ ASTNode/../../STPManager/../sat/core/../mtl/Map.h \
+ ASTNode/../../STPManager/../sat/core/../mtl/../mtl/IntTypesMtl.h \
+ ASTNode/../../STPManager/../sat/core/../mtl/Alloc.h \
+ ASTNode/../../STPManager/../sat/core/../mtl/../mtl/XAlloc.h \
+ ASTNode/ClauseList.h ASTNode/../ToSATBase.h ASTNode/../../AST/AST.h \
+ ASTNode/../../STPManager/STPManager.h ASTNode/../BitBlaster.h \
+ ASTNode/../../printer/printers.h ASTNode/../../printer/../AST/AST.h \
+ ASTNode/../../printer/../AST/ASTKind.h \
+ ASTNode/../../printer/../STPManager/STP.h \
+ ASTNode/../../printer/../STPManager/../AST/AST.h \
+ ASTNode/../../printer/../STPManager/../AST/ArrayTransformer.h \
+ ASTNode/../../printer/../STPManager/../AST/AST.h \
+ ASTNode/../../printer/../STPManager/../AST/../STPManager/STPManager.h \
+ ASTNode/../../printer/../STPManager/../AST/../AST/NodeFactory/SimplifyingNodeFactory.h \
+ ASTNode/../../printer/../STPManager/../AST/../AST/NodeFactory/NodeFactory.h \
+ ASTNode/../../printer/../STPManager/../AST/../AST/NodeFactory/../../STPManager/STPManager.h \
+ ASTNode/../../printer/../STPManager/../STPManager/STPManager.h \
+ ASTNode/../../printer/../STPManager/../simplifier/bvsolver.h \
+ ASTNode/../../printer/../STPManager/../simplifier/simplifier.h \
+ ASTNode/../../printer/../STPManager/../simplifier/../AST/AST.h \
+ ASTNode/../../printer/../STPManager/../simplifier/../STPManager/STPManager.h \
+ ASTNode/../../printer/../STPManager/../simplifier/../AST/NodeFactory/SimplifyingNodeFactory.h \
+ ASTNode/../../printer/../STPManager/../simplifier/SubstitutionMap.h \
+ ASTNode/../../printer/../STPManager/../simplifier/VariablesInExpression.h \
+ ASTNode/../../printer/../STPManager/../simplifier/Symbols.h \
+ ASTNode/../../printer/../STPManager/../simplifier/simplifier.h \
+ ASTNode/../../printer/../STPManager/../to-sat/ASTNode/ToSAT.h \
+ ASTNode/../../printer/../STPManager/../parser/LetMgr.h \
+ ASTNode/../../printer/../STPManager/../parser/../AST/AST.h \
+ ASTNode/../../printer/../STPManager/../absrefine_counterexample/AbsRefine_CounterExample.h \
+ ASTNode/../../printer/../STPManager/../absrefine_counterexample/../AST/AST.h \
+ ASTNode/../../printer/../STPManager/../absrefine_counterexample/../STPManager/STPManager.h \
+ ASTNode/../../printer/../STPManager/../absrefine_counterexample/../simplifier/simplifier.h \
+ ASTNode/../../printer/../STPManager/../absrefine_counterexample/../AST/ArrayTransformer.h \
+ ASTNode/../../printer/../STPManager/../absrefine_counterexample/../to-sat/ToSATBase.h \
+ ASTNode/BBNodeManagerASTNode.h \
+ ASTNode/../../STPManager/UserDefinedFlags.h
+
+ASTNode/ToSAT.h:
+
+ASTNode/ToCNF.h:
+
+ASTNode/../../AST/AST.h:
+
+ASTNode/../../AST/UsefulDefs.h:
+
+ASTNode/../../AST/../main/Globals.h:
+
+ASTNode/../../AST/ASTKind.h:
+
+ASTNode/../../AST/../extlib-constbv/constantbv.h:
+
+ASTNode/../../AST/RunTimes.h:
+
+ASTNode/../../AST/../sat/utils/System.h:
+
+ASTNode/../../AST/../sat/utils/../mtl/IntTypesMtl.h:
+
+ASTNode/../../AST/ASTNode.h:
+
+ASTNode/../../AST/NodeFactory/HashingNodeFactory.h:
+
+ASTNode/../../AST/NodeFactory/NodeFactory.h:
+
+ASTNode/../../AST/NodeFactory/../ASTKind.h:
+
+ASTNode/../../AST/ASTInternal.h:
+
+ASTNode/../../AST/ASTInterior.h:
+
+ASTNode/../../AST/ASTInternalWithChildren.h:
+
+ASTNode/../../AST/ASTSymbol.h:
+
+ASTNode/../../AST/ASTBVConst.h:
+
+ASTNode/../../STPManager/STPManager.h:
+
+ASTNode/../../STPManager/UserDefinedFlags.h:
+
+ASTNode/../../STPManager/../AST/AST.h:
+
+ASTNode/../../STPManager/../AST/NodeFactory/HashingNodeFactory.h:
+
+ASTNode/../../STPManager/../sat/SATSolver.h:
+
+ASTNode/../../STPManager/../sat/mtl/Vec.h:
+
+ASTNode/../../STPManager/../sat/mtl/../mtl/IntTypesMtl.h:
+
+ASTNode/../../STPManager/../sat/mtl/../mtl/XAlloc.h:
+
+ASTNode/../../STPManager/../sat/core/SolverTypes.h:
+
+ASTNode/../../STPManager/../sat/core/../mtl/IntTypesMtl.h:
+
+ASTNode/../../STPManager/../sat/core/../mtl/Alg.h:
+
+ASTNode/../../STPManager/../sat/core/../mtl/../mtl/Vec.h:
+
+ASTNode/../../STPManager/../sat/core/../mtl/Vec.h:
+
+ASTNode/../../STPManager/../sat/core/../mtl/Map.h:
+
+ASTNode/../../STPManager/../sat/core/../mtl/../mtl/IntTypesMtl.h:
+
+ASTNode/../../STPManager/../sat/core/../mtl/Alloc.h:
+
+ASTNode/../../STPManager/../sat/core/../mtl/../mtl/XAlloc.h:
+
+ASTNode/ClauseList.h:
+
+ASTNode/../ToSATBase.h:
+
+ASTNode/../../AST/AST.h:
+
+ASTNode/../../STPManager/STPManager.h:
+
+ASTNode/../BitBlaster.h:
+
+ASTNode/../../printer/printers.h:
+
+ASTNode/../../printer/../AST/AST.h:
+
+ASTNode/../../printer/../AST/ASTKind.h:
+
+ASTNode/../../printer/../STPManager/STP.h:
+
+ASTNode/../../printer/../STPManager/../AST/AST.h:
+
+ASTNode/../../printer/../STPManager/../AST/ArrayTransformer.h:
+
+ASTNode/../../printer/../STPManager/../AST/AST.h:
+
+ASTNode/../../printer/../STPManager/../AST/../STPManager/STPManager.h:
+
+ASTNode/../../printer/../STPManager/../AST/../AST/NodeFactory/SimplifyingNodeFactory.h:
+
+ASTNode/../../printer/../STPManager/../AST/../AST/NodeFactory/NodeFactory.h:
+
+ASTNode/../../printer/../STPManager/../AST/../AST/NodeFactory/../../STPManager/STPManager.h:
+
+ASTNode/../../printer/../STPManager/../STPManager/STPManager.h:
+
+ASTNode/../../printer/../STPManager/../simplifier/bvsolver.h:
+
+ASTNode/../../printer/../STPManager/../simplifier/simplifier.h:
+
+ASTNode/../../printer/../STPManager/../simplifier/../AST/AST.h:
+
+ASTNode/../../printer/../STPManager/../simplifier/../STPManager/STPManager.h:
+
+ASTNode/../../printer/../STPManager/../simplifier/../AST/NodeFactory/SimplifyingNodeFactory.h:
+
+ASTNode/../../printer/../STPManager/../simplifier/SubstitutionMap.h:
+
+ASTNode/../../printer/../STPManager/../simplifier/VariablesInExpression.h:
+
+ASTNode/../../printer/../STPManager/../simplifier/Symbols.h:
+
+ASTNode/../../printer/../STPManager/../simplifier/simplifier.h:
+
+ASTNode/../../printer/../STPManager/../to-sat/ASTNode/ToSAT.h:
+
+ASTNode/../../printer/../STPManager/../parser/LetMgr.h:
+
+ASTNode/../../printer/../STPManager/../parser/../AST/AST.h:
+
+ASTNode/../../printer/../STPManager/../absrefine_counterexample/AbsRefine_CounterExample.h:
+
+ASTNode/../../printer/../STPManager/../absrefine_counterexample/../AST/AST.h:
+
+ASTNode/../../printer/../STPManager/../absrefine_counterexample/../STPManager/STPManager.h:
+
+ASTNode/../../printer/../STPManager/../absrefine_counterexample/../simplifier/simplifier.h:
+
+ASTNode/../../printer/../STPManager/../absrefine_counterexample/../AST/ArrayTransformer.h:
+
+ASTNode/../../printer/../STPManager/../absrefine_counterexample/../to-sat/ToSATBase.h:
+
+ASTNode/BBNodeManagerASTNode.h:
+
+ASTNode/../../STPManager/UserDefinedFlags.h:
+BitBlaster.o ToSATBase.o AIG/BBNodeManagerAIG.o AIG/ToCNFAIG.o AIG/ToSATAIG.o ASTNode/ClauseList.o ASTNode/SimpBool.o ASTNode/ToCNF.o ASTNode/ToSAT.o depend : Makefile ../../scripts/Makefile.common ../../scripts/config.info

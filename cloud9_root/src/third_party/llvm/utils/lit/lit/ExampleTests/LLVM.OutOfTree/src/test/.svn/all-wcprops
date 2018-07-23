@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/utils/lit/lit/ExampleTests/LLVM.OutOfTree/src/test
+END
+lit.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/utils/lit/lit/ExampleTests/LLVM.OutOfTree/src/test/lit.cfg
+END

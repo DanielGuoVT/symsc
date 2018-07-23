@@ -1,0 +1,37 @@
+10
+
+dir
+1417
+http://gyp.googlecode.com/svn/trunk/test/ninja
+http://gyp.googlecode.com/svn
+
+
+
+2012-04-27T23:07:02.102627Z
+1343
+scottmg@chromium.org
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+78cadc50-ecff-11dd-a971-7dbc132099af
+
+action_dependencies
+dir
+
+chained-dependency
+dir
+
+normalize-paths-win
+dir
+

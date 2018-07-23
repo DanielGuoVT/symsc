@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Sparc/MCTargetDesc
+END
+LLVMBuild.txt
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Sparc/MCTargetDesc/LLVMBuild.txt
+END
+SparcMCAsmInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Sparc/MCTargetDesc/SparcMCAsmInfo.h
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Sparc/MCTargetDesc/CMakeLists.txt
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Sparc/MCTargetDesc/Makefile
+END
+SparcMCTargetDesc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Sparc/MCTargetDesc/SparcMCTargetDesc.cpp
+END
+SparcMCTargetDesc.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Sparc/MCTargetDesc/SparcMCTargetDesc.h
+END
+SparcMCAsmInfo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Sparc/MCTargetDesc/SparcMCAsmInfo.cpp
+END

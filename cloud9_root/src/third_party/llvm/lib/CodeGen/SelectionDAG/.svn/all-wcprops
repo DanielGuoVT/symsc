@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/CodeGen/SelectionDAG
+END
+SelectionDAGBuilder.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/CodeGen/SelectionDAG/SelectionDAGBuilder.h
+END
+LegalizeTypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/CodeGen/SelectionDAG/LegalizeTypes.h
+END
+ScheduleDAGSDNodes.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/CodeGen/SelectionDAG/ScheduleDAGSDNodes.cpp
+END
+SDNodeDbgValue.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/CodeGen/SelectionDAG/SDNodeDbgValue.h
+END
+InstrEmitter.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/CodeGen/SelectionDAG/InstrEmitter.h
+END
+ResourcePriorityQueue.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/CodeGen/SelectionDAG/ResourcePriorityQueue.cpp
+END
+LegalizeVectorOps.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/CodeGen/SelectionDAG/LegalizeVectorOps.cpp
+END
+SelectionDAGPrinter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/CodeGen/SelectionDAG/SelectionDAGPrinter.cpp
+END
+SelectionDAGBuilder.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/CodeGen/SelectionDAG/SelectionDAGBuilder.cpp
+END
+ScheduleDAGRRList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/CodeGen/SelectionDAG/ScheduleDAGRRList.cpp
+END
+ScheduleDAGVLIW.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/CodeGen/SelectionDAG/ScheduleDAGVLIW.cpp
+END
+FastISel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/CodeGen/SelectionDAG/FastISel.cpp
+END
+SelectionDAGISel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/CodeGen/SelectionDAG/SelectionDAGISel.cpp
+END
+SelectionDAGDumper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/CodeGen/SelectionDAG/SelectionDAGDumper.cpp
+END
+LegalizeTypesGeneric.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/CodeGen/SelectionDAG/LegalizeTypesGeneric.cpp
+END
+LegalizeTypes.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/CodeGen/SelectionDAG/LegalizeTypes.cpp
+END
+TargetSelectionDAGInfo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/CodeGen/SelectionDAG/TargetSelectionDAGInfo.cpp
+END
+ScheduleDAGFast.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/CodeGen/SelectionDAG/ScheduleDAGFast.cpp
+END
+LLVMBuild.txt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/CodeGen/SelectionDAG/LLVMBuild.txt
+END
+InstrEmitter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/CodeGen/SelectionDAG/InstrEmitter.cpp
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/CodeGen/SelectionDAG/Makefile
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/CodeGen/SelectionDAG/CMakeLists.txt
+END
+ScheduleDAGSDNodes.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/CodeGen/SelectionDAG/ScheduleDAGSDNodes.h
+END
+TargetLowering.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/CodeGen/SelectionDAG/TargetLowering.cpp
+END
+LegalizeIntegerTypes.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/CodeGen/SelectionDAG/LegalizeIntegerTypes.cpp
+END
+SelectionDAG.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/CodeGen/SelectionDAG/SelectionDAG.cpp
+END
+LegalizeVectorTypes.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/CodeGen/SelectionDAG/LegalizeVectorTypes.cpp
+END
+LegalizeFloatTypes.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/CodeGen/SelectionDAG/LegalizeFloatTypes.cpp
+END
+FunctionLoweringInfo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/CodeGen/SelectionDAG/FunctionLoweringInfo.cpp
+END
+LegalizeDAG.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/CodeGen/SelectionDAG/LegalizeDAG.cpp
+END
+DAGCombiner.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/CodeGen/SelectionDAG/DAGCombiner.cpp
+END
+SDNodeOrdering.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/CodeGen/SelectionDAG/SDNodeOrdering.h
+END

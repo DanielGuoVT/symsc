@@ -1,0 +1,533 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM
+END
+neon-vswp.s
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neon-vswp.s
+END
+elf-reloc-02.ll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/elf-reloc-02.ll
+END
+bracket-darwin.s
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/bracket-darwin.s
+END
+hilo-16bit-relocations.s
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/hilo-16bit-relocations.s
+END
+neont2-neg-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neont2-neg-encoding.s
+END
+arm_addrmode2.s
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/arm_addrmode2.s
+END
+neont2-vst-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neont2-vst-encoding.s
+END
+neont2-shift-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neont2-shift-encoding.s
+END
+neon-vld-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neon-vld-encoding.s
+END
+neont2-cmp-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neont2-cmp-encoding.s
+END
+thumb-nop.s
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/thumb-nop.s
+END
+neont2-shiftaccum-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neont2-shiftaccum-encoding.s
+END
+neont2-table-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neont2-table-encoding.s
+END
+vfp4.s
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/vfp4.s
+END
+neont2-minmax-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neont2-minmax-encoding.s
+END
+mode-switch.s
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/mode-switch.s
+END
+arm-arithmetic-aliases.s
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/arm-arithmetic-aliases.s
+END
+neont2-mov-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neont2-mov-encoding.s
+END
+neon-neg-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neon-neg-encoding.s
+END
+elf-reloc-01.ll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/elf-reloc-01.ll
+END
+neon-vst-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neon-vst-encoding.s
+END
+neon-shift-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neon-shift-encoding.s
+END
+neon-cmp-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neon-cmp-encoding.s
+END
+arm_instructions.s
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/arm_instructions.s
+END
+neon-reciprocal-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neon-reciprocal-encoding.s
+END
+neon-pairwise-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neon-pairwise-encoding.s
+END
+thumb2-diagnostics.s
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/thumb2-diagnostics.s
+END
+neon-satshift-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neon-satshift-encoding.s
+END
+neont2-convert-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neont2-convert-encoding.s
+END
+diagnostics.s
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/diagnostics.s
+END
+neon-table-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neon-table-encoding.s
+END
+neon-bitcount-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neon-bitcount-encoding.s
+END
+neont2-mul-accum-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neont2-mul-accum-encoding.s
+END
+lit.local.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/lit.local.cfg
+END
+neont2-add-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neont2-add-encoding.s
+END
+neont2-dup-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neont2-dup-encoding.s
+END
+basic-thumb2-instructions.s
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/basic-thumb2-instructions.s
+END
+neon-mov-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neon-mov-encoding.s
+END
+neont2-shuffle-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neont2-shuffle-encoding.s
+END
+elf-reloc-condcall.s
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/elf-reloc-condcall.s
+END
+arm-memory-instructions.s
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/arm-memory-instructions.s
+END
+pr11877.s
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/pr11877.s
+END
+arm-aliases.s
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/arm-aliases.s
+END
+elf-thumbfunc.s
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/elf-thumbfunc.s
+END
+neon-convert-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neon-convert-encoding.s
+END
+arm_addrmode3.s
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/arm_addrmode3.s
+END
+neont2-reverse-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neont2-reverse-encoding.s
+END
+neon-mul-accum-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neon-mul-accum-encoding.s
+END
+elf-thumbfunc-reloc.ll
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/elf-thumbfunc-reloc.ll
+END
+xscale-attributes.ll
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/xscale-attributes.ll
+END
+arm_word_directive.s
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/arm_word_directive.s
+END
+neon-dup-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neon-dup-encoding.s
+END
+neon-add-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neon-add-encoding.s
+END
+neont2-pairwise-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neont2-pairwise-encoding.s
+END
+neont2-reciprocal-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neont2-reciprocal-encoding.s
+END
+neont2-satshift-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neont2-satshift-encoding.s
+END
+arm_fixups.s
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/arm_fixups.s
+END
+neon-shuffle-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neon-shuffle-encoding.s
+END
+neont2-bitcount-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neont2-bitcount-encoding.s
+END
+thumb.s
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/thumb.s
+END
+neont2-sub-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neont2-sub-encoding.s
+END
+neont2-mul-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neont2-mul-encoding.s
+END
+neont2-absdiff-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neont2-absdiff-encoding.s
+END
+full_line_comment.s
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/full_line_comment.s
+END
+neon-reverse-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neon-reverse-encoding.s
+END
+neont2-abs-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neont2-abs-encoding.s
+END
+elf-reloc-03.ll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/elf-reloc-03.ll
+END
+neont2-bitwise-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neont2-bitwise-encoding.s
+END
+basic-thumb-instructions.s
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/basic-thumb-instructions.s
+END
+basic-arm-instructions.s
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/basic-arm-instructions.s
+END
+elf-thumbfunc-reloc.s
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/elf-thumbfunc-reloc.s
+END
+elf-eflags-eabi.s
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/elf-eflags-eabi.s
+END
+neon-minmax-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neon-minmax-encoding.s
+END
+bracket-exprs.s
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/bracket-exprs.s
+END
+neon-sub-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neon-sub-encoding.s
+END
+dot-req.s
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/dot-req.s
+END
+neont2-vld-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neont2-vld-encoding.s
+END
+neon-mul-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neon-mul-encoding.s
+END
+neon-absdiff-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neon-absdiff-encoding.s
+END
+simple-fp-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/simple-fp-encoding.s
+END
+thumb2-mclass.s
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/thumb2-mclass.s
+END
+arm-it-block.s
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/arm-it-block.s
+END
+thumb-diagnostics.s
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/thumb-diagnostics.s
+END
+neon-abs-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neon-abs-encoding.s
+END
+neon-bitwise-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/neon-bitwise-encoding.s
+END
+vpush-vpop.s
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/vpush-vpop.s
+END
+cxx-global-constructor.ll
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/cxx-global-constructor.ll
+END
+elf-movt.s
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/ARM/elf-movt.s
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/examples/OCaml-Kaleidoscope/Chapter2
+END
+lexer.ml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/examples/OCaml-Kaleidoscope/Chapter2/lexer.ml
+END
+token.ml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/examples/OCaml-Kaleidoscope/Chapter2/token.ml
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/examples/OCaml-Kaleidoscope/Chapter2/Makefile
+END
+_tags
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/examples/OCaml-Kaleidoscope/Chapter2/_tags
+END
+ast.ml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/examples/OCaml-Kaleidoscope/Chapter2/ast.ml
+END
+toplevel.ml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/examples/OCaml-Kaleidoscope/Chapter2/toplevel.ml
+END
+toy.ml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/examples/OCaml-Kaleidoscope/Chapter2/toy.ml
+END
+parser.ml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/examples/OCaml-Kaleidoscope/Chapter2/parser.ml
+END

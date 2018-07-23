@@ -1,0 +1,16 @@
+[func]
+encrypt
+setkey
+
+[sbox]
+sbox0
+sbox1
+sbox2
+sbox3
+
+[shadow]
+encrypt1
+setkey1
+
+[key]
+key

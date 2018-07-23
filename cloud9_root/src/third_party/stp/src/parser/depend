@@ -1,0 +1,1218 @@
+lexcvc.o depend: lexcvc.cpp parser.h ../AST/AST.h ../AST/UsefulDefs.h \
+ ../AST/../main/Globals.h ../AST/ASTKind.h \
+ ../AST/../extlib-constbv/constantbv.h ../AST/RunTimes.h \
+ ../AST/../sat/utils/System.h ../AST/../sat/utils/../mtl/IntTypesMtl.h \
+ ../AST/ASTNode.h ../AST/NodeFactory/HashingNodeFactory.h \
+ ../AST/NodeFactory/NodeFactory.h ../AST/NodeFactory/../ASTKind.h \
+ ../AST/ASTInternal.h ../AST/ASTInterior.h \
+ ../AST/ASTInternalWithChildren.h ../AST/ASTSymbol.h ../AST/ASTBVConst.h \
+ ../STPManager/STPManager.h ../STPManager/UserDefinedFlags.h \
+ ../STPManager/../AST/AST.h \
+ ../STPManager/../AST/NodeFactory/HashingNodeFactory.h \
+ ../STPManager/../sat/SATSolver.h ../STPManager/../sat/mtl/Vec.h \
+ ../STPManager/../sat/mtl/../mtl/IntTypesMtl.h \
+ ../STPManager/../sat/mtl/../mtl/XAlloc.h \
+ ../STPManager/../sat/core/SolverTypes.h \
+ ../STPManager/../sat/core/../mtl/IntTypesMtl.h \
+ ../STPManager/../sat/core/../mtl/Alg.h \
+ ../STPManager/../sat/core/../mtl/../mtl/Vec.h \
+ ../STPManager/../sat/core/../mtl/Vec.h \
+ ../STPManager/../sat/core/../mtl/Map.h \
+ ../STPManager/../sat/core/../mtl/../mtl/IntTypesMtl.h \
+ ../STPManager/../sat/core/../mtl/Alloc.h \
+ ../STPManager/../sat/core/../mtl/../mtl/XAlloc.h ../STPManager/STP.h \
+ ../STPManager/../AST/ArrayTransformer.h ../STPManager/../AST/AST.h \
+ ../STPManager/../AST/../STPManager/STPManager.h \
+ ../STPManager/../AST/../AST/NodeFactory/SimplifyingNodeFactory.h \
+ ../STPManager/../AST/../AST/NodeFactory/NodeFactory.h \
+ ../STPManager/../AST/../AST/NodeFactory/../../STPManager/STPManager.h \
+ ../STPManager/../STPManager/STPManager.h \
+ ../STPManager/../simplifier/bvsolver.h \
+ ../STPManager/../simplifier/simplifier.h \
+ ../STPManager/../simplifier/../AST/AST.h \
+ ../STPManager/../simplifier/../STPManager/STPManager.h \
+ ../STPManager/../simplifier/../AST/NodeFactory/SimplifyingNodeFactory.h \
+ ../STPManager/../simplifier/SubstitutionMap.h \
+ ../STPManager/../simplifier/VariablesInExpression.h \
+ ../STPManager/../simplifier/Symbols.h \
+ ../STPManager/../simplifier/simplifier.h \
+ ../STPManager/../to-sat/ASTNode/ToSAT.h \
+ ../STPManager/../to-sat/ASTNode/ToCNF.h \
+ ../STPManager/../to-sat/ASTNode/../../AST/AST.h \
+ ../STPManager/../to-sat/ASTNode/../../STPManager/STPManager.h \
+ ../STPManager/../to-sat/ASTNode/ClauseList.h \
+ ../STPManager/../to-sat/ASTNode/../ToSATBase.h \
+ ../STPManager/../to-sat/ASTNode/../../AST/AST.h \
+ ../STPManager/../to-sat/ASTNode/../../STPManager/STPManager.h \
+ ../STPManager/../parser/LetMgr.h ../STPManager/../parser/../AST/AST.h \
+ ../STPManager/../absrefine_counterexample/AbsRefine_CounterExample.h \
+ ../STPManager/../absrefine_counterexample/../AST/AST.h \
+ ../STPManager/../absrefine_counterexample/../STPManager/STPManager.h \
+ ../STPManager/../absrefine_counterexample/../simplifier/simplifier.h \
+ ../STPManager/../absrefine_counterexample/../AST/ArrayTransformer.h \
+ ../STPManager/../absrefine_counterexample/../to-sat/ToSATBase.h \
+ parsecvc.hpp ParserInterface.h ../AST/NodeFactory/NodeFactory.h LetMgr.h
+
+parser.h:
+
+../AST/AST.h:
+
+../AST/UsefulDefs.h:
+
+../AST/../main/Globals.h:
+
+../AST/ASTKind.h:
+
+../AST/../extlib-constbv/constantbv.h:
+
+../AST/RunTimes.h:
+
+../AST/../sat/utils/System.h:
+
+../AST/../sat/utils/../mtl/IntTypesMtl.h:
+
+../AST/ASTNode.h:
+
+../AST/NodeFactory/HashingNodeFactory.h:
+
+../AST/NodeFactory/NodeFactory.h:
+
+../AST/NodeFactory/../ASTKind.h:
+
+../AST/ASTInternal.h:
+
+../AST/ASTInterior.h:
+
+../AST/ASTInternalWithChildren.h:
+
+../AST/ASTSymbol.h:
+
+../AST/ASTBVConst.h:
+
+../STPManager/STPManager.h:
+
+../STPManager/UserDefinedFlags.h:
+
+../STPManager/../AST/AST.h:
+
+../STPManager/../AST/NodeFactory/HashingNodeFactory.h:
+
+../STPManager/../sat/SATSolver.h:
+
+../STPManager/../sat/mtl/Vec.h:
+
+../STPManager/../sat/mtl/../mtl/IntTypesMtl.h:
+
+../STPManager/../sat/mtl/../mtl/XAlloc.h:
+
+../STPManager/../sat/core/SolverTypes.h:
+
+../STPManager/../sat/core/../mtl/IntTypesMtl.h:
+
+../STPManager/../sat/core/../mtl/Alg.h:
+
+../STPManager/../sat/core/../mtl/../mtl/Vec.h:
+
+../STPManager/../sat/core/../mtl/Vec.h:
+
+../STPManager/../sat/core/../mtl/Map.h:
+
+../STPManager/../sat/core/../mtl/../mtl/IntTypesMtl.h:
+
+../STPManager/../sat/core/../mtl/Alloc.h:
+
+../STPManager/../sat/core/../mtl/../mtl/XAlloc.h:
+
+../STPManager/STP.h:
+
+../STPManager/../AST/ArrayTransformer.h:
+
+../STPManager/../AST/AST.h:
+
+../STPManager/../AST/../STPManager/STPManager.h:
+
+../STPManager/../AST/../AST/NodeFactory/SimplifyingNodeFactory.h:
+
+../STPManager/../AST/../AST/NodeFactory/NodeFactory.h:
+
+../STPManager/../AST/../AST/NodeFactory/../../STPManager/STPManager.h:
+
+../STPManager/../STPManager/STPManager.h:
+
+../STPManager/../simplifier/bvsolver.h:
+
+../STPManager/../simplifier/simplifier.h:
+
+../STPManager/../simplifier/../AST/AST.h:
+
+../STPManager/../simplifier/../STPManager/STPManager.h:
+
+../STPManager/../simplifier/../AST/NodeFactory/SimplifyingNodeFactory.h:
+
+../STPManager/../simplifier/SubstitutionMap.h:
+
+../STPManager/../simplifier/VariablesInExpression.h:
+
+../STPManager/../simplifier/Symbols.h:
+
+../STPManager/../simplifier/simplifier.h:
+
+../STPManager/../to-sat/ASTNode/ToSAT.h:
+
+../STPManager/../to-sat/ASTNode/ToCNF.h:
+
+../STPManager/../to-sat/ASTNode/../../AST/AST.h:
+
+../STPManager/../to-sat/ASTNode/../../STPManager/STPManager.h:
+
+../STPManager/../to-sat/ASTNode/ClauseList.h:
+
+../STPManager/../to-sat/ASTNode/../ToSATBase.h:
+
+../STPManager/../to-sat/ASTNode/../../AST/AST.h:
+
+../STPManager/../to-sat/ASTNode/../../STPManager/STPManager.h:
+
+../STPManager/../parser/LetMgr.h:
+
+../STPManager/../parser/../AST/AST.h:
+
+../STPManager/../absrefine_counterexample/AbsRefine_CounterExample.h:
+
+../STPManager/../absrefine_counterexample/../AST/AST.h:
+
+../STPManager/../absrefine_counterexample/../STPManager/STPManager.h:
+
+../STPManager/../absrefine_counterexample/../simplifier/simplifier.h:
+
+../STPManager/../absrefine_counterexample/../AST/ArrayTransformer.h:
+
+../STPManager/../absrefine_counterexample/../to-sat/ToSATBase.h:
+
+parsecvc.hpp:
+
+ParserInterface.h:
+
+../AST/NodeFactory/NodeFactory.h:
+
+LetMgr.h:
+parsecvc.o depend: parsecvc.cpp parser.h ../AST/AST.h ../AST/UsefulDefs.h \
+ ../AST/../main/Globals.h ../AST/ASTKind.h \
+ ../AST/../extlib-constbv/constantbv.h ../AST/RunTimes.h \
+ ../AST/../sat/utils/System.h ../AST/../sat/utils/../mtl/IntTypesMtl.h \
+ ../AST/ASTNode.h ../AST/NodeFactory/HashingNodeFactory.h \
+ ../AST/NodeFactory/NodeFactory.h ../AST/NodeFactory/../ASTKind.h \
+ ../AST/ASTInternal.h ../AST/ASTInterior.h \
+ ../AST/ASTInternalWithChildren.h ../AST/ASTSymbol.h ../AST/ASTBVConst.h \
+ ../STPManager/STPManager.h ../STPManager/UserDefinedFlags.h \
+ ../STPManager/../AST/AST.h \
+ ../STPManager/../AST/NodeFactory/HashingNodeFactory.h \
+ ../STPManager/../sat/SATSolver.h ../STPManager/../sat/mtl/Vec.h \
+ ../STPManager/../sat/mtl/../mtl/IntTypesMtl.h \
+ ../STPManager/../sat/mtl/../mtl/XAlloc.h \
+ ../STPManager/../sat/core/SolverTypes.h \
+ ../STPManager/../sat/core/../mtl/IntTypesMtl.h \
+ ../STPManager/../sat/core/../mtl/Alg.h \
+ ../STPManager/../sat/core/../mtl/../mtl/Vec.h \
+ ../STPManager/../sat/core/../mtl/Vec.h \
+ ../STPManager/../sat/core/../mtl/Map.h \
+ ../STPManager/../sat/core/../mtl/../mtl/IntTypesMtl.h \
+ ../STPManager/../sat/core/../mtl/Alloc.h \
+ ../STPManager/../sat/core/../mtl/../mtl/XAlloc.h ../STPManager/STP.h \
+ ../STPManager/../AST/ArrayTransformer.h ../STPManager/../AST/AST.h \
+ ../STPManager/../AST/../STPManager/STPManager.h \
+ ../STPManager/../AST/../AST/NodeFactory/SimplifyingNodeFactory.h \
+ ../STPManager/../AST/../AST/NodeFactory/NodeFactory.h \
+ ../STPManager/../AST/../AST/NodeFactory/../../STPManager/STPManager.h \
+ ../STPManager/../STPManager/STPManager.h \
+ ../STPManager/../simplifier/bvsolver.h \
+ ../STPManager/../simplifier/simplifier.h \
+ ../STPManager/../simplifier/../AST/AST.h \
+ ../STPManager/../simplifier/../STPManager/STPManager.h \
+ ../STPManager/../simplifier/../AST/NodeFactory/SimplifyingNodeFactory.h \
+ ../STPManager/../simplifier/SubstitutionMap.h \
+ ../STPManager/../simplifier/VariablesInExpression.h \
+ ../STPManager/../simplifier/Symbols.h \
+ ../STPManager/../simplifier/simplifier.h \
+ ../STPManager/../to-sat/ASTNode/ToSAT.h \
+ ../STPManager/../to-sat/ASTNode/ToCNF.h \
+ ../STPManager/../to-sat/ASTNode/../../AST/AST.h \
+ ../STPManager/../to-sat/ASTNode/../../STPManager/STPManager.h \
+ ../STPManager/../to-sat/ASTNode/ClauseList.h \
+ ../STPManager/../to-sat/ASTNode/../ToSATBase.h \
+ ../STPManager/../to-sat/ASTNode/../../AST/AST.h \
+ ../STPManager/../to-sat/ASTNode/../../STPManager/STPManager.h \
+ ../STPManager/../parser/LetMgr.h ../STPManager/../parser/../AST/AST.h \
+ ../STPManager/../absrefine_counterexample/AbsRefine_CounterExample.h \
+ ../STPManager/../absrefine_counterexample/../AST/AST.h \
+ ../STPManager/../absrefine_counterexample/../STPManager/STPManager.h \
+ ../STPManager/../absrefine_counterexample/../simplifier/simplifier.h \
+ ../STPManager/../absrefine_counterexample/../AST/ArrayTransformer.h \
+ ../STPManager/../absrefine_counterexample/../to-sat/ToSATBase.h \
+ ParserInterface.h ../AST/NodeFactory/NodeFactory.h LetMgr.h
+
+parser.h:
+
+../AST/AST.h:
+
+../AST/UsefulDefs.h:
+
+../AST/../main/Globals.h:
+
+../AST/ASTKind.h:
+
+../AST/../extlib-constbv/constantbv.h:
+
+../AST/RunTimes.h:
+
+../AST/../sat/utils/System.h:
+
+../AST/../sat/utils/../mtl/IntTypesMtl.h:
+
+../AST/ASTNode.h:
+
+../AST/NodeFactory/HashingNodeFactory.h:
+
+../AST/NodeFactory/NodeFactory.h:
+
+../AST/NodeFactory/../ASTKind.h:
+
+../AST/ASTInternal.h:
+
+../AST/ASTInterior.h:
+
+../AST/ASTInternalWithChildren.h:
+
+../AST/ASTSymbol.h:
+
+../AST/ASTBVConst.h:
+
+../STPManager/STPManager.h:
+
+../STPManager/UserDefinedFlags.h:
+
+../STPManager/../AST/AST.h:
+
+../STPManager/../AST/NodeFactory/HashingNodeFactory.h:
+
+../STPManager/../sat/SATSolver.h:
+
+../STPManager/../sat/mtl/Vec.h:
+
+../STPManager/../sat/mtl/../mtl/IntTypesMtl.h:
+
+../STPManager/../sat/mtl/../mtl/XAlloc.h:
+
+../STPManager/../sat/core/SolverTypes.h:
+
+../STPManager/../sat/core/../mtl/IntTypesMtl.h:
+
+../STPManager/../sat/core/../mtl/Alg.h:
+
+../STPManager/../sat/core/../mtl/../mtl/Vec.h:
+
+../STPManager/../sat/core/../mtl/Vec.h:
+
+../STPManager/../sat/core/../mtl/Map.h:
+
+../STPManager/../sat/core/../mtl/../mtl/IntTypesMtl.h:
+
+../STPManager/../sat/core/../mtl/Alloc.h:
+
+../STPManager/../sat/core/../mtl/../mtl/XAlloc.h:
+
+../STPManager/STP.h:
+
+../STPManager/../AST/ArrayTransformer.h:
+
+../STPManager/../AST/AST.h:
+
+../STPManager/../AST/../STPManager/STPManager.h:
+
+../STPManager/../AST/../AST/NodeFactory/SimplifyingNodeFactory.h:
+
+../STPManager/../AST/../AST/NodeFactory/NodeFactory.h:
+
+../STPManager/../AST/../AST/NodeFactory/../../STPManager/STPManager.h:
+
+../STPManager/../STPManager/STPManager.h:
+
+../STPManager/../simplifier/bvsolver.h:
+
+../STPManager/../simplifier/simplifier.h:
+
+../STPManager/../simplifier/../AST/AST.h:
+
+../STPManager/../simplifier/../STPManager/STPManager.h:
+
+../STPManager/../simplifier/../AST/NodeFactory/SimplifyingNodeFactory.h:
+
+../STPManager/../simplifier/SubstitutionMap.h:
+
+../STPManager/../simplifier/VariablesInExpression.h:
+
+../STPManager/../simplifier/Symbols.h:
+
+../STPManager/../simplifier/simplifier.h:
+
+../STPManager/../to-sat/ASTNode/ToSAT.h:
+
+../STPManager/../to-sat/ASTNode/ToCNF.h:
+
+../STPManager/../to-sat/ASTNode/../../AST/AST.h:
+
+../STPManager/../to-sat/ASTNode/../../STPManager/STPManager.h:
+
+../STPManager/../to-sat/ASTNode/ClauseList.h:
+
+../STPManager/../to-sat/ASTNode/../ToSATBase.h:
+
+../STPManager/../to-sat/ASTNode/../../AST/AST.h:
+
+../STPManager/../to-sat/ASTNode/../../STPManager/STPManager.h:
+
+../STPManager/../parser/LetMgr.h:
+
+../STPManager/../parser/../AST/AST.h:
+
+../STPManager/../absrefine_counterexample/AbsRefine_CounterExample.h:
+
+../STPManager/../absrefine_counterexample/../AST/AST.h:
+
+../STPManager/../absrefine_counterexample/../STPManager/STPManager.h:
+
+../STPManager/../absrefine_counterexample/../simplifier/simplifier.h:
+
+../STPManager/../absrefine_counterexample/../AST/ArrayTransformer.h:
+
+../STPManager/../absrefine_counterexample/../to-sat/ToSATBase.h:
+
+ParserInterface.h:
+
+../AST/NodeFactory/NodeFactory.h:
+
+LetMgr.h:
+lexsmt.o depend: lexsmt.cpp parser.h ../AST/AST.h ../AST/UsefulDefs.h \
+ ../AST/../main/Globals.h ../AST/ASTKind.h \
+ ../AST/../extlib-constbv/constantbv.h ../AST/RunTimes.h \
+ ../AST/../sat/utils/System.h ../AST/../sat/utils/../mtl/IntTypesMtl.h \
+ ../AST/ASTNode.h ../AST/NodeFactory/HashingNodeFactory.h \
+ ../AST/NodeFactory/NodeFactory.h ../AST/NodeFactory/../ASTKind.h \
+ ../AST/ASTInternal.h ../AST/ASTInterior.h \
+ ../AST/ASTInternalWithChildren.h ../AST/ASTSymbol.h ../AST/ASTBVConst.h \
+ ../STPManager/STPManager.h ../STPManager/UserDefinedFlags.h \
+ ../STPManager/../AST/AST.h \
+ ../STPManager/../AST/NodeFactory/HashingNodeFactory.h \
+ ../STPManager/../sat/SATSolver.h ../STPManager/../sat/mtl/Vec.h \
+ ../STPManager/../sat/mtl/../mtl/IntTypesMtl.h \
+ ../STPManager/../sat/mtl/../mtl/XAlloc.h \
+ ../STPManager/../sat/core/SolverTypes.h \
+ ../STPManager/../sat/core/../mtl/IntTypesMtl.h \
+ ../STPManager/../sat/core/../mtl/Alg.h \
+ ../STPManager/../sat/core/../mtl/../mtl/Vec.h \
+ ../STPManager/../sat/core/../mtl/Vec.h \
+ ../STPManager/../sat/core/../mtl/Map.h \
+ ../STPManager/../sat/core/../mtl/../mtl/IntTypesMtl.h \
+ ../STPManager/../sat/core/../mtl/Alloc.h \
+ ../STPManager/../sat/core/../mtl/../mtl/XAlloc.h ../STPManager/STP.h \
+ ../STPManager/../AST/ArrayTransformer.h ../STPManager/../AST/AST.h \
+ ../STPManager/../AST/../STPManager/STPManager.h \
+ ../STPManager/../AST/../AST/NodeFactory/SimplifyingNodeFactory.h \
+ ../STPManager/../AST/../AST/NodeFactory/NodeFactory.h \
+ ../STPManager/../AST/../AST/NodeFactory/../../STPManager/STPManager.h \
+ ../STPManager/../STPManager/STPManager.h \
+ ../STPManager/../simplifier/bvsolver.h \
+ ../STPManager/../simplifier/simplifier.h \
+ ../STPManager/../simplifier/../AST/AST.h \
+ ../STPManager/../simplifier/../STPManager/STPManager.h \
+ ../STPManager/../simplifier/../AST/NodeFactory/SimplifyingNodeFactory.h \
+ ../STPManager/../simplifier/SubstitutionMap.h \
+ ../STPManager/../simplifier/VariablesInExpression.h \
+ ../STPManager/../simplifier/Symbols.h \
+ ../STPManager/../simplifier/simplifier.h \
+ ../STPManager/../to-sat/ASTNode/ToSAT.h \
+ ../STPManager/../to-sat/ASTNode/ToCNF.h \
+ ../STPManager/../to-sat/ASTNode/../../AST/AST.h \
+ ../STPManager/../to-sat/ASTNode/../../STPManager/STPManager.h \
+ ../STPManager/../to-sat/ASTNode/ClauseList.h \
+ ../STPManager/../to-sat/ASTNode/../ToSATBase.h \
+ ../STPManager/../to-sat/ASTNode/../../AST/AST.h \
+ ../STPManager/../to-sat/ASTNode/../../STPManager/STPManager.h \
+ ../STPManager/../parser/LetMgr.h ../STPManager/../parser/../AST/AST.h \
+ ../STPManager/../absrefine_counterexample/AbsRefine_CounterExample.h \
+ ../STPManager/../absrefine_counterexample/../AST/AST.h \
+ ../STPManager/../absrefine_counterexample/../STPManager/STPManager.h \
+ ../STPManager/../absrefine_counterexample/../simplifier/simplifier.h \
+ ../STPManager/../absrefine_counterexample/../AST/ArrayTransformer.h \
+ ../STPManager/../absrefine_counterexample/../to-sat/ToSATBase.h \
+ parsesmt.hpp ParserInterface.h ../AST/NodeFactory/NodeFactory.h LetMgr.h
+
+parser.h:
+
+../AST/AST.h:
+
+../AST/UsefulDefs.h:
+
+../AST/../main/Globals.h:
+
+../AST/ASTKind.h:
+
+../AST/../extlib-constbv/constantbv.h:
+
+../AST/RunTimes.h:
+
+../AST/../sat/utils/System.h:
+
+../AST/../sat/utils/../mtl/IntTypesMtl.h:
+
+../AST/ASTNode.h:
+
+../AST/NodeFactory/HashingNodeFactory.h:
+
+../AST/NodeFactory/NodeFactory.h:
+
+../AST/NodeFactory/../ASTKind.h:
+
+../AST/ASTInternal.h:
+
+../AST/ASTInterior.h:
+
+../AST/ASTInternalWithChildren.h:
+
+../AST/ASTSymbol.h:
+
+../AST/ASTBVConst.h:
+
+../STPManager/STPManager.h:
+
+../STPManager/UserDefinedFlags.h:
+
+../STPManager/../AST/AST.h:
+
+../STPManager/../AST/NodeFactory/HashingNodeFactory.h:
+
+../STPManager/../sat/SATSolver.h:
+
+../STPManager/../sat/mtl/Vec.h:
+
+../STPManager/../sat/mtl/../mtl/IntTypesMtl.h:
+
+../STPManager/../sat/mtl/../mtl/XAlloc.h:
+
+../STPManager/../sat/core/SolverTypes.h:
+
+../STPManager/../sat/core/../mtl/IntTypesMtl.h:
+
+../STPManager/../sat/core/../mtl/Alg.h:
+
+../STPManager/../sat/core/../mtl/../mtl/Vec.h:
+
+../STPManager/../sat/core/../mtl/Vec.h:
+
+../STPManager/../sat/core/../mtl/Map.h:
+
+../STPManager/../sat/core/../mtl/../mtl/IntTypesMtl.h:
+
+../STPManager/../sat/core/../mtl/Alloc.h:
+
+../STPManager/../sat/core/../mtl/../mtl/XAlloc.h:
+
+../STPManager/STP.h:
+
+../STPManager/../AST/ArrayTransformer.h:
+
+../STPManager/../AST/AST.h:
+
+../STPManager/../AST/../STPManager/STPManager.h:
+
+../STPManager/../AST/../AST/NodeFactory/SimplifyingNodeFactory.h:
+
+../STPManager/../AST/../AST/NodeFactory/NodeFactory.h:
+
+../STPManager/../AST/../AST/NodeFactory/../../STPManager/STPManager.h:
+
+../STPManager/../STPManager/STPManager.h:
+
+../STPManager/../simplifier/bvsolver.h:
+
+../STPManager/../simplifier/simplifier.h:
+
+../STPManager/../simplifier/../AST/AST.h:
+
+../STPManager/../simplifier/../STPManager/STPManager.h:
+
+../STPManager/../simplifier/../AST/NodeFactory/SimplifyingNodeFactory.h:
+
+../STPManager/../simplifier/SubstitutionMap.h:
+
+../STPManager/../simplifier/VariablesInExpression.h:
+
+../STPManager/../simplifier/Symbols.h:
+
+../STPManager/../simplifier/simplifier.h:
+
+../STPManager/../to-sat/ASTNode/ToSAT.h:
+
+../STPManager/../to-sat/ASTNode/ToCNF.h:
+
+../STPManager/../to-sat/ASTNode/../../AST/AST.h:
+
+../STPManager/../to-sat/ASTNode/../../STPManager/STPManager.h:
+
+../STPManager/../to-sat/ASTNode/ClauseList.h:
+
+../STPManager/../to-sat/ASTNode/../ToSATBase.h:
+
+../STPManager/../to-sat/ASTNode/../../AST/AST.h:
+
+../STPManager/../to-sat/ASTNode/../../STPManager/STPManager.h:
+
+../STPManager/../parser/LetMgr.h:
+
+../STPManager/../parser/../AST/AST.h:
+
+../STPManager/../absrefine_counterexample/AbsRefine_CounterExample.h:
+
+../STPManager/../absrefine_counterexample/../AST/AST.h:
+
+../STPManager/../absrefine_counterexample/../STPManager/STPManager.h:
+
+../STPManager/../absrefine_counterexample/../simplifier/simplifier.h:
+
+../STPManager/../absrefine_counterexample/../AST/ArrayTransformer.h:
+
+../STPManager/../absrefine_counterexample/../to-sat/ToSATBase.h:
+
+parsesmt.hpp:
+
+ParserInterface.h:
+
+../AST/NodeFactory/NodeFactory.h:
+
+LetMgr.h:
+parsesmt.o depend: parsesmt.cpp ParserInterface.h ../AST/AST.h \
+ ../AST/UsefulDefs.h ../AST/../main/Globals.h ../AST/ASTKind.h \
+ ../AST/../extlib-constbv/constantbv.h ../AST/RunTimes.h \
+ ../AST/../sat/utils/System.h ../AST/../sat/utils/../mtl/IntTypesMtl.h \
+ ../AST/ASTNode.h ../AST/NodeFactory/HashingNodeFactory.h \
+ ../AST/NodeFactory/NodeFactory.h ../AST/NodeFactory/../ASTKind.h \
+ ../AST/ASTInternal.h ../AST/ASTInterior.h \
+ ../AST/ASTInternalWithChildren.h ../AST/ASTSymbol.h ../AST/ASTBVConst.h \
+ ../AST/NodeFactory/NodeFactory.h LetMgr.h ../STPManager/STPManager.h \
+ ../STPManager/UserDefinedFlags.h ../STPManager/../AST/AST.h \
+ ../STPManager/../AST/NodeFactory/HashingNodeFactory.h \
+ ../STPManager/../sat/SATSolver.h ../STPManager/../sat/mtl/Vec.h \
+ ../STPManager/../sat/mtl/../mtl/IntTypesMtl.h \
+ ../STPManager/../sat/mtl/../mtl/XAlloc.h \
+ ../STPManager/../sat/core/SolverTypes.h \
+ ../STPManager/../sat/core/../mtl/IntTypesMtl.h \
+ ../STPManager/../sat/core/../mtl/Alg.h \
+ ../STPManager/../sat/core/../mtl/../mtl/Vec.h \
+ ../STPManager/../sat/core/../mtl/Vec.h \
+ ../STPManager/../sat/core/../mtl/Map.h \
+ ../STPManager/../sat/core/../mtl/../mtl/IntTypesMtl.h \
+ ../STPManager/../sat/core/../mtl/Alloc.h \
+ ../STPManager/../sat/core/../mtl/../mtl/XAlloc.h ../STPManager/STP.h \
+ ../STPManager/../AST/ArrayTransformer.h ../STPManager/../AST/AST.h \
+ ../STPManager/../AST/../STPManager/STPManager.h \
+ ../STPManager/../AST/../AST/NodeFactory/SimplifyingNodeFactory.h \
+ ../STPManager/../AST/../AST/NodeFactory/NodeFactory.h \
+ ../STPManager/../AST/../AST/NodeFactory/../../STPManager/STPManager.h \
+ ../STPManager/../STPManager/STPManager.h \
+ ../STPManager/../simplifier/bvsolver.h \
+ ../STPManager/../simplifier/simplifier.h \
+ ../STPManager/../simplifier/../AST/AST.h \
+ ../STPManager/../simplifier/../STPManager/STPManager.h \
+ ../STPManager/../simplifier/../AST/NodeFactory/SimplifyingNodeFactory.h \
+ ../STPManager/../simplifier/SubstitutionMap.h \
+ ../STPManager/../simplifier/VariablesInExpression.h \
+ ../STPManager/../simplifier/Symbols.h \
+ ../STPManager/../simplifier/simplifier.h \
+ ../STPManager/../to-sat/ASTNode/ToSAT.h \
+ ../STPManager/../to-sat/ASTNode/ToCNF.h \
+ ../STPManager/../to-sat/ASTNode/../../AST/AST.h \
+ ../STPManager/../to-sat/ASTNode/../../STPManager/STPManager.h \
+ ../STPManager/../to-sat/ASTNode/ClauseList.h \
+ ../STPManager/../to-sat/ASTNode/../ToSATBase.h \
+ ../STPManager/../to-sat/ASTNode/../../AST/AST.h \
+ ../STPManager/../to-sat/ASTNode/../../STPManager/STPManager.h \
+ ../STPManager/../parser/LetMgr.h \
+ ../STPManager/../absrefine_counterexample/AbsRefine_CounterExample.h \
+ ../STPManager/../absrefine_counterexample/../AST/AST.h \
+ ../STPManager/../absrefine_counterexample/../STPManager/STPManager.h \
+ ../STPManager/../absrefine_counterexample/../simplifier/simplifier.h \
+ ../STPManager/../absrefine_counterexample/../AST/ArrayTransformer.h \
+ ../STPManager/../absrefine_counterexample/../to-sat/ToSATBase.h
+
+ParserInterface.h:
+
+../AST/AST.h:
+
+../AST/UsefulDefs.h:
+
+../AST/../main/Globals.h:
+
+../AST/ASTKind.h:
+
+../AST/../extlib-constbv/constantbv.h:
+
+../AST/RunTimes.h:
+
+../AST/../sat/utils/System.h:
+
+../AST/../sat/utils/../mtl/IntTypesMtl.h:
+
+../AST/ASTNode.h:
+
+../AST/NodeFactory/HashingNodeFactory.h:
+
+../AST/NodeFactory/NodeFactory.h:
+
+../AST/NodeFactory/../ASTKind.h:
+
+../AST/ASTInternal.h:
+
+../AST/ASTInterior.h:
+
+../AST/ASTInternalWithChildren.h:
+
+../AST/ASTSymbol.h:
+
+../AST/ASTBVConst.h:
+
+../AST/NodeFactory/NodeFactory.h:
+
+LetMgr.h:
+
+../STPManager/STPManager.h:
+
+../STPManager/UserDefinedFlags.h:
+
+../STPManager/../AST/AST.h:
+
+../STPManager/../AST/NodeFactory/HashingNodeFactory.h:
+
+../STPManager/../sat/SATSolver.h:
+
+../STPManager/../sat/mtl/Vec.h:
+
+../STPManager/../sat/mtl/../mtl/IntTypesMtl.h:
+
+../STPManager/../sat/mtl/../mtl/XAlloc.h:
+
+../STPManager/../sat/core/SolverTypes.h:
+
+../STPManager/../sat/core/../mtl/IntTypesMtl.h:
+
+../STPManager/../sat/core/../mtl/Alg.h:
+
+../STPManager/../sat/core/../mtl/../mtl/Vec.h:
+
+../STPManager/../sat/core/../mtl/Vec.h:
+
+../STPManager/../sat/core/../mtl/Map.h:
+
+../STPManager/../sat/core/../mtl/../mtl/IntTypesMtl.h:
+
+../STPManager/../sat/core/../mtl/Alloc.h:
+
+../STPManager/../sat/core/../mtl/../mtl/XAlloc.h:
+
+../STPManager/STP.h:
+
+../STPManager/../AST/ArrayTransformer.h:
+
+../STPManager/../AST/AST.h:
+
+../STPManager/../AST/../STPManager/STPManager.h:
+
+../STPManager/../AST/../AST/NodeFactory/SimplifyingNodeFactory.h:
+
+../STPManager/../AST/../AST/NodeFactory/NodeFactory.h:
+
+../STPManager/../AST/../AST/NodeFactory/../../STPManager/STPManager.h:
+
+../STPManager/../STPManager/STPManager.h:
+
+../STPManager/../simplifier/bvsolver.h:
+
+../STPManager/../simplifier/simplifier.h:
+
+../STPManager/../simplifier/../AST/AST.h:
+
+../STPManager/../simplifier/../STPManager/STPManager.h:
+
+../STPManager/../simplifier/../AST/NodeFactory/SimplifyingNodeFactory.h:
+
+../STPManager/../simplifier/SubstitutionMap.h:
+
+../STPManager/../simplifier/VariablesInExpression.h:
+
+../STPManager/../simplifier/Symbols.h:
+
+../STPManager/../simplifier/simplifier.h:
+
+../STPManager/../to-sat/ASTNode/ToSAT.h:
+
+../STPManager/../to-sat/ASTNode/ToCNF.h:
+
+../STPManager/../to-sat/ASTNode/../../AST/AST.h:
+
+../STPManager/../to-sat/ASTNode/../../STPManager/STPManager.h:
+
+../STPManager/../to-sat/ASTNode/ClauseList.h:
+
+../STPManager/../to-sat/ASTNode/../ToSATBase.h:
+
+../STPManager/../to-sat/ASTNode/../../AST/AST.h:
+
+../STPManager/../to-sat/ASTNode/../../STPManager/STPManager.h:
+
+../STPManager/../parser/LetMgr.h:
+
+../STPManager/../absrefine_counterexample/AbsRefine_CounterExample.h:
+
+../STPManager/../absrefine_counterexample/../AST/AST.h:
+
+../STPManager/../absrefine_counterexample/../STPManager/STPManager.h:
+
+../STPManager/../absrefine_counterexample/../simplifier/simplifier.h:
+
+../STPManager/../absrefine_counterexample/../AST/ArrayTransformer.h:
+
+../STPManager/../absrefine_counterexample/../to-sat/ToSATBase.h:
+lexsmt2.o depend: lexsmt2.cpp parser.h ../AST/AST.h ../AST/UsefulDefs.h \
+ ../AST/../main/Globals.h ../AST/ASTKind.h \
+ ../AST/../extlib-constbv/constantbv.h ../AST/RunTimes.h \
+ ../AST/../sat/utils/System.h ../AST/../sat/utils/../mtl/IntTypesMtl.h \
+ ../AST/ASTNode.h ../AST/NodeFactory/HashingNodeFactory.h \
+ ../AST/NodeFactory/NodeFactory.h ../AST/NodeFactory/../ASTKind.h \
+ ../AST/ASTInternal.h ../AST/ASTInterior.h \
+ ../AST/ASTInternalWithChildren.h ../AST/ASTSymbol.h ../AST/ASTBVConst.h \
+ ../STPManager/STPManager.h ../STPManager/UserDefinedFlags.h \
+ ../STPManager/../AST/AST.h \
+ ../STPManager/../AST/NodeFactory/HashingNodeFactory.h \
+ ../STPManager/../sat/SATSolver.h ../STPManager/../sat/mtl/Vec.h \
+ ../STPManager/../sat/mtl/../mtl/IntTypesMtl.h \
+ ../STPManager/../sat/mtl/../mtl/XAlloc.h \
+ ../STPManager/../sat/core/SolverTypes.h \
+ ../STPManager/../sat/core/../mtl/IntTypesMtl.h \
+ ../STPManager/../sat/core/../mtl/Alg.h \
+ ../STPManager/../sat/core/../mtl/../mtl/Vec.h \
+ ../STPManager/../sat/core/../mtl/Vec.h \
+ ../STPManager/../sat/core/../mtl/Map.h \
+ ../STPManager/../sat/core/../mtl/../mtl/IntTypesMtl.h \
+ ../STPManager/../sat/core/../mtl/Alloc.h \
+ ../STPManager/../sat/core/../mtl/../mtl/XAlloc.h ../STPManager/STP.h \
+ ../STPManager/../AST/ArrayTransformer.h ../STPManager/../AST/AST.h \
+ ../STPManager/../AST/../STPManager/STPManager.h \
+ ../STPManager/../AST/../AST/NodeFactory/SimplifyingNodeFactory.h \
+ ../STPManager/../AST/../AST/NodeFactory/NodeFactory.h \
+ ../STPManager/../AST/../AST/NodeFactory/../../STPManager/STPManager.h \
+ ../STPManager/../STPManager/STPManager.h \
+ ../STPManager/../simplifier/bvsolver.h \
+ ../STPManager/../simplifier/simplifier.h \
+ ../STPManager/../simplifier/../AST/AST.h \
+ ../STPManager/../simplifier/../STPManager/STPManager.h \
+ ../STPManager/../simplifier/../AST/NodeFactory/SimplifyingNodeFactory.h \
+ ../STPManager/../simplifier/SubstitutionMap.h \
+ ../STPManager/../simplifier/VariablesInExpression.h \
+ ../STPManager/../simplifier/Symbols.h \
+ ../STPManager/../simplifier/simplifier.h \
+ ../STPManager/../to-sat/ASTNode/ToSAT.h \
+ ../STPManager/../to-sat/ASTNode/ToCNF.h \
+ ../STPManager/../to-sat/ASTNode/../../AST/AST.h \
+ ../STPManager/../to-sat/ASTNode/../../STPManager/STPManager.h \
+ ../STPManager/../to-sat/ASTNode/ClauseList.h \
+ ../STPManager/../to-sat/ASTNode/../ToSATBase.h \
+ ../STPManager/../to-sat/ASTNode/../../AST/AST.h \
+ ../STPManager/../to-sat/ASTNode/../../STPManager/STPManager.h \
+ ../STPManager/../parser/LetMgr.h ../STPManager/../parser/../AST/AST.h \
+ ../STPManager/../absrefine_counterexample/AbsRefine_CounterExample.h \
+ ../STPManager/../absrefine_counterexample/../AST/AST.h \
+ ../STPManager/../absrefine_counterexample/../STPManager/STPManager.h \
+ ../STPManager/../absrefine_counterexample/../simplifier/simplifier.h \
+ ../STPManager/../absrefine_counterexample/../AST/ArrayTransformer.h \
+ ../STPManager/../absrefine_counterexample/../to-sat/ToSATBase.h \
+ parsesmt2.hpp ParserInterface.h ../AST/NodeFactory/NodeFactory.h \
+ LetMgr.h
+
+parser.h:
+
+../AST/AST.h:
+
+../AST/UsefulDefs.h:
+
+../AST/../main/Globals.h:
+
+../AST/ASTKind.h:
+
+../AST/../extlib-constbv/constantbv.h:
+
+../AST/RunTimes.h:
+
+../AST/../sat/utils/System.h:
+
+../AST/../sat/utils/../mtl/IntTypesMtl.h:
+
+../AST/ASTNode.h:
+
+../AST/NodeFactory/HashingNodeFactory.h:
+
+../AST/NodeFactory/NodeFactory.h:
+
+../AST/NodeFactory/../ASTKind.h:
+
+../AST/ASTInternal.h:
+
+../AST/ASTInterior.h:
+
+../AST/ASTInternalWithChildren.h:
+
+../AST/ASTSymbol.h:
+
+../AST/ASTBVConst.h:
+
+../STPManager/STPManager.h:
+
+../STPManager/UserDefinedFlags.h:
+
+../STPManager/../AST/AST.h:
+
+../STPManager/../AST/NodeFactory/HashingNodeFactory.h:
+
+../STPManager/../sat/SATSolver.h:
+
+../STPManager/../sat/mtl/Vec.h:
+
+../STPManager/../sat/mtl/../mtl/IntTypesMtl.h:
+
+../STPManager/../sat/mtl/../mtl/XAlloc.h:
+
+../STPManager/../sat/core/SolverTypes.h:
+
+../STPManager/../sat/core/../mtl/IntTypesMtl.h:
+
+../STPManager/../sat/core/../mtl/Alg.h:
+
+../STPManager/../sat/core/../mtl/../mtl/Vec.h:
+
+../STPManager/../sat/core/../mtl/Vec.h:
+
+../STPManager/../sat/core/../mtl/Map.h:
+
+../STPManager/../sat/core/../mtl/../mtl/IntTypesMtl.h:
+
+../STPManager/../sat/core/../mtl/Alloc.h:
+
+../STPManager/../sat/core/../mtl/../mtl/XAlloc.h:
+
+../STPManager/STP.h:
+
+../STPManager/../AST/ArrayTransformer.h:
+
+../STPManager/../AST/AST.h:
+
+../STPManager/../AST/../STPManager/STPManager.h:
+
+../STPManager/../AST/../AST/NodeFactory/SimplifyingNodeFactory.h:
+
+../STPManager/../AST/../AST/NodeFactory/NodeFactory.h:
+
+../STPManager/../AST/../AST/NodeFactory/../../STPManager/STPManager.h:
+
+../STPManager/../STPManager/STPManager.h:
+
+../STPManager/../simplifier/bvsolver.h:
+
+../STPManager/../simplifier/simplifier.h:
+
+../STPManager/../simplifier/../AST/AST.h:
+
+../STPManager/../simplifier/../STPManager/STPManager.h:
+
+../STPManager/../simplifier/../AST/NodeFactory/SimplifyingNodeFactory.h:
+
+../STPManager/../simplifier/SubstitutionMap.h:
+
+../STPManager/../simplifier/VariablesInExpression.h:
+
+../STPManager/../simplifier/Symbols.h:
+
+../STPManager/../simplifier/simplifier.h:
+
+../STPManager/../to-sat/ASTNode/ToSAT.h:
+
+../STPManager/../to-sat/ASTNode/ToCNF.h:
+
+../STPManager/../to-sat/ASTNode/../../AST/AST.h:
+
+../STPManager/../to-sat/ASTNode/../../STPManager/STPManager.h:
+
+../STPManager/../to-sat/ASTNode/ClauseList.h:
+
+../STPManager/../to-sat/ASTNode/../ToSATBase.h:
+
+../STPManager/../to-sat/ASTNode/../../AST/AST.h:
+
+../STPManager/../to-sat/ASTNode/../../STPManager/STPManager.h:
+
+../STPManager/../parser/LetMgr.h:
+
+../STPManager/../parser/../AST/AST.h:
+
+../STPManager/../absrefine_counterexample/AbsRefine_CounterExample.h:
+
+../STPManager/../absrefine_counterexample/../AST/AST.h:
+
+../STPManager/../absrefine_counterexample/../STPManager/STPManager.h:
+
+../STPManager/../absrefine_counterexample/../simplifier/simplifier.h:
+
+../STPManager/../absrefine_counterexample/../AST/ArrayTransformer.h:
+
+../STPManager/../absrefine_counterexample/../to-sat/ToSATBase.h:
+
+parsesmt2.hpp:
+
+ParserInterface.h:
+
+../AST/NodeFactory/NodeFactory.h:
+
+LetMgr.h:
+parsesmt2.o depend: parsesmt2.cpp ParserInterface.h ../AST/AST.h \
+ ../AST/UsefulDefs.h ../AST/../main/Globals.h ../AST/ASTKind.h \
+ ../AST/../extlib-constbv/constantbv.h ../AST/RunTimes.h \
+ ../AST/../sat/utils/System.h ../AST/../sat/utils/../mtl/IntTypesMtl.h \
+ ../AST/ASTNode.h ../AST/NodeFactory/HashingNodeFactory.h \
+ ../AST/NodeFactory/NodeFactory.h ../AST/NodeFactory/../ASTKind.h \
+ ../AST/ASTInternal.h ../AST/ASTInterior.h \
+ ../AST/ASTInternalWithChildren.h ../AST/ASTSymbol.h ../AST/ASTBVConst.h \
+ ../AST/NodeFactory/NodeFactory.h LetMgr.h ../STPManager/STPManager.h \
+ ../STPManager/UserDefinedFlags.h ../STPManager/../AST/AST.h \
+ ../STPManager/../AST/NodeFactory/HashingNodeFactory.h \
+ ../STPManager/../sat/SATSolver.h ../STPManager/../sat/mtl/Vec.h \
+ ../STPManager/../sat/mtl/../mtl/IntTypesMtl.h \
+ ../STPManager/../sat/mtl/../mtl/XAlloc.h \
+ ../STPManager/../sat/core/SolverTypes.h \
+ ../STPManager/../sat/core/../mtl/IntTypesMtl.h \
+ ../STPManager/../sat/core/../mtl/Alg.h \
+ ../STPManager/../sat/core/../mtl/../mtl/Vec.h \
+ ../STPManager/../sat/core/../mtl/Vec.h \
+ ../STPManager/../sat/core/../mtl/Map.h \
+ ../STPManager/../sat/core/../mtl/../mtl/IntTypesMtl.h \
+ ../STPManager/../sat/core/../mtl/Alloc.h \
+ ../STPManager/../sat/core/../mtl/../mtl/XAlloc.h ../STPManager/STP.h \
+ ../STPManager/../AST/ArrayTransformer.h ../STPManager/../AST/AST.h \
+ ../STPManager/../AST/../STPManager/STPManager.h \
+ ../STPManager/../AST/../AST/NodeFactory/SimplifyingNodeFactory.h \
+ ../STPManager/../AST/../AST/NodeFactory/NodeFactory.h \
+ ../STPManager/../AST/../AST/NodeFactory/../../STPManager/STPManager.h \
+ ../STPManager/../STPManager/STPManager.h \
+ ../STPManager/../simplifier/bvsolver.h \
+ ../STPManager/../simplifier/simplifier.h \
+ ../STPManager/../simplifier/../AST/AST.h \
+ ../STPManager/../simplifier/../STPManager/STPManager.h \
+ ../STPManager/../simplifier/../AST/NodeFactory/SimplifyingNodeFactory.h \
+ ../STPManager/../simplifier/SubstitutionMap.h \
+ ../STPManager/../simplifier/VariablesInExpression.h \
+ ../STPManager/../simplifier/Symbols.h \
+ ../STPManager/../simplifier/simplifier.h \
+ ../STPManager/../to-sat/ASTNode/ToSAT.h \
+ ../STPManager/../to-sat/ASTNode/ToCNF.h \
+ ../STPManager/../to-sat/ASTNode/../../AST/AST.h \
+ ../STPManager/../to-sat/ASTNode/../../STPManager/STPManager.h \
+ ../STPManager/../to-sat/ASTNode/ClauseList.h \
+ ../STPManager/../to-sat/ASTNode/../ToSATBase.h \
+ ../STPManager/../to-sat/ASTNode/../../AST/AST.h \
+ ../STPManager/../to-sat/ASTNode/../../STPManager/STPManager.h \
+ ../STPManager/../parser/LetMgr.h \
+ ../STPManager/../absrefine_counterexample/AbsRefine_CounterExample.h \
+ ../STPManager/../absrefine_counterexample/../AST/AST.h \
+ ../STPManager/../absrefine_counterexample/../STPManager/STPManager.h \
+ ../STPManager/../absrefine_counterexample/../simplifier/simplifier.h \
+ ../STPManager/../absrefine_counterexample/../AST/ArrayTransformer.h \
+ ../STPManager/../absrefine_counterexample/../to-sat/ToSATBase.h
+
+ParserInterface.h:
+
+../AST/AST.h:
+
+../AST/UsefulDefs.h:
+
+../AST/../main/Globals.h:
+
+../AST/ASTKind.h:
+
+../AST/../extlib-constbv/constantbv.h:
+
+../AST/RunTimes.h:
+
+../AST/../sat/utils/System.h:
+
+../AST/../sat/utils/../mtl/IntTypesMtl.h:
+
+../AST/ASTNode.h:
+
+../AST/NodeFactory/HashingNodeFactory.h:
+
+../AST/NodeFactory/NodeFactory.h:
+
+../AST/NodeFactory/../ASTKind.h:
+
+../AST/ASTInternal.h:
+
+../AST/ASTInterior.h:
+
+../AST/ASTInternalWithChildren.h:
+
+../AST/ASTSymbol.h:
+
+../AST/ASTBVConst.h:
+
+../AST/NodeFactory/NodeFactory.h:
+
+LetMgr.h:
+
+../STPManager/STPManager.h:
+
+../STPManager/UserDefinedFlags.h:
+
+../STPManager/../AST/AST.h:
+
+../STPManager/../AST/NodeFactory/HashingNodeFactory.h:
+
+../STPManager/../sat/SATSolver.h:
+
+../STPManager/../sat/mtl/Vec.h:
+
+../STPManager/../sat/mtl/../mtl/IntTypesMtl.h:
+
+../STPManager/../sat/mtl/../mtl/XAlloc.h:
+
+../STPManager/../sat/core/SolverTypes.h:
+
+../STPManager/../sat/core/../mtl/IntTypesMtl.h:
+
+../STPManager/../sat/core/../mtl/Alg.h:
+
+../STPManager/../sat/core/../mtl/../mtl/Vec.h:
+
+../STPManager/../sat/core/../mtl/Vec.h:
+
+../STPManager/../sat/core/../mtl/Map.h:
+
+../STPManager/../sat/core/../mtl/../mtl/IntTypesMtl.h:
+
+../STPManager/../sat/core/../mtl/Alloc.h:
+
+../STPManager/../sat/core/../mtl/../mtl/XAlloc.h:
+
+../STPManager/STP.h:
+
+../STPManager/../AST/ArrayTransformer.h:
+
+../STPManager/../AST/AST.h:
+
+../STPManager/../AST/../STPManager/STPManager.h:
+
+../STPManager/../AST/../AST/NodeFactory/SimplifyingNodeFactory.h:
+
+../STPManager/../AST/../AST/NodeFactory/NodeFactory.h:
+
+../STPManager/../AST/../AST/NodeFactory/../../STPManager/STPManager.h:
+
+../STPManager/../STPManager/STPManager.h:
+
+../STPManager/../simplifier/bvsolver.h:
+
+../STPManager/../simplifier/simplifier.h:
+
+../STPManager/../simplifier/../AST/AST.h:
+
+../STPManager/../simplifier/../STPManager/STPManager.h:
+
+../STPManager/../simplifier/../AST/NodeFactory/SimplifyingNodeFactory.h:
+
+../STPManager/../simplifier/SubstitutionMap.h:
+
+../STPManager/../simplifier/VariablesInExpression.h:
+
+../STPManager/../simplifier/Symbols.h:
+
+../STPManager/../simplifier/simplifier.h:
+
+../STPManager/../to-sat/ASTNode/ToSAT.h:
+
+../STPManager/../to-sat/ASTNode/ToCNF.h:
+
+../STPManager/../to-sat/ASTNode/../../AST/AST.h:
+
+../STPManager/../to-sat/ASTNode/../../STPManager/STPManager.h:
+
+../STPManager/../to-sat/ASTNode/ClauseList.h:
+
+../STPManager/../to-sat/ASTNode/../ToSATBase.h:
+
+../STPManager/../to-sat/ASTNode/../../AST/AST.h:
+
+../STPManager/../to-sat/ASTNode/../../STPManager/STPManager.h:
+
+../STPManager/../parser/LetMgr.h:
+
+../STPManager/../absrefine_counterexample/AbsRefine_CounterExample.h:
+
+../STPManager/../absrefine_counterexample/../AST/AST.h:
+
+../STPManager/../absrefine_counterexample/../STPManager/STPManager.h:
+
+../STPManager/../absrefine_counterexample/../simplifier/simplifier.h:
+
+../STPManager/../absrefine_counterexample/../AST/ArrayTransformer.h:
+
+../STPManager/../absrefine_counterexample/../to-sat/ToSATBase.h:
+LetMgr.o depend: LetMgr.cpp LetMgr.h ../AST/AST.h ../AST/UsefulDefs.h \
+ ../AST/../main/Globals.h ../AST/ASTKind.h \
+ ../AST/../extlib-constbv/constantbv.h ../AST/RunTimes.h \
+ ../AST/../sat/utils/System.h ../AST/../sat/utils/../mtl/IntTypesMtl.h \
+ ../AST/ASTNode.h ../AST/NodeFactory/HashingNodeFactory.h \
+ ../AST/NodeFactory/NodeFactory.h ../AST/NodeFactory/../ASTKind.h \
+ ../AST/ASTInternal.h ../AST/ASTInterior.h \
+ ../AST/ASTInternalWithChildren.h ../AST/ASTSymbol.h ../AST/ASTBVConst.h
+
+LetMgr.h:
+
+../AST/AST.h:
+
+../AST/UsefulDefs.h:
+
+../AST/../main/Globals.h:
+
+../AST/ASTKind.h:
+
+../AST/../extlib-constbv/constantbv.h:
+
+../AST/RunTimes.h:
+
+../AST/../sat/utils/System.h:
+
+../AST/../sat/utils/../mtl/IntTypesMtl.h:
+
+../AST/ASTNode.h:
+
+../AST/NodeFactory/HashingNodeFactory.h:
+
+../AST/NodeFactory/NodeFactory.h:
+
+../AST/NodeFactory/../ASTKind.h:
+
+../AST/ASTInternal.h:
+
+../AST/ASTInterior.h:
+
+../AST/ASTInternalWithChildren.h:
+
+../AST/ASTSymbol.h:
+
+../AST/ASTBVConst.h:
+lexcvc.o parsecvc.o lexsmt.o parsesmt.o lexsmt2.o parsesmt2.o LetMgr.o depend : Makefile ../../scripts/Makefile.common ../../scripts/config.info

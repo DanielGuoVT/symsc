@@ -1,0 +1,305 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon
+END
+HexagonInstrInfo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonInstrInfo.cpp
+END
+HexagonTargetMachine.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonTargetMachine.cpp
+END
+LLVMBuild.txt
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/LLVMBuild.txt
+END
+HexagonTargetObjectFile.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonTargetObjectFile.cpp
+END
+HexagonSelectionDAGInfo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonSelectionDAGInfo.cpp
+END
+HexagonInstrFormats.td
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonInstrFormats.td
+END
+HexagonSchedule.td
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonSchedule.td
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/CMakeLists.txt
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/Makefile
+END
+HexagonCallingConv.td
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonCallingConv.td
+END
+HexagonAsmPrinter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonAsmPrinter.cpp
+END
+Hexagon.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/Hexagon.h
+END
+HexagonIntrinsicsV4.td
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonIntrinsicsV4.td
+END
+HexagonRegisterInfo.td
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonRegisterInfo.td
+END
+HexagonSelectCCInfo.td
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonSelectCCInfo.td
+END
+HexagonISelDAGToDAG.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonISelDAGToDAG.cpp
+END
+HexagonInstrFormatsV4.td
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonInstrFormatsV4.td
+END
+HexagonScheduleV4.td
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonScheduleV4.td
+END
+HexagonMachineFunctionInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonMachineFunctionInfo.h
+END
+HexagonCFGOptimizer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonCFGOptimizer.cpp
+END
+Hexagon.td
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/Hexagon.td
+END
+HexagonRegisterInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonRegisterInfo.h
+END
+HexagonSubtarget.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonSubtarget.h
+END
+HexagonMCInstLower.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonMCInstLower.cpp
+END
+HexagonImmediates.td
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonImmediates.td
+END
+HexagonFrameLowering.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonFrameLowering.h
+END
+HexagonVarargsCallingConvention.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonVarargsCallingConvention.h
+END
+HexagonISelLowering.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonISelLowering.h
+END
+HexagonInstrInfoV3.td
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonInstrInfoV3.td
+END
+HexagonSplitTFRCondSets.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonSplitTFRCondSets.cpp
+END
+HexagonCallingConvLower.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonCallingConvLower.h
+END
+HexagonIntrinsicsDerived.td
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonIntrinsicsDerived.td
+END
+HexagonInstrInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonInstrInfo.h
+END
+HexagonTargetMachine.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonTargetMachine.h
+END
+HexagonTargetObjectFile.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonTargetObjectFile.h
+END
+HexagonSelectionDAGInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonSelectionDAGInfo.h
+END
+HexagonIntrinsicsV3.td
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonIntrinsicsV3.td
+END
+HexagonAsmPrinter.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonAsmPrinter.h
+END
+HexagonExpandPredSpillCode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonExpandPredSpillCode.cpp
+END
+HexagonSubtarget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonSubtarget.cpp
+END
+HexagonRegisterInfo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonRegisterInfo.cpp
+END
+HexagonInstrInfo.td
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonInstrInfo.td
+END
+HexagonFrameLowering.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonFrameLowering.cpp
+END
+HexagonPeephole.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonPeephole.cpp
+END
+HexagonISelLowering.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonISelLowering.cpp
+END
+HexagonRemoveSZExtArgs.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonRemoveSZExtArgs.cpp
+END
+HexagonCallingConvLower.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonCallingConvLower.cpp
+END
+HexagonIntrinsics.td
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonIntrinsics.td
+END
+HexagonHardwareLoops.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonHardwareLoops.cpp
+END
+HexagonInstrInfoV4.td
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/HexagonInstrInfoV4.td
+END

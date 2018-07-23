@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/X86
+END
+invalid-cmp-imm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/X86/invalid-cmp-imm.txt
+END
+enhanced.txt
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/X86/enhanced.txt
+END
+truncated-input.txt
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/X86/truncated-input.txt
+END
+x86-32.txt
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/X86/x86-32.txt
+END
+simple-tests.txt
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/X86/simple-tests.txt
+END
+invalid-VEX-vvvv.txt
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/X86/invalid-VEX-vvvv.txt
+END
+x86-64.txt
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/X86/x86-64.txt
+END
+intel-syntax.txt
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/X86/intel-syntax.txt
+END
+lit.local.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/Disassembler/X86/lit.local.cfg
+END

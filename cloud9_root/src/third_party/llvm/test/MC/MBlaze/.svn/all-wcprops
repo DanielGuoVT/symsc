@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/MBlaze
+END
+mblaze_memory.s
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/MBlaze/mblaze_memory.s
+END
+mblaze_fpu.s
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/MBlaze/mblaze_fpu.s
+END
+mblaze_operands.s
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/MBlaze/mblaze_operands.s
+END
+mblaze_branch.s
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/MBlaze/mblaze_branch.s
+END
+mblaze_pattern.s
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/MBlaze/mblaze_pattern.s
+END
+mblaze_shift.s
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/MBlaze/mblaze_shift.s
+END
+mblaze_special.s
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/MBlaze/mblaze_special.s
+END
+mblaze_imm.s
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/MBlaze/mblaze_imm.s
+END
+mblaze_typea.s
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/MBlaze/mblaze_typea.s
+END
+mblaze_typeb.s
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/MBlaze/mblaze_typeb.s
+END
+lit.local.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/MBlaze/lit.local.cfg
+END
+mblaze_fsl.s
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/MBlaze/mblaze_fsl.s
+END

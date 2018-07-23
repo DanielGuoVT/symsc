@@ -1,0 +1,14 @@
+[func]
+Schedule
+Encrypt
+
+[sbox]
+sBox4
+invsBox4
+
+[shadow]
+Schedule
+Encrypt
+
+[key]
+key

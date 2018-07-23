@@ -1,0 +1,2184 @@
+Logger.o depend: Logger.cpp Logger.h mtl/Vec.h mtl/Heap.h mtl/Vec.h \
+ mtl/Alg.h SolverTypes.h Clause.h PackedRow.h constants.h \
+ ClauseAllocator.h ../../boost/pool/pool.hpp ../../boost/config.hpp \
+ ../../boost/config/user.hpp \
+ ../../boost/config/select_compiler_config.hpp \
+ ../../boost/config/compiler/gcc.hpp \
+ ../../boost/config/select_stdlib_config.hpp \
+ ../../boost/config/no_tr1/utility.hpp \
+ ../../boost/config/stdlib/libstdcpp3.hpp \
+ ../../boost/config/select_platform_config.hpp \
+ ../../boost/config/platform/linux.hpp \
+ ../../boost/config/posix_features.hpp ../../boost/config/suffix.hpp \
+ ../../boost/pool/poolfwd.hpp ../../boost/pool/detail/mutex.hpp \
+ ../../boost/pool/detail/ct_gcd_lcm.hpp ../../boost/static_assert.hpp \
+ ../../boost/detail/workaround.hpp ../../boost/type_traits/ice.hpp \
+ ../../boost/type_traits/detail/yes_no_type.hpp \
+ ../../boost/type_traits/detail/ice_or.hpp \
+ ../../boost/type_traits/detail/ice_and.hpp \
+ ../../boost/type_traits/detail/ice_not.hpp \
+ ../../boost/type_traits/detail/ice_eq.hpp \
+ ../../boost/pool/detail/gcd_lcm.hpp \
+ ../../boost/pool/simple_segregated_storage.hpp Solver.h time_mem.h \
+ MersenneTwister.h BoundedQueue.h GaussianConfig.h Gaussian.h \
+ PackedMatrix.h BitArray.h
+
+Logger.h:
+
+mtl/Vec.h:
+
+mtl/Heap.h:
+
+mtl/Vec.h:
+
+mtl/Alg.h:
+
+SolverTypes.h:
+
+Clause.h:
+
+PackedRow.h:
+
+constants.h:
+
+ClauseAllocator.h:
+
+../../boost/pool/pool.hpp:
+
+../../boost/config.hpp:
+
+../../boost/config/user.hpp:
+
+../../boost/config/select_compiler_config.hpp:
+
+../../boost/config/compiler/gcc.hpp:
+
+../../boost/config/select_stdlib_config.hpp:
+
+../../boost/config/no_tr1/utility.hpp:
+
+../../boost/config/stdlib/libstdcpp3.hpp:
+
+../../boost/config/select_platform_config.hpp:
+
+../../boost/config/platform/linux.hpp:
+
+../../boost/config/posix_features.hpp:
+
+../../boost/config/suffix.hpp:
+
+../../boost/pool/poolfwd.hpp:
+
+../../boost/pool/detail/mutex.hpp:
+
+../../boost/pool/detail/ct_gcd_lcm.hpp:
+
+../../boost/static_assert.hpp:
+
+../../boost/detail/workaround.hpp:
+
+../../boost/type_traits/ice.hpp:
+
+../../boost/type_traits/detail/yes_no_type.hpp:
+
+../../boost/type_traits/detail/ice_or.hpp:
+
+../../boost/type_traits/detail/ice_and.hpp:
+
+../../boost/type_traits/detail/ice_not.hpp:
+
+../../boost/type_traits/detail/ice_eq.hpp:
+
+../../boost/pool/detail/gcd_lcm.hpp:
+
+../../boost/pool/simple_segregated_storage.hpp:
+
+Solver.h:
+
+time_mem.h:
+
+MersenneTwister.h:
+
+BoundedQueue.h:
+
+GaussianConfig.h:
+
+Gaussian.h:
+
+PackedMatrix.h:
+
+BitArray.h:
+Solver.o depend: Solver.cpp Solver.h time_mem.h mtl/Vec.h mtl/Heap.h \
+ mtl/Vec.h mtl/Alg.h MersenneTwister.h SolverTypes.h Clause.h PackedRow.h \
+ constants.h ClauseAllocator.h ../../boost/pool/pool.hpp \
+ ../../boost/config.hpp ../../boost/config/user.hpp \
+ ../../boost/config/select_compiler_config.hpp \
+ ../../boost/config/compiler/gcc.hpp \
+ ../../boost/config/select_stdlib_config.hpp \
+ ../../boost/config/no_tr1/utility.hpp \
+ ../../boost/config/stdlib/libstdcpp3.hpp \
+ ../../boost/config/select_platform_config.hpp \
+ ../../boost/config/platform/linux.hpp \
+ ../../boost/config/posix_features.hpp ../../boost/config/suffix.hpp \
+ ../../boost/pool/poolfwd.hpp ../../boost/pool/detail/mutex.hpp \
+ ../../boost/pool/detail/ct_gcd_lcm.hpp ../../boost/static_assert.hpp \
+ ../../boost/detail/workaround.hpp ../../boost/type_traits/ice.hpp \
+ ../../boost/type_traits/detail/yes_no_type.hpp \
+ ../../boost/type_traits/detail/ice_or.hpp \
+ ../../boost/type_traits/detail/ice_and.hpp \
+ ../../boost/type_traits/detail/ice_not.hpp \
+ ../../boost/type_traits/detail/ice_eq.hpp \
+ ../../boost/pool/detail/gcd_lcm.hpp \
+ ../../boost/pool/simple_segregated_storage.hpp Logger.h BoundedQueue.h \
+ GaussianConfig.h VarReplacer.h FindUndef.h XorFinder.h ClauseCleaner.h \
+ Subsumer.h mtl/Queue.h CSet.h BitArray.h XorSubsumer.h XSet.h \
+ RestartTypeChooser.h FailedVarSearcher.h PartHandler.h PartFinder.h \
+ StateSaver.h UselessBinRemover.h OnlyNonLearntBins.h Gaussian.h \
+ PackedMatrix.h MatrixFinder.h
+
+Solver.h:
+
+time_mem.h:
+
+mtl/Vec.h:
+
+mtl/Heap.h:
+
+mtl/Vec.h:
+
+mtl/Alg.h:
+
+MersenneTwister.h:
+
+SolverTypes.h:
+
+Clause.h:
+
+PackedRow.h:
+
+constants.h:
+
+ClauseAllocator.h:
+
+../../boost/pool/pool.hpp:
+
+../../boost/config.hpp:
+
+../../boost/config/user.hpp:
+
+../../boost/config/select_compiler_config.hpp:
+
+../../boost/config/compiler/gcc.hpp:
+
+../../boost/config/select_stdlib_config.hpp:
+
+../../boost/config/no_tr1/utility.hpp:
+
+../../boost/config/stdlib/libstdcpp3.hpp:
+
+../../boost/config/select_platform_config.hpp:
+
+../../boost/config/platform/linux.hpp:
+
+../../boost/config/posix_features.hpp:
+
+../../boost/config/suffix.hpp:
+
+../../boost/pool/poolfwd.hpp:
+
+../../boost/pool/detail/mutex.hpp:
+
+../../boost/pool/detail/ct_gcd_lcm.hpp:
+
+../../boost/static_assert.hpp:
+
+../../boost/detail/workaround.hpp:
+
+../../boost/type_traits/ice.hpp:
+
+../../boost/type_traits/detail/yes_no_type.hpp:
+
+../../boost/type_traits/detail/ice_or.hpp:
+
+../../boost/type_traits/detail/ice_and.hpp:
+
+../../boost/type_traits/detail/ice_not.hpp:
+
+../../boost/type_traits/detail/ice_eq.hpp:
+
+../../boost/pool/detail/gcd_lcm.hpp:
+
+../../boost/pool/simple_segregated_storage.hpp:
+
+Logger.h:
+
+BoundedQueue.h:
+
+GaussianConfig.h:
+
+VarReplacer.h:
+
+FindUndef.h:
+
+XorFinder.h:
+
+ClauseCleaner.h:
+
+Subsumer.h:
+
+mtl/Queue.h:
+
+CSet.h:
+
+BitArray.h:
+
+XorSubsumer.h:
+
+XSet.h:
+
+RestartTypeChooser.h:
+
+FailedVarSearcher.h:
+
+PartHandler.h:
+
+PartFinder.h:
+
+StateSaver.h:
+
+UselessBinRemover.h:
+
+OnlyNonLearntBins.h:
+
+Gaussian.h:
+
+PackedMatrix.h:
+
+MatrixFinder.h:
+PackedRow.o depend: PackedRow.cpp PackedRow.h SolverTypes.h mtl/Alg.h \
+ mtl/Vec.h
+
+PackedRow.h:
+
+SolverTypes.h:
+
+mtl/Alg.h:
+
+mtl/Vec.h:
+XorFinder.o depend: XorFinder.cpp XorFinder.h Clause.h mtl/Vec.h \
+ SolverTypes.h mtl/Alg.h PackedRow.h constants.h ClauseAllocator.h \
+ ../../boost/pool/pool.hpp ../../boost/config.hpp \
+ ../../boost/config/user.hpp \
+ ../../boost/config/select_compiler_config.hpp \
+ ../../boost/config/compiler/gcc.hpp \
+ ../../boost/config/select_stdlib_config.hpp \
+ ../../boost/config/no_tr1/utility.hpp \
+ ../../boost/config/stdlib/libstdcpp3.hpp \
+ ../../boost/config/select_platform_config.hpp \
+ ../../boost/config/platform/linux.hpp \
+ ../../boost/config/posix_features.hpp ../../boost/config/suffix.hpp \
+ ../../boost/pool/poolfwd.hpp ../../boost/pool/detail/mutex.hpp \
+ ../../boost/pool/detail/ct_gcd_lcm.hpp ../../boost/static_assert.hpp \
+ ../../boost/detail/workaround.hpp ../../boost/type_traits/ice.hpp \
+ ../../boost/type_traits/detail/yes_no_type.hpp \
+ ../../boost/type_traits/detail/ice_or.hpp \
+ ../../boost/type_traits/detail/ice_and.hpp \
+ ../../boost/type_traits/detail/ice_not.hpp \
+ ../../boost/type_traits/detail/ice_eq.hpp \
+ ../../boost/pool/detail/gcd_lcm.hpp \
+ ../../boost/pool/simple_segregated_storage.hpp VarReplacer.h Solver.h \
+ time_mem.h mtl/Heap.h mtl/Vec.h MersenneTwister.h Logger.h \
+ BoundedQueue.h GaussianConfig.h ClauseCleaner.h Subsumer.h mtl/Queue.h \
+ CSet.h BitArray.h XorSubsumer.h XSet.h
+
+XorFinder.h:
+
+Clause.h:
+
+mtl/Vec.h:
+
+SolverTypes.h:
+
+mtl/Alg.h:
+
+PackedRow.h:
+
+constants.h:
+
+ClauseAllocator.h:
+
+../../boost/pool/pool.hpp:
+
+../../boost/config.hpp:
+
+../../boost/config/user.hpp:
+
+../../boost/config/select_compiler_config.hpp:
+
+../../boost/config/compiler/gcc.hpp:
+
+../../boost/config/select_stdlib_config.hpp:
+
+../../boost/config/no_tr1/utility.hpp:
+
+../../boost/config/stdlib/libstdcpp3.hpp:
+
+../../boost/config/select_platform_config.hpp:
+
+../../boost/config/platform/linux.hpp:
+
+../../boost/config/posix_features.hpp:
+
+../../boost/config/suffix.hpp:
+
+../../boost/pool/poolfwd.hpp:
+
+../../boost/pool/detail/mutex.hpp:
+
+../../boost/pool/detail/ct_gcd_lcm.hpp:
+
+../../boost/static_assert.hpp:
+
+../../boost/detail/workaround.hpp:
+
+../../boost/type_traits/ice.hpp:
+
+../../boost/type_traits/detail/yes_no_type.hpp:
+
+../../boost/type_traits/detail/ice_or.hpp:
+
+../../boost/type_traits/detail/ice_and.hpp:
+
+../../boost/type_traits/detail/ice_not.hpp:
+
+../../boost/type_traits/detail/ice_eq.hpp:
+
+../../boost/pool/detail/gcd_lcm.hpp:
+
+../../boost/pool/simple_segregated_storage.hpp:
+
+VarReplacer.h:
+
+Solver.h:
+
+time_mem.h:
+
+mtl/Heap.h:
+
+mtl/Vec.h:
+
+MersenneTwister.h:
+
+Logger.h:
+
+BoundedQueue.h:
+
+GaussianConfig.h:
+
+ClauseCleaner.h:
+
+Subsumer.h:
+
+mtl/Queue.h:
+
+CSet.h:
+
+BitArray.h:
+
+XorSubsumer.h:
+
+XSet.h:
+VarReplacer.o depend: VarReplacer.cpp VarReplacer.h Solver.h time_mem.h \
+ mtl/Vec.h mtl/Heap.h mtl/Vec.h mtl/Alg.h MersenneTwister.h SolverTypes.h \
+ Clause.h PackedRow.h constants.h ClauseAllocator.h \
+ ../../boost/pool/pool.hpp ../../boost/config.hpp \
+ ../../boost/config/user.hpp \
+ ../../boost/config/select_compiler_config.hpp \
+ ../../boost/config/compiler/gcc.hpp \
+ ../../boost/config/select_stdlib_config.hpp \
+ ../../boost/config/no_tr1/utility.hpp \
+ ../../boost/config/stdlib/libstdcpp3.hpp \
+ ../../boost/config/select_platform_config.hpp \
+ ../../boost/config/platform/linux.hpp \
+ ../../boost/config/posix_features.hpp ../../boost/config/suffix.hpp \
+ ../../boost/pool/poolfwd.hpp ../../boost/pool/detail/mutex.hpp \
+ ../../boost/pool/detail/ct_gcd_lcm.hpp ../../boost/static_assert.hpp \
+ ../../boost/detail/workaround.hpp ../../boost/type_traits/ice.hpp \
+ ../../boost/type_traits/detail/yes_no_type.hpp \
+ ../../boost/type_traits/detail/ice_or.hpp \
+ ../../boost/type_traits/detail/ice_and.hpp \
+ ../../boost/type_traits/detail/ice_not.hpp \
+ ../../boost/type_traits/detail/ice_eq.hpp \
+ ../../boost/pool/detail/gcd_lcm.hpp \
+ ../../boost/pool/simple_segregated_storage.hpp Logger.h BoundedQueue.h \
+ GaussianConfig.h ClauseCleaner.h Subsumer.h mtl/Queue.h CSet.h \
+ BitArray.h XorSubsumer.h XSet.h PartHandler.h PartFinder.h
+
+VarReplacer.h:
+
+Solver.h:
+
+time_mem.h:
+
+mtl/Vec.h:
+
+mtl/Heap.h:
+
+mtl/Vec.h:
+
+mtl/Alg.h:
+
+MersenneTwister.h:
+
+SolverTypes.h:
+
+Clause.h:
+
+PackedRow.h:
+
+constants.h:
+
+ClauseAllocator.h:
+
+../../boost/pool/pool.hpp:
+
+../../boost/config.hpp:
+
+../../boost/config/user.hpp:
+
+../../boost/config/select_compiler_config.hpp:
+
+../../boost/config/compiler/gcc.hpp:
+
+../../boost/config/select_stdlib_config.hpp:
+
+../../boost/config/no_tr1/utility.hpp:
+
+../../boost/config/stdlib/libstdcpp3.hpp:
+
+../../boost/config/select_platform_config.hpp:
+
+../../boost/config/platform/linux.hpp:
+
+../../boost/config/posix_features.hpp:
+
+../../boost/config/suffix.hpp:
+
+../../boost/pool/poolfwd.hpp:
+
+../../boost/pool/detail/mutex.hpp:
+
+../../boost/pool/detail/ct_gcd_lcm.hpp:
+
+../../boost/static_assert.hpp:
+
+../../boost/detail/workaround.hpp:
+
+../../boost/type_traits/ice.hpp:
+
+../../boost/type_traits/detail/yes_no_type.hpp:
+
+../../boost/type_traits/detail/ice_or.hpp:
+
+../../boost/type_traits/detail/ice_and.hpp:
+
+../../boost/type_traits/detail/ice_not.hpp:
+
+../../boost/type_traits/detail/ice_eq.hpp:
+
+../../boost/pool/detail/gcd_lcm.hpp:
+
+../../boost/pool/simple_segregated_storage.hpp:
+
+Logger.h:
+
+BoundedQueue.h:
+
+GaussianConfig.h:
+
+ClauseCleaner.h:
+
+Subsumer.h:
+
+mtl/Queue.h:
+
+CSet.h:
+
+BitArray.h:
+
+XorSubsumer.h:
+
+XSet.h:
+
+PartHandler.h:
+
+PartFinder.h:
+FindUndef.o depend: FindUndef.cpp FindUndef.h Solver.h time_mem.h \
+ mtl/Vec.h mtl/Heap.h mtl/Vec.h mtl/Alg.h MersenneTwister.h SolverTypes.h \
+ Clause.h PackedRow.h constants.h ClauseAllocator.h \
+ ../../boost/pool/pool.hpp ../../boost/config.hpp \
+ ../../boost/config/user.hpp \
+ ../../boost/config/select_compiler_config.hpp \
+ ../../boost/config/compiler/gcc.hpp \
+ ../../boost/config/select_stdlib_config.hpp \
+ ../../boost/config/no_tr1/utility.hpp \
+ ../../boost/config/stdlib/libstdcpp3.hpp \
+ ../../boost/config/select_platform_config.hpp \
+ ../../boost/config/platform/linux.hpp \
+ ../../boost/config/posix_features.hpp ../../boost/config/suffix.hpp \
+ ../../boost/pool/poolfwd.hpp ../../boost/pool/detail/mutex.hpp \
+ ../../boost/pool/detail/ct_gcd_lcm.hpp ../../boost/static_assert.hpp \
+ ../../boost/detail/workaround.hpp ../../boost/type_traits/ice.hpp \
+ ../../boost/type_traits/detail/yes_no_type.hpp \
+ ../../boost/type_traits/detail/ice_or.hpp \
+ ../../boost/type_traits/detail/ice_and.hpp \
+ ../../boost/type_traits/detail/ice_not.hpp \
+ ../../boost/type_traits/detail/ice_eq.hpp \
+ ../../boost/pool/detail/gcd_lcm.hpp \
+ ../../boost/pool/simple_segregated_storage.hpp Logger.h BoundedQueue.h \
+ GaussianConfig.h VarReplacer.h
+
+FindUndef.h:
+
+Solver.h:
+
+time_mem.h:
+
+mtl/Vec.h:
+
+mtl/Heap.h:
+
+mtl/Vec.h:
+
+mtl/Alg.h:
+
+MersenneTwister.h:
+
+SolverTypes.h:
+
+Clause.h:
+
+PackedRow.h:
+
+constants.h:
+
+ClauseAllocator.h:
+
+../../boost/pool/pool.hpp:
+
+../../boost/config.hpp:
+
+../../boost/config/user.hpp:
+
+../../boost/config/select_compiler_config.hpp:
+
+../../boost/config/compiler/gcc.hpp:
+
+../../boost/config/select_stdlib_config.hpp:
+
+../../boost/config/no_tr1/utility.hpp:
+
+../../boost/config/stdlib/libstdcpp3.hpp:
+
+../../boost/config/select_platform_config.hpp:
+
+../../boost/config/platform/linux.hpp:
+
+../../boost/config/posix_features.hpp:
+
+../../boost/config/suffix.hpp:
+
+../../boost/pool/poolfwd.hpp:
+
+../../boost/pool/detail/mutex.hpp:
+
+../../boost/pool/detail/ct_gcd_lcm.hpp:
+
+../../boost/static_assert.hpp:
+
+../../boost/detail/workaround.hpp:
+
+../../boost/type_traits/ice.hpp:
+
+../../boost/type_traits/detail/yes_no_type.hpp:
+
+../../boost/type_traits/detail/ice_or.hpp:
+
+../../boost/type_traits/detail/ice_and.hpp:
+
+../../boost/type_traits/detail/ice_not.hpp:
+
+../../boost/type_traits/detail/ice_eq.hpp:
+
+../../boost/pool/detail/gcd_lcm.hpp:
+
+../../boost/pool/simple_segregated_storage.hpp:
+
+Logger.h:
+
+BoundedQueue.h:
+
+GaussianConfig.h:
+
+VarReplacer.h:
+ClauseCleaner.o depend: ClauseCleaner.cpp ClauseCleaner.h Solver.h \
+ time_mem.h mtl/Vec.h mtl/Heap.h mtl/Vec.h mtl/Alg.h MersenneTwister.h \
+ SolverTypes.h Clause.h PackedRow.h constants.h ClauseAllocator.h \
+ ../../boost/pool/pool.hpp ../../boost/config.hpp \
+ ../../boost/config/user.hpp \
+ ../../boost/config/select_compiler_config.hpp \
+ ../../boost/config/compiler/gcc.hpp \
+ ../../boost/config/select_stdlib_config.hpp \
+ ../../boost/config/no_tr1/utility.hpp \
+ ../../boost/config/stdlib/libstdcpp3.hpp \
+ ../../boost/config/select_platform_config.hpp \
+ ../../boost/config/platform/linux.hpp \
+ ../../boost/config/posix_features.hpp ../../boost/config/suffix.hpp \
+ ../../boost/pool/poolfwd.hpp ../../boost/pool/detail/mutex.hpp \
+ ../../boost/pool/detail/ct_gcd_lcm.hpp ../../boost/static_assert.hpp \
+ ../../boost/detail/workaround.hpp ../../boost/type_traits/ice.hpp \
+ ../../boost/type_traits/detail/yes_no_type.hpp \
+ ../../boost/type_traits/detail/ice_or.hpp \
+ ../../boost/type_traits/detail/ice_and.hpp \
+ ../../boost/type_traits/detail/ice_not.hpp \
+ ../../boost/type_traits/detail/ice_eq.hpp \
+ ../../boost/pool/detail/gcd_lcm.hpp \
+ ../../boost/pool/simple_segregated_storage.hpp Logger.h BoundedQueue.h \
+ GaussianConfig.h Subsumer.h mtl/Queue.h CSet.h BitArray.h XorSubsumer.h \
+ XSet.h VarReplacer.h
+
+ClauseCleaner.h:
+
+Solver.h:
+
+time_mem.h:
+
+mtl/Vec.h:
+
+mtl/Heap.h:
+
+mtl/Vec.h:
+
+mtl/Alg.h:
+
+MersenneTwister.h:
+
+SolverTypes.h:
+
+Clause.h:
+
+PackedRow.h:
+
+constants.h:
+
+ClauseAllocator.h:
+
+../../boost/pool/pool.hpp:
+
+../../boost/config.hpp:
+
+../../boost/config/user.hpp:
+
+../../boost/config/select_compiler_config.hpp:
+
+../../boost/config/compiler/gcc.hpp:
+
+../../boost/config/select_stdlib_config.hpp:
+
+../../boost/config/no_tr1/utility.hpp:
+
+../../boost/config/stdlib/libstdcpp3.hpp:
+
+../../boost/config/select_platform_config.hpp:
+
+../../boost/config/platform/linux.hpp:
+
+../../boost/config/posix_features.hpp:
+
+../../boost/config/suffix.hpp:
+
+../../boost/pool/poolfwd.hpp:
+
+../../boost/pool/detail/mutex.hpp:
+
+../../boost/pool/detail/ct_gcd_lcm.hpp:
+
+../../boost/static_assert.hpp:
+
+../../boost/detail/workaround.hpp:
+
+../../boost/type_traits/ice.hpp:
+
+../../boost/type_traits/detail/yes_no_type.hpp:
+
+../../boost/type_traits/detail/ice_or.hpp:
+
+../../boost/type_traits/detail/ice_and.hpp:
+
+../../boost/type_traits/detail/ice_not.hpp:
+
+../../boost/type_traits/detail/ice_eq.hpp:
+
+../../boost/pool/detail/gcd_lcm.hpp:
+
+../../boost/pool/simple_segregated_storage.hpp:
+
+Logger.h:
+
+BoundedQueue.h:
+
+GaussianConfig.h:
+
+Subsumer.h:
+
+mtl/Queue.h:
+
+CSet.h:
+
+BitArray.h:
+
+XorSubsumer.h:
+
+XSet.h:
+
+VarReplacer.h:
+RestartTypeChooser.o depend: RestartTypeChooser.cpp RestartTypeChooser.h \
+ Solver.h time_mem.h mtl/Vec.h mtl/Heap.h mtl/Vec.h mtl/Alg.h \
+ MersenneTwister.h SolverTypes.h Clause.h PackedRow.h constants.h \
+ ClauseAllocator.h ../../boost/pool/pool.hpp ../../boost/config.hpp \
+ ../../boost/config/user.hpp \
+ ../../boost/config/select_compiler_config.hpp \
+ ../../boost/config/compiler/gcc.hpp \
+ ../../boost/config/select_stdlib_config.hpp \
+ ../../boost/config/no_tr1/utility.hpp \
+ ../../boost/config/stdlib/libstdcpp3.hpp \
+ ../../boost/config/select_platform_config.hpp \
+ ../../boost/config/platform/linux.hpp \
+ ../../boost/config/posix_features.hpp ../../boost/config/suffix.hpp \
+ ../../boost/pool/poolfwd.hpp ../../boost/pool/detail/mutex.hpp \
+ ../../boost/pool/detail/ct_gcd_lcm.hpp ../../boost/static_assert.hpp \
+ ../../boost/detail/workaround.hpp ../../boost/type_traits/ice.hpp \
+ ../../boost/type_traits/detail/yes_no_type.hpp \
+ ../../boost/type_traits/detail/ice_or.hpp \
+ ../../boost/type_traits/detail/ice_and.hpp \
+ ../../boost/type_traits/detail/ice_not.hpp \
+ ../../boost/type_traits/detail/ice_eq.hpp \
+ ../../boost/pool/detail/gcd_lcm.hpp \
+ ../../boost/pool/simple_segregated_storage.hpp Logger.h BoundedQueue.h \
+ GaussianConfig.h
+
+RestartTypeChooser.h:
+
+Solver.h:
+
+time_mem.h:
+
+mtl/Vec.h:
+
+mtl/Heap.h:
+
+mtl/Vec.h:
+
+mtl/Alg.h:
+
+MersenneTwister.h:
+
+SolverTypes.h:
+
+Clause.h:
+
+PackedRow.h:
+
+constants.h:
+
+ClauseAllocator.h:
+
+../../boost/pool/pool.hpp:
+
+../../boost/config.hpp:
+
+../../boost/config/user.hpp:
+
+../../boost/config/select_compiler_config.hpp:
+
+../../boost/config/compiler/gcc.hpp:
+
+../../boost/config/select_stdlib_config.hpp:
+
+../../boost/config/no_tr1/utility.hpp:
+
+../../boost/config/stdlib/libstdcpp3.hpp:
+
+../../boost/config/select_platform_config.hpp:
+
+../../boost/config/platform/linux.hpp:
+
+../../boost/config/posix_features.hpp:
+
+../../boost/config/suffix.hpp:
+
+../../boost/pool/poolfwd.hpp:
+
+../../boost/pool/detail/mutex.hpp:
+
+../../boost/pool/detail/ct_gcd_lcm.hpp:
+
+../../boost/static_assert.hpp:
+
+../../boost/detail/workaround.hpp:
+
+../../boost/type_traits/ice.hpp:
+
+../../boost/type_traits/detail/yes_no_type.hpp:
+
+../../boost/type_traits/detail/ice_or.hpp:
+
+../../boost/type_traits/detail/ice_and.hpp:
+
+../../boost/type_traits/detail/ice_not.hpp:
+
+../../boost/type_traits/detail/ice_eq.hpp:
+
+../../boost/pool/detail/gcd_lcm.hpp:
+
+../../boost/pool/simple_segregated_storage.hpp:
+
+Logger.h:
+
+BoundedQueue.h:
+
+GaussianConfig.h:
+FailedVarSearcher.o depend: FailedVarSearcher.cpp FailedVarSearcher.h \
+ SolverTypes.h mtl/Alg.h Clause.h mtl/Vec.h PackedRow.h constants.h \
+ ClauseAllocator.h ../../boost/pool/pool.hpp ../../boost/config.hpp \
+ ../../boost/config/user.hpp \
+ ../../boost/config/select_compiler_config.hpp \
+ ../../boost/config/compiler/gcc.hpp \
+ ../../boost/config/select_stdlib_config.hpp \
+ ../../boost/config/no_tr1/utility.hpp \
+ ../../boost/config/stdlib/libstdcpp3.hpp \
+ ../../boost/config/select_platform_config.hpp \
+ ../../boost/config/platform/linux.hpp \
+ ../../boost/config/posix_features.hpp ../../boost/config/suffix.hpp \
+ ../../boost/pool/poolfwd.hpp ../../boost/pool/detail/mutex.hpp \
+ ../../boost/pool/detail/ct_gcd_lcm.hpp ../../boost/static_assert.hpp \
+ ../../boost/detail/workaround.hpp ../../boost/type_traits/ice.hpp \
+ ../../boost/type_traits/detail/yes_no_type.hpp \
+ ../../boost/type_traits/detail/ice_or.hpp \
+ ../../boost/type_traits/detail/ice_and.hpp \
+ ../../boost/type_traits/detail/ice_not.hpp \
+ ../../boost/type_traits/detail/ice_eq.hpp \
+ ../../boost/pool/detail/gcd_lcm.hpp \
+ ../../boost/pool/simple_segregated_storage.hpp BitArray.h Solver.h \
+ time_mem.h mtl/Heap.h mtl/Vec.h MersenneTwister.h Logger.h \
+ BoundedQueue.h GaussianConfig.h ClauseCleaner.h Subsumer.h mtl/Queue.h \
+ CSet.h XorSubsumer.h XSet.h VarReplacer.h StateSaver.h
+
+FailedVarSearcher.h:
+
+SolverTypes.h:
+
+mtl/Alg.h:
+
+Clause.h:
+
+mtl/Vec.h:
+
+PackedRow.h:
+
+constants.h:
+
+ClauseAllocator.h:
+
+../../boost/pool/pool.hpp:
+
+../../boost/config.hpp:
+
+../../boost/config/user.hpp:
+
+../../boost/config/select_compiler_config.hpp:
+
+../../boost/config/compiler/gcc.hpp:
+
+../../boost/config/select_stdlib_config.hpp:
+
+../../boost/config/no_tr1/utility.hpp:
+
+../../boost/config/stdlib/libstdcpp3.hpp:
+
+../../boost/config/select_platform_config.hpp:
+
+../../boost/config/platform/linux.hpp:
+
+../../boost/config/posix_features.hpp:
+
+../../boost/config/suffix.hpp:
+
+../../boost/pool/poolfwd.hpp:
+
+../../boost/pool/detail/mutex.hpp:
+
+../../boost/pool/detail/ct_gcd_lcm.hpp:
+
+../../boost/static_assert.hpp:
+
+../../boost/detail/workaround.hpp:
+
+../../boost/type_traits/ice.hpp:
+
+../../boost/type_traits/detail/yes_no_type.hpp:
+
+../../boost/type_traits/detail/ice_or.hpp:
+
+../../boost/type_traits/detail/ice_and.hpp:
+
+../../boost/type_traits/detail/ice_not.hpp:
+
+../../boost/type_traits/detail/ice_eq.hpp:
+
+../../boost/pool/detail/gcd_lcm.hpp:
+
+../../boost/pool/simple_segregated_storage.hpp:
+
+BitArray.h:
+
+Solver.h:
+
+time_mem.h:
+
+mtl/Heap.h:
+
+mtl/Vec.h:
+
+MersenneTwister.h:
+
+Logger.h:
+
+BoundedQueue.h:
+
+GaussianConfig.h:
+
+ClauseCleaner.h:
+
+Subsumer.h:
+
+mtl/Queue.h:
+
+CSet.h:
+
+XorSubsumer.h:
+
+XSet.h:
+
+VarReplacer.h:
+
+StateSaver.h:
+PartFinder.o depend: PartFinder.cpp PartFinder.h Clause.h mtl/Vec.h \
+ SolverTypes.h mtl/Alg.h PackedRow.h constants.h ClauseAllocator.h \
+ ../../boost/pool/pool.hpp ../../boost/config.hpp \
+ ../../boost/config/user.hpp \
+ ../../boost/config/select_compiler_config.hpp \
+ ../../boost/config/compiler/gcc.hpp \
+ ../../boost/config/select_stdlib_config.hpp \
+ ../../boost/config/no_tr1/utility.hpp \
+ ../../boost/config/stdlib/libstdcpp3.hpp \
+ ../../boost/config/select_platform_config.hpp \
+ ../../boost/config/platform/linux.hpp \
+ ../../boost/config/posix_features.hpp ../../boost/config/suffix.hpp \
+ ../../boost/pool/poolfwd.hpp ../../boost/pool/detail/mutex.hpp \
+ ../../boost/pool/detail/ct_gcd_lcm.hpp ../../boost/static_assert.hpp \
+ ../../boost/detail/workaround.hpp ../../boost/type_traits/ice.hpp \
+ ../../boost/type_traits/detail/yes_no_type.hpp \
+ ../../boost/type_traits/detail/ice_or.hpp \
+ ../../boost/type_traits/detail/ice_and.hpp \
+ ../../boost/type_traits/detail/ice_not.hpp \
+ ../../boost/type_traits/detail/ice_eq.hpp \
+ ../../boost/pool/detail/gcd_lcm.hpp \
+ ../../boost/pool/simple_segregated_storage.hpp Solver.h time_mem.h \
+ mtl/Heap.h mtl/Vec.h MersenneTwister.h Logger.h BoundedQueue.h \
+ GaussianConfig.h Gaussian.h PackedMatrix.h BitArray.h ClauseCleaner.h \
+ Subsumer.h mtl/Queue.h CSet.h XorSubsumer.h XSet.h VarReplacer.h \
+ FailedVarSearcher.h
+
+PartFinder.h:
+
+Clause.h:
+
+mtl/Vec.h:
+
+SolverTypes.h:
+
+mtl/Alg.h:
+
+PackedRow.h:
+
+constants.h:
+
+ClauseAllocator.h:
+
+../../boost/pool/pool.hpp:
+
+../../boost/config.hpp:
+
+../../boost/config/user.hpp:
+
+../../boost/config/select_compiler_config.hpp:
+
+../../boost/config/compiler/gcc.hpp:
+
+../../boost/config/select_stdlib_config.hpp:
+
+../../boost/config/no_tr1/utility.hpp:
+
+../../boost/config/stdlib/libstdcpp3.hpp:
+
+../../boost/config/select_platform_config.hpp:
+
+../../boost/config/platform/linux.hpp:
+
+../../boost/config/posix_features.hpp:
+
+../../boost/config/suffix.hpp:
+
+../../boost/pool/poolfwd.hpp:
+
+../../boost/pool/detail/mutex.hpp:
+
+../../boost/pool/detail/ct_gcd_lcm.hpp:
+
+../../boost/static_assert.hpp:
+
+../../boost/detail/workaround.hpp:
+
+../../boost/type_traits/ice.hpp:
+
+../../boost/type_traits/detail/yes_no_type.hpp:
+
+../../boost/type_traits/detail/ice_or.hpp:
+
+../../boost/type_traits/detail/ice_and.hpp:
+
+../../boost/type_traits/detail/ice_not.hpp:
+
+../../boost/type_traits/detail/ice_eq.hpp:
+
+../../boost/pool/detail/gcd_lcm.hpp:
+
+../../boost/pool/simple_segregated_storage.hpp:
+
+Solver.h:
+
+time_mem.h:
+
+mtl/Heap.h:
+
+mtl/Vec.h:
+
+MersenneTwister.h:
+
+Logger.h:
+
+BoundedQueue.h:
+
+GaussianConfig.h:
+
+Gaussian.h:
+
+PackedMatrix.h:
+
+BitArray.h:
+
+ClauseCleaner.h:
+
+Subsumer.h:
+
+mtl/Queue.h:
+
+CSet.h:
+
+XorSubsumer.h:
+
+XSet.h:
+
+VarReplacer.h:
+
+FailedVarSearcher.h:
+Subsumer.o depend: Subsumer.cpp Solver.h time_mem.h mtl/Vec.h mtl/Heap.h \
+ mtl/Vec.h mtl/Alg.h MersenneTwister.h SolverTypes.h Clause.h PackedRow.h \
+ constants.h ClauseAllocator.h ../../boost/pool/pool.hpp \
+ ../../boost/config.hpp ../../boost/config/user.hpp \
+ ../../boost/config/select_compiler_config.hpp \
+ ../../boost/config/compiler/gcc.hpp \
+ ../../boost/config/select_stdlib_config.hpp \
+ ../../boost/config/no_tr1/utility.hpp \
+ ../../boost/config/stdlib/libstdcpp3.hpp \
+ ../../boost/config/select_platform_config.hpp \
+ ../../boost/config/platform/linux.hpp \
+ ../../boost/config/posix_features.hpp ../../boost/config/suffix.hpp \
+ ../../boost/pool/poolfwd.hpp ../../boost/pool/detail/mutex.hpp \
+ ../../boost/pool/detail/ct_gcd_lcm.hpp ../../boost/static_assert.hpp \
+ ../../boost/detail/workaround.hpp ../../boost/type_traits/ice.hpp \
+ ../../boost/type_traits/detail/yes_no_type.hpp \
+ ../../boost/type_traits/detail/ice_or.hpp \
+ ../../boost/type_traits/detail/ice_and.hpp \
+ ../../boost/type_traits/detail/ice_not.hpp \
+ ../../boost/type_traits/detail/ice_eq.hpp \
+ ../../boost/pool/detail/gcd_lcm.hpp \
+ ../../boost/pool/simple_segregated_storage.hpp Logger.h BoundedQueue.h \
+ GaussianConfig.h Subsumer.h mtl/Queue.h CSet.h BitArray.h \
+ ClauseCleaner.h XorSubsumer.h XSet.h VarReplacer.h XorFinder.h \
+ OnlyNonLearntBins.h
+
+Solver.h:
+
+time_mem.h:
+
+mtl/Vec.h:
+
+mtl/Heap.h:
+
+mtl/Vec.h:
+
+mtl/Alg.h:
+
+MersenneTwister.h:
+
+SolverTypes.h:
+
+Clause.h:
+
+PackedRow.h:
+
+constants.h:
+
+ClauseAllocator.h:
+
+../../boost/pool/pool.hpp:
+
+../../boost/config.hpp:
+
+../../boost/config/user.hpp:
+
+../../boost/config/select_compiler_config.hpp:
+
+../../boost/config/compiler/gcc.hpp:
+
+../../boost/config/select_stdlib_config.hpp:
+
+../../boost/config/no_tr1/utility.hpp:
+
+../../boost/config/stdlib/libstdcpp3.hpp:
+
+../../boost/config/select_platform_config.hpp:
+
+../../boost/config/platform/linux.hpp:
+
+../../boost/config/posix_features.hpp:
+
+../../boost/config/suffix.hpp:
+
+../../boost/pool/poolfwd.hpp:
+
+../../boost/pool/detail/mutex.hpp:
+
+../../boost/pool/detail/ct_gcd_lcm.hpp:
+
+../../boost/static_assert.hpp:
+
+../../boost/detail/workaround.hpp:
+
+../../boost/type_traits/ice.hpp:
+
+../../boost/type_traits/detail/yes_no_type.hpp:
+
+../../boost/type_traits/detail/ice_or.hpp:
+
+../../boost/type_traits/detail/ice_and.hpp:
+
+../../boost/type_traits/detail/ice_not.hpp:
+
+../../boost/type_traits/detail/ice_eq.hpp:
+
+../../boost/pool/detail/gcd_lcm.hpp:
+
+../../boost/pool/simple_segregated_storage.hpp:
+
+Logger.h:
+
+BoundedQueue.h:
+
+GaussianConfig.h:
+
+Subsumer.h:
+
+mtl/Queue.h:
+
+CSet.h:
+
+BitArray.h:
+
+ClauseCleaner.h:
+
+XorSubsumer.h:
+
+XSet.h:
+
+VarReplacer.h:
+
+XorFinder.h:
+
+OnlyNonLearntBins.h:
+PartHandler.o depend: PartHandler.cpp PartHandler.h Solver.h time_mem.h \
+ mtl/Vec.h mtl/Heap.h mtl/Vec.h mtl/Alg.h MersenneTwister.h SolverTypes.h \
+ Clause.h PackedRow.h constants.h ClauseAllocator.h \
+ ../../boost/pool/pool.hpp ../../boost/config.hpp \
+ ../../boost/config/user.hpp \
+ ../../boost/config/select_compiler_config.hpp \
+ ../../boost/config/compiler/gcc.hpp \
+ ../../boost/config/select_stdlib_config.hpp \
+ ../../boost/config/no_tr1/utility.hpp \
+ ../../boost/config/stdlib/libstdcpp3.hpp \
+ ../../boost/config/select_platform_config.hpp \
+ ../../boost/config/platform/linux.hpp \
+ ../../boost/config/posix_features.hpp ../../boost/config/suffix.hpp \
+ ../../boost/pool/poolfwd.hpp ../../boost/pool/detail/mutex.hpp \
+ ../../boost/pool/detail/ct_gcd_lcm.hpp ../../boost/static_assert.hpp \
+ ../../boost/detail/workaround.hpp ../../boost/type_traits/ice.hpp \
+ ../../boost/type_traits/detail/yes_no_type.hpp \
+ ../../boost/type_traits/detail/ice_or.hpp \
+ ../../boost/type_traits/detail/ice_and.hpp \
+ ../../boost/type_traits/detail/ice_not.hpp \
+ ../../boost/type_traits/detail/ice_eq.hpp \
+ ../../boost/pool/detail/gcd_lcm.hpp \
+ ../../boost/pool/simple_segregated_storage.hpp Logger.h BoundedQueue.h \
+ GaussianConfig.h PartFinder.h VarReplacer.h
+
+PartHandler.h:
+
+Solver.h:
+
+time_mem.h:
+
+mtl/Vec.h:
+
+mtl/Heap.h:
+
+mtl/Vec.h:
+
+mtl/Alg.h:
+
+MersenneTwister.h:
+
+SolverTypes.h:
+
+Clause.h:
+
+PackedRow.h:
+
+constants.h:
+
+ClauseAllocator.h:
+
+../../boost/pool/pool.hpp:
+
+../../boost/config.hpp:
+
+../../boost/config/user.hpp:
+
+../../boost/config/select_compiler_config.hpp:
+
+../../boost/config/compiler/gcc.hpp:
+
+../../boost/config/select_stdlib_config.hpp:
+
+../../boost/config/no_tr1/utility.hpp:
+
+../../boost/config/stdlib/libstdcpp3.hpp:
+
+../../boost/config/select_platform_config.hpp:
+
+../../boost/config/platform/linux.hpp:
+
+../../boost/config/posix_features.hpp:
+
+../../boost/config/suffix.hpp:
+
+../../boost/pool/poolfwd.hpp:
+
+../../boost/pool/detail/mutex.hpp:
+
+../../boost/pool/detail/ct_gcd_lcm.hpp:
+
+../../boost/static_assert.hpp:
+
+../../boost/detail/workaround.hpp:
+
+../../boost/type_traits/ice.hpp:
+
+../../boost/type_traits/detail/yes_no_type.hpp:
+
+../../boost/type_traits/detail/ice_or.hpp:
+
+../../boost/type_traits/detail/ice_and.hpp:
+
+../../boost/type_traits/detail/ice_not.hpp:
+
+../../boost/type_traits/detail/ice_eq.hpp:
+
+../../boost/pool/detail/gcd_lcm.hpp:
+
+../../boost/pool/simple_segregated_storage.hpp:
+
+Logger.h:
+
+BoundedQueue.h:
+
+GaussianConfig.h:
+
+PartFinder.h:
+
+VarReplacer.h:
+XorSubsumer.o depend: XorSubsumer.cpp Solver.h time_mem.h mtl/Vec.h \
+ mtl/Heap.h mtl/Vec.h mtl/Alg.h MersenneTwister.h SolverTypes.h Clause.h \
+ PackedRow.h constants.h ClauseAllocator.h ../../boost/pool/pool.hpp \
+ ../../boost/config.hpp ../../boost/config/user.hpp \
+ ../../boost/config/select_compiler_config.hpp \
+ ../../boost/config/compiler/gcc.hpp \
+ ../../boost/config/select_stdlib_config.hpp \
+ ../../boost/config/no_tr1/utility.hpp \
+ ../../boost/config/stdlib/libstdcpp3.hpp \
+ ../../boost/config/select_platform_config.hpp \
+ ../../boost/config/platform/linux.hpp \
+ ../../boost/config/posix_features.hpp ../../boost/config/suffix.hpp \
+ ../../boost/pool/poolfwd.hpp ../../boost/pool/detail/mutex.hpp \
+ ../../boost/pool/detail/ct_gcd_lcm.hpp ../../boost/static_assert.hpp \
+ ../../boost/detail/workaround.hpp ../../boost/type_traits/ice.hpp \
+ ../../boost/type_traits/detail/yes_no_type.hpp \
+ ../../boost/type_traits/detail/ice_or.hpp \
+ ../../boost/type_traits/detail/ice_and.hpp \
+ ../../boost/type_traits/detail/ice_not.hpp \
+ ../../boost/type_traits/detail/ice_eq.hpp \
+ ../../boost/pool/detail/gcd_lcm.hpp \
+ ../../boost/pool/simple_segregated_storage.hpp Logger.h BoundedQueue.h \
+ GaussianConfig.h XorSubsumer.h XSet.h ClauseCleaner.h Subsumer.h \
+ mtl/Queue.h CSet.h BitArray.h VarReplacer.h
+
+Solver.h:
+
+time_mem.h:
+
+mtl/Vec.h:
+
+mtl/Heap.h:
+
+mtl/Vec.h:
+
+mtl/Alg.h:
+
+MersenneTwister.h:
+
+SolverTypes.h:
+
+Clause.h:
+
+PackedRow.h:
+
+constants.h:
+
+ClauseAllocator.h:
+
+../../boost/pool/pool.hpp:
+
+../../boost/config.hpp:
+
+../../boost/config/user.hpp:
+
+../../boost/config/select_compiler_config.hpp:
+
+../../boost/config/compiler/gcc.hpp:
+
+../../boost/config/select_stdlib_config.hpp:
+
+../../boost/config/no_tr1/utility.hpp:
+
+../../boost/config/stdlib/libstdcpp3.hpp:
+
+../../boost/config/select_platform_config.hpp:
+
+../../boost/config/platform/linux.hpp:
+
+../../boost/config/posix_features.hpp:
+
+../../boost/config/suffix.hpp:
+
+../../boost/pool/poolfwd.hpp:
+
+../../boost/pool/detail/mutex.hpp:
+
+../../boost/pool/detail/ct_gcd_lcm.hpp:
+
+../../boost/static_assert.hpp:
+
+../../boost/detail/workaround.hpp:
+
+../../boost/type_traits/ice.hpp:
+
+../../boost/type_traits/detail/yes_no_type.hpp:
+
+../../boost/type_traits/detail/ice_or.hpp:
+
+../../boost/type_traits/detail/ice_and.hpp:
+
+../../boost/type_traits/detail/ice_not.hpp:
+
+../../boost/type_traits/detail/ice_eq.hpp:
+
+../../boost/pool/detail/gcd_lcm.hpp:
+
+../../boost/pool/simple_segregated_storage.hpp:
+
+Logger.h:
+
+BoundedQueue.h:
+
+GaussianConfig.h:
+
+XorSubsumer.h:
+
+XSet.h:
+
+ClauseCleaner.h:
+
+Subsumer.h:
+
+mtl/Queue.h:
+
+CSet.h:
+
+BitArray.h:
+
+VarReplacer.h:
+Gaussian.o depend: Gaussian.cpp Gaussian.h SolverTypes.h mtl/Alg.h \
+ Solver.h time_mem.h mtl/Vec.h mtl/Heap.h mtl/Vec.h MersenneTwister.h \
+ Clause.h PackedRow.h constants.h ClauseAllocator.h \
+ ../../boost/pool/pool.hpp ../../boost/config.hpp \
+ ../../boost/config/user.hpp \
+ ../../boost/config/select_compiler_config.hpp \
+ ../../boost/config/compiler/gcc.hpp \
+ ../../boost/config/select_stdlib_config.hpp \
+ ../../boost/config/no_tr1/utility.hpp \
+ ../../boost/config/stdlib/libstdcpp3.hpp \
+ ../../boost/config/select_platform_config.hpp \
+ ../../boost/config/platform/linux.hpp \
+ ../../boost/config/posix_features.hpp ../../boost/config/suffix.hpp \
+ ../../boost/pool/poolfwd.hpp ../../boost/pool/detail/mutex.hpp \
+ ../../boost/pool/detail/ct_gcd_lcm.hpp ../../boost/static_assert.hpp \
+ ../../boost/detail/workaround.hpp ../../boost/type_traits/ice.hpp \
+ ../../boost/type_traits/detail/yes_no_type.hpp \
+ ../../boost/type_traits/detail/ice_or.hpp \
+ ../../boost/type_traits/detail/ice_and.hpp \
+ ../../boost/type_traits/detail/ice_not.hpp \
+ ../../boost/type_traits/detail/ice_eq.hpp \
+ ../../boost/pool/detail/gcd_lcm.hpp \
+ ../../boost/pool/simple_segregated_storage.hpp Logger.h BoundedQueue.h \
+ GaussianConfig.h PackedMatrix.h BitArray.h ClauseCleaner.h Subsumer.h \
+ mtl/Queue.h CSet.h XorSubsumer.h XSet.h
+
+Gaussian.h:
+
+SolverTypes.h:
+
+mtl/Alg.h:
+
+Solver.h:
+
+time_mem.h:
+
+mtl/Vec.h:
+
+mtl/Heap.h:
+
+mtl/Vec.h:
+
+MersenneTwister.h:
+
+Clause.h:
+
+PackedRow.h:
+
+constants.h:
+
+ClauseAllocator.h:
+
+../../boost/pool/pool.hpp:
+
+../../boost/config.hpp:
+
+../../boost/config/user.hpp:
+
+../../boost/config/select_compiler_config.hpp:
+
+../../boost/config/compiler/gcc.hpp:
+
+../../boost/config/select_stdlib_config.hpp:
+
+../../boost/config/no_tr1/utility.hpp:
+
+../../boost/config/stdlib/libstdcpp3.hpp:
+
+../../boost/config/select_platform_config.hpp:
+
+../../boost/config/platform/linux.hpp:
+
+../../boost/config/posix_features.hpp:
+
+../../boost/config/suffix.hpp:
+
+../../boost/pool/poolfwd.hpp:
+
+../../boost/pool/detail/mutex.hpp:
+
+../../boost/pool/detail/ct_gcd_lcm.hpp:
+
+../../boost/static_assert.hpp:
+
+../../boost/detail/workaround.hpp:
+
+../../boost/type_traits/ice.hpp:
+
+../../boost/type_traits/detail/yes_no_type.hpp:
+
+../../boost/type_traits/detail/ice_or.hpp:
+
+../../boost/type_traits/detail/ice_and.hpp:
+
+../../boost/type_traits/detail/ice_not.hpp:
+
+../../boost/type_traits/detail/ice_eq.hpp:
+
+../../boost/pool/detail/gcd_lcm.hpp:
+
+../../boost/pool/simple_segregated_storage.hpp:
+
+Logger.h:
+
+BoundedQueue.h:
+
+GaussianConfig.h:
+
+PackedMatrix.h:
+
+BitArray.h:
+
+ClauseCleaner.h:
+
+Subsumer.h:
+
+mtl/Queue.h:
+
+CSet.h:
+
+XorSubsumer.h:
+
+XSet.h:
+MatrixFinder.o depend: MatrixFinder.cpp MatrixFinder.h Clause.h mtl/Vec.h \
+ SolverTypes.h mtl/Alg.h PackedRow.h constants.h ClauseAllocator.h \
+ ../../boost/pool/pool.hpp ../../boost/config.hpp \
+ ../../boost/config/user.hpp \
+ ../../boost/config/select_compiler_config.hpp \
+ ../../boost/config/compiler/gcc.hpp \
+ ../../boost/config/select_stdlib_config.hpp \
+ ../../boost/config/no_tr1/utility.hpp \
+ ../../boost/config/stdlib/libstdcpp3.hpp \
+ ../../boost/config/select_platform_config.hpp \
+ ../../boost/config/platform/linux.hpp \
+ ../../boost/config/posix_features.hpp ../../boost/config/suffix.hpp \
+ ../../boost/pool/poolfwd.hpp ../../boost/pool/detail/mutex.hpp \
+ ../../boost/pool/detail/ct_gcd_lcm.hpp ../../boost/static_assert.hpp \
+ ../../boost/detail/workaround.hpp ../../boost/type_traits/ice.hpp \
+ ../../boost/type_traits/detail/yes_no_type.hpp \
+ ../../boost/type_traits/detail/ice_or.hpp \
+ ../../boost/type_traits/detail/ice_and.hpp \
+ ../../boost/type_traits/detail/ice_not.hpp \
+ ../../boost/type_traits/detail/ice_eq.hpp \
+ ../../boost/pool/detail/gcd_lcm.hpp \
+ ../../boost/pool/simple_segregated_storage.hpp Solver.h time_mem.h \
+ mtl/Heap.h mtl/Vec.h MersenneTwister.h Logger.h BoundedQueue.h \
+ GaussianConfig.h Gaussian.h PackedMatrix.h BitArray.h ClauseCleaner.h \
+ Subsumer.h mtl/Queue.h CSet.h XorSubsumer.h XSet.h
+
+MatrixFinder.h:
+
+Clause.h:
+
+mtl/Vec.h:
+
+SolverTypes.h:
+
+mtl/Alg.h:
+
+PackedRow.h:
+
+constants.h:
+
+ClauseAllocator.h:
+
+../../boost/pool/pool.hpp:
+
+../../boost/config.hpp:
+
+../../boost/config/user.hpp:
+
+../../boost/config/select_compiler_config.hpp:
+
+../../boost/config/compiler/gcc.hpp:
+
+../../boost/config/select_stdlib_config.hpp:
+
+../../boost/config/no_tr1/utility.hpp:
+
+../../boost/config/stdlib/libstdcpp3.hpp:
+
+../../boost/config/select_platform_config.hpp:
+
+../../boost/config/platform/linux.hpp:
+
+../../boost/config/posix_features.hpp:
+
+../../boost/config/suffix.hpp:
+
+../../boost/pool/poolfwd.hpp:
+
+../../boost/pool/detail/mutex.hpp:
+
+../../boost/pool/detail/ct_gcd_lcm.hpp:
+
+../../boost/static_assert.hpp:
+
+../../boost/detail/workaround.hpp:
+
+../../boost/type_traits/ice.hpp:
+
+../../boost/type_traits/detail/yes_no_type.hpp:
+
+../../boost/type_traits/detail/ice_or.hpp:
+
+../../boost/type_traits/detail/ice_and.hpp:
+
+../../boost/type_traits/detail/ice_not.hpp:
+
+../../boost/type_traits/detail/ice_eq.hpp:
+
+../../boost/pool/detail/gcd_lcm.hpp:
+
+../../boost/pool/simple_segregated_storage.hpp:
+
+Solver.h:
+
+time_mem.h:
+
+mtl/Heap.h:
+
+mtl/Vec.h:
+
+MersenneTwister.h:
+
+Logger.h:
+
+BoundedQueue.h:
+
+GaussianConfig.h:
+
+Gaussian.h:
+
+PackedMatrix.h:
+
+BitArray.h:
+
+ClauseCleaner.h:
+
+Subsumer.h:
+
+mtl/Queue.h:
+
+CSet.h:
+
+XorSubsumer.h:
+
+XSet.h:
+StateSaver.o depend: StateSaver.cpp StateSaver.h Solver.h time_mem.h \
+ mtl/Vec.h mtl/Heap.h mtl/Vec.h mtl/Alg.h MersenneTwister.h SolverTypes.h \
+ Clause.h PackedRow.h constants.h ClauseAllocator.h \
+ ../../boost/pool/pool.hpp ../../boost/config.hpp \
+ ../../boost/config/user.hpp \
+ ../../boost/config/select_compiler_config.hpp \
+ ../../boost/config/compiler/gcc.hpp \
+ ../../boost/config/select_stdlib_config.hpp \
+ ../../boost/config/no_tr1/utility.hpp \
+ ../../boost/config/stdlib/libstdcpp3.hpp \
+ ../../boost/config/select_platform_config.hpp \
+ ../../boost/config/platform/linux.hpp \
+ ../../boost/config/posix_features.hpp ../../boost/config/suffix.hpp \
+ ../../boost/pool/poolfwd.hpp ../../boost/pool/detail/mutex.hpp \
+ ../../boost/pool/detail/ct_gcd_lcm.hpp ../../boost/static_assert.hpp \
+ ../../boost/detail/workaround.hpp ../../boost/type_traits/ice.hpp \
+ ../../boost/type_traits/detail/yes_no_type.hpp \
+ ../../boost/type_traits/detail/ice_or.hpp \
+ ../../boost/type_traits/detail/ice_and.hpp \
+ ../../boost/type_traits/detail/ice_not.hpp \
+ ../../boost/type_traits/detail/ice_eq.hpp \
+ ../../boost/pool/detail/gcd_lcm.hpp \
+ ../../boost/pool/simple_segregated_storage.hpp Logger.h BoundedQueue.h \
+ GaussianConfig.h
+
+StateSaver.h:
+
+Solver.h:
+
+time_mem.h:
+
+mtl/Vec.h:
+
+mtl/Heap.h:
+
+mtl/Vec.h:
+
+mtl/Alg.h:
+
+MersenneTwister.h:
+
+SolverTypes.h:
+
+Clause.h:
+
+PackedRow.h:
+
+constants.h:
+
+ClauseAllocator.h:
+
+../../boost/pool/pool.hpp:
+
+../../boost/config.hpp:
+
+../../boost/config/user.hpp:
+
+../../boost/config/select_compiler_config.hpp:
+
+../../boost/config/compiler/gcc.hpp:
+
+../../boost/config/select_stdlib_config.hpp:
+
+../../boost/config/no_tr1/utility.hpp:
+
+../../boost/config/stdlib/libstdcpp3.hpp:
+
+../../boost/config/select_platform_config.hpp:
+
+../../boost/config/platform/linux.hpp:
+
+../../boost/config/posix_features.hpp:
+
+../../boost/config/suffix.hpp:
+
+../../boost/pool/poolfwd.hpp:
+
+../../boost/pool/detail/mutex.hpp:
+
+../../boost/pool/detail/ct_gcd_lcm.hpp:
+
+../../boost/static_assert.hpp:
+
+../../boost/detail/workaround.hpp:
+
+../../boost/type_traits/ice.hpp:
+
+../../boost/type_traits/detail/yes_no_type.hpp:
+
+../../boost/type_traits/detail/ice_or.hpp:
+
+../../boost/type_traits/detail/ice_and.hpp:
+
+../../boost/type_traits/detail/ice_not.hpp:
+
+../../boost/type_traits/detail/ice_eq.hpp:
+
+../../boost/pool/detail/gcd_lcm.hpp:
+
+../../boost/pool/simple_segregated_storage.hpp:
+
+Logger.h:
+
+BoundedQueue.h:
+
+GaussianConfig.h:
+ClauseAllocator.o depend: ClauseAllocator.cpp ClauseAllocator.h mtl/Vec.h \
+ ../../boost/pool/pool.hpp ../../boost/config.hpp \
+ ../../boost/config/user.hpp \
+ ../../boost/config/select_compiler_config.hpp \
+ ../../boost/config/compiler/gcc.hpp \
+ ../../boost/config/select_stdlib_config.hpp \
+ ../../boost/config/no_tr1/utility.hpp \
+ ../../boost/config/stdlib/libstdcpp3.hpp \
+ ../../boost/config/select_platform_config.hpp \
+ ../../boost/config/platform/linux.hpp \
+ ../../boost/config/posix_features.hpp ../../boost/config/suffix.hpp \
+ ../../boost/pool/poolfwd.hpp ../../boost/pool/detail/mutex.hpp \
+ ../../boost/pool/detail/ct_gcd_lcm.hpp ../../boost/static_assert.hpp \
+ ../../boost/detail/workaround.hpp ../../boost/type_traits/ice.hpp \
+ ../../boost/type_traits/detail/yes_no_type.hpp \
+ ../../boost/type_traits/detail/ice_or.hpp \
+ ../../boost/type_traits/detail/ice_and.hpp \
+ ../../boost/type_traits/detail/ice_not.hpp \
+ ../../boost/type_traits/detail/ice_eq.hpp \
+ ../../boost/pool/detail/gcd_lcm.hpp \
+ ../../boost/pool/simple_segregated_storage.hpp SolverTypes.h mtl/Alg.h \
+ Clause.h PackedRow.h constants.h Solver.h time_mem.h mtl/Heap.h \
+ mtl/Vec.h MersenneTwister.h Logger.h BoundedQueue.h GaussianConfig.h \
+ Subsumer.h mtl/Queue.h CSet.h BitArray.h XorSubsumer.h XSet.h \
+ PartHandler.h PartFinder.h
+
+ClauseAllocator.h:
+
+mtl/Vec.h:
+
+../../boost/pool/pool.hpp:
+
+../../boost/config.hpp:
+
+../../boost/config/user.hpp:
+
+../../boost/config/select_compiler_config.hpp:
+
+../../boost/config/compiler/gcc.hpp:
+
+../../boost/config/select_stdlib_config.hpp:
+
+../../boost/config/no_tr1/utility.hpp:
+
+../../boost/config/stdlib/libstdcpp3.hpp:
+
+../../boost/config/select_platform_config.hpp:
+
+../../boost/config/platform/linux.hpp:
+
+../../boost/config/posix_features.hpp:
+
+../../boost/config/suffix.hpp:
+
+../../boost/pool/poolfwd.hpp:
+
+../../boost/pool/detail/mutex.hpp:
+
+../../boost/pool/detail/ct_gcd_lcm.hpp:
+
+../../boost/static_assert.hpp:
+
+../../boost/detail/workaround.hpp:
+
+../../boost/type_traits/ice.hpp:
+
+../../boost/type_traits/detail/yes_no_type.hpp:
+
+../../boost/type_traits/detail/ice_or.hpp:
+
+../../boost/type_traits/detail/ice_and.hpp:
+
+../../boost/type_traits/detail/ice_not.hpp:
+
+../../boost/type_traits/detail/ice_eq.hpp:
+
+../../boost/pool/detail/gcd_lcm.hpp:
+
+../../boost/pool/simple_segregated_storage.hpp:
+
+SolverTypes.h:
+
+mtl/Alg.h:
+
+Clause.h:
+
+PackedRow.h:
+
+constants.h:
+
+Solver.h:
+
+time_mem.h:
+
+mtl/Heap.h:
+
+mtl/Vec.h:
+
+MersenneTwister.h:
+
+Logger.h:
+
+BoundedQueue.h:
+
+GaussianConfig.h:
+
+Subsumer.h:
+
+mtl/Queue.h:
+
+CSet.h:
+
+BitArray.h:
+
+XorSubsumer.h:
+
+XSet.h:
+
+PartHandler.h:
+
+PartFinder.h:
+UselessBinRemover.o depend: UselessBinRemover.cpp UselessBinRemover.h \
+ mtl/Vec.h Solver.h time_mem.h mtl/Heap.h mtl/Vec.h mtl/Alg.h \
+ MersenneTwister.h SolverTypes.h Clause.h PackedRow.h constants.h \
+ ClauseAllocator.h ../../boost/pool/pool.hpp ../../boost/config.hpp \
+ ../../boost/config/user.hpp \
+ ../../boost/config/select_compiler_config.hpp \
+ ../../boost/config/compiler/gcc.hpp \
+ ../../boost/config/select_stdlib_config.hpp \
+ ../../boost/config/no_tr1/utility.hpp \
+ ../../boost/config/stdlib/libstdcpp3.hpp \
+ ../../boost/config/select_platform_config.hpp \
+ ../../boost/config/platform/linux.hpp \
+ ../../boost/config/posix_features.hpp ../../boost/config/suffix.hpp \
+ ../../boost/pool/poolfwd.hpp ../../boost/pool/detail/mutex.hpp \
+ ../../boost/pool/detail/ct_gcd_lcm.hpp ../../boost/static_assert.hpp \
+ ../../boost/detail/workaround.hpp ../../boost/type_traits/ice.hpp \
+ ../../boost/type_traits/detail/yes_no_type.hpp \
+ ../../boost/type_traits/detail/ice_or.hpp \
+ ../../boost/type_traits/detail/ice_and.hpp \
+ ../../boost/type_traits/detail/ice_not.hpp \
+ ../../boost/type_traits/detail/ice_eq.hpp \
+ ../../boost/pool/detail/gcd_lcm.hpp \
+ ../../boost/pool/simple_segregated_storage.hpp Logger.h BoundedQueue.h \
+ GaussianConfig.h OnlyNonLearntBins.h VarReplacer.h ClauseCleaner.h \
+ Subsumer.h mtl/Queue.h CSet.h BitArray.h XorSubsumer.h XSet.h
+
+UselessBinRemover.h:
+
+mtl/Vec.h:
+
+Solver.h:
+
+time_mem.h:
+
+mtl/Heap.h:
+
+mtl/Vec.h:
+
+mtl/Alg.h:
+
+MersenneTwister.h:
+
+SolverTypes.h:
+
+Clause.h:
+
+PackedRow.h:
+
+constants.h:
+
+ClauseAllocator.h:
+
+../../boost/pool/pool.hpp:
+
+../../boost/config.hpp:
+
+../../boost/config/user.hpp:
+
+../../boost/config/select_compiler_config.hpp:
+
+../../boost/config/compiler/gcc.hpp:
+
+../../boost/config/select_stdlib_config.hpp:
+
+../../boost/config/no_tr1/utility.hpp:
+
+../../boost/config/stdlib/libstdcpp3.hpp:
+
+../../boost/config/select_platform_config.hpp:
+
+../../boost/config/platform/linux.hpp:
+
+../../boost/config/posix_features.hpp:
+
+../../boost/config/suffix.hpp:
+
+../../boost/pool/poolfwd.hpp:
+
+../../boost/pool/detail/mutex.hpp:
+
+../../boost/pool/detail/ct_gcd_lcm.hpp:
+
+../../boost/static_assert.hpp:
+
+../../boost/detail/workaround.hpp:
+
+../../boost/type_traits/ice.hpp:
+
+../../boost/type_traits/detail/yes_no_type.hpp:
+
+../../boost/type_traits/detail/ice_or.hpp:
+
+../../boost/type_traits/detail/ice_and.hpp:
+
+../../boost/type_traits/detail/ice_not.hpp:
+
+../../boost/type_traits/detail/ice_eq.hpp:
+
+../../boost/pool/detail/gcd_lcm.hpp:
+
+../../boost/pool/simple_segregated_storage.hpp:
+
+Logger.h:
+
+BoundedQueue.h:
+
+GaussianConfig.h:
+
+OnlyNonLearntBins.h:
+
+VarReplacer.h:
+
+ClauseCleaner.h:
+
+Subsumer.h:
+
+mtl/Queue.h:
+
+CSet.h:
+
+BitArray.h:
+
+XorSubsumer.h:
+
+XSet.h:
+OnlyNonLearntBins.o depend: OnlyNonLearntBins.cpp OnlyNonLearntBins.h \
+ Solver.h time_mem.h mtl/Vec.h mtl/Heap.h mtl/Vec.h mtl/Alg.h \
+ MersenneTwister.h SolverTypes.h Clause.h PackedRow.h constants.h \
+ ClauseAllocator.h ../../boost/pool/pool.hpp ../../boost/config.hpp \
+ ../../boost/config/user.hpp \
+ ../../boost/config/select_compiler_config.hpp \
+ ../../boost/config/compiler/gcc.hpp \
+ ../../boost/config/select_stdlib_config.hpp \
+ ../../boost/config/no_tr1/utility.hpp \
+ ../../boost/config/stdlib/libstdcpp3.hpp \
+ ../../boost/config/select_platform_config.hpp \
+ ../../boost/config/platform/linux.hpp \
+ ../../boost/config/posix_features.hpp ../../boost/config/suffix.hpp \
+ ../../boost/pool/poolfwd.hpp ../../boost/pool/detail/mutex.hpp \
+ ../../boost/pool/detail/ct_gcd_lcm.hpp ../../boost/static_assert.hpp \
+ ../../boost/detail/workaround.hpp ../../boost/type_traits/ice.hpp \
+ ../../boost/type_traits/detail/yes_no_type.hpp \
+ ../../boost/type_traits/detail/ice_or.hpp \
+ ../../boost/type_traits/detail/ice_and.hpp \
+ ../../boost/type_traits/detail/ice_not.hpp \
+ ../../boost/type_traits/detail/ice_eq.hpp \
+ ../../boost/pool/detail/gcd_lcm.hpp \
+ ../../boost/pool/simple_segregated_storage.hpp Logger.h BoundedQueue.h \
+ GaussianConfig.h VarReplacer.h ClauseCleaner.h Subsumer.h mtl/Queue.h \
+ CSet.h BitArray.h XorSubsumer.h XSet.h
+
+OnlyNonLearntBins.h:
+
+Solver.h:
+
+time_mem.h:
+
+mtl/Vec.h:
+
+mtl/Heap.h:
+
+mtl/Vec.h:
+
+mtl/Alg.h:
+
+MersenneTwister.h:
+
+SolverTypes.h:
+
+Clause.h:
+
+PackedRow.h:
+
+constants.h:
+
+ClauseAllocator.h:
+
+../../boost/pool/pool.hpp:
+
+../../boost/config.hpp:
+
+../../boost/config/user.hpp:
+
+../../boost/config/select_compiler_config.hpp:
+
+../../boost/config/compiler/gcc.hpp:
+
+../../boost/config/select_stdlib_config.hpp:
+
+../../boost/config/no_tr1/utility.hpp:
+
+../../boost/config/stdlib/libstdcpp3.hpp:
+
+../../boost/config/select_platform_config.hpp:
+
+../../boost/config/platform/linux.hpp:
+
+../../boost/config/posix_features.hpp:
+
+../../boost/config/suffix.hpp:
+
+../../boost/pool/poolfwd.hpp:
+
+../../boost/pool/detail/mutex.hpp:
+
+../../boost/pool/detail/ct_gcd_lcm.hpp:
+
+../../boost/static_assert.hpp:
+
+../../boost/detail/workaround.hpp:
+
+../../boost/type_traits/ice.hpp:
+
+../../boost/type_traits/detail/yes_no_type.hpp:
+
+../../boost/type_traits/detail/ice_or.hpp:
+
+../../boost/type_traits/detail/ice_and.hpp:
+
+../../boost/type_traits/detail/ice_not.hpp:
+
+../../boost/type_traits/detail/ice_eq.hpp:
+
+../../boost/pool/detail/gcd_lcm.hpp:
+
+../../boost/pool/simple_segregated_storage.hpp:
+
+Logger.h:
+
+BoundedQueue.h:
+
+GaussianConfig.h:
+
+VarReplacer.h:
+
+ClauseCleaner.h:
+
+Subsumer.h:
+
+mtl/Queue.h:
+
+CSet.h:
+
+BitArray.h:
+
+XorSubsumer.h:
+
+XSet.h:
+Logger.o Solver.o PackedRow.o XorFinder.o VarReplacer.o FindUndef.o ClauseCleaner.o RestartTypeChooser.o FailedVarSearcher.o PartFinder.o Subsumer.o PartHandler.o XorSubsumer.o Gaussian.o MatrixFinder.o StateSaver.o ClauseAllocator.o UselessBinRemover.o OnlyNonLearntBins.o depend : Makefile ../../../scripts/Makefile.common ../../../scripts/config.info

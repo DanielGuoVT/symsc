@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/MCTargetDesc
+END
+HexagonMCAsmInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/MCTargetDesc/HexagonMCAsmInfo.h
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/MCTargetDesc/CMakeLists.txt
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/MCTargetDesc/Makefile
+END
+HexagonMCTargetDesc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/MCTargetDesc/HexagonMCTargetDesc.cpp
+END
+HexagonMCTargetDesc.h
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/MCTargetDesc/HexagonMCTargetDesc.h
+END
+HexagonBaseInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/MCTargetDesc/HexagonBaseInfo.h
+END
+HexagonMCAsmInfo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/MCTargetDesc/HexagonMCAsmInfo.cpp
+END
+LLVMBuild.txt
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/Hexagon/MCTargetDesc/LLVMBuild.txt
+END

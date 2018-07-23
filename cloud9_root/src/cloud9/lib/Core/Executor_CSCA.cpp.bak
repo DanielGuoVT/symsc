@@ -1,0 +1,582 @@
+/*
+ * Executor.cpp
+ *
+ *  Created on: Jun 29, 2017
+ *      Author: sjguo
+ */
+
+#include <stdio.h>
+#include <cmath>
+#include <map>
+#include <iostream>
+#include "klee/Expr.h"
+#include "klee/ExecutionState.h"
+#include "klee/Executor.h"
+#include "TimingSolver.h"
+
+using namespace std;
+using namespace klee;
+using namespace llvm;
+
+namespace klee {
+
+int Executor::cacheSetNum = 16;
+int Executor::cacheLineSize = 8;
+bool find = false;
+
+int Executor::log_base2(int n) {
+	int power = 0;
+	if (n <= 0 || (n & (n - 1)) != 0)
+	assert(0 && "log2() only works for positive power of two values");
+	while (n >>= 1)
+		power++;
+	return power;
+}
+
+unsigned Executor::getCacheSet(uint64_t address, unsigned set_size, unsigned line_size) {
+	return ((address) >> (int) log2(line_size)) & (set_size - 1);
+}
+
+unsigned Executor::getCacheTag(uint64_t address, unsigned set_size, unsigned line_size) {
+	return (address) >> ((int) log2(line_size) + (int) log2(set_size));
+}
+
+ref<Expr> Executor::createCacheSetCompareConstraint(ref<Expr> addr1, ref<Expr> addr2) {
+	if (addr1->getKind() == Expr::Constant) {
+		if (addr2->getKind() == Expr::Constant) {
+			return Executor::createCacheSetCompareConstraintCC(addr1, addr2);
+		} else {
+			return Executor::createCacheSetCompareConstraintSC(addr1, addr2);
+		}
+	} else {
+		if (addr2->getKind() == Expr::Constant) {
+			return Executor::createCacheSetCompareConstraintSC(addr1, addr2);
+		} else {
+			return Executor::createCacheSetCompareConstraintSS(addr1, addr2);
+		}
+	}
+}
+
+ref<Expr> Executor::createCacheTagCompareConstraint(ref<Expr> addr1, ref<Expr> addr2) {
+	if (addr1->getKind() == Expr::Constant) {
+		if (addr2->getKind() == Expr::Constant) {
+			return Executor::createCacheTagCompareConstraintCC(addr1, addr2);
+		} else {
+			return Executor::createCacheTagCompareConstraintSC(addr1, addr2);
+		}
+	} else {
+		if (addr2->getKind() == Expr::Constant) {
+			return Executor::createCacheTagCompareConstraintSC(addr1, addr2);
+		} else {
+			return Executor::createCacheTagCompareConstraintSS(addr1, addr2);
+		}
+	}
+}
+
+ref<Expr> Executor::createCacheSetCompareConstraintCC(ref<Expr> addr1, ref<Expr> addr2) {
+	ref<ConstantExpr> CE1 = dyn_cast<ConstantExpr>(addr1);
+	uint64_t mem_addr1 = CE1->getZExtValue();
+	unsigned set1 = getCacheSet(mem_addr1, Executor::cacheSetNum, Executor::cacheLineSize);
+
+	ref<ConstantExpr> CE2 = dyn_cast<ConstantExpr>(addr2);
+	uint64_t mem_addr2 = CE2->getZExtValue();
+	unsigned set2 = getCacheSet(mem_addr2, Executor::cacheSetNum, Executor::cacheLineSize);
+
+	if (set1 == set2) return ConstantExpr::create(1, Expr::Bool);
+	else return ConstantExpr::create(0, Expr::Bool);
+}
+
+ref<Expr> Executor::createCacheTagCompareConstraintCC(ref<Expr> addr1, ref<Expr> addr2) {
+	ConstantExpr* CE1 = dyn_cast<ConstantExpr>(addr1);
+	uint64_t mem_addr1 = CE1->getZExtValue();
+	unsigned tag1 = getCacheTag(mem_addr1, Executor::cacheSetNum, Executor::cacheLineSize);
+
+	ConstantExpr* CE2 = dyn_cast<ConstantExpr>(addr2);
+	uint64_t mem_addr2 = CE2->getZExtValue();
+	unsigned tag2 = getCacheTag(mem_addr2, Executor::cacheSetNum, Executor::cacheLineSize);
+
+	if (tag1 == tag2) return ConstantExpr::create(1, Expr::Bool);
+	else return ConstantExpr::create(0, Expr::Bool);
+}
+//
+// generate set equality constraints for <symbolic, constant> address pairs
+ref<Expr> Executor::createCacheSetCompareConstraintSC(ref<Expr> addr1, ref<Expr> addr2) {
+	unsigned set;
+	klee::ref<Expr> set_addr;
+	std::pair<klee::ref<Expr>, klee::ref<Expr> > setPair(addr1, addr2);
+
+	// try to look up in cache
+	if (setPairCache.count(setPair)) {
+		return setPairCache[setPair];
+	}
+
+	// either addr1 or addr2 is constant expr
+	if (addr1->getKind() == Expr::Constant) {
+		ConstantExpr* CE = dyn_cast<ConstantExpr>(addr1);
+		uint64_t addr_mem = CE->getZExtValue();
+		set = getCacheSet(addr_mem, cacheSetNum, cacheLineSize);
+
+		if (setCache.count(addr2)) set_addr = setCache[addr2];
+		else {
+			ref<Expr> base_addr = LShrExpr::create(addr2, ConstantExpr::alloc((unsigned) log2(cacheLineSize), addr2->getWidth()));
+			set_addr = AndExpr::create(base_addr, ConstantExpr::alloc(cacheSetNum - 1, addr2->getWidth()));
+			setCache[addr2] = set_addr;
+		}
+	} else {
+		ConstantExpr* CE = dyn_cast<ConstantExpr>(addr2);
+		uint64_t addr_mem = CE->getZExtValue();
+		set = getCacheSet(addr_mem, cacheSetNum, cacheLineSize);
+		if (setCache.count(addr1)) set_addr = setCache[addr1];
+		else {
+			ref<Expr> base_addr = LShrExpr::create(addr1, ConstantExpr::alloc((unsigned) log2(cacheLineSize), addr1->getWidth()));
+			set_addr = AndExpr::create(base_addr, ConstantExpr::alloc(cacheSetNum - 1, addr1->getWidth()));
+			setCache[addr1] = set_addr;
+		}
+	}
+
+	setPairCache[setPair] = EqExpr::create(set_addr, ConstantExpr::alloc(set, set_addr->getWidth()));
+	return setPairCache[setPair];
+}
+
+// generate tag inequality constraints for <symbolic, constant> address pairs
+ref<Expr> Executor::createCacheTagCompareConstraintSC(ref<Expr> addr1, ref<Expr> addr2) {
+	int tag;
+	ref<Expr> tag_addr;
+	std::pair<ref<Expr>, ref<Expr> > tagPair(addr1, addr2);
+
+	// look up the cache
+	if (tagPairCache.count(tagPair)) {
+		return tagPairCache[tagPair];
+	}
+
+	// either addr1 or addr2 is constant expr
+	if (addr1->getKind() == Expr::Constant) {
+		ConstantExpr* CE = dyn_cast<ConstantExpr>(addr1);
+		uint64_t addr_mem = CE->getZExtValue();
+		tag = getCacheTag(addr_mem, cacheSetNum, cacheLineSize);
+		if (tagCache.count(addr2)) tag_addr = tagCache[addr2];
+		else { /* allocate new memory and store in the cache */
+			tag_addr = LShrExpr::create(addr2, ConstantExpr::alloc((unsigned) log2(cacheLineSize) + (unsigned) log2(cacheSetNum), addr2->getWidth()));
+			tagCache[addr2] = tag_addr;
+		}
+	} else {
+		ConstantExpr* CE = dyn_cast<ConstantExpr>(addr2);
+		uint64_t addr_mem = CE->getZExtValue();
+		tag = getCacheTag(addr_mem, cacheSetNum, cacheLineSize);
+		if (tagCache.count(addr1)) tag_addr = tagCache[addr1];
+		else { /* allocate new memory and store in the cache */
+			tag_addr = LShrExpr::create(addr1, ConstantExpr::alloc((unsigned) log2(cacheLineSize) + (unsigned) log2(cacheSetNum), addr1->getWidth()));
+			tagCache[addr1] = tag_addr;
+		}
+	}
+
+	tagPairCache[tagPair] = EqExpr::create(tag_addr, ConstantExpr::alloc(tag, tag_addr->getWidth()));
+	return tagPairCache[tagPair];
+}
+
+// generate tag inequality constraints for <symbolic, symbolic> address pairs
+ref<Expr> Executor::createCacheSetCompareConstraintSS(ref<Expr> addr1, ref<Expr> addr2) {
+	std::pair<ref<Expr>, ref<Expr> > setPair(addr1, addr2);
+	ref<Expr> set_addr1, set_addr2;
+
+	if (setPairCache.count(setPair)) {
+		return setPairCache[setPair];
+	}
+
+	if (setCache.count(addr1)) set_addr1 = setCache[addr1];
+	else {
+		ref<Expr> base_addr = LShrExpr::create(addr1, ConstantExpr::alloc((unsigned) log2(cacheLineSize), addr1->getWidth()));
+		set_addr1 = AndExpr::create(base_addr, ConstantExpr::alloc(cacheSetNum - 1, addr1->getWidth()));
+		setCache[addr1] = set_addr1;
+	}
+	if (setCache.count(addr2)) set_addr2 = setCache[addr2];
+	else {
+		ref<Expr> base_addr = LShrExpr::create(addr2, ConstantExpr::alloc((unsigned) log2(cacheLineSize), addr2->getWidth()));
+		set_addr2 = AndExpr::create(base_addr, ConstantExpr::alloc(cacheSetNum - 1, addr2->getWidth()));
+		setCache[addr2] = set_addr2;
+	}
+
+	setPairCache[setPair] = EqExpr::create(set_addr1, set_addr2);
+	return setPairCache[setPair];
+}
+
+// generate tag inequality constraints for <symbolic,symbolic> constraint pairs
+ref<Expr> Executor::createCacheTagCompareConstraintSS(ref<Expr> addr1, ref<Expr> addr2) {
+	std::pair<ref<Expr>, ref<Expr> > tagPair(addr1, addr2);
+	ref<Expr> tag_addr1, tag_addr2;
+
+	if (tagPairCache.count(tagPair)) {
+		return tagPairCache[tagPair];
+	}
+	if (tagCache.count(addr1)) tag_addr1 = tagCache[addr1];
+	else {
+		tag_addr1 = LShrExpr::create(addr1, ConstantExpr::alloc((unsigned) log2(cacheLineSize) + (unsigned) log2(cacheSetNum), addr1->getWidth()));
+		tagCache[addr1] = tag_addr1;
+	}
+	if (tagCache.count(addr2)) tag_addr2 = tagCache[addr2];
+	else {
+		tag_addr2 = LShrExpr::create(addr2, ConstantExpr::alloc((unsigned) log2(cacheLineSize) + (unsigned) log2(cacheSetNum), addr2->getWidth()));
+		tagCache[addr2] = tag_addr2;
+	}
+	tagPairCache[tagPair] = EqExpr::create(tag_addr1, tag_addr2);
+	return tagPairCache[tagPair];
+}
+
+ref<Expr> Executor::createNotReloadConstraint(unsigned crtIdx, ref<Expr> target, ExecutionState &state) {
+	ref<Expr> crt = state.memAddressList[crtIdx];
+	ref<Expr> setCmp = Executor::createCacheSetCompareConstraint(target, crt);
+
+	if (setCmp->getKind() == Expr::Constant) {
+		if (setCmp->isTrue()) return ConstantExpr::create(0, Expr::Bool);
+		else return ConstantExpr::create(1, Expr::Bool);
+	}
+	return NotExpr::create(setCmp);
+}
+
+void Executor::processCacheAccess(ExecutionState &state, TimingSolver *solver) {
+	if (state.memAddressList.empty()) return;
+
+	unsigned size = state.memAddressList.size();
+	for (unsigned idx = 1; idx < size; idx++) {
+		computeIndividualConstraint(state, solver, idx, state.memAddressList[idx]);
+	}
+}
+
+void Executor::computeIndividualConstraint(ExecutionState &state, TimingSolver *solver, int idx, ref<Expr> addr) {
+	ref<Expr> premise = NULL;
+	ref<Expr> miss = NULL;
+	ref<Expr> not_reload = NULL;
+
+	bool must_miss;
+	bool must_hit;
+	bool sym_reload;
+
+	std::cerr << "idx: " << idx <<", addr: "<<state.memAddressList[idx]<< std::endl;
+
+	for (int i = idx - 1; i >= 0; i--) {
+		ref<Expr> &prev = state.memAddressList[i];
+		ref<Expr> setCmp = Executor::createCacheSetCompareConstraint(addr, prev);
+		ref<Expr> tagCmp = NULL;
+
+		must_hit = false;
+		must_miss = false;
+
+		if (i < idx - 1) {
+			ref<Expr> tmp = Executor::createNotReloadConstraint(i + 1, addr, state);
+			if (tmp->getKind() == Expr::Constant) {
+				// should stop backtracking if previously reloaded
+				// can only be not-reload (true)
+				assert(tmp->isTrue());
+				if (not_reload.isNull()) not_reload = tmp;
+			} else {
+				not_reload = not_reload.isNull() ? tmp : AndExpr::create(not_reload, tmp);
+			}
+		}
+
+		if (setCmp->getKind() == Expr::Constant) { // constant cmp constraint
+			if (setCmp->isFalse()) {
+				if (not_reload.isNull()) {
+					assert(premise.isNull());
+					must_miss = true;
+				} else if (dyn_cast<ConstantExpr>(not_reload)) {
+					assert(dyn_cast<ConstantExpr>(not_reload)->isTrue());
+					assert(premise.isNull());
+					must_miss = true;
+				}
+				continue; // different cache set
+			}
+			tagCmp = Executor::createCacheTagCompareConstraint(addr, prev);
+			assert(tagCmp->getKind() == Expr::Constant);
+			if (tagCmp->isTrue()) {
+				// a hard hit
+				if (not_reload.isNull()) {
+					assert(premise.isNull());
+					must_hit = true;
+				} else if (dyn_cast<ConstantExpr>(not_reload)) {
+					assert(dyn_cast<ConstantExpr>(not_reload)->isTrue());
+					assert(premise.isNull());
+					must_hit = true;
+				} else {
+					premise = premise.isNull() ? not_reload : OrExpr::create(premise, not_reload);
+				}
+			} else { // same cache set, different tag
+				if (not_reload.isNull()) {
+					assert(premise.isNull());
+					must_miss = true;
+				} else if (dyn_cast<ConstantExpr>(not_reload)) {
+					assert(dyn_cast<ConstantExpr>(not_reload)->isTrue());
+					assert(premise.isNull());
+					must_miss = true;
+				}
+			}
+			break;
+		} else { //symbolic cmp constraint
+			bool mustBeFalse = true;
+			solver->mustBeFalse(data::SIDE_CHANNEL_ANALYSIS, state, setCmp, mustBeFalse);
+			if (mustBeFalse) {
+				if (not_reload.isNull()) assert(premise.isNull());
+				must_miss = true;
+				continue; // cannot cause either conflict or hit, do nothing
+			}
+
+			tagCmp = Executor::createCacheTagCompareConstraint(addr, prev);
+			ref<Expr> current = not_reload.isNull() ? AndExpr::create(setCmp, tagCmp) : AndExpr::create(not_reload, AndExpr::create(setCmp, tagCmp));
+
+			if (premise.isNull()) premise = current;
+			else premise = OrExpr::create(premise, current);
+			assert(!premise.isNull());
+
+			bool mustBeTrue = false;
+			solver->mustBeTrue(data::SIDE_CHANNEL_ANALYSIS, state, setCmp, mustBeTrue);
+
+			if (mustBeTrue) { // Must stop here
+				if (not_reload.isNull()) {
+					assert(premise.isNull());
+					must_hit = true;
+				}
+				break;
+			}
+		}
+	}
+
+	if (premise.isNull()) {
+		std::string name("h");
+		std::ostringstream ss;
+		ss << idx;
+		ss << '_';
+		name += ss.str();
+		const Array *array = Array::CreateArray(name, 1);
+		ref<Expr> result = ReadExpr::createTempRead(array, 8);
+
+		ref<Expr> hit = EqExpr::create(result, ConstantExpr::alloc(1, result->getWidth()));
+		ref<Expr> miss = EqExpr::create(result, ConstantExpr::alloc(0, result->getWidth()));
+
+		if (must_miss) {
+			premise = ConstantExpr::create(1, Expr::Bool);
+			ref<Expr> hitConstraint = Expr::createImplies(premise, miss);
+			ref<Expr> missConstraint = Expr::createImplies(NotExpr::create(premise), hit);
+
+			state.symbolicHitLog[idx] = result;
+			state.constraintsMap[idx] = std::make_pair(hitConstraint, missConstraint);
+			state.symbolicHitVars.push_back(std::make_pair(idx, array));
+		} else if (must_hit) {
+			premise = ConstantExpr::create(1, Expr::Bool);
+			ref<Expr> hitConstraint = Expr::createImplies(premise, hit);
+			ref<Expr> missConstraint = Expr::createImplies(NotExpr::create(premise), miss);
+
+			state.symbolicHitLog[idx] = result;
+			state.constraintsMap[idx] = std::make_pair(hitConstraint, missConstraint);
+			state.symbolicHitVars.push_back(std::make_pair(idx, array));
+		} else {
+
+			for (int i = 0; i <= idx; i++) {
+				state.memInsts[i]->dump();
+			}
+
+			std::cerr << std::endl;
+
+			for (int i = 0; i <= idx; i++) {
+				if (state.memAddressList[i]->getKind() == Expr::Constant) {
+					ref<ConstantExpr> addr0 = dyn_cast<ConstantExpr>(state.memAddressList[i]);
+					std::cerr << "[DBG]: i" << i << ", addr: " << addr0 << ", nset: "
+							<< getCacheSet(addr0->getZExtValue(), Executor::cacheSetNum, Executor::cacheLineSize) << std::endl;
+				} else {
+					std::cerr << "[DBG]: i" << i << ", addr: " << state.memAddressList[i] << std::endl;
+				}
+			}
+
+			assert(0 && "should not reach here.");
+		}
+	} else {
+		std::string name("h");
+		std::ostringstream ss;
+		ss << idx;
+		ss << '_';
+		name += ss.str();
+
+		const Array *array = Array::CreateArray(name, 1);
+		ref<Expr> result = ReadExpr::createTempRead(array, 1);
+
+		ref<Expr> hit = EqExpr::create(result, ConstantExpr::alloc(1, result->getWidth()));
+		ref<Expr> miss = EqExpr::create(result, ConstantExpr::alloc(0, result->getWidth()));
+
+		ref<Expr> hitConstraint = Expr::createImplies(premise, hit);
+		ref<Expr> missConstraint = Expr::createImplies(NotExpr::create(premise), miss);
+
+		state.symbolicHitLog[idx] = result;
+		state.constraintsMap[idx] = std::make_pair(hitConstraint, missConstraint);
+		state.symbolicHitVars.push_back(std::make_pair(idx, array));
+	}
+}
+
+static bool substituteSymVar(ref<Expr> target, ref<Expr> newValue) {
+	assert(!target.isNull());
+	bool found = false;
+	if (target->getKind() == Expr::Read) {
+		ref<ReadExpr> read = dyn_cast<ReadExpr>(target);
+		if (read->updates.root->getName() == "k") {
+			for (size_t i = 0; i < target->parent->getNumKids(); i++) {
+				if (target->parent->getKid(i) == target) {
+					target->parent->setKid(i, newValue);
+					found = true;
+					break;
+				}
+			}
+		}
+	}
+	if (found) return found;
+	for (size_t i = 0; i < target->getNumKids(); i++) {
+		if (substituteSymVar(target->getKid(i), newValue)) {
+			found = true;
+			break;
+		}
+	}
+	return found;
+}
+
+static uint64_t computeExpr(ref<Expr> source) {
+	uint64_t result = 0;
+	if (source->getKind() == Expr::Add) {
+		ref<AddExpr> add = dyn_cast<AddExpr>(source);
+
+		if (add->getKid(0)->getKind() == Expr::Constant) {
+			ref<ConstantExpr> left = dyn_cast<ConstantExpr>(add->getKid(0));
+			result += left->getZExtValue();
+		}
+
+		if (add->getKid(1)->getKind() == Expr::ZExt) {
+			ref<ConstantExpr> right = dyn_cast<ConstantExpr>(add->getKid(1)->getKid(0));
+			result += right->getZExtValue();
+		} else if (add->getKid(1)->getKind() == Expr::SExt) {
+			ref<ConstantExpr> left = dyn_cast<ConstantExpr>(add->getKid(1)->getKid(0)->getKid(0));
+			ref<ConstantExpr> right = dyn_cast<ConstantExpr>(add->getKid(1)->getKid(0)->getKid(1)->getKid(0));
+			result += left->getZExtValue();
+			result += right->getZExtValue();
+		}
+	}
+	return result;
+}
+
+int Executor::computeSolution(ExecutionState &state, TimingSolver *solver) {
+	if (state.symbolicHitVars.empty()) {
+		return 0;
+	}
+
+	std::vector<const Array *> allObjects;
+	std::vector<std::pair<unsigned, const Array*> > &vars = state.symbolicHitVars;
+
+	for (size_t i = 0; i < state.symbolics.size(); i++) {
+		allObjects.push_back(state.symbolics[i].second);
+	}
+	for (size_t i = 0; i < vars.size(); i++) {
+		allObjects.push_back(vars[i].second);
+	}
+
+	ExecutionState::ConstraintsMap &cm = state.constraintsMap;
+	ExecutionState::ConstraintsMap::iterator mit = cm.begin();
+	for (; mit != cm.end(); mit++) {
+		state.addConstraint(mit->second.first);
+		state.addConstraint(mit->second.second);
+	}
+
+	bool success = true;
+	std::vector<vector<unsigned char> > solvedValues;
+
+	while (success) {
+		solver->setTimeout(0);
+		success = solver->getInitialValues(data::SIDE_CHANNEL_ANALYSIS, state, allObjects, solvedValues);
+		if (!success) {
+			std::cerr << "[DBG] finish solving ... " << std::endl;
+		} else {
+			std::vector<std::pair<const MemoryObject*, const Array*> > &symbolics = state.symbolics;
+			std::stringstream ss1;
+			std::stringstream ss2;
+			std::stringstream ss3;
+			for (size_t i = 3; i < symbolics.size(); i++) {
+				std::string name = symbolics[i].second->getName();
+				ss1 << name << ": ";
+				for (size_t j = 0; j < solvedValues[i].size(); j++) {
+					char buf[8];
+					sprintf(buf, "%hhu", solvedValues[i][j]);
+					ss1 << buf;
+					ss3 << buf;
+				}
+			}
+
+			unsigned offset = symbolics.size();
+			for (size_t i = 0; i < vars.size(); i++) {
+				std::string name = vars[i].second->getName();
+				//	ss2 << name;
+				for (size_t j = 0; j < solvedValues[offset + i].size(); j++) {
+					char buf[8];
+					sprintf(buf, "%hhu", solvedValues[offset + i][j]);
+					ss2 << buf;
+				}
+				if (i != vars.size() - 1) {
+					ss2 << "-";
+				}
+			}
+
+			string input_seq = ss1.str();
+			string cache_seq = ss2.str();
+
+			if (!cacheBehavInputMap.count(cache_seq)) {
+				if (cacheBehavInputMap.empty()) {
+					std::cerr << "empty cacheBehaInputMap, now push back the first item ..." << std::endl;
+				} else {
+					std::cerr << "find new cache sequence ..." << std::endl;
+				}
+				std::cerr << "input sequence : " << input_seq << std::endl;
+				std::cerr << "chache sequence: " << cache_seq << std::endl;
+
+				cacheBehavInputMap[cache_seq] = input_seq;
+
+#if 0 // use the solved value to construct the concrete addresses to check the cache-mapping sequence
+				uint64_t tmp;
+				ss3 >> tmp;
+				ref<Expr> k = ConstantExpr::create(tmp, Expr::Int8);
+				std::vector<ref<Expr> > addrs;
+				for (size_t i = 0; i < state.memAddressList.size(); i++) {
+					addrs.push_back(Expr::copyExpr(state.memAddressList[i]));
+				}
+
+				for (size_t i = 0; i < addrs.size(); i++) {
+					if (addrs[i]->getKind() == Expr::Constant) {
+						uint64_t addr = dyn_cast<ConstantExpr>(addrs[i])->getZExtValue();
+						std::cerr << "tid: " << state.tids[i] << ", addr: " << addr << ", cset: "
+						<< this->getCacheSet(addr, cacheSetNum, cacheLineSize) << std::endl;
+						continue;
+					}
+					ref<Expr> candidate = addrs[i];
+					substituteSymVar(candidate, k);
+					uint64_t addr = computeExpr(candidate);
+					std::cerr << "tid: " << state.tids[i] << ", addr: " << addr << ", cset: " << this->getCacheSet(addr, cacheSetNum, cacheLineSize)
+					<< std::endl;
+				}
+#endif
+			} else {
+//				std::cerr << "cache seq exists" << std::endl;
+			}
+
+			// now add constraint to compute next possible solution
+			ref<Expr> extra = NULL;
+			for (size_t i = 3; i < symbolics.size(); i++) {
+				UpdateList ul(symbolics[i].second, 0);
+				std::vector<unsigned char> &solvedValue = solvedValues[i];
+				for (unsigned j = 0; j < solvedValue.size(); j++) {
+					ref<Expr> tmpRead = ReadExpr::alloc(ul, ConstantExpr::create(j, Expr::Int8));
+					ref<Expr> tmpValue = ConstantExpr::create(solvedValue[j], tmpRead->getWidth());
+					if (extra.isNull()) extra = EqExpr::create(tmpRead, tmpValue);
+					else extra = AndExpr::create(extra, EqExpr::create(tmpRead, tmpValue));
+				}
+			}
+			if (!extra.isNull()) {
+				state.addConstraint(NotExpr::create(extra));
+			}
+		}
+	}
+	return 0;
+}
+
+}
+

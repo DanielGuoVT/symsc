@@ -1,0 +1,11 @@
+--- runtime/POSIX/sockets.c2012-09-17 17:10:49.000000000 +0200
++++ runtime/POSIX/sockets.c2012-09-17 17:13:36.000000000 +0200
+@@ -1918,7 +1918,7 @@
+ int getnameinfo(const struct sockaddr *sa, socklen_t salen,
+                 char *host, socklen_t hostlen,
+                 char *serv, socklen_t servlen,
+-                int flags) {
++                unsigned int flags) {
+ 
+   if (sa->sa_family != AF_INET || salen < sizeof(struct sockaddr_in)) {
+     return EAI_FAMILY;

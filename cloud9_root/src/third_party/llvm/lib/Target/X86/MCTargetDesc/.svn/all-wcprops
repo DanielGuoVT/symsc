@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/X86/MCTargetDesc
+END
+LLVMBuild.txt
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/X86/MCTargetDesc/LLVMBuild.txt
+END
+X86MCAsmInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/X86/MCTargetDesc/X86MCAsmInfo.h
+END
+X86MCCodeEmitter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/X86/MCTargetDesc/X86MCCodeEmitter.cpp
+END
+X86MCTargetDesc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/X86/MCTargetDesc/X86MCTargetDesc.cpp
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/X86/MCTargetDesc/CMakeLists.txt
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/X86/MCTargetDesc/Makefile
+END
+X86AsmBackend.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/X86/MCTargetDesc/X86AsmBackend.cpp
+END
+X86FixupKinds.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/X86/MCTargetDesc/X86FixupKinds.h
+END
+X86ELFObjectWriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/X86/MCTargetDesc/X86ELFObjectWriter.cpp
+END
+X86MCTargetDesc.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/X86/MCTargetDesc/X86MCTargetDesc.h
+END
+X86BaseInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/X86/MCTargetDesc/X86BaseInfo.h
+END
+X86MCAsmInfo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/X86/MCTargetDesc/X86MCAsmInfo.cpp
+END
+X86MachObjectWriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/X86/MCTargetDesc/X86MachObjectWriter.cpp
+END
+X86WinCOFFObjectWriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/lib/Target/X86/MCTargetDesc/X86WinCOFFObjectWriter.cpp
+END

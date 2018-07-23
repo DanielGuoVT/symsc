@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/SPARC
+END
+2008-10-10-InlineAsmMemoryOperand.ll
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/SPARC/2008-10-10-InlineAsmMemoryOperand.ll
+END
+2007-05-09-JumpTables.ll
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/SPARC/2007-05-09-JumpTables.ll
+END
+2011-12-03-TailDuplication.ll
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/SPARC/2011-12-03-TailDuplication.ll
+END
+2011-01-21-ByValArgs.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/SPARC/2011-01-21-ByValArgs.ll
+END
+2008-10-10-InlineAsmRegOperand.ll
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/SPARC/2008-10-10-InlineAsmRegOperand.ll
+END
+lit.local.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/SPARC/lit.local.cfg
+END
+2010-04-07-DbgValueOtherTargets.ll
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/SPARC/2010-04-07-DbgValueOtherTargets.ll
+END
+private.ll
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/SPARC/private.ll
+END
+mult-alt-generic-sparc.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/SPARC/mult-alt-generic-sparc.ll
+END
+2009-08-28-PIC.ll
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/SPARC/2009-08-28-PIC.ll
+END
+2006-01-22-BitConvertLegalize.ll
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/SPARC/2006-01-22-BitConvertLegalize.ll
+END
+basictest.ll
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/SPARC/basictest.ll
+END
+2007-07-05-LiveIntervalAssert.ll
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/SPARC/2007-07-05-LiveIntervalAssert.ll
+END
+ctpop.ll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/SPARC/ctpop.ll
+END
+2009-08-28-WeakLinkage.ll
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/SPARC/2009-08-28-WeakLinkage.ll
+END
+2011-01-19-DelaySlot.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/SPARC/2011-01-19-DelaySlot.ll
+END
+2011-01-11-Call.ll
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/SPARC/2011-01-11-Call.ll
+END
+2011-01-22-SRet.ll
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/SPARC/2011-01-22-SRet.ll
+END
+2011-01-11-FrameAddr.ll
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/SPARC/2011-01-11-FrameAddr.ll
+END
+2011-01-11-CC.ll
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/CodeGen/SPARC/2011-01-11-CC.ll
+END

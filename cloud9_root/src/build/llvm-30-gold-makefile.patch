@@ -1,0 +1,13 @@
+Index: tools/gold/Makefile
+===================================================================
+--- tools/gold/Makefile	(revision 151385)
++++ tools/gold/Makefile	(working copy)
+@@ -26,6 +26,7 @@
+ # Because off_t is used in the public API, the largefile parts are required for
+ # ABI compatibility.
+ CXXFLAGS+=-I$(BINUTILS_INCDIR) -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+-CXXFLAGS+=$(SharedLibDir)/$(SharedPrefix)LTO$(SHLIBEXT)
+ 
+ include $(LEVEL)/Makefile.common
++
++LIBS+= -L$(SharedLibDir)/$(SharedPrefix) -lLTO

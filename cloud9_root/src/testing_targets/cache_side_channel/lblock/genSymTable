@@ -1,0 +1,13 @@
+rm -f *.elf;
+rm -f *.bc;
+
+name=`basename $(pwd)`
+
+clang -g -O0 ${name}_original.c 
+#readelf -a a.out > layout_raw
+#rm a.out
+
+clang -emit-llvm -c ${name}_original.c -o ${name}_original.bc
+llvm-dis ${name}_original.bc
+clang ${name}_original.bc -o ${name}_original.elf;
+readelf -s ${name}_original.elf > layout_raw;

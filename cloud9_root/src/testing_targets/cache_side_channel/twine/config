@@ -1,0 +1,13 @@
+[func]
+Encrypt
+Schedule
+
+[sbox]
+Sbox_byte
+
+[shadow]
+Encrypt
+Schedule
+
+[key]
+key

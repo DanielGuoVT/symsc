@@ -1,0 +1,8 @@
+[func]
+gdk_keyval_name
+
+[sbox]
+gdk_keys_by_keyval
+
+[key]
+keyval

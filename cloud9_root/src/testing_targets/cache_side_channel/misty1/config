@@ -1,0 +1,16 @@
+[func]
+FI
+encrypt
+key_schedule
+
+[sbox]
+MISTY1_SBOX_S7
+MISTY1_SBOX_S9
+
+[shadow]
+key_schedule1
+encrypt1
+FI
+
+[key]
+key

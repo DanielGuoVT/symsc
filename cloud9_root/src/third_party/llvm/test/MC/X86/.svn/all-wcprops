@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/X86
+END
+x86-32-avx.s
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/X86/x86-32-avx.s
+END
+x86_64-fma3-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/X86/x86_64-fma3-encoding.s
+END
+x86_directives.s
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/X86/x86_directives.s
+END
+x86-32.s
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/X86/x86-32.s
+END
+x86_64-fma4-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/X86/x86_64-fma4-encoding.s
+END
+x86-64.s
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/X86/x86-64.s
+END
+padlock.s
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/X86/padlock.s
+END
+x86_64-avx-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/X86/x86_64-avx-encoding.s
+END
+lit.local.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/X86/lit.local.cfg
+END
+x86_64-imm-widths.s
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/X86/x86_64-imm-widths.s
+END
+x86_operands.s
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/X86/x86_operands.s
+END
+x86_errors.s
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/X86/x86_errors.s
+END
+x86_64-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/X86/x86_64-encoding.s
+END
+intel-syntax-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/X86/intel-syntax-encoding.s
+END
+x86_64-xop-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/X86/x86_64-xop-encoding.s
+END
+x86_64-bmi-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/X86/x86_64-bmi-encoding.s
+END
+x86_64-avx-clmul-encoding.s
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/X86/x86_64-avx-clmul-encoding.s
+END
+2011-09-06-NoNewline.s
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/X86/2011-09-06-NoNewline.s
+END
+3DNow.s
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/X86/3DNow.s
+END
+x86-32-fma3.s
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/X86/x86-32-fma3.s
+END
+address-size.s
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/X86/address-size.s
+END
+intel-syntax-2.s
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/X86/intel-syntax-2.s
+END
+intel-syntax.s
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/X86/intel-syntax.s
+END
+x86-32-coverage.s
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/MC/X86/x86-32-coverage.s
+END

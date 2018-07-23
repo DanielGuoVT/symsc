@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Object/X86
+END
+lit.local.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Object/X86/lit.local.cfg
+END
+objdump-disassembly-inline-relocations.test
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Object/X86/objdump-disassembly-inline-relocations.test
+END
+objdump-trivial-object.test
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/llvm-project/!svn/ver/156747/llvm/tags/RELEASE_31/final/test/Object/X86/objdump-trivial-object.test
+END
