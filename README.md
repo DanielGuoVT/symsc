@@ -1,4 +1,4 @@
-# SYMSC
+# SymSC
 Author: Shengjian (Daniel) Guo  
 Email : guosj@vt.edu  
 ### Introduction
